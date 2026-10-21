@@ -1,0 +1,92 @@
+{
+  "schema": "vpfp_frozen_ic40_solver_guidance_round_v1",
+  "experiment_id": "vpfp-strong-ic40-demand-batched-oracle-guidance-20260908",
+  "base_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp-strong-regime-coherent-5268586/seed-0/initial_conditioned/checkpoints/fixed-step-040000.pt",
+  "base_checkpoint_sha256": "255b8f77e418568b4d48b3669b95aa706cd83d94cee76d291806ae4e55794f62",
+  "retained_control_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp-strong-regime-coherent-5268586/seed-1/initial_conditioned/checkpoints/fixed-step-040000.pt",
+  "retained_control_checkpoint_sha256": "fac4b591d13afb75b744ed0775d5cf1eeb142d3b0cb9ef4665b9d50b1f7c3d5a",
+  "solver": "${PDE_GAV_RUN_ROOT}/unified-plasma-agent-iterations-20260825-v2/vpfp-strong-r2/result/model/submission.py",
+  "solver_sha256": "c3fd9984dc05d1a8ecdb698e7c63861e98f201cadb0cfba9ad1b78d9e20867bd",
+  "native_config": "configs/vpfp_unified_live_strong_collision.json",
+  "portable_codec": {
+    "schema": "vpfp_explicit_portable_codec_binding_v1",
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-portable-codec-export-5299171/conversion/portable-codec.pt",
+    "sha256": "ab52cf84c5d010900165f884d52787e19d83f6760de5e5d5e56bc9af5d07f18c",
+    "conversion_result": "${PDE_GAV_RUN_ROOT}/vpfp-portable-codec-export-5299171/conversion/result.json",
+    "conversion_result_sha256": "29d0542cd92a7df1bce3226465d3c1c70385fb7da48b683249100a1eb805f9fe"
+  },
+  "seeds": {
+    "fit": 2720260908,
+    "validation": 2820260908,
+    "selection": 2920260908,
+    "confirmation": 3020260908,
+    "training": 3120260908
+  },
+  "counts": {
+    "fit": 64,
+    "validation": 16,
+    "selection": 16,
+    "confirmation": 32
+  },
+  "preflight_fit_count": 2,
+  "condition_strata": {
+    "collision_nu_edges": [
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "temperature_edges": [
+      0.8,
+      1,
+      1.2
+    ]
+  },
+  "training": {
+    "steps": 2000,
+    "batch_size": 4,
+    "learning_rate": 0.0002,
+    "checkpoint_every": 250,
+    "width": 32,
+    "depth": 2,
+    "error_scale": 1,
+    "validity_weight": 0.1
+  },
+  "sampling": {
+    "heun_steps": 64,
+    "churn": 0,
+    "selection_strengths": [
+      0,
+      0.5,
+      2
+    ],
+    "max_gradient_norm": 1,
+    "guidance_sigma_min": 0.002,
+    "guidance_sigma_max": 2
+  },
+  "solver_budget_seconds": 180,
+  "reward": "current_solver_physical_scale_macro_RMSE_then_log1p_over_1_plus_log1p",
+  "base_weights_trainable": false,
+  "solver_weights_or_code_trainable": false,
+  "failed_solver_outputs_are_high_rewards": false,
+  "old_scores_used_as_training_labels": false,
+  "automatic_online_asset_replacement": false,
+  "scientific_admission": false,
+  "total_gpu_hours_cap": null,
+  "maximum_concurrent_vpfp_gpus": 2,
+  "public_access_mode": "demand_legacy_arrays_v1",
+  "legacy_solver_array_grid": {
+    "nx": 33,
+    "ny": 33,
+    "nt": 13,
+    "nvx": 9,
+    "nvy": 9,
+    "velocity_bounds": [
+      -5,
+      5,
+      -5,
+      5
+    ]
+  }
+}

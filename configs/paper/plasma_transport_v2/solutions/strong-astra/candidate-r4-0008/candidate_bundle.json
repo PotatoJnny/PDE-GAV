@@ -1,0 +1,23 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "corner_proposals.py",
+    "corner_refinement.py",
+    "corner_sampling.py",
+    "gpu_integrator_bspline.py",
+    "initial_projection.py",
+    "multirate_gate.py",
+    "multirate_sampling.py",
+    "pilot_density.py",
+    "quadrature_select.py",
+    "source_spline_piecewise.py",
+    "source_spline_stable.py",
+    "spatial_source_guard.py",
+    "spline_degree_selection.py",
+    "submission.py",
+    "temporal_sampling.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 109627,
+  "tree_sha256": "f89c77d0c064bc4b0bddb24377558a5ab3b0e7dce342ea50a99cc25a373f5e39"
+}

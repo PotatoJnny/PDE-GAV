@@ -1,0 +1,91 @@
+{
+  "schema": "ns_fixed_data_baseline_v1",
+  "method": "autonumerics_ns_adaptation",
+  "seed": 101,
+  "dataset": {
+    "kind": "continuous_mms_paired",
+    "arm": "fixed_sampled",
+    "manifest": "@STARTER@",
+    "expected_cases": 64,
+    "expected_continuous_mms_abi": "continuous_structured_ns_mms_v6",
+    "selection_manifest": "@SELECTION@",
+    "development_device": "cuda:0",
+    "selection_device": "cpu"
+  },
+  "initial_candidate": "@INITIAL@",
+  "initial_candidate_sha256": "@INITIAL_SHA256@",
+  "search": {
+    "literature_options": {
+      "total_wall_seconds": null,
+      "branch_wall_seconds": null,
+      "planning_call_seconds": null,
+      "json_attempts": 2,
+      "codepde_samples": 3,
+      "codepde_trials": 5,
+      "codepde_seed_pool_size": 3,
+      "codepde_reference_counts": [
+        3,
+        3,
+        3
+      ],
+      "autonumerics_plans": 10,
+      "autonumerics_top_k": 5,
+      "autonumerics_fresh_starts": 2,
+      "autonumerics_coarse_repairs": 4,
+      "autonumerics_fine_repairs": 2,
+      "autonumerics_coarse_factor": 4,
+      "autonumerics_probe_cases": 1,
+      "protocol": "completion_v2"
+    }
+  },
+  "prompt": "Develop a reusable solver for the declared incompressible Navier--Stokes Cases. Minimize mean relative error of the two velocity components. Choose and implement the numerical methods you consider most promising; follow the supplied method stage. Pressure is not scored. One common frozen 24-Case validation bank selects the delivered program; independent terminal Cases are not available during development.",
+  "agent": {
+    "command": [
+      "{python}",
+      "{repo}/scripts/run_canonical_codex_agent.py",
+      "--codex-binary",
+      "@CODEX@",
+      "--auth-file",
+      "@AUTH@",
+      "--runtime-root",
+      "{output}/agent_runtime",
+      "--config",
+      "{repo}/scripts/canonical_codex.config.toml"
+    ],
+    "hard_wall_seconds": null,
+    "nomination_policy": "latest",
+    "transient_resume_max_attempts": 2,
+    "gpu_devices": [
+      "@GPU@"
+    ],
+    "inline_array_bytes": 256,
+    "worker_settings": {
+      "profile": "structured_numerical",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "candidate_abi": "prepare_solution_then_evaluate_points_v1",
+      "candidate_execution": {
+        "device": "cpu",
+        "cuda_available": false
+      },
+      "controller_rpc_timeout_seconds": 7200,
+      "continuation_backend": "canonical_codex_v1"
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "evaluation": {
+    "allow_grid_truth": false,
+    "allow_point_truth": false,
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 32,
+    "selection_point_count": 96,
+    "candidate_case_workers": "@WORKERS@",
+    "candidate_case_hard_wall_seconds": 300,
+    "development_batch_hard_wall_seconds": null,
+    "borrow_agent_gpus": true
+  }
+}

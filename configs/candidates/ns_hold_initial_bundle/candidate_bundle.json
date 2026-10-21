@@ -1,0 +1,7 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "submission.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1"
+}

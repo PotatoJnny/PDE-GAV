@@ -1,0 +1,22 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "base.py",
+    "charge_engine.py",
+    "compressed_source.py",
+    "cubic_charge_projection.py",
+    "fourier_helpers.py",
+    "goal_tensor.py",
+    "gp_engine.py",
+    "initial_defect.py",
+    "kinetic_evolution.py",
+    "reconstruct.py",
+    "submission.py",
+    "tangent_model.py",
+    "tensor_cubature.py",
+    "thermal_mixing.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 117372,
+  "tree_sha256": "3754fd5501ee8a431f2821888b3cb73307e4b30266ecea13f6fa5971cf26ac6d"
+}

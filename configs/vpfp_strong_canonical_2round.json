@@ -1,0 +1,88 @@
+{
+  "schema": "canonical_vpfp_strong_iteration_v1",
+  "campaign_id": "vpfp-strong-online-guidance-2round-20260909",
+  "master_seed": 920260909,
+  "round_count": 2,
+  "backend": {
+    "native_spec": {
+      "regime_id": "long_time_strong_collision_v2",
+      "collision_nu_range": [
+        10,
+        30
+      ],
+      "temperature_range": [
+        0.8,
+        1.2
+      ],
+      "time_domain": [
+        0,
+        1
+      ],
+      "base_decoder_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/base_online_decoder.pt",
+      "expanded_decoder_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/expanded_robust_decoder.pt",
+      "base_decoder_sha256": "44f15e3d48120bce94066078dd5f54ff99227d0855f7c5646c173e43fdacd6a9",
+      "expanded_decoder_sha256": "18eeaefb325b998fbaf72fb27059df9528a4f8e75ea8975a5ce4db491aca3530"
+    },
+    "base_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp-strong-regime-coherent-5268586/seed-0/initial_conditioned/checkpoints/fixed-step-040000.pt",
+    "base_checkpoint_sha256": "255b8f77e418568b4d48b3669b95aa706cd83d94cee76d291806ae4e55794f62",
+    "portable_codec": "${PDE_GAV_RUN_ROOT}/vpfp-portable-codec-export-5299171/conversion/portable-codec.pt",
+    "portable_codec_sha256": "ab52cf84c5d010900165f884d52787e19d83f6760de5e5d5e56bc9af5d07f18c",
+    "device": "cuda",
+    "guidance_config": {
+      "steps": 2000,
+      "batch_size": 4,
+      "learning_rate": 0.0002,
+      "beta_std": 0.5,
+      "fit_count": 64,
+      "validation_count": 16,
+      "target_ratio": 0.1,
+      "max_flow_ratio": 0.25,
+      "wall_seconds": 1800
+    }
+  },
+  "execution": {
+    "agent_active_budget_seconds": 1800,
+    "agent_hard_wall_seconds": 5400,
+    "controller_rpc_timeout_seconds": 7200,
+    "candidate_case_workers": 4,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_candidate_batch_hard_wall_seconds": 6900,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max"
+  },
+  "development": {
+    "max_cases_per_agent_per_round": 48,
+    "starter_base": 4
+  },
+  "official": {
+    "base": 80
+  },
+  "terminal": {
+    "base": 32,
+    "base_perturbed": 8,
+    "guided_per_round": 16
+  },
+  "task": {
+    "require_prepared_solution": true,
+    "candidate_compute_budget": 180,
+    "development_point_count": 128,
+    "official_point_count": 256,
+    "terminal_point_count": 256
+  },
+  "candidate": {
+    "initial_bundle": "candidates/vpfp_strong_initial_bundle",
+    "initial_name": "VPFP strong incumbent",
+    "initial_summary": "Previously validated public-only VPFP solver with a query-blind grid preparation and continuous macro interpolation adapter."
+  },
+  "worker": {
+    "script": "../scripts/run_canonical_codex_agent.py",
+    "codex_config": "../scripts/canonical_codex.config.toml"
+  },
+  "agents": [
+    {
+      "agent_id": "vpfp-agent",
+      "name": "VPFP strong solver developer",
+      "prompt": "Improve the current Solver/ROM on continuous strong-collision VPFP public problems. Learn the schema and public metadata; use the source/rho0/g0 numerical Oracle only at coordinates your method needs. You may sample fresh BASE or round-frozen GUIDED cases and paired perturbations, inspect development macro errors and iterate on candidate code. Guidance is retrained between rounds for the previously selected solver, not updated by your current candidates. Export prepare_solution(case, solve_budget=None) then handle.evaluate(query), returning only rho, momentum_x, momentum_y, kinetic_energy at arbitrary requested points. Never read Controller-private artifacts, hidden model coefficients, feedback labels or Official/Terminal cases. The inherited S0 grid is just one method, not a required mesh. Nominate reproducible candidate bundles when improvements are ready; there is no nomination-count cap. Use the common memory and retain a valid solver."
+    }
+  ]
+}

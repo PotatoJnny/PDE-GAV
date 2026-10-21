@@ -1,0 +1,80 @@
+{
+  "schema": "pde_campaign_v1",
+  "problem": "vpfp",
+  "name": "VPFP long-time one-click smoke",
+  "dataset": {
+    "format": "vpfp_long_time_answer_first_release_bank_v2",
+    "release_bank_report": "${VPFP_RELEASE_BANK_REPORT}"
+  },
+  "execution": {
+    "backend": "slurm",
+    "storage_root": "${VPFP_RUN_STORAGE_ROOT}",
+    "run_root": "${VPFP_RUN_STORAGE_ROOT}/vpfp_long_time_smoke",
+    "virtual_environment": "${VPFP_VIRTUAL_ENV}",
+    "account": "${PDE_GAV_SLURM_ACCOUNT}",
+    "qos": "normal",
+    "preparation_partition": "gpubase_l40s_b1",
+    "gpu_partition": "gpubase_l40s_b3",
+    "gpu_gres": "gpu:l40s:1",
+    "modules": [
+      "StdEnv/2023",
+      "python/3.11",
+      "scipy-stack/2024b"
+    ],
+    "resources": {
+      "prepare_campaign": {
+        "cpus": 4,
+        "memory": "24G",
+        "time": "01:00:00"
+      },
+      "agent_a": {
+        "cpus": 16,
+        "memory": "96G",
+        "time": "02:00:00"
+      },
+      "agent_b": {
+        "cpus": 16,
+        "memory": "96G",
+        "time": "02:00:00"
+      },
+      "final_evaluation": {
+        "cpus": 16,
+        "memory": "96G",
+        "time": "04:00:00"
+      }
+    }
+  },
+  "generator": {
+    "representation": "fourier_hermite_positive",
+    "base_decoder_checkpoint": "${VPFP_BASE_DECODER_CHECKPOINT}",
+    "expanded_decoder_checkpoint": "${VPFP_EXPANDED_DECODER_CHECKPOINT}",
+    "generation_batch_size": 16,
+    "guidance_pool_size": 4,
+    "guidance_enabled": true,
+    "perturbations_enabled": true
+  },
+  "campaign": {
+    "round_index": 0,
+    "seed_base": 7600000
+  },
+  "agent": {
+    "backend": "codex_mock",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "active_wall_seconds": 3600,
+    "budget_seconds": 60,
+    "finalist_timeout_seconds": 1800,
+    "development_case_credits": 64,
+    "prompt_file": "prompts/vpfp_long_time_objective.md"
+  },
+  "evaluator": {
+    "broad_cases": 4,
+    "frontier_cases": 2,
+    "macro_match_validation": "formal_dual_score_v1"
+  },
+  "task": {
+    "kind": "observable_model",
+    "macro_match_contract": "vpfp_full_velocity_macro_match_v1",
+    "incumbent_model": "../legacy/vpfp/baselines/long_time_strong_incumbent/submission.py"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "physics": "gkw",
+  "factory_settings": {
+    "physical_root": "${PDE_GAV_WORKTREES_ROOT}/gkw-fresh-physical-5ca50ae",
+    "external_root": "${PDE_GAV_DEPS_ROOT}/neural-gyrokinetics-568411b",
+    "gyaradax_root": "${PDE_GAV_DEPS_ROOT}/gyaradax-318e3d11",
+    "python_dependency_root": "${PDE_GAV_DEPS_ROOT}/gkw-perturbation-qualification-python-v1",
+    "qualification_root": "${PDE_GAV_RUN_ROOT}/gkw-full-capacity-continuous-condition-qualification-production-20260831-v1",
+    "artifacts": {
+      "kinetic_edm": "${PDE_GAV_RUN_ROOT}/fusion-nested-c256-edm-capacity384-highnoise-20k-v1/hierarchical_edm.pt",
+      "kinetic_corpus": "${PDE_GAV_RUN_ROOT}/fusion-nested-hierarchy-c256-width512-depth3-12k-v1/nested_hierarchy_corpus.pt",
+      "potential_edm": "${PDE_GAV_RUN_ROOT}/fusion-potential-edm-axial-kx-30k-reaudit-v1/potential_spectral_edm.pt",
+      "potential_corpus": "${PDE_GAV_RUN_ROOT}/fusion-potential-corpus-k17y17-centered-screen16x-v1/potential_spectral_corpus.pt",
+      "hierarchy_checkpoint": "${PDE_GAV_RUN_ROOT}/fusion-nested-hierarchy-c256-width512-depth3-12k-v1/nested_hierarchy_codec.pt",
+      "parent_hierarchy_checkpoint": "${PDE_GAV_RUN_ROOT}/fusion-nested-aware-parent-decoder-cont-physical-1500-v1/hierarchical_decoder_repair.pt",
+      "geometry_sidecar": "${PDE_GAV_RUN_ROOT}/fusion-geometry-sidecar-4280615/gkw_field_geometry_sidecar.pt",
+      "velocity_metric": "${PDE_GAV_RUN_ROOT}/fusion-generated-velocity-metric-scratch-s2k-v1/velocity_metric_carrier.pt",
+      "correction_calibration": "${PDE_GAV_RUN_ROOT}/fusion-joint-exact-h-phi-calibration-scratch-learned-480-v1/generated_field_closure_report.json",
+      "time_registry": "${PDE_GAV_RUN_ROOT}/fusion-gkw-time-4306935/gkw_time_registry.npz",
+      "encode_report": "${PDE_GAV_RUN_ROOT}/fusion-axial-flow-4278689/encode_report.json",
+      "latent_corpus": "${PDE_GAV_RUN_ROOT}/fusion-axial-flow-4278689/latent_corpus.pt",
+      "equation_calibration": "${PDE_GAV_RUN_ROOT}/fusion-gkw-equation-first-calibration-32-v1/report.json"
+    },
+    "artifact_sha256": {
+      "kinetic_edm": "5dc3aa622baf0b5e9aef59a8954259da7782d02ca4dcd1838aef2393013f632c",
+      "kinetic_corpus": "853d45c0db5967b38e40224eeda630914ebe1281a7114bb21426e363a2d8000a",
+      "potential_edm": "9fdc0a272e0b9dbcfa1853ae0548132bf29237de084872822f3d68321a99eddd",
+      "potential_corpus": "8d6b14fc5f5714ea4dab1bd554274bd9c6914472870b1f7159753853630394f7",
+      "hierarchy_checkpoint": "61e0693f41ab1781aed07c8e6416a2209c04bdd7920019de6a451f57ebe966de",
+      "parent_hierarchy_checkpoint": "d4151a0ce9b0a2f8a96ea4205b1f25d5f64a1c2f3ec83188af7db2f05f02812b",
+      "geometry_sidecar": "e22e8ce18b4b806118ede886e0c8d7a2ee5b9419c1a2cef2cf4ae95fe552dbf0",
+      "velocity_metric": "323f9912471feff7476ebb62fa80a4baeb4278e51bca5f4a83b24bb0506d0507",
+      "correction_calibration": "e57f6db16d4591d9b19064c77169b6cbe7456c73526ae7c5924e319d4afab80a",
+      "time_registry": "429e3b32e3ec1afc041707dc454136f4fa9062144b11a6357897f147d1199ef2",
+      "encode_report": "a7633b95c55251742fca974f5ec8dfdf6aca486548b1babbb018b33446ea4f22",
+      "latent_corpus": "2ee87aa091f1f69e553bdfcf28893890db0ba49fcd44e1aadd0585ed5fc12529",
+      "equation_calibration": "1d037ed384635e5942699775d57948c7f33c813d78996351bdebc6e428acba9e"
+    }
+  }
+}

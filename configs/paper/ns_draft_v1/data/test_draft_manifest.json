@@ -1,0 +1,3014 @@
+{
+  "dataset_id": "ns-d0-paper-draft-v1",
+  "reference_kind": "numerical_trajectory_derived_discrete_mms",
+  "schema": "ns_d0_v1",
+  "selection_algorithm": "Python random.Random(20260907); sorted IDs; development/validation first, then family-sorted calibration and nested test",
+  "selection_seed": 20260907,
+  "source_manifest": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_large/split_manifest.json",
+  "source_manifest_sha256": "74308ae15a6923de58fda7b196cec9350d3eb9663cc7e2e4bb402c785da305e7",
+  "splits": {
+    "test_draft": [
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060875",
+        "case_id": "d0_kite_baffle_060875",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_070059",
+        "case_id": "d0_kite_baffle_070059",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_056412",
+        "case_id": "d0_kite_baffle_056412",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_045802",
+        "case_id": "d0_kite_baffle_045802",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_023694",
+        "case_id": "d0_kite_baffle_023694",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_034/d0_large/cases/d0_kite_baffle_040930",
+        "case_id": "d0_kite_baffle_040930",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_013949",
+        "case_id": "d0_kite_baffle_013949",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_024/d0_large/cases/d0_kite_baffle_029287",
+        "case_id": "d0_kite_baffle_029287",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_020/d0_large/cases/d0_kite_baffle_024361",
+        "case_id": "d0_kite_baffle_024361",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_046/d0_large/cases/d0_kite_baffle_055959",
+        "case_id": "d0_kite_baffle_055959",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_021/d0_large/cases/d0_kite_baffle_025348",
+        "case_id": "d0_kite_baffle_025348",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_069171",
+        "case_id": "d0_kite_baffle_069171",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_035/d0_large/cases/d0_kite_baffle_042942",
+        "case_id": "d0_kite_baffle_042942",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_032/d0_large/cases/d0_kite_baffle_038469",
+        "case_id": "d0_kite_baffle_038469",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_010/d0_large/cases/d0_kite_baffle_012602",
+        "case_id": "d0_kite_baffle_012602",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_093/d0_large/cases/d0_kite_baffle_112468",
+        "case_id": "d0_kite_baffle_112468",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043277",
+        "case_id": "d0_kite_baffle_043277",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_074/d0_large/cases/d0_kite_baffle_089632",
+        "case_id": "d0_kite_baffle_089632",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_098086",
+        "case_id": "d0_kite_baffle_098086",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017221",
+        "case_id": "d0_kite_baffle_017221",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043787",
+        "case_id": "d0_kite_baffle_043787",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083734",
+        "case_id": "d0_kite_baffle_083734",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_076376",
+        "case_id": "d0_kite_baffle_076376",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_062004",
+        "case_id": "d0_kite_baffle_062004",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_070/d0_large/cases/d0_kite_baffle_084897",
+        "case_id": "d0_kite_baffle_084897",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_051879",
+        "case_id": "d0_kite_baffle_051879",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_082/d0_large/cases/d0_kite_baffle_098611",
+        "case_id": "d0_kite_baffle_098611",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_009813",
+        "case_id": "d0_kite_baffle_009813",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_076/d0_large/cases/d0_kite_baffle_091613",
+        "case_id": "d0_kite_baffle_091613",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_007482",
+        "case_id": "d0_kite_baffle_007482",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072392",
+        "case_id": "d0_kite_baffle_072392",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_042/d0_large/cases/d0_kite_baffle_050482",
+        "case_id": "d0_kite_baffle_050482",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_085693",
+        "case_id": "d0_kite_baffle_085693",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_049/d0_large/cases/d0_kite_baffle_059614",
+        "case_id": "d0_kite_baffle_059614",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072926",
+        "case_id": "d0_kite_baffle_072926",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_105681",
+        "case_id": "d0_kite_baffle_105681",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_105107",
+        "case_id": "d0_kite_baffle_105107",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_085/d0_large/cases/d0_kite_baffle_102917",
+        "case_id": "d0_kite_baffle_102917",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_045/d0_large/cases/d0_kite_baffle_054833",
+        "case_id": "d0_kite_baffle_054833",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_042/d0_large/cases/d0_kite_baffle_051076",
+        "case_id": "d0_kite_baffle_051076",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_095/d0_large/cases/d0_kite_baffle_114071",
+        "case_id": "d0_kite_baffle_114071",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043566",
+        "case_id": "d0_kite_baffle_043566",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_014053",
+        "case_id": "d0_kite_baffle_014053",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060234",
+        "case_id": "d0_kite_baffle_060234",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_093/d0_large/cases/d0_kite_baffle_112100",
+        "case_id": "d0_kite_baffle_112100",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_097/d0_large/cases/d0_kite_baffle_117241",
+        "case_id": "d0_kite_baffle_117241",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_007/d0_large/cases/d0_kite_baffle_008408",
+        "case_id": "d0_kite_baffle_008408",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043492",
+        "case_id": "d0_kite_baffle_043492",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_033/d0_large/cases/d0_kite_baffle_040528",
+        "case_id": "d0_kite_baffle_040528",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096262",
+        "case_id": "d0_kite_baffle_096262",
+        "family": "baffle_impingement_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_012/d0_large/cases/d0_kite_baffle_014632",
+        "case_id": "d0_kite_baffle_014632",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_022/d0_large/cases/d0_kite_baffle_027066",
+        "case_id": "d0_kite_baffle_027066",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_062/d0_large/cases/d0_kite_baffle_074577",
+        "case_id": "d0_kite_baffle_074577",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_111350",
+        "case_id": "d0_kite_baffle_111350",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_005/d0_large/cases/d0_kite_baffle_006029",
+        "case_id": "d0_kite_baffle_006029",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_096/d0_large/cases/d0_kite_baffle_115458",
+        "case_id": "d0_kite_baffle_115458",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_079/d0_large/cases/d0_kite_baffle_094950",
+        "case_id": "d0_kite_baffle_094950",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_056880",
+        "case_id": "d0_kite_baffle_056880",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_078/d0_large/cases/d0_kite_baffle_093996",
+        "case_id": "d0_kite_baffle_093996",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_023765",
+        "case_id": "d0_kite_baffle_023765",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060545",
+        "case_id": "d0_kite_baffle_060545",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_068/d0_large/cases/d0_kite_baffle_082480",
+        "case_id": "d0_kite_baffle_082480",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_105015",
+        "case_id": "d0_kite_baffle_105015",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_046097",
+        "case_id": "d0_kite_baffle_046097",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083549",
+        "case_id": "d0_kite_baffle_083549",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_084/d0_large/cases/d0_kite_baffle_100848",
+        "case_id": "d0_kite_baffle_100848",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_111384",
+        "case_id": "d0_kite_baffle_111384",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_013/d0_large/cases/d0_kite_baffle_015645",
+        "case_id": "d0_kite_baffle_015645",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_022917",
+        "case_id": "d0_kite_baffle_022917",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_017/d0_large/cases/d0_kite_baffle_021221",
+        "case_id": "d0_kite_baffle_021221",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_001/d0_large/cases/d0_kite_baffle_002146",
+        "case_id": "d0_kite_baffle_002146",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_039/d0_large/cases/d0_kite_baffle_047695",
+        "case_id": "d0_kite_baffle_047695",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_007223",
+        "case_id": "d0_kite_baffle_007223",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_002/d0_large/cases/d0_kite_baffle_002679",
+        "case_id": "d0_kite_baffle_002679",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_097/d0_large/cases/d0_kite_baffle_117324",
+        "case_id": "d0_kite_baffle_117324",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_026/d0_large/cases/d0_kite_baffle_031735",
+        "case_id": "d0_kite_baffle_031735",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_052591",
+        "case_id": "d0_kite_baffle_052591",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_079429",
+        "case_id": "d0_kite_baffle_079429",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_098/d0_large/cases/d0_kite_baffle_118137",
+        "case_id": "d0_kite_baffle_118137",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_020/d0_large/cases/d0_kite_baffle_024531",
+        "case_id": "d0_kite_baffle_024531",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_084/d0_large/cases/d0_kite_baffle_100947",
+        "case_id": "d0_kite_baffle_100947",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_080480",
+        "case_id": "d0_kite_baffle_080480",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_057074",
+        "case_id": "d0_kite_baffle_057074",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_091/d0_large/cases/d0_kite_baffle_109660",
+        "case_id": "d0_kite_baffle_109660",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_096/d0_large/cases/d0_kite_baffle_115983",
+        "case_id": "d0_kite_baffle_115983",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_018/d0_large/cases/d0_kite_baffle_022565",
+        "case_id": "d0_kite_baffle_022565",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_105335",
+        "case_id": "d0_kite_baffle_105335",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_013/d0_large/cases/d0_kite_baffle_015746",
+        "case_id": "d0_kite_baffle_015746",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_073/d0_large/cases/d0_kite_baffle_088294",
+        "case_id": "d0_kite_baffle_088294",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_038177",
+        "case_id": "d0_kite_baffle_038177",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_044/d0_large/cases/d0_kite_baffle_052850",
+        "case_id": "d0_kite_baffle_052850",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_057037",
+        "case_id": "d0_kite_baffle_057037",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_010029",
+        "case_id": "d0_kite_baffle_010029",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_097855",
+        "case_id": "d0_kite_baffle_097855",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_073/d0_large/cases/d0_kite_baffle_088344",
+        "case_id": "d0_kite_baffle_088344",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_022882",
+        "case_id": "d0_kite_baffle_022882",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_075970",
+        "case_id": "d0_kite_baffle_075970",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_097411",
+        "case_id": "d0_kite_baffle_097411",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_085/d0_large/cases/d0_kite_baffle_102454",
+        "case_id": "d0_kite_baffle_102454",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_044058",
+        "case_id": "d0_kite_baffle_044058",
+        "family": "body_force_wake_acceleration",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_062/d0_large/cases/d0_kite_baffle_075045",
+        "case_id": "d0_kite_baffle_075045",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096078",
+        "case_id": "d0_kite_baffle_096078",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_080869",
+        "case_id": "d0_kite_baffle_080869",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096080",
+        "case_id": "d0_kite_baffle_096080",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_039/d0_large/cases/d0_kite_baffle_047167",
+        "case_id": "d0_kite_baffle_047167",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_037537",
+        "case_id": "d0_kite_baffle_037537",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_080178",
+        "case_id": "d0_kite_baffle_080178",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072996",
+        "case_id": "d0_kite_baffle_072996",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_004/d0_large/cases/d0_kite_baffle_005126",
+        "case_id": "d0_kite_baffle_005126",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_045/d0_large/cases/d0_kite_baffle_054578",
+        "case_id": "d0_kite_baffle_054578",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_082/d0_large/cases/d0_kite_baffle_099002",
+        "case_id": "d0_kite_baffle_099002",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_007561",
+        "case_id": "d0_kite_baffle_007561",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_017/d0_large/cases/d0_kite_baffle_020600",
+        "case_id": "d0_kite_baffle_020600",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_054/d0_large/cases/d0_kite_baffle_065023",
+        "case_id": "d0_kite_baffle_065023",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_059/d0_large/cases/d0_kite_baffle_071353",
+        "case_id": "d0_kite_baffle_071353",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_075/d0_large/cases/d0_kite_baffle_090642",
+        "case_id": "d0_kite_baffle_090642",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_079645",
+        "case_id": "d0_kite_baffle_079645",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_052/d0_large/cases/d0_kite_baffle_062669",
+        "case_id": "d0_kite_baffle_062669",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_062/d0_large/cases/d0_kite_baffle_075108",
+        "case_id": "d0_kite_baffle_075108",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_053/d0_large/cases/d0_kite_baffle_063733",
+        "case_id": "d0_kite_baffle_063733",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_080518",
+        "case_id": "d0_kite_baffle_080518",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_105010",
+        "case_id": "d0_kite_baffle_105010",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_029/d0_large/cases/d0_kite_baffle_034851",
+        "case_id": "d0_kite_baffle_034851",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_056/d0_large/cases/d0_kite_baffle_068055",
+        "case_id": "d0_kite_baffle_068055",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_068858",
+        "case_id": "d0_kite_baffle_068858",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_086977",
+        "case_id": "d0_kite_baffle_086977",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_017/d0_large/cases/d0_kite_baffle_021148",
+        "case_id": "d0_kite_baffle_021148",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_086565",
+        "case_id": "d0_kite_baffle_086565",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_029/d0_large/cases/d0_kite_baffle_035758",
+        "case_id": "d0_kite_baffle_035758",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_023/d0_large/cases/d0_kite_baffle_027988",
+        "case_id": "d0_kite_baffle_027988",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_020/d0_large/cases/d0_kite_baffle_024157",
+        "case_id": "d0_kite_baffle_024157",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_079797",
+        "case_id": "d0_kite_baffle_079797",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_028/d0_large/cases/d0_kite_baffle_034291",
+        "case_id": "d0_kite_baffle_034291",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_068530",
+        "case_id": "d0_kite_baffle_068530",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_070/d0_large/cases/d0_kite_baffle_084994",
+        "case_id": "d0_kite_baffle_084994",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_034/d0_large/cases/d0_kite_baffle_041345",
+        "case_id": "d0_kite_baffle_041345",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106403",
+        "case_id": "d0_kite_baffle_106403",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_037620",
+        "case_id": "d0_kite_baffle_037620",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106507",
+        "case_id": "d0_kite_baffle_106507",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_056865",
+        "case_id": "d0_kite_baffle_056865",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_044/d0_large/cases/d0_kite_baffle_053008",
+        "case_id": "d0_kite_baffle_053008",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_099/d0_large/cases/d0_kite_baffle_119759",
+        "case_id": "d0_kite_baffle_119759",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_056/d0_large/cases/d0_kite_baffle_067609",
+        "case_id": "d0_kite_baffle_067609",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_010297",
+        "case_id": "d0_kite_baffle_010297",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_074/d0_large/cases/d0_kite_baffle_089752",
+        "case_id": "d0_kite_baffle_089752",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_051667",
+        "case_id": "d0_kite_baffle_051667",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_110835",
+        "case_id": "d0_kite_baffle_110835",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_028/d0_large/cases/d0_kite_baffle_034152",
+        "case_id": "d0_kite_baffle_034152",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_022/d0_large/cases/d0_kite_baffle_026952",
+        "case_id": "d0_kite_baffle_026952",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_079/d0_large/cases/d0_kite_baffle_095600",
+        "case_id": "d0_kite_baffle_095600",
+        "family": "counter_rotating_vortex_pair",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_105925",
+        "case_id": "d0_kite_baffle_105925",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_076280",
+        "case_id": "d0_kite_baffle_076280",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_033/d0_large/cases/d0_kite_baffle_040491",
+        "case_id": "d0_kite_baffle_040491",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_020/d0_large/cases/d0_kite_baffle_024398",
+        "case_id": "d0_kite_baffle_024398",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_034/d0_large/cases/d0_kite_baffle_041344",
+        "case_id": "d0_kite_baffle_041344",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_080460",
+        "case_id": "d0_kite_baffle_080460",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_076/d0_large/cases/d0_kite_baffle_091859",
+        "case_id": "d0_kite_baffle_091859",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_097/d0_large/cases/d0_kite_baffle_116831",
+        "case_id": "d0_kite_baffle_116831",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_007/d0_large/cases/d0_kite_baffle_008614",
+        "case_id": "d0_kite_baffle_008614",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_079995",
+        "case_id": "d0_kite_baffle_079995",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_021/d0_large/cases/d0_kite_baffle_025622",
+        "case_id": "d0_kite_baffle_025622",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_042/d0_large/cases/d0_kite_baffle_050829",
+        "case_id": "d0_kite_baffle_050829",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061919",
+        "case_id": "d0_kite_baffle_061919",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017299",
+        "case_id": "d0_kite_baffle_017299",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_018/d0_large/cases/d0_kite_baffle_021618",
+        "case_id": "d0_kite_baffle_021618",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_064/d0_large/cases/d0_kite_baffle_077550",
+        "case_id": "d0_kite_baffle_077550",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_090/d0_large/cases/d0_kite_baffle_108062",
+        "case_id": "d0_kite_baffle_108062",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_048/d0_large/cases/d0_kite_baffle_058354",
+        "case_id": "d0_kite_baffle_058354",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_105053",
+        "case_id": "d0_kite_baffle_105053",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_054/d0_large/cases/d0_kite_baffle_065611",
+        "case_id": "d0_kite_baffle_065611",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_045/d0_large/cases/d0_kite_baffle_054251",
+        "case_id": "d0_kite_baffle_054251",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_039/d0_large/cases/d0_kite_baffle_047108",
+        "case_id": "d0_kite_baffle_047108",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_099813",
+        "case_id": "d0_kite_baffle_099813",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_111345",
+        "case_id": "d0_kite_baffle_111345",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_086192",
+        "case_id": "d0_kite_baffle_086192",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_113770",
+        "case_id": "d0_kite_baffle_113770",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_078/d0_large/cases/d0_kite_baffle_094264",
+        "case_id": "d0_kite_baffle_094264",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_010/d0_large/cases/d0_kite_baffle_012383",
+        "case_id": "d0_kite_baffle_012383",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_084/d0_large/cases/d0_kite_baffle_101475",
+        "case_id": "d0_kite_baffle_101475",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_069346",
+        "case_id": "d0_kite_baffle_069346",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_041/d0_large/cases/d0_kite_baffle_049882",
+        "case_id": "d0_kite_baffle_049882",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017232",
+        "case_id": "d0_kite_baffle_017232",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_023247",
+        "case_id": "d0_kite_baffle_023247",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_046344",
+        "case_id": "d0_kite_baffle_046344",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_049/d0_large/cases/d0_kite_baffle_059561",
+        "case_id": "d0_kite_baffle_059561",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_046/d0_large/cases/d0_kite_baffle_055761",
+        "case_id": "d0_kite_baffle_055761",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_086/d0_large/cases/d0_kite_baffle_103616",
+        "case_id": "d0_kite_baffle_103616",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_012/d0_large/cases/d0_kite_baffle_014814",
+        "case_id": "d0_kite_baffle_014814",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_077/d0_large/cases/d0_kite_baffle_092637",
+        "case_id": "d0_kite_baffle_092637",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_035/d0_large/cases/d0_kite_baffle_042742",
+        "case_id": "d0_kite_baffle_042742",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_077/d0_large/cases/d0_kite_baffle_093197",
+        "case_id": "d0_kite_baffle_093197",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_082/d0_large/cases/d0_kite_baffle_098573",
+        "case_id": "d0_kite_baffle_098573",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_096/d0_large/cases/d0_kite_baffle_115452",
+        "case_id": "d0_kite_baffle_115452",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_046360",
+        "case_id": "d0_kite_baffle_046360",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_046/d0_large/cases/d0_kite_baffle_055658",
+        "case_id": "d0_kite_baffle_055658",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_077/d0_large/cases/d0_kite_baffle_093301",
+        "case_id": "d0_kite_baffle_093301",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_089/d0_large/cases/d0_kite_baffle_107711",
+        "case_id": "d0_kite_baffle_107711",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_029/d0_large/cases/d0_kite_baffle_034925",
+        "case_id": "d0_kite_baffle_034925",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_010474",
+        "case_id": "d0_kite_baffle_010474",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_042/d0_large/cases/d0_kite_baffle_050933",
+        "case_id": "d0_kite_baffle_050933",
+        "family": "inlet_region_body_force_jet",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083362",
+        "case_id": "d0_kite_baffle_083362",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_069720",
+        "case_id": "d0_kite_baffle_069720",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_081193",
+        "case_id": "d0_kite_baffle_081193",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_090/d0_large/cases/d0_kite_baffle_108132",
+        "case_id": "d0_kite_baffle_108132",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017652",
+        "case_id": "d0_kite_baffle_017652",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_099/d0_large/cases/d0_kite_baffle_119136",
+        "case_id": "d0_kite_baffle_119136",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_024/d0_large/cases/d0_kite_baffle_029202",
+        "case_id": "d0_kite_baffle_029202",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_099/d0_large/cases/d0_kite_baffle_119135",
+        "case_id": "d0_kite_baffle_119135",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_001/d0_large/cases/d0_kite_baffle_001383",
+        "case_id": "d0_kite_baffle_001383",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_001/d0_large/cases/d0_kite_baffle_001644",
+        "case_id": "d0_kite_baffle_001644",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_037381",
+        "case_id": "d0_kite_baffle_037381",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_087064",
+        "case_id": "d0_kite_baffle_087064",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_069959",
+        "case_id": "d0_kite_baffle_069959",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_099/d0_large/cases/d0_kite_baffle_119400",
+        "case_id": "d0_kite_baffle_119400",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_065/d0_large/cases/d0_kite_baffle_078366",
+        "case_id": "d0_kite_baffle_078366",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_053/d0_large/cases/d0_kite_baffle_064449",
+        "case_id": "d0_kite_baffle_064449",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_014171",
+        "case_id": "d0_kite_baffle_014171",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_061/d0_large/cases/d0_kite_baffle_074053",
+        "case_id": "d0_kite_baffle_074053",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_024/d0_large/cases/d0_kite_baffle_029076",
+        "case_id": "d0_kite_baffle_029076",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_040/d0_large/cases/d0_kite_baffle_048399",
+        "case_id": "d0_kite_baffle_048399",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_084/d0_large/cases/d0_kite_baffle_100943",
+        "case_id": "d0_kite_baffle_100943",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072100",
+        "case_id": "d0_kite_baffle_072100",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_113351",
+        "case_id": "d0_kite_baffle_113351",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060204",
+        "case_id": "d0_kite_baffle_060204",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_056691",
+        "case_id": "d0_kite_baffle_056691",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_037/d0_large/cases/d0_kite_baffle_044855",
+        "case_id": "d0_kite_baffle_044855",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_017/d0_large/cases/d0_kite_baffle_020701",
+        "case_id": "d0_kite_baffle_020701",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_090/d0_large/cases/d0_kite_baffle_108105",
+        "case_id": "d0_kite_baffle_108105",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_010037",
+        "case_id": "d0_kite_baffle_010037",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_104996",
+        "case_id": "d0_kite_baffle_104996",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_032/d0_large/cases/d0_kite_baffle_038687",
+        "case_id": "d0_kite_baffle_038687",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061265",
+        "case_id": "d0_kite_baffle_061265",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_100594",
+        "case_id": "d0_kite_baffle_100594",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_052348",
+        "case_id": "d0_kite_baffle_052348",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_068801",
+        "case_id": "d0_kite_baffle_068801",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_053/d0_large/cases/d0_kite_baffle_064284",
+        "case_id": "d0_kite_baffle_064284",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_052012",
+        "case_id": "d0_kite_baffle_052012",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_046/d0_large/cases/d0_kite_baffle_056155",
+        "case_id": "d0_kite_baffle_056155",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_001/d0_large/cases/d0_kite_baffle_001847",
+        "case_id": "d0_kite_baffle_001847",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_034/d0_large/cases/d0_kite_baffle_041478",
+        "case_id": "d0_kite_baffle_041478",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_097635",
+        "case_id": "d0_kite_baffle_097635",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_013637",
+        "case_id": "d0_kite_baffle_013637",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_086503",
+        "case_id": "d0_kite_baffle_086503",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_068956",
+        "case_id": "d0_kite_baffle_068956",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_024/d0_large/cases/d0_kite_baffle_029740",
+        "case_id": "d0_kite_baffle_029740",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_091/d0_large/cases/d0_kite_baffle_109703",
+        "case_id": "d0_kite_baffle_109703",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_027/d0_large/cases/d0_kite_baffle_033224",
+        "case_id": "d0_kite_baffle_033224",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106324",
+        "case_id": "d0_kite_baffle_106324",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_009742",
+        "case_id": "d0_kite_baffle_009742",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_077/d0_large/cases/d0_kite_baffle_092823",
+        "case_id": "d0_kite_baffle_092823",
+        "family": "oscillatory_cross_shear",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_076025",
+        "case_id": "d0_kite_baffle_076025",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_021/d0_large/cases/d0_kite_baffle_026041",
+        "case_id": "d0_kite_baffle_026041",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043979",
+        "case_id": "d0_kite_baffle_043979",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_056469",
+        "case_id": "d0_kite_baffle_056469",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106078",
+        "case_id": "d0_kite_baffle_106078",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_010/d0_large/cases/d0_kite_baffle_012764",
+        "case_id": "d0_kite_baffle_012764",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_062/d0_large/cases/d0_kite_baffle_074918",
+        "case_id": "d0_kite_baffle_074918",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_076/d0_large/cases/d0_kite_baffle_091849",
+        "case_id": "d0_kite_baffle_091849",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_065/d0_large/cases/d0_kite_baffle_078698",
+        "case_id": "d0_kite_baffle_078698",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_075940",
+        "case_id": "d0_kite_baffle_075940",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_003/d0_large/cases/d0_kite_baffle_004544",
+        "case_id": "d0_kite_baffle_004544",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_015/d0_large/cases/d0_kite_baffle_018942",
+        "case_id": "d0_kite_baffle_018942",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_016/d0_large/cases/d0_kite_baffle_019656",
+        "case_id": "d0_kite_baffle_019656",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_089/d0_large/cases/d0_kite_baffle_107234",
+        "case_id": "d0_kite_baffle_107234",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_085723",
+        "case_id": "d0_kite_baffle_085723",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_023/d0_large/cases/d0_kite_baffle_027948",
+        "case_id": "d0_kite_baffle_027948",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_025/d0_large/cases/d0_kite_baffle_030467",
+        "case_id": "d0_kite_baffle_030467",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_104717",
+        "case_id": "d0_kite_baffle_104717",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_052/d0_large/cases/d0_kite_baffle_062839",
+        "case_id": "d0_kite_baffle_062839",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_104501",
+        "case_id": "d0_kite_baffle_104501",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_079989",
+        "case_id": "d0_kite_baffle_079989",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_044147",
+        "case_id": "d0_kite_baffle_044147",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061991",
+        "case_id": "d0_kite_baffle_061991",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_080939",
+        "case_id": "d0_kite_baffle_080939",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_070008",
+        "case_id": "d0_kite_baffle_070008",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061843",
+        "case_id": "d0_kite_baffle_061843",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_007/d0_large/cases/d0_kite_baffle_008780",
+        "case_id": "d0_kite_baffle_008780",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_005/d0_large/cases/d0_kite_baffle_006358",
+        "case_id": "d0_kite_baffle_006358",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_059/d0_large/cases/d0_kite_baffle_070939",
+        "case_id": "d0_kite_baffle_070939",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_105624",
+        "case_id": "d0_kite_baffle_105624",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_090/d0_large/cases/d0_kite_baffle_108879",
+        "case_id": "d0_kite_baffle_108879",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_077/d0_large/cases/d0_kite_baffle_093228",
+        "case_id": "d0_kite_baffle_093228",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096931",
+        "case_id": "d0_kite_baffle_096931",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_032/d0_large/cases/d0_kite_baffle_038771",
+        "case_id": "d0_kite_baffle_038771",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_096/d0_large/cases/d0_kite_baffle_115767",
+        "case_id": "d0_kite_baffle_115767",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_013/d0_large/cases/d0_kite_baffle_016550",
+        "case_id": "d0_kite_baffle_016550",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017228",
+        "case_id": "d0_kite_baffle_017228",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_111264",
+        "case_id": "d0_kite_baffle_111264",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_024/d0_large/cases/d0_kite_baffle_029088",
+        "case_id": "d0_kite_baffle_029088",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_068711",
+        "case_id": "d0_kite_baffle_068711",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_075689",
+        "case_id": "d0_kite_baffle_075689",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106348",
+        "case_id": "d0_kite_baffle_106348",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_059/d0_large/cases/d0_kite_baffle_071649",
+        "case_id": "d0_kite_baffle_071649",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_026/d0_large/cases/d0_kite_baffle_031368",
+        "case_id": "d0_kite_baffle_031368",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_064/d0_large/cases/d0_kite_baffle_077553",
+        "case_id": "d0_kite_baffle_077553",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_079/d0_large/cases/d0_kite_baffle_095471",
+        "case_id": "d0_kite_baffle_095471",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_110603",
+        "case_id": "d0_kite_baffle_110603",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_029/d0_large/cases/d0_kite_baffle_035666",
+        "case_id": "d0_kite_baffle_035666",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_075/d0_large/cases/d0_kite_baffle_090454",
+        "case_id": "d0_kite_baffle_090454",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_026/d0_large/cases/d0_kite_baffle_031823",
+        "case_id": "d0_kite_baffle_031823",
+        "family": "pressure_gradient_channel_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_087140",
+        "case_id": "d0_kite_baffle_087140",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_086116",
+        "case_id": "d0_kite_baffle_086116",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_074/d0_large/cases/d0_kite_baffle_089153",
+        "case_id": "d0_kite_baffle_089153",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_099784",
+        "case_id": "d0_kite_baffle_099784",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_046367",
+        "case_id": "d0_kite_baffle_046367",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_007980",
+        "case_id": "d0_kite_baffle_007980",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_066/d0_large/cases/d0_kite_baffle_079494",
+        "case_id": "d0_kite_baffle_079494",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_112843",
+        "case_id": "d0_kite_baffle_112843",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_064/d0_large/cases/d0_kite_baffle_077571",
+        "case_id": "d0_kite_baffle_077571",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_005/d0_large/cases/d0_kite_baffle_006463",
+        "case_id": "d0_kite_baffle_006463",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_070/d0_large/cases/d0_kite_baffle_084347",
+        "case_id": "d0_kite_baffle_084347",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061947",
+        "case_id": "d0_kite_baffle_061947",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_037891",
+        "case_id": "d0_kite_baffle_037891",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_113664",
+        "case_id": "d0_kite_baffle_113664",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_097541",
+        "case_id": "d0_kite_baffle_097541",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060355",
+        "case_id": "d0_kite_baffle_060355",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_086/d0_large/cases/d0_kite_baffle_103693",
+        "case_id": "d0_kite_baffle_103693",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_007764",
+        "case_id": "d0_kite_baffle_007764",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_099681",
+        "case_id": "d0_kite_baffle_099681",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_033/d0_large/cases/d0_kite_baffle_040106",
+        "case_id": "d0_kite_baffle_040106",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_069843",
+        "case_id": "d0_kite_baffle_069843",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_008/d0_large/cases/d0_kite_baffle_010213",
+        "case_id": "d0_kite_baffle_010213",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_078/d0_large/cases/d0_kite_baffle_093751",
+        "case_id": "d0_kite_baffle_093751",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_061/d0_large/cases/d0_kite_baffle_073483",
+        "case_id": "d0_kite_baffle_073483",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_069786",
+        "case_id": "d0_kite_baffle_069786",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072598",
+        "case_id": "d0_kite_baffle_072598",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_028/d0_large/cases/d0_kite_baffle_033982",
+        "case_id": "d0_kite_baffle_033982",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_052/d0_large/cases/d0_kite_baffle_062568",
+        "case_id": "d0_kite_baffle_062568",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_068/d0_large/cases/d0_kite_baffle_082265",
+        "case_id": "d0_kite_baffle_082265",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_049/d0_large/cases/d0_kite_baffle_059791",
+        "case_id": "d0_kite_baffle_059791",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_009/d0_large/cases/d0_kite_baffle_011767",
+        "case_id": "d0_kite_baffle_011767",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_069339",
+        "case_id": "d0_kite_baffle_069339",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_033/d0_large/cases/d0_kite_baffle_039979",
+        "case_id": "d0_kite_baffle_039979",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_055/d0_large/cases/d0_kite_baffle_066996",
+        "case_id": "d0_kite_baffle_066996",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072661",
+        "case_id": "d0_kite_baffle_072661",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_029/d0_large/cases/d0_kite_baffle_034930",
+        "case_id": "d0_kite_baffle_034930",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_001/d0_large/cases/d0_kite_baffle_002154",
+        "case_id": "d0_kite_baffle_002154",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_061/d0_large/cases/d0_kite_baffle_074044",
+        "case_id": "d0_kite_baffle_074044",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_049/d0_large/cases/d0_kite_baffle_059074",
+        "case_id": "d0_kite_baffle_059074",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_070245",
+        "case_id": "d0_kite_baffle_070245",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083669",
+        "case_id": "d0_kite_baffle_083669",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_054/d0_large/cases/d0_kite_baffle_065366",
+        "case_id": "d0_kite_baffle_065366",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_086/d0_large/cases/d0_kite_baffle_103493",
+        "case_id": "d0_kite_baffle_103493",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_093/d0_large/cases/d0_kite_baffle_112075",
+        "case_id": "d0_kite_baffle_112075",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_046/d0_large/cases/d0_kite_baffle_055788",
+        "case_id": "d0_kite_baffle_055788",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_030/d0_large/cases/d0_kite_baffle_036469",
+        "case_id": "d0_kite_baffle_036469",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_034/d0_large/cases/d0_kite_baffle_040965",
+        "case_id": "d0_kite_baffle_040965",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_086/d0_large/cases/d0_kite_baffle_103473",
+        "case_id": "d0_kite_baffle_103473",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_091/d0_large/cases/d0_kite_baffle_109863",
+        "case_id": "d0_kite_baffle_109863",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061514",
+        "case_id": "d0_kite_baffle_061514",
+        "family": "rotary_solenoidal_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_074/d0_large/cases/d0_kite_baffle_089045",
+        "case_id": "d0_kite_baffle_089045",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_059/d0_large/cases/d0_kite_baffle_071296",
+        "case_id": "d0_kite_baffle_071296",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_051652",
+        "case_id": "d0_kite_baffle_051652",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_076/d0_large/cases/d0_kite_baffle_091497",
+        "case_id": "d0_kite_baffle_091497",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_045863",
+        "case_id": "d0_kite_baffle_045863",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_098/d0_large/cases/d0_kite_baffle_118254",
+        "case_id": "d0_kite_baffle_118254",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_015/d0_large/cases/d0_kite_baffle_018976",
+        "case_id": "d0_kite_baffle_018976",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_062/d0_large/cases/d0_kite_baffle_075039",
+        "case_id": "d0_kite_baffle_075039",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_052573",
+        "case_id": "d0_kite_baffle_052573",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_058/d0_large/cases/d0_kite_baffle_069942",
+        "case_id": "d0_kite_baffle_069942",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_078/d0_large/cases/d0_kite_baffle_093758",
+        "case_id": "d0_kite_baffle_093758",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_046115",
+        "case_id": "d0_kite_baffle_046115",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_100102",
+        "case_id": "d0_kite_baffle_100102",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_044/d0_large/cases/d0_kite_baffle_052943",
+        "case_id": "d0_kite_baffle_052943",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_003/d0_large/cases/d0_kite_baffle_003903",
+        "case_id": "d0_kite_baffle_003903",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_010/d0_large/cases/d0_kite_baffle_012935",
+        "case_id": "d0_kite_baffle_012935",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_013/d0_large/cases/d0_kite_baffle_016509",
+        "case_id": "d0_kite_baffle_016509",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_076469",
+        "case_id": "d0_kite_baffle_076469",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_013809",
+        "case_id": "d0_kite_baffle_013809",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_084/d0_large/cases/d0_kite_baffle_100945",
+        "case_id": "d0_kite_baffle_100945",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_022/d0_large/cases/d0_kite_baffle_027245",
+        "case_id": "d0_kite_baffle_027245",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_105944",
+        "case_id": "d0_kite_baffle_105944",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_046/d0_large/cases/d0_kite_baffle_055997",
+        "case_id": "d0_kite_baffle_055997",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_079/d0_large/cases/d0_kite_baffle_095651",
+        "case_id": "d0_kite_baffle_095651",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_085661",
+        "case_id": "d0_kite_baffle_085661",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_029/d0_large/cases/d0_kite_baffle_035247",
+        "case_id": "d0_kite_baffle_035247",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106451",
+        "case_id": "d0_kite_baffle_106451",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_097/d0_large/cases/d0_kite_baffle_117009",
+        "case_id": "d0_kite_baffle_117009",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_056/d0_large/cases/d0_kite_baffle_067322",
+        "case_id": "d0_kite_baffle_067322",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_092/d0_large/cases/d0_kite_baffle_111193",
+        "case_id": "d0_kite_baffle_111193",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_097/d0_large/cases/d0_kite_baffle_117293",
+        "case_id": "d0_kite_baffle_117293",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_113703",
+        "case_id": "d0_kite_baffle_113703",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043978",
+        "case_id": "d0_kite_baffle_043978",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_013/d0_large/cases/d0_kite_baffle_016320",
+        "case_id": "d0_kite_baffle_016320",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_025/d0_large/cases/d0_kite_baffle_030244",
+        "case_id": "d0_kite_baffle_030244",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060194",
+        "case_id": "d0_kite_baffle_060194",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_042/d0_large/cases/d0_kite_baffle_050460",
+        "case_id": "d0_kite_baffle_050460",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_077/d0_large/cases/d0_kite_baffle_093212",
+        "case_id": "d0_kite_baffle_093212",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_018/d0_large/cases/d0_kite_baffle_021626",
+        "case_id": "d0_kite_baffle_021626",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_005/d0_large/cases/d0_kite_baffle_006668",
+        "case_id": "d0_kite_baffle_006668",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_051/d0_large/cases/d0_kite_baffle_061551",
+        "case_id": "d0_kite_baffle_061551",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_068/d0_large/cases/d0_kite_baffle_082398",
+        "case_id": "d0_kite_baffle_082398",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_062/d0_large/cases/d0_kite_baffle_075315",
+        "case_id": "d0_kite_baffle_075315",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_038029",
+        "case_id": "d0_kite_baffle_038029",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_005/d0_large/cases/d0_kite_baffle_006420",
+        "case_id": "d0_kite_baffle_006420",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_095/d0_large/cases/d0_kite_baffle_114430",
+        "case_id": "d0_kite_baffle_114430",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_001/d0_large/cases/d0_kite_baffle_001626",
+        "case_id": "d0_kite_baffle_001626",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_010/d0_large/cases/d0_kite_baffle_012925",
+        "case_id": "d0_kite_baffle_012925",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_038/d0_large/cases/d0_kite_baffle_046050",
+        "case_id": "d0_kite_baffle_046050",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_045/d0_large/cases/d0_kite_baffle_054084",
+        "case_id": "d0_kite_baffle_054084",
+        "family": "shear_layer_vortex_sling",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_106031",
+        "case_id": "d0_kite_baffle_106031",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_026/d0_large/cases/d0_kite_baffle_031592",
+        "case_id": "d0_kite_baffle_031592",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_047/d0_large/cases/d0_kite_baffle_056427",
+        "case_id": "d0_kite_baffle_056427",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_008199",
+        "case_id": "d0_kite_baffle_008199",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_045/d0_large/cases/d0_kite_baffle_054053",
+        "case_id": "d0_kite_baffle_054053",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_076/d0_large/cases/d0_kite_baffle_091589",
+        "case_id": "d0_kite_baffle_091589",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_023/d0_large/cases/d0_kite_baffle_027755",
+        "case_id": "d0_kite_baffle_027755",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_028/d0_large/cases/d0_kite_baffle_033821",
+        "case_id": "d0_kite_baffle_033821",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_091/d0_large/cases/d0_kite_baffle_109394",
+        "case_id": "d0_kite_baffle_109394",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_078/d0_large/cases/d0_kite_baffle_094110",
+        "case_id": "d0_kite_baffle_094110",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083366",
+        "case_id": "d0_kite_baffle_083366",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096265",
+        "case_id": "d0_kite_baffle_096265",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_056/d0_large/cases/d0_kite_baffle_067587",
+        "case_id": "d0_kite_baffle_067587",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_087/d0_large/cases/d0_kite_baffle_104988",
+        "case_id": "d0_kite_baffle_104988",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_096/d0_large/cases/d0_kite_baffle_115922",
+        "case_id": "d0_kite_baffle_115922",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_037/d0_large/cases/d0_kite_baffle_045369",
+        "case_id": "d0_kite_baffle_045369",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096805",
+        "case_id": "d0_kite_baffle_096805",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_084/d0_large/cases/d0_kite_baffle_101337",
+        "case_id": "d0_kite_baffle_101337",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_038149",
+        "case_id": "d0_kite_baffle_038149",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_059/d0_large/cases/d0_kite_baffle_070894",
+        "case_id": "d0_kite_baffle_070894",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_080/d0_large/cases/d0_kite_baffle_096540",
+        "case_id": "d0_kite_baffle_096540",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_113471",
+        "case_id": "d0_kite_baffle_113471",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043609",
+        "case_id": "d0_kite_baffle_043609",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_075/d0_large/cases/d0_kite_baffle_090787",
+        "case_id": "d0_kite_baffle_090787",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072903",
+        "case_id": "d0_kite_baffle_072903",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_028/d0_large/cases/d0_kite_baffle_033894",
+        "case_id": "d0_kite_baffle_033894",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_051896",
+        "case_id": "d0_kite_baffle_051896",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_040/d0_large/cases/d0_kite_baffle_048763",
+        "case_id": "d0_kite_baffle_048763",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_041/d0_large/cases/d0_kite_baffle_049808",
+        "case_id": "d0_kite_baffle_049808",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_053/d0_large/cases/d0_kite_baffle_063724",
+        "case_id": "d0_kite_baffle_063724",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_113161",
+        "case_id": "d0_kite_baffle_113161",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_004/d0_large/cases/d0_kite_baffle_005793",
+        "case_id": "d0_kite_baffle_005793",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_059/d0_large/cases/d0_kite_baffle_071184",
+        "case_id": "d0_kite_baffle_071184",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_053/d0_large/cases/d0_kite_baffle_064391",
+        "case_id": "d0_kite_baffle_064391",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_037/d0_large/cases/d0_kite_baffle_045040",
+        "case_id": "d0_kite_baffle_045040",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_060/d0_large/cases/d0_kite_baffle_072549",
+        "case_id": "d0_kite_baffle_072549",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_012/d0_large/cases/d0_kite_baffle_015384",
+        "case_id": "d0_kite_baffle_015384",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_076327",
+        "case_id": "d0_kite_baffle_076327",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_087002",
+        "case_id": "d0_kite_baffle_087002",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_034/d0_large/cases/d0_kite_baffle_041539",
+        "case_id": "d0_kite_baffle_041539",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_097687",
+        "case_id": "d0_kite_baffle_097687",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_013988",
+        "case_id": "d0_kite_baffle_013988",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_095/d0_large/cases/d0_kite_baffle_114566",
+        "case_id": "d0_kite_baffle_114566",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060856",
+        "case_id": "d0_kite_baffle_060856",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_050/d0_large/cases/d0_kite_baffle_060911",
+        "case_id": "d0_kite_baffle_060911",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_075/d0_large/cases/d0_kite_baffle_090415",
+        "case_id": "d0_kite_baffle_090415",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_009/d0_large/cases/d0_kite_baffle_011099",
+        "case_id": "d0_kite_baffle_011099",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_093/d0_large/cases/d0_kite_baffle_111604",
+        "case_id": "d0_kite_baffle_111604",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_067/d0_large/cases/d0_kite_baffle_081353",
+        "case_id": "d0_kite_baffle_081353",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_057/d0_large/cases/d0_kite_baffle_069090",
+        "case_id": "d0_kite_baffle_069090",
+        "family": "sidewall_eddy_drive",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_027/d0_large/cases/d0_kite_baffle_032740",
+        "case_id": "d0_kite_baffle_032740",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_041/d0_large/cases/d0_kite_baffle_049639",
+        "case_id": "d0_kite_baffle_049639",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_020/d0_large/cases/d0_kite_baffle_024365",
+        "case_id": "d0_kite_baffle_024365",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_076/d0_large/cases/d0_kite_baffle_091673",
+        "case_id": "d0_kite_baffle_091673",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017423",
+        "case_id": "d0_kite_baffle_017423",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_099/d0_large/cases/d0_kite_baffle_118986",
+        "case_id": "d0_kite_baffle_118986",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083711",
+        "case_id": "d0_kite_baffle_083711",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_055/d0_large/cases/d0_kite_baffle_066170",
+        "case_id": "d0_kite_baffle_066170",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_090/d0_large/cases/d0_kite_baffle_108148",
+        "case_id": "d0_kite_baffle_108148",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_016/d0_large/cases/d0_kite_baffle_020167",
+        "case_id": "d0_kite_baffle_020167",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_022/d0_large/cases/d0_kite_baffle_027398",
+        "case_id": "d0_kite_baffle_027398",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_096/d0_large/cases/d0_kite_baffle_115634",
+        "case_id": "d0_kite_baffle_115634",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_078/d0_large/cases/d0_kite_baffle_093637",
+        "case_id": "d0_kite_baffle_093637",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_069/d0_large/cases/d0_kite_baffle_083258",
+        "case_id": "d0_kite_baffle_083258",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_023367",
+        "case_id": "d0_kite_baffle_023367",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_013889",
+        "case_id": "d0_kite_baffle_013889",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_013/d0_large/cases/d0_kite_baffle_015981",
+        "case_id": "d0_kite_baffle_015981",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_019/d0_large/cases/d0_kite_baffle_022952",
+        "case_id": "d0_kite_baffle_022952",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_027/d0_large/cases/d0_kite_baffle_032467",
+        "case_id": "d0_kite_baffle_032467",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_014/d0_large/cases/d0_kite_baffle_017123",
+        "case_id": "d0_kite_baffle_017123",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_016/d0_large/cases/d0_kite_baffle_019596",
+        "case_id": "d0_kite_baffle_019596",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_031/d0_large/cases/d0_kite_baffle_037743",
+        "case_id": "d0_kite_baffle_037743",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_089/d0_large/cases/d0_kite_baffle_106902",
+        "case_id": "d0_kite_baffle_106902",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_063/d0_large/cases/d0_kite_baffle_076565",
+        "case_id": "d0_kite_baffle_076565",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_032/d0_large/cases/d0_kite_baffle_038651",
+        "case_id": "d0_kite_baffle_038651",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_048/d0_large/cases/d0_kite_baffle_058300",
+        "case_id": "d0_kite_baffle_058300",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_011/d0_large/cases/d0_kite_baffle_013706",
+        "case_id": "d0_kite_baffle_013706",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_044/d0_large/cases/d0_kite_baffle_053177",
+        "case_id": "d0_kite_baffle_053177",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_036/d0_large/cases/d0_kite_baffle_043296",
+        "case_id": "d0_kite_baffle_043296",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_049/d0_large/cases/d0_kite_baffle_059372",
+        "case_id": "d0_kite_baffle_059372",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_094/d0_large/cases/d0_kite_baffle_112990",
+        "case_id": "d0_kite_baffle_112990",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_086858",
+        "case_id": "d0_kite_baffle_086858",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_048/d0_large/cases/d0_kite_baffle_057710",
+        "case_id": "d0_kite_baffle_057710",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_087336",
+        "case_id": "d0_kite_baffle_087336",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_006/d0_large/cases/d0_kite_baffle_007988",
+        "case_id": "d0_kite_baffle_007988",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_023/d0_large/cases/d0_kite_baffle_027991",
+        "case_id": "d0_kite_baffle_027991",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_087186",
+        "case_id": "d0_kite_baffle_087186",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_086127",
+        "case_id": "d0_kite_baffle_086127",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_081/d0_large/cases/d0_kite_baffle_097521",
+        "case_id": "d0_kite_baffle_097521",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_072/d0_large/cases/d0_kite_baffle_086656",
+        "case_id": "d0_kite_baffle_086656",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_068/d0_large/cases/d0_kite_baffle_082026",
+        "case_id": "d0_kite_baffle_082026",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_079/d0_large/cases/d0_kite_baffle_095168",
+        "case_id": "d0_kite_baffle_095168",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_023/d0_large/cases/d0_kite_baffle_028475",
+        "case_id": "d0_kite_baffle_028475",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_012/d0_large/cases/d0_kite_baffle_014437",
+        "case_id": "d0_kite_baffle_014437",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_071/d0_large/cases/d0_kite_baffle_085435",
+        "case_id": "d0_kite_baffle_085435",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_018/d0_large/cases/d0_kite_baffle_022351",
+        "case_id": "d0_kite_baffle_022351",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_100260",
+        "case_id": "d0_kite_baffle_100260",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_083/d0_large/cases/d0_kite_baffle_099768",
+        "case_id": "d0_kite_baffle_099768",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_088/d0_large/cases/d0_kite_baffle_105672",
+        "case_id": "d0_kite_baffle_105672",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      },
+      {
+        "case_dir": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_shards/shard_043/d0_large/cases/d0_kite_baffle_051855",
+        "case_id": "d0_kite_baffle_051855",
+        "family": "wake_reversal_pulse",
+        "source_split": "d0_distribution_test"
+      }
+    ]
+  },
+  "test_eligibility": "D0 d0_distribution_test excluding the 128 case IDs in the packaged post-selection answer_first_report"
+}

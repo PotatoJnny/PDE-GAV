@@ -1,0 +1,32 @@
+{
+  "schema": "vpfp_regime_coherent_research_campaign_v1",
+  "purpose": "regime calibration and architecture selection, not admission",
+  "maximum_gpu_hours": 48,
+  "maximum_concurrent_gpus": 2,
+  "stage_gpu_hour_caps": {
+    "preflight": 1,
+    "audit_screen": 7,
+    "strong_comparisons": 8,
+    "weak_comparisons": 20,
+    "independent_confirmation": 12
+  },
+  "accounting": "allocated GPUs times allocation elapsed time; preflight is part of the original 8h audit/preflight budget",
+  "allocation_policy": "one GPU per job; at most two campaign jobs concurrently; no unrecorded retries or automatic budget expansion",
+  "strong_source": "${PDE_GAV_RUN_ROOT}/vpfp-strong-main-5244223",
+  "strong_parent_experiment": "${PDE_GAV_RUN_ROOT}/vpfp-strong-initial-5259887",
+  "weak_source": "${PDE_GAV_RUN_ROOT}/vpfp-scaleup-weak-5241246",
+  "weak_parent_experiment": "${PDE_GAV_RUN_ROOT}/vpfp-hermite-joint-recovery-5258664",
+  "screen_attempts_per_model": 128,
+  "confirmation_attempts_per_model": 512,
+  "independent_confirmation_status": "not_started",
+  "replicas": 2,
+  "strong_global_steps": [20000, 30000, 40000],
+  "new_model_steps": 20000,
+  "sampler": {"architecture": "EDM", "method": "Heun", "steps": 64},
+  "weak_training_gate": "passing real numerical mechanics plus explicit review of uncompressed and k4/k6 representation curves",
+  "reference_probability_matching_required": false,
+  "bounded_net_momentum_driving_allowed": true,
+  "scientific_admission": false,
+  "replace_online_assets": false,
+  "public_macro_matcher_changed": false
+}

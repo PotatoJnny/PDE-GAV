@@ -1,0 +1,68 @@
+{
+  "schema": "pde_campaign_v1",
+  "problem": "vpfp",
+  "protocol": "unified_macro_reference_v1",
+  "name": "VPFP unified macro fresh-Agent U0 reference",
+  "dataset": {
+    "format": "vpfp_long_time_answer_first_release_bank_v2",
+    "release_bank_report": "${VPFP_RELEASE_BANK_REPORT}"
+  },
+  "execution": {
+    "backend": "slurm",
+    "storage_root": "${VPFP_RUN_STORAGE_ROOT}",
+    "run_root": "${VPFP_RUN_STORAGE_ROOT}/vpfp-unified-fresh-u0-reference",
+    "virtual_environment": "${VPFP_VIRTUAL_ENV}",
+    "account": "${PDE_GAV_SLURM_ACCOUNT}",
+    "qos": "normal",
+    "preparation_partition": "gpubase_l40s_b3",
+    "modules": [
+      "StdEnv/2023",
+      "python/3.11",
+      "scipy-stack/2024b"
+    ],
+    "resources": {
+      "macro_agent_round": {
+        "cpus": 8,
+        "memory": "32G",
+        "time": "08:00:00"
+      }
+    }
+  },
+  "generator": {
+    "base_decoder_checkpoint": "${VPFP_BASE_DECODER_CHECKPOINT}"
+  },
+  "campaign": {
+    "round_count": 1,
+    "development_case_count": 4,
+    "selection_case_count": 4,
+    "promotion_case_count": 4,
+    "terminal_case_count": 4,
+    "seed_base": 8240000,
+    "seed_stride": 10000,
+    "development_pool_multiplier": 1
+  },
+  "agent": {
+    "backend": "codex",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "timeout_seconds": 21600,
+    "development_case_credits": 16,
+    "launcher": "../scripts/run_reference_macro_codex_agent.sh",
+    "codex_binary": "${VPFP_CODEX_BINARY}",
+    "auth_file": "${VPFP_CODEX_AUTH_FILE}"
+  },
+  "evaluator": {
+    "promotion_confidence_z": 0.0,
+    "promotion_min_mean_improvement": 0.0,
+    "promotion_min_win_rate": 0.0,
+    "promotion_require_cvar_no_regression": false,
+    "terminal_confidence_z": 0.0,
+    "terminal_min_win_rate": 0.0,
+    "terminal_require_cvar_no_regression": false
+  },
+  "task": {
+    "kind": "observable_model",
+    "macro_match_contract": "vpfp_full_velocity_macro_match_v1",
+    "cold_start_model": "candidates/vpfp_hold_initial_macro_candidate.py"
+  }
+}

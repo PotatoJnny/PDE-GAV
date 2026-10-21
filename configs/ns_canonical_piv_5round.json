@@ -1,0 +1,152 @@
+{
+  "schema": "canonical_ns_campaign_v1",
+  "campaign_id": "ns-canonical-real-piv-full-5round-2agent-hardwall4h-20260908",
+  "profile": "experimental_piv",
+  "master_seed": 2026090402,
+  "round_count": 5,
+  "execution": {
+    "agent_count": 2,
+    "agent_hard_wall_seconds": 14400,
+    "transient_resume_until_deadline": true,
+    "controller_rpc_timeout_seconds": 7200,
+    "candidate_case_workers": 28,
+    "candidate_device": "cpu_or_cuda",
+    "candidate_case_hard_wall_seconds": 900,
+    "development_candidate_batch_hard_wall_seconds": 6900,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "nomination_policy": "single_primary_v1",
+    "solver_batch_size": 8,
+    "gpu_slots_per_device": 2,
+    "oracle_max_workers": 8,
+    "development_oracle_max_workers": 2,
+    "oracle_concurrency_per_device": 2,
+    "development_solver_placement": "agent_gpu",
+    "gpu_execution": {
+      "protocol": "shared_gpu_v1",
+      "agent_sandbox_backend": "bwrap-nvidia-v1",
+      "candidate_devices": [
+        "3"
+      ]
+    }
+  },
+  "dataset": {
+    "dataset_id": "shang-tu-cylinder-piv-re413-completed-v2",
+    "manifest": "../project_runs/ns_real_piv_gappy_product_v2/completed_case_manifest.json",
+    "settings": {
+      "generator_training_split": "generator_training",
+      "generator_validation_split": "generator_validation",
+      "development_split": "development",
+      "hidden_split": "verifier",
+      "final_test_split": "final_test",
+      "evaluation_reference": "measurement",
+      "generator_training_cases": 0,
+      "generator_validation_cases": 0,
+      "development_cases": 0,
+      "hidden_cases": 0,
+      "final_test_cases": 0
+    }
+  },
+  "generator": {
+    "checkpoint": "../runs/ns_real_piv_generator_fixed_5round_20260826/artifacts/base_generator/generator.pt",
+    "settings": {
+      "device": "cuda",
+      "integration_steps": 64,
+      "guidance_minimum_cases": 4,
+      "guidance_ridge": 1.0,
+      "guidance_strength": 0.15,
+      "guidance_max_flow_ratio": 0.25,
+      "perturbation_scale": 0.15,
+      "validity_margin": 0.35,
+      "require_validation_pass": true
+    }
+  },
+  "development": {
+    "strategy": "agent_adaptive",
+    "case_replay": false,
+    "max_cases_per_agent_per_round": 64,
+    "allowed_sources": [
+      "original",
+      "base",
+      "guided"
+    ],
+    "starter_only_sources": [
+      "original"
+    ],
+    "starter": {
+      "original": 10,
+      "base": 8,
+      "guided": 8,
+      "base_perturbed": 0,
+      "guided_perturbed": 0
+    }
+  },
+  "official": {
+    "original": 5,
+    "base": 6,
+    "guided": 3,
+    "base_perturbed": 1,
+    "guided_perturbed": 1
+  },
+  "terminal": {
+    "cohorts": [
+      {
+        "cohort_id": "real_piv_final_test",
+        "guidance_source": "base",
+        "suite": {
+          "original": 25,
+          "base": 0,
+          "guided": 0,
+          "base_perturbed": 0,
+          "guided_perturbed": 0
+        }
+      }
+    ],
+    "ranking": {
+      "cohort_id": "real_piv_final_test",
+      "distribution": "original",
+      "statistic": "mean"
+    }
+  },
+  "promotion": {
+    "preset": "minimize_metric",
+    "settings": {
+      "primary": {
+        "distribution": "original",
+        "statistic": "mean"
+      },
+      "require_improvement": true
+    }
+  },
+  "evaluator": {
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 32,
+    "official_point_count": 96,
+    "terminal_point_count": 128,
+    "allow_grid_truth": false,
+    "allow_point_truth": false,
+    "allow_development_solution_session": false
+  },
+  "candidate": {
+    "initial_bundle": "candidates/ns_piv_project_gappy_pod_initial_bundle",
+    "initial_name": "Gappy POD MAP reconstruction",
+    "initial_summary": "The selected fixed-basis rank-64 Gappy POD MAP reconstruction used to initialize the real-PIV solver search.",
+    "max_bundle_bytes": 67108864
+  },
+  "worker": {
+    "script": "../scripts/run_canonical_codex_agent.py",
+    "codex_config": "../scripts/canonical_codex.config.toml"
+  },
+  "agents": [
+    {
+      "agent_id": "piv-broad-explorer",
+      "name": "Broad PIV reconstruction explorer",
+      "prompt": "Focus primarily on exploring new approaches to the task. Pursue the ideas you judge most promising for producing a stronger program. Use the current program and available evidence as context, and follow useful findings wherever they lead. You have full freedom to choose methods, representations, and experiments, including combining new ideas with improvements to existing approaches.\n\nDevelop a portable full-window velocity reconstruction program for the sparse cylinder-wake PIV Cases. The supplied program, sparse observations, available Development tools, and Campaign Memory support your research. Choose how to use them to improve the stated evaluation objective. The 50 measured Development Cases are allocated as 10 fresh originals per round. These originals are already staged; additional original Cases are unavailable during the turn. Generated and guided Development tools remain available."
+    },
+    {
+      "agent_id": "piv-critical-refiner",
+      "name": "Critical PIV reconstruction refiner",
+      "prompt": "Focus primarily on improving the current approach. Use the current program and available evidence to identify where further work could produce a stronger program. You decide what to retain, change, or replace, and follow useful findings wherever they lead. You have full freedom to choose methods, representations, and experiments, including a different approach when it offers a better path forward.\n\nDevelop a portable full-window velocity reconstruction program for the sparse cylinder-wake PIV Cases. The supplied program, sparse observations, available Development tools, and Campaign Memory support your research. Choose how to use them to improve the stated evaluation objective. The 50 measured Development Cases are allocated as 10 fresh originals per round. These originals are already staged; additional original Cases are unavailable during the turn. Generated and guided Development tools remain available."
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "schema": "pde_gav_experiment_release_provenance_v1",
+  "archive_root": "${PDE_GAV_ARCHIVE_ROOT}/20261019",
+  "followup_root": "${PDE_GAV_SOURCE_ROOT}/experiments/kinetic-followup-20261019",
+  "sources": {
+    "program_index": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/programs/INDEX.json",
+      "sha256": "a23668f1425fca3818f38e532d4fcb446d9a20acb70fe4edd277947ce4368744",
+      "bytes": 428706
+    },
+    "selection_and_score_summary": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/reports/agent-iterations/score_summary.json",
+      "sha256": "c010e9a42152601b55836c90e9cbe620a1cd378cbc2d133538c2b69cc5246a00",
+      "bytes": 1516996
+    },
+    "config_artemis-sol": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/completed-results/completed-results/artemis-sol/resolved_config.json",
+      "sha256": "3bda14001e2527496c11750a15eba8f97946debdf8b3be2d566b431e70991ff9",
+      "bytes": 115460,
+      "release_path": "recorded_configs/artemis-sol.json",
+      "published_sha256": "8580239cbf85f92486fb0387d6292a2b0714c0ed6d26d77e0aa7338247a17075",
+      "published_bytes": 115310
+    },
+    "config_strong-sol": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/completed-results/completed-results/strong-sol/resolved_config.json",
+      "sha256": "85427e3551f5f3c8105c70d81e15a693319a2919f9252df7d4ee98e3e24d37b4",
+      "bytes": 115244,
+      "release_path": "recorded_configs/strong-sol.json",
+      "published_sha256": "5e846b505131a445090236dc382be31adde872a3b0d28856d0ec715f0bd7afb8",
+      "published_bytes": 115088
+    },
+    "config_artemis-astra": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/remote-native-records/artemis-astra/resolved_config.json",
+      "sha256": "ee487c8f0dba91210e19ed2cb69b88ce1c8cdac172710211e2936abc113adc33",
+      "bytes": 115470,
+      "release_path": "recorded_configs/artemis-astra.json",
+      "published_sha256": "6e80067c2f9a952bd0facdfb7e538af3e477a0e13b8979a692c46ce903894683",
+      "published_bytes": 115320
+    },
+    "config_strong-astra": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/remote-native-records/strong-astra/resolved_config.json",
+      "sha256": "39d03bc37b80dfdd8672dbc3633cd63f866487b5960ac55481174769bc04901e",
+      "bytes": 115254,
+      "release_path": "recorded_configs/strong-astra.json",
+      "published_sha256": "7c125d156f0933576551458e9b2c9796c2f166c4c474fd75c5768d0b7b255093",
+      "published_bytes": 115098
+    },
+    "config_weak-astra": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/remote-native-records/weak-astra/resolved_config.json",
+      "sha256": "8ea7fc920d0c3104dca6db6f7f09fe5ae31d238ad05b1c56d8832d40e189e615",
+      "bytes": 115333,
+      "release_path": "recorded_configs/weak-astra.json",
+      "published_sha256": "307c6c510876f6a8ec0130effb000da54575abc9302893d6f389f0c8836f91a0",
+      "published_bytes": 115226
+    },
+    "config_weak-sol": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/remote-native-records/weak-sol/resolved_config.json",
+      "sha256": "c849522195f2bf18416f39f6608ee6c241288519aa51e926eceb447a49b03cb4",
+      "bytes": 115323,
+      "release_path": "recorded_configs/weak-sol.json",
+      "published_sha256": "632c679665ee8314b4fbc506b617fc6d284f0e389beea7a9717d0c4636a938b8",
+      "published_bytes": 115216
+    },
+    "published_calibration": {
+      "path": "${PDE_GAV_SOURCE_ROOT}/experiments/kinetic-followup-20261019/independent/frozen-transport-calibration.json",
+      "sha256": "973c82defb0f0e5d3d2ac7612a62cdb1c1c8b8bf733977a9ce8200c8b94e1da4",
+      "bytes": 81002,
+      "release_path": "metric_calibration.json",
+      "published_sha256": "973c82defb0f0e5d3d2ac7612a62cdb1c1c8b8bf733977a9ce8200c8b94e1da4",
+      "published_bytes": 81002
+    },
+    "native_round_scores.csv": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/reports/terminal-complete/round_scores.csv",
+      "sha256": "e64fd3b6159ac68a79ad04a6103a2d4f383afde528b7e75bdc651e9ffc060987",
+      "bytes": 8125,
+      "release_path": "results/native_round_scores.csv",
+      "published_sha256": "e64fd3b6159ac68a79ad04a6103a2d4f383afde528b7e75bdc651e9ffc060987",
+      "published_bytes": 8125
+    },
+    "native_case_scores.csv": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/reports/terminal-complete/case_scores.csv",
+      "sha256": "414c5bf1358769a7bf4122dd5095ca26e7c6b72187e9624d1a817469b82442d3",
+      "bytes": 771945,
+      "release_path": "results/native_case_scores.csv",
+      "published_sha256": "414c5bf1358769a7bf4122dd5095ca26e7c6b72187e9624d1a817469b82442d3",
+      "published_bytes": 771945
+    },
+    "vpfp_original_round-summary.csv": {
+      "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-postprocess-6464177/independent/round-summary.csv",
+      "sha256": "b732d815df91c3299d6d0e454e206de61ef52514ad091c42b64fea32292ae284",
+      "bytes": 6831,
+      "release_path": "results/independent/vpfp_original_round-summary.csv",
+      "published_sha256": "b732d815df91c3299d6d0e454e206de61ef52514ad091c42b64fea32292ae284",
+      "published_bytes": 6831
+    },
+    "vpfp_original_per-case.csv": {
+      "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-postprocess-6464177/independent/per-case.csv",
+      "sha256": "61236f834c39a4caca201c8547e452622f0b1d2fb2aa92365d2bc8ffb6ebeacb",
+      "bytes": 91410,
+      "release_path": "results/independent/vpfp_original_per-case.csv",
+      "published_sha256": "cf7a149f14e5f56aa522f8d0e928870e2e1c9bc4101f175250f273d4d2853de3",
+      "published_bytes": 86945
+    },
+    "vpfp_completed_round-summary.csv": {
+      "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-postprocess-6485371/independent/round-summary.csv",
+      "sha256": "368c07ad77981712f446e488e8b7b3dae27599ae34f3ed409f07ad6129dc85ff",
+      "bytes": 7084,
+      "release_path": "results/independent/vpfp_completed_round-summary.csv",
+      "published_sha256": "368c07ad77981712f446e488e8b7b3dae27599ae34f3ed409f07ad6129dc85ff",
+      "published_bytes": 7084
+    },
+    "vpfp_completed_per-case.csv": {
+      "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-postprocess-6485371/independent/per-case.csv",
+      "sha256": "d77670af6a2cf02948e0cd4e9b38b2b84abdb6724bc86e457d557baf8da6fd9d",
+      "bytes": 93600,
+      "release_path": "results/independent/vpfp_completed_per-case.csv",
+      "published_sha256": "eb354cb2df491aa27834519d6683879e814c39aa550063f01aa18e5c9dc4533b",
+      "published_bytes": 89344
+    },
+    "artemis_round-summary.csv": {
+      "path": "${PDE_GAV_RUN_ROOT}/artemis-independent-rounds-6496845/round-summary/round-summary.csv",
+      "sha256": "a47c1ff1ed5178f260988bec08a2f70a194acf497bb38db480a4d15230178462",
+      "bytes": 3013,
+      "release_path": "results/independent/artemis_round-summary.csv",
+      "published_sha256": "a47c1ff1ed5178f260988bec08a2f70a194acf497bb38db480a4d15230178462",
+      "published_bytes": 3013
+    },
+    "artemis_per-case.csv": {
+      "path": "${PDE_GAV_RUN_ROOT}/artemis-independent-rounds-6496845/round-summary/per-case.csv",
+      "sha256": "fa03f06196dbc6708e5c730a6b111e97a4047076007767f358405d80bfec3c01",
+      "bytes": 29093,
+      "release_path": "results/independent/artemis_per-case.csv",
+      "published_sha256": "cb351018fff08701be70243a51b1c9c4da3fd338dcc2230ce3441f08dffcab09",
+      "published_bytes": 27497
+    },
+    "vpfp_independent_verification": {
+      "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-postprocess-6485371/independent/verified-results.json",
+      "sha256": "2ea634fd4aec950e3614889cb77da3643bf461fea422b46c8deee05ddf446a0d",
+      "bytes": 3512169
+    },
+    "artemis_independent_verification": {
+      "path": "${PDE_GAV_RUN_ROOT}/artemis-independent-rounds-6496845/round-summary/summary.json",
+      "sha256": "63775f682689bcc00858f1449ec3ec293a7dd32450057794821867f2ebe4c141",
+      "bytes": 1696697
+    },
+    "vpfp_independent_merge": {
+      "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-postprocess-6485371/independent/merge-status.json",
+      "sha256": "790459ed7be58f34c7be5c4cc8784aa2a6a4ab5dd9ec5ae04e2b5010b97493bf",
+      "bytes": 1305,
+      "release_path": "results/independent/vpfp_merge_status.json",
+      "published_sha256": "67ad63a81fb2a0423edd5302f77017342c60f1a643e7003d1716110e5fef7066",
+      "published_bytes": 1191
+    },
+    "native_prediction_index": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/indexes/terminal-solutions/terminal_solution_index.json",
+      "sha256": "a3d4acad37a39b8351f3796e0b1cd36ae59f4e2c0f0d98d39d89a80f7f83a22f",
+      "bytes": 8305992
+    },
+    "historical_framework_manifest": {
+      "path": "${PDE_GAV_ARCHIVE_ROOT}/20261019/sources/frozen-framework-source/framework-source/operations/offline_eval/frozen-source-manifest.json",
+      "sha256": "39f3c0ae92ff14c39194efce8e3c660e91d749f49f63f16533c37d1379a02dd2",
+      "bytes": 228052
+    }
+  },
+  "historical_framework": {
+    "archive_path": "sources/frozen-framework-source/framework-source",
+    "recorded_revision": "cd0e83fc1f6d7882e93f058182d6284a22010828",
+    "matching_file_sha256": {
+      "scripts/plasma_gpu_campaign.py": "47cfcf77b2e89880bcc0ba5fb399e2050f80593405aefaf0180addd5339cde3c",
+      "src/pde_agent_verifier_solver/sdk/solve_budget.py": "9d72dcf2cbb63549baf8d66f8ec5b2de5c354a43595fe55b9574feee39d88c49",
+      "src/pde_agent_verifier_solver/plugins/plasma_transport.py": "33f951ea42d68e46f1e4590b6e9ef8e349d235fef58b524dfd0059cacd1dac95"
+    },
+    "note": "These three files match the published offline snapshot. Full historical replay uses the archived frozen source and its assets; current main is not asserted to be the execution snapshot."
+  },
+  "publication_note": "Published copies replace site-specific storage locations with the placeholders documented in docs/SITE_CONFIGURATION.md; sha256/bytes identify the archived originals and published_sha256/published_bytes the files in this directory."
+}

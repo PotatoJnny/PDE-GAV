@@ -1,0 +1,40 @@
+{
+  "schema": "ns_common_evaluation_v1",
+  "task_id": "ns-full-field-solver",
+  "require_initial": true,
+  "datasets": [
+    {
+      "dataset_id": "independent-numerical-ns",
+      "manifest": "/replace/with/independent_ns_dataset/manifest.json",
+      "split": "d0_distribution_test",
+      "cohort": "independent_original"
+    }
+  ],
+  "programs": [
+    {
+      "method": "S0",
+      "run_id": "reference-initial",
+      "seed": 0,
+      "artifact_id": "initial-solver",
+      "role": "initial",
+      "bundle": "/replace/with/frozen_initial/candidate_bundle.json"
+    },
+    {
+      "method": "full",
+      "run_id": "full-seed-0",
+      "seed": 0,
+      "artifact_id": "selected-final-solver",
+      "role": "final",
+      "bundle": "/replace/with/frozen_final/candidate_bundle.json"
+    }
+  ],
+  "query": {
+    "point_count": 128,
+    "seed": 12345,
+    "include_pressure": false
+  },
+  "budget": {
+    "max_workers": 1,
+    "case_hard_wall_seconds": 900
+  }
+}

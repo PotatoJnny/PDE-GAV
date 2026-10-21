@@ -1,0 +1,139 @@
+{
+  "schema": "pde_campaign_v1",
+  "problem": "ns",
+  "name": "NS unified one-click smoke",
+  "dataset": {
+    "format": "ns_d0_v1",
+    "manifest": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_large/split_manifest.json"
+  },
+  "execution": {
+    "backend": "slurm",
+    "run_root": "${PDE_GAV_SOURCE_ROOT}/project_runs/ns_one_click_smoke_example",
+    "account": "${PDE_GAV_SLURM_ACCOUNT}",
+    "qos": "normal",
+    "gpu_partition": "gpubase_l40s_b3",
+    "gpu_gres": "gpu:l40s:1",
+    "modules": [
+      "scipy-stack",
+      "hdf5",
+      "pytest"
+    ],
+    "resources": {
+      "default": {
+        "cpus": 4,
+        "memory": "32G",
+        "time": "01:00:00"
+      }
+    }
+  },
+  "projection": {
+    "train_cases": 8,
+    "validation_cases": 4,
+    "batch_cases": 2,
+    "shard_cases": 4,
+    "loader_workers": 2,
+    "spatial_mode_x": 16,
+    "spatial_mode_y": 16,
+    "time_order": 12,
+    "geometry_mask_transition": 0.05,
+    "ridge_relative": 1e-06,
+    "hidden_reference_cases": 2
+  },
+  "pca": {
+    "ranks": [
+      2,
+      4
+    ],
+    "validation_cases": 4,
+    "batch_cases": 2,
+    "loader_workers": 2,
+    "oversample": 2,
+    "power_iterations": 1,
+    "seed": 20260809
+  },
+  "flow": {
+    "rank": 4,
+    "steps": 2,
+    "selected_step": 2,
+    "batch_size": 4,
+    "validation_cases": 4,
+    "width": 16,
+    "depth": 1,
+    "time_width": 8,
+    "lr": 0.0002,
+    "warmup_steps": 0,
+    "log_every": 1,
+    "validate_every": 1,
+    "checkpoint_every": 1,
+    "seed": 20260809,
+    "amp": "none"
+  },
+  "generator": {
+    "integration_steps": 2,
+    "sample_batch": 4,
+    "train_audit_cases": 8,
+    "validation_audit_cases": 4,
+    "metric_rank": 2,
+    "paired_base_audit_cases": 2,
+    "source_batch_points": 1024,
+    "cuda_cache_clear_every": 4,
+    "flow_state": "raw",
+    "seed": 20260810
+  },
+  "guidance": {
+    "steps": 2,
+    "batch_size": 4,
+    "width": 16,
+    "depth": 1,
+    "time_width": 8,
+    "lr": 0.0002,
+    "strength": 0.1,
+    "max_flow_ratio": 0.25,
+    "objective": "solver_error",
+    "seed": 20260810,
+    "minimum_cases": 5
+  },
+  "perturbations": {
+    "pca_tangent": 1,
+    "spectral_complement": 1,
+    "pca_normal": 1,
+    "replay": 3,
+    "target_question_norm": 0.01,
+    "reference_velocity_scale": 0.005531590859331513,
+    "reference_forcing_scale": 0.39948812205030987,
+    "spectral_max_mode": 20,
+    "selection_seed": 2026081601,
+    "seed": 2026081602
+  },
+  "hidden": {
+    "cases": 2,
+    "seed": 20260810,
+    "selection_seed": 20260811,
+    "sample_cases": 2
+  },
+  "campaign": {
+    "rounds": 2,
+    "cases_per_round": 8,
+    "guard_cases": 0
+  },
+  "agent": {
+    "backend": "codex_mock",
+    "prompt_file": "",
+    "budget_seconds": 60,
+    "max_attempts": 1,
+    "model": "",
+    "reasoning_effort": "",
+    "cache_fixed_setup": true,
+    "allow_network": false
+  },
+  "evaluator": {
+    "formal_scope": "cumulative",
+    "workers": 2,
+    "nx": 0,
+    "ny": 0,
+    "nt": 0
+  },
+  "task": {
+    "kind": "solver"
+  }
+}

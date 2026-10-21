@@ -1,0 +1,60 @@
+# Reference-runtime policy only. The Agent shares a node and OS user with the
+# controller, so this configuration is not a hostile-code isolation boundary.
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+allow_login_shell = false
+check_for_update_on_startup = false
+# Literature and public-code search are part of the scientific action space.
+# The private Generator, hidden cohorts, and controller credentials remain
+# outside the Agent workspace; web access is not used as that security boundary.
+web_search = "live"
+
+[features]
+guardian_approval = false
+
+[sandbox_workspace_write]
+# Required for the controller-owned loopback evaluator RPC. Codex sandbox
+# configuration cannot restrict this to loopback, hence reference-only status.
+network_access = true
+
+[shell_environment_policy]
+inherit = "all"
+include_only = [
+  "HOME",
+  "PATH",
+  "VIRTUAL_ENV",
+  "PYTHONPATH",
+  "LANG",
+  "LC_*",
+  "TERM",
+  "TMPDIR",
+  "TMP",
+  "TEMP",
+  "USER",
+  "PYTHONDONTWRITEBYTECODE",
+  "PYTHONUNBUFFERED",
+  "PYTHONNOUSERSITE",
+  "LD_LIBRARY_PATH",
+  "OMP_NUM_THREADS",
+  "MKL_NUM_THREADS",
+  "CUDA_VISIBLE_DEVICES",
+  "CUDA_DEVICE_ORDER",
+  "SLURM_JOB_ID",
+  "SLURM_JOB_NAME",
+  "SLURM_TMPDIR",
+  "SLURM_CPUS_PER_TASK",
+  "SLURM_MEM_PER_NODE",
+  "SLURM_JOB_GPUS",
+  "SLURM_GPUS",
+  "PDE_MACRO_WORKSPACE",
+  "PDE_MACRO_CONTEXT",
+  "PDE_MACRO_PROMPT",
+  "PDE_MACRO_SUBMISSION",
+  "HTTP_PROXY",
+  "HTTPS_PROXY",
+  "NO_PROXY",
+  "SSL_CERT_FILE",
+  "SSL_CERT_DIR",
+  "REQUESTS_CA_BUNDLE",
+  "CURL_CA_BUNDLE",
+]

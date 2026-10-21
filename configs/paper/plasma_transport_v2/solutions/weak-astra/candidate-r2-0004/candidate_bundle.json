@@ -1,0 +1,17 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "base.py",
+    "compressed_source.py",
+    "fourier_helpers.py",
+    "initial_defect.py",
+    "kinetic_evolution.py",
+    "reconstruct.py",
+    "submission.py",
+    "tensor_cubature.py",
+    "thermal_mixing.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 77966,
+  "tree_sha256": "f0bd9e5f796b986c556df47e89140f244a04e13383ee1c2afab78ef4d01899a4"
+}

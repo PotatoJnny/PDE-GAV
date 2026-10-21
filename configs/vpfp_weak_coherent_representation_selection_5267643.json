@@ -1,0 +1,36 @@
+{
+  "schema": "vpfp_moving_frame_representation_selection_v1",
+  "mechanics_passed": true,
+  "selected_mode": 6,
+  "selected_fit_grid": 33,
+  "corpus_manifest_sha256": "0e322cd70bdd2558e0512911e2199a45acff964499ba3ba6a18b901b432e6db8",
+  "preflight_result": "${PDE_GAV_RUN_ROOT}/vpfp-regime-coherent-preflight-5267643/moving-frame-preflight/result.json",
+  "preflight_result_sha256": "d5ee3158f6abbfac52517eba5a8be8bea9ea74460f331d01bdc3a0e0aac5de7f",
+  "compression_review": "Reviewed all 16 train/validation cases, independent33/65 evaluation grids and listed node/midpoint/quarter-point derivatives. k6 improves most pooled value and derivative diagnostics relative to k4; fit33-to65 refinement barely changes errors. Select k6/fit33 for the registered exploratory20k hierarchy, retaining33 time nodes, not as lossless reconstruction or physical admission. Pooled dt_f relative error is17.985% at midpoints and17.412% at quarter points, but absolute RMS is about.0045 at nodes and nonnodes alike: different reference derivative denominators explain much of the relative contrast. Pure temporal underresolution is not established; spatial truncation and nonlinear macro interpolation effects remain to be separated.",
+  "scope": "registered_exploratory_two_seed_20k_only_not_next_main_training_admission",
+  "selected_case_count": 16,
+  "reference_calibration_or_evaluation_splits_used_for_selection": false,
+  "summary": {
+    "aggregation": "pooled sum_squared_error over pooled sum_squared_reference; listed probes only",
+    "f_relative_rms_node": 0.006098678153913645,
+    "f_relative_rms_midpoint": 0.006448220805396166,
+    "dt_f_relative_rms_node": 0.037766905950203426,
+    "dt_f_relative_rms_midpoint": 0.17984505539933704,
+    "dt_f_relative_rms_quarter": 0.17412181002662036,
+    "dt_f_absolute_rms_node": 0.004453453244022649,
+    "dt_f_absolute_rms_midpoint": 0.004593014760778714,
+    "dt_f_absolute_rms_quarter": 0.0046281798000598695,
+    "dt_f_reference_rms_node": 0.11791946234342401,
+    "dt_f_reference_rms_midpoint": 0.025538732497149573,
+    "dt_f_reference_rms_quarter": 0.026580126862638845,
+    "K_relative_rms_midpoint": 0.005529304599855187
+  },
+  "unresolved": [
+    "Nonnode relative derivative reconstruction errors are material, but absolute errors are similar at nodes and nonnodes; neither a pure time bottleneck nor uniform source accuracy is established.",
+    "No uniform-in-space/time or full-velocity density/source norm certificate.",
+    "k6 does not dominate every component; node dt_K pooled relativeRMS is3.389% versus k4's3.318%.",
+    "Actual new-A native Campaign, frozen-model physical audit and independent512-attempt confirmation remain required."
+  ],
+  "scientific_admission": false,
+  "replace_online_assets": false
+}

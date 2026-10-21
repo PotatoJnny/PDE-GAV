@@ -1,0 +1,20 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "adaptive_grid.py",
+    "base_solver.py",
+    "charge_projection.py",
+    "demodulated_source.py",
+    "dense_source.py",
+    "evolution_policy.py",
+    "initial_projection.py",
+    "integrated_forcing.py",
+    "phase_output.py",
+    "source_query_grid.py",
+    "submission.py",
+    "temporal_selection.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 86166,
+  "tree_sha256": "824da9d11a6ad7c2f0b413307981cefc7af69ed0636c1fa29911885a3dc96780"
+}

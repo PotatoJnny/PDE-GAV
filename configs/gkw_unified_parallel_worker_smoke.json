@@ -1,0 +1,131 @@
+{
+  "schema": "unified_plasma_agent_iteration_v1",
+  "campaign_id": "gkw-unified-continuous-condition-parallel-worker-smoke-20260830-v1",
+  "execution": {
+    "mode": "process_per_agent_with_central_gpu",
+    "worker_gpu_count": 2,
+    "controller_gpu_count": 1,
+    "cpus_per_worker": 8,
+    "timeout_seconds": 1800
+  },
+  "controller_policy": {
+    "schema": "unified_macro_controller_policy_v1",
+    "profile": "gkw_parallel_worker_chain_smoke_v1",
+    "agent_count": 2,
+    "round_count": 1,
+    "development_root_count": 1,
+    "development_pool_multiplier": 1,
+    "development_release_root_limit": 1,
+    "development_screen_root_stages": [
+      1
+    ],
+    "development_screen_root_credit_limit": 1,
+    "development_screen_confidence_z": 0.0,
+    "development_screen_continuation_max_mean_ratio": 2.0,
+    "selection_root_count": 1,
+    "evidence_stages": [
+      {
+        "root_count": 1,
+        "confidence_z": 0.0,
+        "min_mean_improvement": 0.0,
+        "min_win_rate": 0.0,
+        "require_cvar_no_regression": false
+      }
+    ],
+    "development_screen_timeout_seconds": 300,
+    "terminal_root_count": 1,
+    "development_case_credits": 2,
+    "seed_stride": 10000,
+    "paired_sampling_max_attempts": 8,
+    "paired_objective": {
+      "mode": "weighted_composite",
+      "base_weight": 0.5,
+      "perturbed_weight": 0.5,
+      "guardrail_relative_margin": 0.05,
+      "guardrail_confidence_z": 0.0
+    },
+    "candidate_compute_budget": 180,
+    "candidate_query_seconds_per_point_limit": 0.05,
+    "agent_timeout_seconds": 300,
+    "agent_hard_timeout_seconds": 900,
+    "model": "scripted-gpu-smoke",
+    "reasoning_effort": "low",
+    "allow_development_truth": false,
+    "cvar_tail_fraction": 1.0,
+    "terminal_confidence_z": 0.0,
+    "terminal_min_win_rate": 0.0,
+    "terminal_require_cvar_no_regression": false,
+    "search_protocol": {
+      "min_distinct_screened_candidates": 1,
+      "min_full_stage_candidates": 1,
+      "min_released_roots": 1,
+      "require_final_full_stage": true,
+      "leaderboard_limit": 2,
+      "cross_share_after_round": 0
+    },
+    "agent_roles": [
+      "Scripted GPU worker A: exercise one complete paired-root release, screen, and submission path.",
+      "Scripted GPU worker B: independently exercise the same path on a distinct assigned GPU."
+    ]
+  },
+  "physics": "gkw",
+  "run_root": "${PLASMA_RUN_ROOT}",
+  "storage_root": "${PLASMA_STORAGE_ROOT}",
+  "agent": {
+    "cold_start_candidate": "${UNIFIED_ROOT}/configs/candidates/gkw_hold_initial_macro_candidate.py",
+    "agent_launcher": "${UNIFIED_ROOT}/scripts/run_reference_macro_smoke_agent.py",
+    "codex_binary": "${CODEX_BINARY}",
+    "auth_file": "${CODEX_AUTH_FILE}"
+  },
+  "gkw": {
+    "physical_root": "${GKW_PHYSICAL_ROOT}",
+    "physical_commit": "80632f11a39b8577124ffa652556af1521d9b992",
+    "external_root": "${GKW_EXTERNAL_ROOT}",
+    "external_commit": "568411b33be486262b8c5cfe1dfb3e0fe97f6419",
+    "gyaradax_root": "${PDE_GAV_DEPS_ROOT}/gyaradax-318e3d11",
+    "gyaradax_commit": "318e3d11d7326d99e96f2bd5a8998a462261dcd4",
+    "artifacts": {
+      "kinetic_edm": "${PDE_GAV_RUN_ROOT}/fusion-nested-c256-edm-capacity384-highnoise-20k-v1/hierarchical_edm.pt",
+      "kinetic_corpus": "${PDE_GAV_RUN_ROOT}/fusion-nested-hierarchy-c256-width512-depth3-12k-v1/nested_hierarchy_corpus.pt",
+      "potential_edm": "${PDE_GAV_RUN_ROOT}/fusion-potential-edm-axial-kx-30k-reaudit-v1/potential_spectral_edm.pt",
+      "potential_corpus": "${PDE_GAV_RUN_ROOT}/fusion-potential-corpus-k17y17-centered-screen16x-v1/potential_spectral_corpus.pt",
+      "hierarchy_checkpoint": "${PDE_GAV_RUN_ROOT}/fusion-nested-hierarchy-c256-width512-depth3-12k-v1/nested_hierarchy_codec.pt",
+      "parent_hierarchy_checkpoint": "${PDE_GAV_RUN_ROOT}/fusion-nested-aware-parent-decoder-cont-physical-1500-v1/hierarchical_decoder_repair.pt",
+      "geometry_sidecar": "${PDE_GAV_RUN_ROOT}/fusion-geometry-sidecar-4280615/gkw_field_geometry_sidecar.pt",
+      "velocity_metric": "${PDE_GAV_RUN_ROOT}/fusion-generated-velocity-metric-scratch-s2k-v1/velocity_metric_carrier.pt",
+      "correction_calibration": "${PDE_GAV_RUN_ROOT}/fusion-joint-exact-h-phi-calibration-scratch-learned-480-v1/generated_field_closure_report.json",
+      "time_registry": "${PDE_GAV_RUN_ROOT}/fusion-gkw-time-4306935/gkw_time_registry.npz",
+      "encode_report": "${PDE_GAV_RUN_ROOT}/fusion-axial-flow-4278689/encode_report.json",
+      "latent_corpus": "${PDE_GAV_RUN_ROOT}/fusion-axial-flow-4278689/latent_corpus.pt",
+      "equation_calibration": "${PDE_GAV_RUN_ROOT}/fusion-gkw-equation-first-calibration-32-v1/report.json"
+    },
+    "artifact_sha256": {
+      "kinetic_edm": "5dc3aa622baf0b5e9aef59a8954259da7782d02ca4dcd1838aef2393013f632c",
+      "kinetic_corpus": "853d45c0db5967b38e40224eeda630914ebe1281a7114bb21426e363a2d8000a",
+      "potential_edm": "9fdc0a272e0b9dbcfa1853ae0548132bf29237de084872822f3d68321a99eddd",
+      "potential_corpus": "8d6b14fc5f5714ea4dab1bd554274bd9c6914472870b1f7159753853630394f7",
+      "hierarchy_checkpoint": "61e0693f41ab1781aed07c8e6416a2209c04bdd7920019de6a451f57ebe966de",
+      "parent_hierarchy_checkpoint": "d4151a0ce9b0a2f8a96ea4205b1f25d5f64a1c2f3ec83188af7db2f05f02812b",
+      "geometry_sidecar": "e22e8ce18b4b806118ede886e0c8d7a2ee5b9419c1a2cef2cf4ae95fe552dbf0",
+      "velocity_metric": "323f9912471feff7476ebb62fa80a4baeb4278e51bca5f4a83b24bb0506d0507",
+      "correction_calibration": "e57f6db16d4591d9b19064c77169b6cbe7456c73526ae7c5924e319d4afab80a",
+      "time_registry": "429e3b32e3ec1afc041707dc454136f4fa9062144b11a6357897f147d1199ef2",
+      "encode_report": "a7633b95c55251742fca974f5ec8dfdf6aca486548b1babbb018b33446ea4f22",
+      "latent_corpus": "2ee87aa091f1f69e553bdfcf28893890db0ba49fcd44e1aadd0585ed5fc12529",
+      "equation_calibration": "1d037ed384635e5942699775d57948c7f33c813d78996351bdebc6e428acba9e"
+    },
+    "perturbation_qualification": {
+      "certificate": "${GKW_PERTURBATION_CERTIFICATE}",
+      "qualification_report": "${GKW_QUALIFICATION_REPORT}",
+      "generator_manifest": "${GKW_QUALIFICATION_GENERATOR_MANIFEST}",
+      "operator_manifest": "${GKW_QUALIFICATION_OPERATOR_MANIFEST}",
+      "physical_source_manifest": "${GKW_QUALIFICATION_PHYSICAL_SOURCE_MANIFEST}",
+      "seed_plan": "${GKW_QUALIFICATION_SEED_PLAN}",
+      "qualification_report_sha256": "${GKW_QUALIFICATION_REPORT_SHA256}",
+      "generator_manifest_sha256": "${GKW_QUALIFICATION_GENERATOR_MANIFEST_SHA256}",
+      "operator_manifest_sha256": "${GKW_QUALIFICATION_OPERATOR_MANIFEST_SHA256}",
+      "physical_source_manifest_sha256": "${GKW_QUALIFICATION_PHYSICAL_SOURCE_MANIFEST_SHA256}",
+      "seed_plan_manifest_sha256": "${GKW_QUALIFICATION_SEED_PLAN_MANIFEST_SHA256}"
+    }
+  }
+}

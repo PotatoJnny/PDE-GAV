@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pde-agent-verifier-solver"
+version = "0.1.0.dev0"
+description = "A framework for multi-round PDE Generator-Agent-Verifier runs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "PDE Agent Verifier Solver contributors"},
+]
+dependencies = [
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7",
+  "matplotlib>=3.6",
+]
+scientific = ["torch", "scipy", "h5py", "threadpoolctl", "matplotlib>=3.6"]
+paper = [
+  "matplotlib>=3.6",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"pde_agent_verifier_solver.plugins.ns" = ["_public_resources/*.py", "_public_resources/*.md", "_public_resources/*.txt"]
+"pde_agent_verifier_solver.plugins.vpfp" = ["_public_resources/*.py", "_public_resources/*.md"]
+"pde_agent_verifier_solver.plugins.gkw" = ["_public_resources/*.py", "_public_resources/*.md"]
+"pde_agent_verifier_solver.plugins.vp_1d1v" = ["_public_resources/*.py", "_public_resources/*.md"]
+"pde_agent_verifier_solver.plugins.ns.baselines" = ["_vendor/*.json", "_vendor/*LICENSE*", "_vendor/aide_upstream/*.txt"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

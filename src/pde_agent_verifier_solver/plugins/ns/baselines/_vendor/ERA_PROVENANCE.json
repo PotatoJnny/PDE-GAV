@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/google-research/era",
+  "revision": "eb56676ce0a9b22b0c357c218de09ac61e94fc4b",
+  "upstream_path": "implementation/futs.py",
+  "sha256": "5cc827f3d609105c1bd7b1103e4c33e393043c6db882bd1f44b9e4ec4301b814",
+  "license": "Apache-2.0",
+  "modified": false,
+  "retrieved_on": "2026-09-06"
+}

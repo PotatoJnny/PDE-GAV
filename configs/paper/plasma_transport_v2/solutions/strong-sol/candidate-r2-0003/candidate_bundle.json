@@ -1,0 +1,9 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "submission.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 17076,
+  "tree_sha256": "14e115ab4b969ecadd98dfa0e596c79eae020caa429561f599fbf78b5c097607"
+}

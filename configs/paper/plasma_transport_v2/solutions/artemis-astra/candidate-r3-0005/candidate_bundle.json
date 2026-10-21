@@ -1,0 +1,11 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "base_solver.py",
+    "charge_projection.py",
+    "submission.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 26653,
+  "tree_sha256": "455e34d783182bc565381f611d9a966b3232a513f4a490a5a23b8089eb4b3180"
+}

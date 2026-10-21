@@ -1,0 +1,76 @@
+{
+  "vpfp": {
+    "schema": "kinetic_independent_verified_comparison_v1",
+    "status": "complete",
+    "original_protocol_status": "incomplete",
+    "expected_distinct_attempts": 200,
+    "displayed_round_case_rows": 224,
+    "partial_case_means_reported": false,
+    "all_successful_metrics_recomputed_from_saved_arrays": true,
+    "original_failures_preserved": true,
+    "superseded_original_failures": [
+      {
+        "case_id": "independent-vpfp-00000",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00001",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00002",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00003",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00004",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00005",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00006",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00007",
+        "unit_id": "strong-d2544e63519cab0d"
+      },
+      {
+        "case_id": "independent-vpfp-00000",
+        "unit_id": "strong-ed7bb64cbc669d90"
+      },
+      {
+        "case_id": "independent-vpfp-00001",
+        "unit_id": "strong-ed7bb64cbc669d90"
+      },
+      {
+        "case_id": "independent-vpfp-00004",
+        "unit_id": "strong-ed7bb64cbc669d90"
+      }
+    ],
+    "supersession_rule": "one verified supplementary success per original approved timeout; no error comparison",
+    "total_preserved_attempts": 212
+  },
+  "artemis": {
+    "schema": "artemis_independent_round_summary_v1",
+    "status": "complete",
+    "metric": "plasma_macro_transport_v2",
+    "expected_bank_sha256": "c663245943b7e736dea634851472719a26b56b1be3790cd4c5f54888f6c4fb7b",
+    "expected_distinct_attempts": 78,
+    "completed_distinct_attempts": 78,
+    "displayed_round_case_rows": 84,
+    "completed_displayed_rows": 84,
+    "all_successful_metrics_recomputed_from_saved_arrays": true,
+    "candidate_selection_performed": false,
+    "original_attempts_preserved": true,
+    "partial_case_means_reported": false,
+    "verification_errors": []
+  },
+  "solver_reexecuted_for_publication": false
+}

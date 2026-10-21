@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+node_modules/
+.next/
+.vinext/
+.wrangler/
+.env*
+auth.json
+credentials.json
+.paper_runs/
+project_runs/
+runs/
+artifacts/
+*.pt
+*.pth
+*.npz
+*.h5
+*.hdf5
+slurm-*.out
+slurm-*.err
+
+# Local input binding; weights stay in the research archive.
+/assets
+
+# Merge leftovers
+*.orig

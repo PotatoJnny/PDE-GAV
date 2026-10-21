@@ -1,0 +1,39 @@
+{
+  "schema": "vpfp_guidance_calibration_experiment_v1",
+  "effect_template": "configs/vpfp_strong_guidance_effect_demand_20260908.json",
+  "steps": 2000,
+  "seeds": [
+    3120260908,
+    3120260909
+  ],
+  "variants": [
+    "original",
+    "scale",
+    "initialization",
+    "combined"
+  ],
+  "calibration_seed": 7120260908,
+  "validation_seed": 7220260908,
+  "validation_sigmas": [
+    0.002,
+    0.05,
+    0.2,
+    1,
+    2
+  ],
+  "validation_replicates": 2,
+  "strength": 2,
+  "fresh_split_seeds": {
+    "fit": 7320260908,
+    "validation": 7420260908,
+    "selection": 7520260908,
+    "confirmation": 7620260908,
+    "training": 7820260908
+  },
+  "bootstrap_seed": 7720260908,
+  "bootstrap_replicates": 10000,
+  "prior_effect": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-guidance-effect-demand-5308991/evaluation/result.json",
+    "sha256": "d6fa4c24fc1337327d2fe19055fc95aca7ed73ca05988a414f069a32c067552f"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "canonical_vpfp_strong_formal_v1",
+  "campaign_id": "vpfp-strong-full-5round-s101-20260909",
+  "master_seed": 101,
+  "round_count": 5,
+  "backend": {
+    "native_spec": {
+      "regime_id": "long_time_strong_collision_v2",
+      "collision_nu_range": [
+        10,
+        30
+      ],
+      "temperature_range": [
+        0.8,
+        1.2
+      ],
+      "time_domain": [
+        0,
+        1
+      ],
+      "base_decoder_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/base_online_decoder.pt",
+      "expanded_decoder_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/expanded_robust_decoder.pt",
+      "base_decoder_sha256": "44f15e3d48120bce94066078dd5f54ff99227d0855f7c5646c173e43fdacd6a9",
+      "expanded_decoder_sha256": "18eeaefb325b998fbaf72fb27059df9528a4f8e75ea8975a5ce4db491aca3530"
+    },
+    "base_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp-strong-regime-coherent-5268586/seed-0/initial_conditioned/checkpoints/fixed-step-040000.pt",
+    "base_checkpoint_sha256": "255b8f77e418568b4d48b3669b95aa706cd83d94cee76d291806ae4e55794f62",
+    "portable_codec": "${PDE_GAV_RUN_ROOT}/vpfp-portable-codec-export-5299171/conversion/portable-codec.pt",
+    "portable_codec_sha256": "ab52cf84c5d010900165f884d52787e19d83f6760de5e5d5e56bc9af5d07f18c",
+    "device": "cuda",
+    "guidance_config": {
+      "steps": 2000,
+      "batch_size": 4,
+      "learning_rate": 0.0002,
+      "beta_std": 0.5,
+      "fit_count": 64,
+      "validation_count": 16,
+      "target_ratio": 0.1,
+      "max_flow_ratio": 0.25,
+      "wall_seconds": 1800
+    },
+    "feedback_selection": "first_80_clean_base_feedback_order"
+  },
+  "execution": {
+    "agent_hard_wall_seconds": 14400,
+    "controller_rpc_timeout_seconds": 7200,
+    "candidate_case_workers": 16,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_candidate_batch_hard_wall_seconds": 6900,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "candidate_worker_options": [
+      4,
+      8,
+      16
+    ],
+    "candidate_worker_selection": "minimum_elapsed_among_all_numerically_verified_preflight_options"
+  },
+  "development": {
+    "max_cases_per_agent_per_round": 32,
+    "starter_base": 4
+  },
+  "official": {
+    "base": 342,
+    "guided": 341,
+    "base_perturbed": 341,
+    "guided_perturbed": 0
+  },
+  "terminal": {
+    "cohorts": [
+      {
+        "cohort_id": "common_base",
+        "guidance_source": "base",
+        "suite": {
+          "base": 256,
+          "base_perturbed": 128
+        }
+      },
+      {
+        "cohort_id": "common_guided",
+        "guidance_source": "round_guided",
+        "round_index": 1,
+        "suite": {
+          "guided": 256,
+          "guided_perturbed": 128
+        }
+      }
+    ],
+    "ranking": {
+      "cohort_id": "overall",
+      "distribution": "overall",
+      "statistic": "mean"
+    }
+  },
+  "task": {
+    "require_prepared_solution": true,
+    "candidate_compute_budget": 180,
+    "development_point_count": 128,
+    "official_point_count": 256,
+    "terminal_point_count": 256
+  },
+  "candidate": {
+    "initial_bundle": "candidates/vpfp_strong_initial_bundle",
+    "initial_name": "VPFP strong incumbent",
+    "initial_summary": "Previously validated public-only VPFP solver with a query-blind grid preparation and continuous macro interpolation adapter.",
+    "initial_bundle_sha256": "d97d86d7a76f1683595cedb82bd957379ed8d5bc3ff779b82f1bbbad93615f16"
+  },
+  "worker": {
+    "script": "../scripts/run_canonical_codex_agent.py",
+    "codex_config": "../scripts/canonical_codex.config.toml"
+  },
+  "agents": [
+    {
+      "agent_id": "vpfp-broad-explorer",
+      "name": "VPFP broad solver explorer",
+      "prompt": "Explore physically distinct kinetic and macroscopic numerical methods, coherent macro representations and source-aware reduced models. Develop one runnable macroscopic Solver/ROM for continuous strong-collision VPFP (nu in [10,30], bath temperature [0.8,1.2], t in [0,1]). Inspect public schema and metadata. Query public source/rho0/g0 Oracles only at coordinates your numerical method needs. The inherited S0 is one runnable starting method; its grid is not a required mesh. Export prepare_solution(case, solve_budget=None), then a handle.evaluate(query) returning rho, momentum_x, momentum_y and kinetic_energy at arbitrary (t,x,y) points. Preparation is blind to scoring coordinates. Do not access Controller-private artifacts, hidden answers, model coefficients, feedback labels, Official or Terminal cases. Each round each Agent has 14400 seconds TOTAL wall time including all tools and Controller waiting, and at most32 fresh development Cases including the initial4 BASE Cases and all perturbed children. Request BASE/GUIDED and paired perturbations adaptively; reuse available development Cases for Solver comparisons. Guidance is retrained once between rounds for the previous selected Solver, not updated for your current nominees. Promotion compares the incumbent and all runnable nominees on the SAME1024 hidden Cases within this run and round:342 BASE,341 GUIDED,341 BASE-perturbed and0 GUIDED-perturbed. Minimize overall.mean of the existing per-Case VPFP macro_match error, not a full distribution-function match. Nonfinite/execution failures are retained and make the Candidate ineligible. Exact ties keep the incumbent. Use shared cumulative Campaign Memory and submit distinct reproducible runnable Candidates worth common evaluation; the protocol imposes no nomination-count cap. Final reporting uses a separate common S0-referenced B/G/P terminal bank; it is never available for development or promotion."
+    },
+    {
+      "agent_id": "vpfp-critical-refiner",
+      "name": "VPFP critical solver refiner",
+      "prompt": "Diagnose and improve stiffness handling, initial layers, collision balance, moment consistency, numerical stability and computational cost. Develop one runnable macroscopic Solver/ROM for continuous strong-collision VPFP (nu in [10,30], bath temperature [0.8,1.2], t in [0,1]). Inspect public schema and metadata. Query public source/rho0/g0 Oracles only at coordinates your numerical method needs. The inherited S0 is one runnable starting method; its grid is not a required mesh. Export prepare_solution(case, solve_budget=None), then a handle.evaluate(query) returning rho, momentum_x, momentum_y and kinetic_energy at arbitrary (t,x,y) points. Preparation is blind to scoring coordinates. Do not access Controller-private artifacts, hidden answers, model coefficients, feedback labels, Official or Terminal cases. Each round each Agent has 14400 seconds TOTAL wall time including all tools and Controller waiting, and at most32 fresh development Cases including the initial4 BASE Cases and all perturbed children. Request BASE/GUIDED and paired perturbations adaptively; reuse available development Cases for Solver comparisons. Guidance is retrained once between rounds for the previous selected Solver, not updated for your current nominees. Promotion compares the incumbent and all runnable nominees on the SAME1024 hidden Cases within this run and round:342 BASE,341 GUIDED,341 BASE-perturbed and0 GUIDED-perturbed. Minimize overall.mean of the existing per-Case VPFP macro_match error, not a full distribution-function match. Nonfinite/execution failures are retained and make the Candidate ineligible. Exact ties keep the incumbent. Use shared cumulative Campaign Memory and submit distinct reproducible runnable Candidates worth common evaluation; the protocol imposes no nomination-count cap. Final reporting uses a separate common S0-referenced B/G/P terminal bank; it is never available for development or promotion."
+    }
+  ],
+  "protocol": {
+    "approval": "User approved NS-sized mixed evaluation with unchanged VPFP scoring/Guidance on 2026-09-09",
+    "reference": "experiment execution plan (kept with the experiment archive, not in this repository)",
+    "agent_time_mode": "total_wall_including_tools",
+    "selected_program": "last_round_selected_not_terminal_best",
+    "terminal_reference": "common_initial_S0_via_round1_G1",
+    "guidance_feedback_selection": "first_80_clean_base_feedback_order",
+    "initial_feedback_evaluated_base_count": 342,
+    "guidance_training_base_count": 80
+  },
+  "promotion": {
+    "preset": "minimize_metric",
+    "settings": {
+      "primary": {
+        "distribution": "overall",
+        "statistic": "mean"
+      }
+    }
+  }
+}

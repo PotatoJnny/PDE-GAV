@@ -1,0 +1,44 @@
+{
+  "schema": "vpfp_campaign_guidance_paircheck_v1",
+  "campaign_root": "${PDE_GAV_RUN_ROOT}/vpfp-strong-canonical-iteration-5315905/campaign",
+  "campaign_config": "configs/vpfp_strong_canonical_2round.json",
+  "guide_round": 2,
+  "guidance_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp-strong-canonical-iteration-5315905/campaign/private_backend/guidance/round-002/fixed-step-002000.pt",
+  "guidance_sha256": "69a728aa8d48256e0c78febbe11bcffcb298b0ffb9e73c370daa3612c774f270",
+  "candidates": [
+    {
+      "id": "candidate-r1-0003",
+      "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-canonical-iteration-5315905/campaign/agent_turns/round-0001-vpfp-agent-afd3323098dd449a98bb9d1b3d00ce1e/.submitted-candidates/nomination-00000003/b17323e96ade4f1a495a71ea3d96356d08fac8ef4dea9491d1a7af076078dfbd",
+      "sha256": "b17323e96ade4f1a495a71ea3d96356d08fac8ef4dea9491d1a7af076078dfbd",
+      "role": "guidance_target"
+    },
+    {
+      "id": "candidate-r2-0006",
+      "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-canonical-iteration-5315905/campaign/selected_candidate",
+      "sha256": "67b2d0d7adaa5e9716291a7dd977b51207a4ec5144f54c99fe4cd94d551b1e39",
+      "role": "final_delivery"
+    }
+  ],
+  "root_master_seed": 930260910,
+  "root_count": 32,
+  "condition_strata": {
+    "collision_nu_edges": [
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "temperature_edges": [
+      0.8,
+      1,
+      1.2
+    ]
+  },
+  "bootstrap_seed": 931260910,
+  "bootstrap_replicates": 2000,
+  "point_count": 256,
+  "candidate_workers": 4,
+  "wall_seconds": 9900,
+  "random_seed": 932260910
+}

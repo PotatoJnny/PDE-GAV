@@ -1,0 +1,2785 @@
+{
+  "schema": "pde_gav_experiment_release_files_v1",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 232,
+      "sha256": "ccb06e11caf2f974cf7d6b2154bae8dc0f76966bf7f788b17a045d4aca4c0cee"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 9763,
+      "sha256": "d8e6dcd0b65a89ad3574c6706ee476b2c552fe022ef62e83b1fd663822260657"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5159,
+      "sha256": "930f6c2fce1d3d845853892d8380e9c6f79afd29a40442aefa10b042aa2e3b5c"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 2495,
+      "sha256": "3f82baaabfe72c09ae3526171e3651fa6c2af6316ce94eb969ec123d2d880a0c"
+    },
+    {
+      "path": "metric_calibration.json",
+      "bytes": 81002,
+      "sha256": "973c82defb0f0e5d3d2ac7612a62cdb1c1c8b8bf733977a9ce8200c8b94e1da4"
+    },
+    {
+      "path": "prompts/artemis/artemis-broad-explorer.md",
+      "bytes": 5075,
+      "sha256": "4ced52a34d79053875e18ae39883d308dab2060c6dc426c3506676d82845cf96"
+    },
+    {
+      "path": "prompts/artemis/artemis-critical-refiner.md",
+      "bytes": 5102,
+      "sha256": "21979b23c3095bd5c9c2a73ffa29e8a31873ac25a54110c072c04ac32d6d9b09"
+    },
+    {
+      "path": "prompts/strong/vpfp-broad-explorer.md",
+      "bytes": 5156,
+      "sha256": "d43263ccbc5e855ee6be031e5f4ea8cdf352e6397088e0cade413e88f4a4545d"
+    },
+    {
+      "path": "prompts/strong/vpfp-critical-refiner.md",
+      "bytes": 5183,
+      "sha256": "3ed31e52a357cec89b4e2cc52831974e29196c5f0c8ddbe5babed90bda956869"
+    },
+    {
+      "path": "prompts/weak/vpfp-weak-broad-explorer.md",
+      "bytes": 5154,
+      "sha256": "7d5c13b84516639ad4693237f0785af803cbe7b793c55749488f9c657827564a"
+    },
+    {
+      "path": "prompts/weak/vpfp-weak-critical-refiner.md",
+      "bytes": 5181,
+      "sha256": "60ccbf7609c505a00ad4847b0cb29fffe499e610f7bc4200c18af53d4e245cfb"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 5616,
+      "sha256": "bdb1c38e3957e7c3d48b886e9b4c4a952a731bbbacd3596eb1e75e472f5edaa9"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 9879,
+      "sha256": "2ceada58d25dbde395798664cfbbc018dd9f194625fc36f44b89e259869d6863"
+    },
+    {
+      "path": "recorded_configs/artemis-astra.json",
+      "bytes": 115320,
+      "sha256": "6e80067c2f9a952bd0facdfb7e538af3e477a0e13b8979a692c46ce903894683"
+    },
+    {
+      "path": "recorded_configs/artemis-sol.json",
+      "bytes": 115310,
+      "sha256": "8580239cbf85f92486fb0387d6292a2b0714c0ed6d26d77e0aa7338247a17075"
+    },
+    {
+      "path": "recorded_configs/strong-astra.json",
+      "bytes": 115098,
+      "sha256": "7c125d156f0933576551458e9b2c9796c2f166c4c474fd75c5768d0b7b255093"
+    },
+    {
+      "path": "recorded_configs/strong-sol.json",
+      "bytes": 115088,
+      "sha256": "5e846b505131a445090236dc382be31adde872a3b0d28856d0ec715f0bd7afb8"
+    },
+    {
+      "path": "recorded_configs/weak-astra.json",
+      "bytes": 115226,
+      "sha256": "307c6c510876f6a8ec0130effb000da54575abc9302893d6f389f0c8836f91a0"
+    },
+    {
+      "path": "recorded_configs/weak-sol.json",
+      "bytes": 115216,
+      "sha256": "632c679665ee8314b4fbc506b617fc6d284f0e389beea7a9717d0c4636a938b8"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 5098,
+      "sha256": "30837967de90328d090722750d54b20e02b55c2ee1bdee0db75fa44ab0200226"
+    },
+    {
+      "path": "results/independent/artemis_per-case.csv",
+      "bytes": 27497,
+      "sha256": "cb351018fff08701be70243a51b1c9c4da3fd338dcc2230ce3441f08dffcab09"
+    },
+    {
+      "path": "results/independent/artemis_round-summary.csv",
+      "bytes": 3013,
+      "sha256": "a47c1ff1ed5178f260988bec08a2f70a194acf497bb38db480a4d15230178462"
+    },
+    {
+      "path": "results/independent/verification.json",
+      "bytes": 2405,
+      "sha256": "93a67ac1f436f8f4fd87b55823c1392df2cb291d9623148ad2433829f72a657a"
+    },
+    {
+      "path": "results/independent/vpfp_completed_per-case.csv",
+      "bytes": 89344,
+      "sha256": "eb354cb2df491aa27834519d6683879e814c39aa550063f01aa18e5c9dc4533b"
+    },
+    {
+      "path": "results/independent/vpfp_completed_round-summary.csv",
+      "bytes": 7084,
+      "sha256": "368c07ad77981712f446e488e8b7b3dae27599ae34f3ed409f07ad6129dc85ff"
+    },
+    {
+      "path": "results/independent/vpfp_merge_status.json",
+      "bytes": 1191,
+      "sha256": "67ad63a81fb2a0423edd5302f77017342c60f1a643e7003d1716110e5fef7066"
+    },
+    {
+      "path": "results/independent/vpfp_original_per-case.csv",
+      "bytes": 86945,
+      "sha256": "cf7a149f14e5f56aa522f8d0e928870e2e1c9bc4101f175250f273d4d2853de3"
+    },
+    {
+      "path": "results/independent/vpfp_original_round-summary.csv",
+      "bytes": 6831,
+      "sha256": "b732d815df91c3299d6d0e454e206de61ef52514ad091c42b64fea32292ae284"
+    },
+    {
+      "path": "results/native_case_scores.csv",
+      "bytes": 771945,
+      "sha256": "414c5bf1358769a7bf4122dd5095ca26e7c6b72187e9624d1a817469b82442d3"
+    },
+    {
+      "path": "results/native_round_scores.csv",
+      "bytes": 8125,
+      "sha256": "e64fd3b6159ac68a79ad04a6103a2d4f383afde528b7e75bdc651e9ffc060987"
+    },
+    {
+      "path": "results/selection.csv",
+      "bytes": 7203,
+      "sha256": "1972278fb333159172703fc8fdb51540f83e30566cfc70caa25ea4131deba5d6"
+    },
+    {
+      "path": "results/selection_decisions.json",
+      "bytes": 93750,
+      "sha256": "b23ae7519686ce982441d87f5124daaf4065132d2814f9303af758f8c00453e0"
+    },
+    {
+      "path": "results/selection_policies.json",
+      "bytes": 10009,
+      "sha256": "242d9a3dae5ea69f0270f758f2fc013c1ca8474a012034b9f8befd440cad0800"
+    },
+    {
+      "path": "solutions/INDEX.csv",
+      "bytes": 18767,
+      "sha256": "89b72afda32c02c92cd7eb487864ab72ba3dcf2535c0967b0da9dc4bd82db71a"
+    },
+    {
+      "path": "solutions/INDEX.json",
+      "bytes": 169960,
+      "sha256": "6f2514f621784a7d7a0fde8eeec8d4ba35ce5f9090d1fdc9b8cd26f83494f9ae"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r1-0001/base_solver.py",
+      "bytes": 20431,
+      "sha256": "9fd2e3ff457c845d2b4af54831c7d70df6ab31441c1cbcc59f9db05643634d36"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r1-0001/candidate_bundle.json",
+      "bytes": 287,
+      "sha256": "2155742997bce6debaf1a14bb32a1d6da4805798de7c318186b8b733c9225668"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r1-0001/charge_projection.py",
+      "bytes": 5137,
+      "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r1-0001/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r1-0002/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "d7cd70ab6304d7644ee661dfd7f38883e4dffe0c8964502dbdcea9e5f2e52a40"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r1-0002/submission.py",
+      "bytes": 19848,
+      "sha256": "d0f6ca83dd561f6ed97ae529ba51442e2b7789258eba8a2b34bd0c76e5c71245"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0003/base_solver.py",
+      "bytes": 20439,
+      "sha256": "6443d54c608f69828b136dbb2eb3611d4bd3e7fa276b62f600906499c720206a"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0003/candidate_bundle.json",
+      "bytes": 287,
+      "sha256": "99e285efa481d0105d9a61803bf2b260f215e32defdc45187b9bc0ac0c340961"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0003/charge_projection.py",
+      "bytes": 5137,
+      "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0003/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0004/base_solver.py",
+      "bytes": 26388,
+      "sha256": "c14023c4ae2f1d5e5b40fefbaaa6da17f09d33b4f9c73f08b613d616de22c968"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0004/candidate_bundle.json",
+      "bytes": 287,
+      "sha256": "8068b1b988c3f1fb93afda3c70aafb3b0f8f12248979841901357ff5ff712336"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0004/charge_projection.py",
+      "bytes": 5137,
+      "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r2-0004/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0005/base_solver.py",
+      "bytes": 20440,
+      "sha256": "2aaa00298e5395ad82b4b7be37f14d60d2538936c9e831355a4fe2c740287736"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0005/candidate_bundle.json",
+      "bytes": 287,
+      "sha256": "8edb2941656fbe34fadba4b08858c434e212faf28c1663d1c992014c4d37fa1f"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0005/charge_projection.py",
+      "bytes": 5137,
+      "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0005/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0006/base_solver.py",
+      "bytes": 23475,
+      "sha256": "5ba79675302259f33f781375323ebdae7b0e09c61a9f0957196db33fc3bf2d51"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0006/candidate_bundle.json",
+      "bytes": 339,
+      "sha256": "bff53f58c58aa235517157be2112f97c78780d764116de7fb0c3e3ebdff6b760"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0006/charge_projection.py",
+      "bytes": 5137,
+      "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0006/dense_source.py",
+      "bytes": 3132,
+      "sha256": "ebeb2e3900a011f9a717988d1276fdc0253456abe780912be4b1eb0d3721e9aa"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0006/initial_projection.py",
+      "bytes": 1502,
+      "sha256": "79d5c01afc5fbf0e22144acb661dfd9befa4b4fb5d987867acbbc77eeafc53cf"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r3-0006/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/base_solver.py",
+      "bytes": 54701,
+      "sha256": "20a2fd9cc9496c6321a1f4cacb35b5646671adce9980ccc7eedfabdc3b54d1ce"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/candidate_bundle.json",
+      "bytes": 553,
+      "sha256": "9299807ba5d5ca5596b6c45974bb22116e85ff66568d74f5b6a9d39a31428450"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/cell_source.py",
+      "bytes": 9542,
+      "sha256": "4282d16c96fdb980ab7cc57bd144bd5e142f0d4ba982d0c386413c80373dc073"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/charge_projection.py",
+      "bytes": 5137,
+      "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/compressed_source.py",
+      "bytes": 7192,
+      "sha256": "50d21de376b401857cbadfc37d00deef2a1f742dd998a727e7683d6711bcda03"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/dense_source.py",
+      "bytes": 3380,
+      "sha256": "1bca6e28fa89f7d772dc32fa1fc8c8b7b7f8b9f8b5a2e6aed3b95aa661a4eb88"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/free_source.py",
+      "bytes": 10963,
+      "sha256": "60e77c859e11b9cfccba5b73c94ff245cff9f058fa4f25bf46f64ca0f4cec4e2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/initial_projection.py",
+      "bytes": 1502,
+      "sha256": "79d5c01afc5fbf0e22144acb661dfd9befa4b4fb5d987867acbbc77eeafc53cf"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/interaction_source.py",
+      "bytes": 13281,
+      "sha256": "447ad1940e8cb91ee4b084c9428f173c5e5d733d5e181f01dd4ff33e1a85fa04"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/source_geometry.py",
+      "bytes": 6614,
+      "sha256": "58e92b784e9102f98aa651625836ff1ed3b04b5984cf26fa2183ffd55cd122ed"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/source_integral_plan.py",
+      "bytes": 2977,
+      "sha256": "4460dc1fe342bed3acbf79b907dd2c05f95f2fbe4717fbcf80872bfaacf09eba"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/source_projection.py",
+      "bytes": 2983,
+      "sha256": "b07e8b2ae0d5da9dd83cd5575bb7fee2da968acbc795bb2a243020fc4b67742a"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/startup_fallback.py",
+      "bytes": 3540,
+      "sha256": "cb1ecadf466ca6a001e76082702cc0cd49af093beaa6c9b9b1c6ef06a0199a0b"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0007/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/adaptive_grid.py",
+      "bytes": 7121,
+      "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/base_solver.py",
+      "bytes": 28909,
+      "sha256": "626009f4368704bcb1496b5a65f4e43a4be9fc0c4f59744b573bea32341e1ed5"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/candidate_bundle.json",
+      "bytes": 528,
+      "sha256": "631241749eb3f628beb3912b6b0e1bc8d5cd79e53ee296b2b0efb7542e3031eb"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/charge_projection.py",
+      "bytes": 6318,
+      "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/demodulated_source.py",
+      "bytes": 7917,
+      "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/dense_source.py",
+      "bytes": 5197,
+      "sha256": "9c50aa6701614a363bdfce5ecf7e63add659c734ad042d4487f5baae6b1bfbb4"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/evolution_policy.py",
+      "bytes": 2781,
+      "sha256": "539e5e72a9ac6763e51c5c6e22a93cafa4a7ed3f1c9b0087a9860c95c04db693"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/initial_projection.py",
+      "bytes": 1491,
+      "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/integrated_forcing.py",
+      "bytes": 2411,
+      "sha256": "4407e948dfe9665f9b604ee206270737fc2e2d21209aad126e3e6f496dc99677"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/phase_output.py",
+      "bytes": 8348,
+      "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/source_query_grid.py",
+      "bytes": 3407,
+      "sha256": "d8ab0611bd86ff7f8a79c07223de44fe3e7cc4c995c9dc855bd88c55b40be3a7"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r4-0008/temporal_selection.py",
+      "bytes": 7168,
+      "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/adaptive_grid.py",
+      "bytes": 7121,
+      "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/base_solver.py",
+      "bytes": 28909,
+      "sha256": "626009f4368704bcb1496b5a65f4e43a4be9fc0c4f59744b573bea32341e1ed5"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/candidate_bundle.json",
+      "bytes": 528,
+      "sha256": "d7440c331473b93719b7c41032e7826915e02d762dec9fe63d02042f460a1a2e"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/charge_projection.py",
+      "bytes": 6318,
+      "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/demodulated_source.py",
+      "bytes": 7917,
+      "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/dense_source.py",
+      "bytes": 5197,
+      "sha256": "9c50aa6701614a363bdfce5ecf7e63add659c734ad042d4487f5baae6b1bfbb4"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/evolution_policy.py",
+      "bytes": 2781,
+      "sha256": "539e5e72a9ac6763e51c5c6e22a93cafa4a7ed3f1c9b0087a9860c95c04db693"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/initial_projection.py",
+      "bytes": 1491,
+      "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/integrated_forcing.py",
+      "bytes": 2411,
+      "sha256": "4407e948dfe9665f9b604ee206270737fc2e2d21209aad126e3e6f496dc99677"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/phase_output.py",
+      "bytes": 8348,
+      "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/source_query_grid.py",
+      "bytes": 7429,
+      "sha256": "b925f742c16bebc3940eda471fef98606f037e3e54d1f3f8ae5dcf36d5887421"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0009/temporal_selection.py",
+      "bytes": 7168,
+      "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/adaptive_grid.py",
+      "bytes": 7121,
+      "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/additive_source.py",
+      "bytes": 11618,
+      "sha256": "a3ee07caf7e4c35ef1788f662f4d34f8ab79dad49aec45121643142b685602e0"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/base_solver.py",
+      "bytes": 33826,
+      "sha256": "c077330179c623a3e5e7166caf0420445b00efe1d82bc306a724d9cd8e6b28f6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/candidate_bundle.json",
+      "bytes": 576,
+      "sha256": "6179c93c8584cb4f2e450e6892e70e8f171048c02b471e224fa7e3e304c1fb35"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/charge_projection.py",
+      "bytes": 6318,
+      "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/demodulated_source.py",
+      "bytes": 15253,
+      "sha256": "8223318f841a06456c3c9d18df3b56f8008fb913f4dd24c74ecd614f4cdd599a"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/dense_source.py",
+      "bytes": 5197,
+      "sha256": "9c50aa6701614a363bdfce5ecf7e63add659c734ad042d4487f5baae6b1bfbb4"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/evolution_policy.py",
+      "bytes": 2781,
+      "sha256": "fed48428f4273748344ab1a87763e891c17c23ee5abf6006ad47384e850c1103"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/fused_cuda.py",
+      "bytes": 11772,
+      "sha256": "192f6242f54db0651404b12480c5d3427bb74b7452f7f3dbf4b44b7c99a25c67"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/initial_projection.py",
+      "bytes": 1491,
+      "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/integrated_forcing.py",
+      "bytes": 3402,
+      "sha256": "5a390a4630726aab07db855c98f3c1cf49bfa8a1c4d6b7e1311e597ce6b76f4e"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/phase_output.py",
+      "bytes": 8348,
+      "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/source_query_grid.py",
+      "bytes": 7571,
+      "sha256": "1b8aeedd9210133ec215ddc611421a8a264938d850fe800de3aefe6c35188ee5"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r5-0010/temporal_selection.py",
+      "bytes": 7168,
+      "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/adaptive_grid.py",
+      "bytes": 7121,
+      "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/base_solver.py",
+      "bytes": 28956,
+      "sha256": "6130bb1ff224d77259629480057fb33fb3185fd45a9a2ec0112638429949c981"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/candidate_bundle.json",
+      "bytes": 550,
+      "sha256": "e53941f1359d60bedc4cd9903f3f92e8f879859e3e2ea1154d9a8acf2cd0f1df"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/charge_projection.py",
+      "bytes": 6318,
+      "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/demodulated_source.py",
+      "bytes": 7917,
+      "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/dense_source.py",
+      "bytes": 7813,
+      "sha256": "58c281f21c844ed25436ee041b08711b470780752b4561145d464126dc1a915f"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/evolution_policy.py",
+      "bytes": 2781,
+      "sha256": "539e5e72a9ac6763e51c5c6e22a93cafa4a7ed3f1c9b0087a9860c95c04db693"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/fused_cuda.py",
+      "bytes": 9706,
+      "sha256": "a89217e3e07ec3fb92492de339daf3d08ce25d6a5549b03c38d66ca392deef88"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/initial_projection.py",
+      "bytes": 1491,
+      "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/integrated_forcing.py",
+      "bytes": 5923,
+      "sha256": "14f789e265ac35817e3745c06936d2215a622b6898968fdf3f28a9064af80913"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/phase_output.py",
+      "bytes": 8348,
+      "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/source_query_grid.py",
+      "bytes": 13096,
+      "sha256": "3b1ed694ca1a7a13854c70372e92535561d46458574f60099c42fe707740c667"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0011/temporal_selection.py",
+      "bytes": 7168,
+      "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/adaptive_grid.py",
+      "bytes": 7121,
+      "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/base_solver.py",
+      "bytes": 29529,
+      "sha256": "284a9a653e0a5b9d00c70323550a07e8cdaec8356b071df25a22d238a3f878f3"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/candidate_bundle.json",
+      "bytes": 529,
+      "sha256": "1c1393d86e618a5228dbc2eef39867998d5a36cdef1312f9c0b4d9c60c83decd"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/charge_projection.py",
+      "bytes": 6318,
+      "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/demodulated_source.py",
+      "bytes": 7917,
+      "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/dense_source.py",
+      "bytes": 9860,
+      "sha256": "77c7955a479d2368f64595021027c44b0ccacc2582c6b6ec74eca1275ba75a01"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/evolution_policy.py",
+      "bytes": 4859,
+      "sha256": "f4209a8d95fd26334459b2b553716b02dd664240d63bd036816ffbb73d4f97f8"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/initial_projection.py",
+      "bytes": 1491,
+      "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/integrated_forcing.py",
+      "bytes": 2411,
+      "sha256": "4407e948dfe9665f9b604ee206270737fc2e2d21209aad126e3e6f496dc99677"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/phase_output.py",
+      "bytes": 8348,
+      "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/source_query_grid.py",
+      "bytes": 14349,
+      "sha256": "2b7a6ae201d20c4f27b8706e83a3a29de133aeeeea35eae081274939c0b66d08"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/submission.py",
+      "bytes": 1076,
+      "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-r6-0012/temporal_selection.py",
+      "bytes": 7168,
+      "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-s0/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "3cefb722c17a948a674d7b8c225645707ec8d3a19317e3cf47b130067985f5ee"
+    },
+    {
+      "path": "solutions/artemis-astra/candidate-s0/submission.py",
+      "bytes": 5827,
+      "sha256": "9a2d495286a1bcee78ea02339c06dc65aca725e749571fa8428f86d111b62b04"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r1-0001/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "e914c71df173961f65ed7ac74a28f22ccb6230dc4aecb9a78cf69d9fff06541b"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r1-0001/submission.py",
+      "bytes": 8028,
+      "sha256": "e514f98cb40db29904e35cd7550f650e2ed768f96382c7e765376312e10cb0b8"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r1-0002/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "67c9f0c7492c245b216cc6a0fc630bc77ffca7dcb59d61312a29af91a6804293"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r1-0002/submission.py",
+      "bytes": 9633,
+      "sha256": "9c5110f4aa154548c44c100a03d72df6d3660b519f780cd59688cfaa9f653b1c"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r2-0003/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "de1cf45bb24475843b05e326f0e9a93ee63512ed60cd3e17d63b9a1224a4a5a5"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r2-0003/solver128.py",
+      "bytes": 10746,
+      "sha256": "6fe84410bf32462bbef3f8468641af967bfef91cf44bd15de0269a5419bdfca6"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r2-0003/solver192.py",
+      "bytes": 9883,
+      "sha256": "fabc27234596a5aae205c647512114518d8b59d2f6981da20876c733562acc8f"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r2-0003/submission.py",
+      "bytes": 2310,
+      "sha256": "ccaa2d483aca01ae0387e50d0b2fd713590b6610b487db07bfe401a4b217b541"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r2-0004/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "733af2611a771206cb5088fa93c9abb6739bb6a98ce5a6a9d94af67c97e21926"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r2-0004/submission.py",
+      "bytes": 10514,
+      "sha256": "b87f5d9d0ce2855fc12d99660e9f52da6bc7e88c3411731d3f61c42f3c8d5ac8"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r3-0005/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "ef446bb7ae760145758f483f334b33047e14cd951c722722c88a68a2626f7969"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r3-0005/solver128.py",
+      "bytes": 10746,
+      "sha256": "6fe84410bf32462bbef3f8468641af967bfef91cf44bd15de0269a5419bdfca6"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r3-0005/solver192.py",
+      "bytes": 13752,
+      "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r3-0005/submission.py",
+      "bytes": 2310,
+      "sha256": "ccaa2d483aca01ae0387e50d0b2fd713590b6610b487db07bfe401a4b217b541"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r3-0006/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "110b626d678920c6251401539072ea6ed83fe85813258a1713aa584e1209debf"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r3-0006/submission.py",
+      "bytes": 9978,
+      "sha256": "195633495cbf514159cb3ec995b29693be378d3b8958b4248e9e7f6267e038ed"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0007/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "3976ae824a5099f549d147dd6814396011011d1d6b679dec9ed273a950be3d8d"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0007/solver128.py",
+      "bytes": 11189,
+      "sha256": "3781eb094e537adfda84f05ceb1b884c43eefb957347d2d94b966af1f364a7d0"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0007/solver192.py",
+      "bytes": 13752,
+      "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0007/submission.py",
+      "bytes": 2343,
+      "sha256": "bc260f671bc464100815afd6192211765b8f2181e2a9f6453eaf61935298443e"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0008/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "5d71600916ad837bf95ffe83ec6aa909b8daa07775bd2fc64c14c801a8c4f184"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0008/solver128.py",
+      "bytes": 10746,
+      "sha256": "6fe84410bf32462bbef3f8468641af967bfef91cf44bd15de0269a5419bdfca6"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0008/solver192.py",
+      "bytes": 14128,
+      "sha256": "3b6156c25f12677523a90a8e3e36cca0ebec8e0412dbcf95945c19e28f96e765"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r4-0008/submission.py",
+      "bytes": 2449,
+      "sha256": "bd3031b0f9efb240c22eaca32edd7c5700c2671e9d26b313d6302c7f81f69421"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0009/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "cea9a714164d3bd1e2ce5ab1d90f70612c015603a8c74d1862e78222d46bc542"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0009/solver128.py",
+      "bytes": 11747,
+      "sha256": "aafd145fa73ee186c3c576b20da4e1f44366820a218cf01e9aed2f690152995b"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0009/solver192.py",
+      "bytes": 13752,
+      "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0009/submission.py",
+      "bytes": 3089,
+      "sha256": "997d0d001c9dcf4da958f3ccaa51db1907ef014adc55ed6b138ebc6f75389e35"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0010/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "85568ed6cce78d15078a80301d652b04bd4003ff3c820d6110c38fef287b76a8"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0010/solver128.py",
+      "bytes": 12487,
+      "sha256": "430323fb92754f03db51b6dc332b1742a766212e861e6085bc25456f8338b12b"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0010/solver192.py",
+      "bytes": 13752,
+      "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r5-0010/submission.py",
+      "bytes": 3471,
+      "sha256": "f5c2ef4881a898c94e9e5134e3b5ac91aa3660564e7650dc5be6198c4dab0f84"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0011/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "584bf136db4a3df5d081239ed5796a80a707cfc253e1f324388b3bedd9a20109"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0011/solver128.py",
+      "bytes": 12591,
+      "sha256": "fad36704f846f3a1f87754e660df0c6005d221e43553e9096ee6a526fc492568"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0011/solver192.py",
+      "bytes": 13752,
+      "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0011/submission.py",
+      "bytes": 3471,
+      "sha256": "f5c2ef4881a898c94e9e5134e3b5ac91aa3660564e7650dc5be6198c4dab0f84"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0012/candidate_bundle.json",
+      "bytes": 277,
+      "sha256": "32a56e0193541deeef165f37652b5965430175bd16c67e29075bd6a972e604ac"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0012/solver128.py",
+      "bytes": 13380,
+      "sha256": "6075e76e1473c357c4991e19cfadf1c41888f2ff06a03de4ef975473d3068a42"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0012/solver192.py",
+      "bytes": 13752,
+      "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-r6-0012/submission.py",
+      "bytes": 3471,
+      "sha256": "f5c2ef4881a898c94e9e5134e3b5ac91aa3660564e7650dc5be6198c4dab0f84"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-s0/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "3cefb722c17a948a674d7b8c225645707ec8d3a19317e3cf47b130067985f5ee"
+    },
+    {
+      "path": "solutions/artemis-sol/candidate-s0/submission.py",
+      "bytes": 5827,
+      "sha256": "9a2d495286a1bcee78ea02339c06dc65aca725e749571fa8428f86d111b62b04"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0001/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "db26461737fa3c6ea3085fcd12a15eb807a732f0d96692b9cc5cf1f3c06b5f75"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0001/submission.py",
+      "bytes": 20601,
+      "sha256": "7b7caa48932b7665c5e043f64896a7cc1b5f2259b01225bf384f51d63d0dc6e2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/candidate_bundle.json",
+      "bytes": 386,
+      "sha256": "88112a16d555f510828ec30a9ccaedb1c65266ecab85a5cbf290fed35dd1fb4d"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/corner_sampling.py",
+      "bytes": 7301,
+      "sha256": "cd5991819a27f40aabded2a1758cdc2d01518a1c081bba24adccb04658caade1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/gpu_integrator_bspline.py",
+      "bytes": 9283,
+      "sha256": "ad205620832b09b61a1a87c74bfecd9d2dbfb59c18155d92d1bf7963c86628b7"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/quadrature_select.py",
+      "bytes": 3954,
+      "sha256": "2cf60886891d85acdf6fca3f684f99dcb1a69c96250102fd9cbde6d961229739"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/source_spline_piecewise.py",
+      "bytes": 2697,
+      "sha256": "835ddb29b97757eaf01b5f24726a250b65c26d376af3cf3b362f16b86a4d0e54"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/submission.py",
+      "bytes": 10371,
+      "sha256": "0c002c4a9cdc4d6e16b1b3db97bf8ed1120414caecf6801ca42602d4c041f44d"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r1-0002/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/candidate_bundle.json",
+      "bytes": 506,
+      "sha256": "bcccd4ed2f958536620dff5edbffb6662dc17a272d707f18a3d1919b97d318ab"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/gpu_integrator_bspline.py",
+      "bytes": 10035,
+      "sha256": "f1b35ac8973c8e39e0a176a5dcadca5e978d06494ece9ab13a3a0030aeeeef60"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/quadrature_select.py",
+      "bytes": 3975,
+      "sha256": "3fddedaa273068424219ceea0e6d410dc7ba3203fb401b63d872083c132378e8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/source_spline_piecewise.py",
+      "bytes": 4230,
+      "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/submission.py",
+      "bytes": 15458,
+      "sha256": "3c47da4501afb28521909a29da2712284ccf52e6c2e0705aed0fed02294ed6e3"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0003/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/candidate_bundle.json",
+      "bytes": 449,
+      "sha256": "9941db940b1cd2b1d27613371b825dd54abf04a4722275653b8d103704ae011f"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/corner_sampling.py",
+      "bytes": 7595,
+      "sha256": "535871312f31f7d982afb859e5307dd20dc100d5a955858cc802630b15bfc77a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/gpu_integrator_bspline.py",
+      "bytes": 12895,
+      "sha256": "e18e517ed2780ecc0162ec4ef9d21d4986bb579a4f19a2f18a0f8b563f713f50"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/initial_quadrature_select.py",
+      "bytes": 6830,
+      "sha256": "a8df01386a610a4df603a566f6d4b70b7418e80039d21a47cbadab86f9ff518a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/pilot_refinement.py",
+      "bytes": 7036,
+      "sha256": "83cc733d1e06c6543857919f4897e9b409de113cc4a66f94d7a5c49ddb7267f2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/quadrature_select.py",
+      "bytes": 3954,
+      "sha256": "2cf60886891d85acdf6fca3f684f99dcb1a69c96250102fd9cbde6d961229739"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/source_spline_piecewise.py",
+      "bytes": 4298,
+      "sha256": "2058a8fb80d26f575e63a9fbb5e768dd54e76a6cdfa8370108a0b74a0d4774a2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/submission.py",
+      "bytes": 14539,
+      "sha256": "ede1e08a82baf6193df882d316f50d10b6441b9d9e3a671f0740931be65a11d3"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r2-0004/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/candidate_bundle.json",
+      "bytes": 531,
+      "sha256": "8cee306558dfc257f7b4072c70353e330a97be5dc3ae7882044b7e29fd4fe997"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/gpu_integrator_bspline.py",
+      "bytes": 10037,
+      "sha256": "5ef77dfde589f24ad3d1929cd32f66792b0f0c3220e2e9da5335e781cb974eda"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/guarded_output.py",
+      "bytes": 6169,
+      "sha256": "43bd7ca50fc814f0f583801e089a0fdfa98429b11d762ea6ca70509fb40735b7"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/quadrature_select.py",
+      "bytes": 3975,
+      "sha256": "3fddedaa273068424219ceea0e6d410dc7ba3203fb401b63d872083c132378e8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/source_spline_piecewise.py",
+      "bytes": 7484,
+      "sha256": "9dda8a6df9dc1d570462f722c11b4203ae14f10f665fb475cff2c425ad439782"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/submission.py",
+      "bytes": 15560,
+      "sha256": "0e336a041ceacc26af94ea023fd6893c0704deceab8900f5200e3d707444ba42"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0005/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/candidate_bundle.json",
+      "bytes": 645,
+      "sha256": "7bd66ab63e47d213a5dda071f01241e41b30afe974d0e0d1aab56235301b7bb1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/pilot_density.py",
+      "bytes": 13699,
+      "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/source_spline_piecewise.py",
+      "bytes": 4230,
+      "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/source_spline_stable.py",
+      "bytes": 3797,
+      "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/submission.py",
+      "bytes": 22436,
+      "sha256": "ff33d9402898c0cc8c4fcf46e6ed19504761c21baed5a366be9940e702e34e4a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r3-0006/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/candidate_bundle.json",
+      "bytes": 724,
+      "sha256": "656364ad6162417e620147710bddabd673579e874ec69feecaa59f79b04ea994"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/corner_collapse.py",
+      "bytes": 9022,
+      "sha256": "27a0142be5c749d271f6ee1123af2372c328c7deeda2d142d1124b2d36917aed"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/pilot_density.py",
+      "bytes": 13699,
+      "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/pilot_macros.py",
+      "bytes": 28956,
+      "sha256": "ff9bb28a6b8ead0451580c490f576b40496af362363208d271c0c032ad3c5f77"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/source_spline_piecewise.py",
+      "bytes": 4230,
+      "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/source_spline_stable.py",
+      "bytes": 5129,
+      "sha256": "0dbdca7b6b6da2e1dfbdbe311b880381e28b407cc725afc4844e34180f487f3c"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/spatial_trial_retry.py",
+      "bytes": 2893,
+      "sha256": "5e0ba02287bab49d55e999e75e3307ab0be803e59e4690bc120a30a819e094ef"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/submission.py",
+      "bytes": 26118,
+      "sha256": "e6d2a45190929c409d243c803eec20ca268edbdbe6fa1737e52cf8bfa87b7665"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0007/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/candidate_bundle.json",
+      "bytes": 645,
+      "sha256": "bc78cfb652454d8e6f3cefa17ba5949b3da48459e0f27c57278245ed94b82a57"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/pilot_density.py",
+      "bytes": 14067,
+      "sha256": "fe1dc67cd5f3a076877adc295aab60ff829440ef0b4f45613dab77300380dee6"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/source_spline_piecewise.py",
+      "bytes": 6947,
+      "sha256": "c40c7f70acdb4db68053e10785a5bd856dc7cb8856bbfa99f96381a2f630af01"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/source_spline_stable.py",
+      "bytes": 3797,
+      "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/submission.py",
+      "bytes": 22924,
+      "sha256": "262e56db0a7013d4d08bc9359f401e32b06acbf155e714cdf3e261679957ee32"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r4-0008/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/bounded_cubic.py",
+      "bytes": 14043,
+      "sha256": "c516df9a9d8e7b8a0e2702da00bc51ae1a265243150a6f0d818bdf1636cff40c"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/candidate_bundle.json",
+      "bytes": 757,
+      "sha256": "9e00f564ec1edebdde5d61db8088f1eaf9232fb829c84b47c9c40b6afdf5c276"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/initial_normalization.py",
+      "bytes": 7984,
+      "sha256": "9b18b8cd2be55838e1728caa8010e2e64d550910d9fe5b51827e4a55c0ec2819"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/pilot_density.py",
+      "bytes": 13699,
+      "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/separable_projection.py",
+      "bytes": 2955,
+      "sha256": "87ebe8cd9001121f45bb318e91b64a353e31b84e180d4f7f171059f784be6c1f"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/source_spline_piecewise.py",
+      "bytes": 4230,
+      "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/source_spline_stable.py",
+      "bytes": 3797,
+      "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/stable_quintic.py",
+      "bytes": 7333,
+      "sha256": "dbfa17ff70319105c0afa5293590f01f1b1dd561ad01d1bc4b6ae9fe2f64be72"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/submission.py",
+      "bytes": 23510,
+      "sha256": "434997be03827772fa7879cd82cf9a2b5ede6f48db6670e99550a30b4a7670bb"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0009/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/bounded_hermite.py",
+      "bytes": 13440,
+      "sha256": "8dd6320e183fd0153cc12ce8d9fd4cf30a46973b18502c2bd3a688b864f05303"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/candidate_bundle.json",
+      "bytes": 705,
+      "sha256": "711b7049d20629f17827f2aacdd952894e54dbd8794ce827bcef4328c572a585"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/guarded_corner_collapse.py",
+      "bytes": 6880,
+      "sha256": "bf1b44844d3876e0041d57031de7b5e1a7e640fec939c8fa092e1b03988fffdc"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/pilot_density.py",
+      "bytes": 13699,
+      "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/source_spline_piecewise.py",
+      "bytes": 7127,
+      "sha256": "7170200b953f8771e018d4c20969a8275f7d79ff51e28dd0a9e558c676e81491"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/source_spline_stable.py",
+      "bytes": 3797,
+      "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/submission.py",
+      "bytes": 23354,
+      "sha256": "36695cc934cabcba2f34aa4539d8e6c8a84fc27461944288c40cc320096508c9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r5-0010/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/bounded_cubic.py",
+      "bytes": 14043,
+      "sha256": "c516df9a9d8e7b8a0e2702da00bc51ae1a265243150a6f0d818bdf1636cff40c"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/candidate_bundle.json",
+      "bytes": 757,
+      "sha256": "6a2917a22d6976818349ba66a09a88cd4dcb14aba8cd3d89458ef85b7af0081b"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/initial_normalization.py",
+      "bytes": 7984,
+      "sha256": "9b18b8cd2be55838e1728caa8010e2e64d550910d9fe5b51827e4a55c0ec2819"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/pilot_density.py",
+      "bytes": 13699,
+      "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/separable_projection.py",
+      "bytes": 2955,
+      "sha256": "87ebe8cd9001121f45bb318e91b64a353e31b84e180d4f7f171059f784be6c1f"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/source_spline_piecewise.py",
+      "bytes": 4230,
+      "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/source_spline_stable.py",
+      "bytes": 3797,
+      "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/stable_quintic.py",
+      "bytes": 7333,
+      "sha256": "dbfa17ff70319105c0afa5293590f01f1b1dd561ad01d1bc4b6ae9fe2f64be72"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/submission.py",
+      "bytes": 23531,
+      "sha256": "340a9c199f496ac2d4e0aa1897412d71d796d72222425a6c63ef26a8cce42e81"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0011/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/bounded_cubic.py",
+      "bytes": 17388,
+      "sha256": "53093e49086ea55953cd8f19589016ccc42a973d5eb1318f94e2ee8a31674529"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/candidate_bundle.json",
+      "bytes": 784,
+      "sha256": "8467b5d53ea7f7c69b337880c787fa30779880cd2f62d7ee93f6c1201d8d6023"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/corner_proposals.py",
+      "bytes": 1172,
+      "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/corner_refinement.py",
+      "bytes": 5564,
+      "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/corner_sampling.py",
+      "bytes": 7536,
+      "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/gpu_integrator_bspline.py",
+      "bytes": 13170,
+      "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/initial_normalization.py",
+      "bytes": 7984,
+      "sha256": "9b18b8cd2be55838e1728caa8010e2e64d550910d9fe5b51827e4a55c0ec2819"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/initial_projection.py",
+      "bytes": 5592,
+      "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/late_source_plan.py",
+      "bytes": 3251,
+      "sha256": "5ba43fc13ca3845b32d882d6f172147212b451cc1fd48a8130fb0829ed2adcae"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/multirate_gate.py",
+      "bytes": 7719,
+      "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/multirate_sampling.py",
+      "bytes": 2839,
+      "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/pilot_density.py",
+      "bytes": 17914,
+      "sha256": "10fb010483fa0efd46568ad572707bf06b0b6683be771a6010f02a4bbfc5c1dd"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/quadrature_select.py",
+      "bytes": 4065,
+      "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/separable_projection.py",
+      "bytes": 2955,
+      "sha256": "87ebe8cd9001121f45bb318e91b64a353e31b84e180d4f7f171059f784be6c1f"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/source_spline_piecewise.py",
+      "bytes": 4230,
+      "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/source_spline_stable.py",
+      "bytes": 3797,
+      "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/spatial_source_guard.py",
+      "bytes": 3378,
+      "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/spline_degree_selection.py",
+      "bytes": 4540,
+      "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/stable_quintic.py",
+      "bytes": 7333,
+      "sha256": "dbfa17ff70319105c0afa5293590f01f1b1dd561ad01d1bc4b6ae9fe2f64be72"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/submission.py",
+      "bytes": 24602,
+      "sha256": "09571e426b447e05d3e6230a379f01bb872264e5b514b0eb454f8ec0532b45fd"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-r6-0012/temporal_sampling.py",
+      "bytes": 6317,
+      "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-s0/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463"
+    },
+    {
+      "path": "solutions/strong-astra/candidate-s0/submission.py",
+      "bytes": 6101,
+      "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r1-0001/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "97c748fc3a277c32c337e8f0d855f29b0751cc9ae2d68aa0196939ebf48e97e5"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r1-0001/submission.py",
+      "bytes": 8994,
+      "sha256": "b1786a1b7aa40daa488d028081fc32f11037dc0c66cce2295a010d4d4edb997e"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r1-0002/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "425203bb87f0d52ce3895ca78eea3118ab1deb62a2fc4b74e38ffc99b3b0301f"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r1-0002/submission.py",
+      "bytes": 16773,
+      "sha256": "af58c17514a4417e3587ad97620de3fa60f30f6baa8704e4b2380e98c7317de1"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r2-0003/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "7e48e44be6f9b4b9e3ea05406e01d0d3419f2181112ee53e27a3b713df0272a2"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r2-0003/submission.py",
+      "bytes": 17076,
+      "sha256": "28c1f772074440bbaad99d29b50a95f0af9d65d87ed1bf194125c2ebc38f3889"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r2-0004/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "d0490eeb428c78a147d487c64939cec18c07f5da3dd2fefd951bfe0eee8f95e1"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r2-0004/submission.py",
+      "bytes": 17242,
+      "sha256": "fe8b60a3de1d1d1d357e1df17ac877184496275424ad42d2199adc8be0294b4d"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r3-0005/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "34c54933e7a091b9b2bf6a65e8df3f0de8c2fa04f26547d0acd5821ac0d46711"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r3-0005/submission.py",
+      "bytes": 19116,
+      "sha256": "513f0098fe3af1a68f2536176826473eaf362fc0e9cc4299b927781725aac179"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r3-0006/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "21efe00393f1c7d2260173eb0a6df34fd4b7d0b10fae5767a91651757fdca990"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r3-0006/submission.py",
+      "bytes": 17537,
+      "sha256": "795227be5026d6aafdd3d47adda548ef7fb8611e731ca11fe43a01490ec82b2f"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r4-0007/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "0dda9d6e7c48c0fae9994c1c71fceff7676fb9953e05d86720ca0372e66a41fc"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r4-0007/submission.py",
+      "bytes": 19117,
+      "sha256": "2c882d10380ee60322c563ff626b6f76606f94c2b1de5afe9c316516054486c1"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r5-0008/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "d629faa9b4c2786ce5d891f1414237ba9c72be50b202702b7f502c9e4168ea44"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r5-0008/submission.py",
+      "bytes": 24814,
+      "sha256": "b35b7c33ffad9edeb25c2c52eb5920b0350be42eaa617babf4a3c8f14fd54076"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r5-0009/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "2ea11149616e072210eb2c0706d491c7b6d2233356f56413bd7823247ec3a9f3"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r5-0009/submission.py",
+      "bytes": 21285,
+      "sha256": "bd83be51e9ab491843c3ebdcda8f7707a201ff48a0b706817d498ba9cb8e95c5"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r6-0010/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "6233a17edcc6e03092911af403755ee0b4596755b42567cbe2cd32d4c2072590"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r6-0010/submission.py",
+      "bytes": 30083,
+      "sha256": "161915074f13a4b2e07d8f67e427bb46f3cab8b53d9693f102e5e34148494360"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r6-0011/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "f1b0f0fe51c6368dc4c95c0f6b902a3d563db3dcf59060be7dae67b681b7d777"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-r6-0011/submission.py",
+      "bytes": 28807,
+      "sha256": "a0c9555645083d6de2f6d66066ca800da3727050ff3d38c7b8d6fc39e27c0a4d"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-s0/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463"
+    },
+    {
+      "path": "solutions/strong-sol/candidate-s0/submission.py",
+      "bytes": 6101,
+      "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r1-0001/candidate_bundle.json",
+      "bytes": 266,
+      "sha256": "5c9ffd3f5d6c237cd28f46c9a27df719b3daadbbecaff6a479b9702f31fc8628"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r1-0001/source_compression.py",
+      "bytes": 30550,
+      "sha256": "b97026ec6f10a44504e6a0b271589b57496269fdb419476042f65919b4c517df"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r1-0001/submission.py",
+      "bytes": 20305,
+      "sha256": "406a46cf26eb0c95612400c8b4fd49eebe91aba3b57fa6c01daaa4b18ccd7a05"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r1-0002/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "682e8c18363d7d30b452fbe5a4c5ae9d8737c2af16ebc66bc09795bcca743765"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r1-0002/submission.py",
+      "bytes": 8360,
+      "sha256": "95541cb16d757422c27980db6241bd042320a31e47a7b45587ffff243c8c1cd4"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/candidate_bundle.json",
+      "bytes": 398,
+      "sha256": "f3fb426f48474689f2f429a24b57230205dd07c20f3cf96b258ff5b2829cc9b1"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/derivative_forecast.py",
+      "bytes": 9604,
+      "sha256": "6498e6c592719451497b378adb008194421ebdb0fe6b3ae7ce15e9da1199642f"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/hybrid_initial_adapter.py",
+      "bytes": 6212,
+      "sha256": "80eb5b07cc7d080bcd03fae50ad13a640bde78ad1a0cf8b63f8695bc2d6bdce6"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/initial_sampling.py",
+      "bytes": 5222,
+      "sha256": "33d8701e0ed2d6d016d2de74dac3b48cb33dd79965dd7565ecce2c650101cc02"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/projection.py",
+      "bytes": 11063,
+      "sha256": "62d9c18b9e39f91e12a1e0f2633c9e0c86bb3c45153c5c938c53659e18869f74"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/rectangle_rule.py",
+      "bytes": 10792,
+      "sha256": "659bf154912910ff50b689b55c09b2f98259ec22611a8e2fcb09cada91d265c2"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/source_sampler.py",
+      "bytes": 3295,
+      "sha256": "37960802703e9dcfca209cd79ad22de1b9af032740ad3ea3848d64953ec35d06"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0003/submission.py",
+      "bytes": 9175,
+      "sha256": "e2218b3944ac731d3a988a27f306f142a6115143c400959e5cbbb211662aa634"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/base.py",
+      "bytes": 10980,
+      "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/candidate_bundle.json",
+      "bytes": 432,
+      "sha256": "5b158624a8537c7fc78dc5996e68a71020d263f5f70a8d4e639cc2ac376f196b"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/compressed_source.py",
+      "bytes": 7234,
+      "sha256": "c8f696f83a2b5c393997be1ea091afc6f1e8244b6fe15694eb248d8077be8192"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/fourier_helpers.py",
+      "bytes": 9421,
+      "sha256": "f9bfef903a6c31a16d72c71887debfd37138fadffcca300503e74e085a464f30"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/initial_defect.py",
+      "bytes": 7397,
+      "sha256": "ec5fafbf220fc59627df2d984fe2d26376fee610d3560208860fafe316f20721"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/kinetic_evolution.py",
+      "bytes": 12912,
+      "sha256": "0006439a62e0be312186766dfc99f2ce26eda1efd801d1e73e35fca8b417f744"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/reconstruct.py",
+      "bytes": 3721,
+      "sha256": "036de06d27a23902ed737ecd7f2f95c48cb43ebd27ca809fc7b3e1c0cf6c0c0e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/submission.py",
+      "bytes": 6485,
+      "sha256": "a301f509b1e900b4339c589c9d7955cbe30ea9cb2ba2a4948f12f48e20af8ff8"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/tensor_cubature.py",
+      "bytes": 16409,
+      "sha256": "ac89abf901a415412a01e82d3b68d28f1d307a76d78add5255006d28a860e0fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r2-0004/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/base.py",
+      "bytes": 11638,
+      "sha256": "66cadd7c0ae9ad8f8864035920599fb2a88238ecebaa5e7591c3ed162d0861a2"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/candidate_bundle.json",
+      "bytes": 557,
+      "sha256": "2713760cee4f90cc894744e7f8fdb8f543ecd0494afabf32fcd3b3645385379b"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/charge_engine.py",
+      "bytes": 4967,
+      "sha256": "48e7950cc31005caa2906c2e7b20b970a982999f874619473d6ce3f54089d9e1"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/compressed_source.py",
+      "bytes": 11269,
+      "sha256": "febd5c8815c92ed1b778f480b95f3689381bfe8dfe5afeca56de7bc2c6553890"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/cubic_charge_projection.py",
+      "bytes": 2955,
+      "sha256": "81f0779528355c96401bcf18d4bedb257ca40d15c47ea181f92acf952e98d1df"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/fourier_helpers.py",
+      "bytes": 9421,
+      "sha256": "f9bfef903a6c31a16d72c71887debfd37138fadffcca300503e74e085a464f30"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/goal_tensor.py",
+      "bytes": 5998,
+      "sha256": "918f9dfd23d9e4bb559b828587c9937f01dbdffa2217d7870e29c9227793f88e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/gp_engine.py",
+      "bytes": 8409,
+      "sha256": "4592053b5677f762c6fcf8dcc5678fe52de86ada84a71e457e0bfca5a48603b4"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/initial_defect.py",
+      "bytes": 7397,
+      "sha256": "ec5fafbf220fc59627df2d984fe2d26376fee610d3560208860fafe316f20721"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/kinetic_evolution.py",
+      "bytes": 12912,
+      "sha256": "0006439a62e0be312186766dfc99f2ce26eda1efd801d1e73e35fca8b417f744"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/reconstruct.py",
+      "bytes": 3721,
+      "sha256": "036de06d27a23902ed737ecd7f2f95c48cb43ebd27ca809fc7b3e1c0cf6c0c0e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/submission.py",
+      "bytes": 11057,
+      "sha256": "cccd63ab3ac15d0de3efeaf4e92f1f25f9511357db44455890138b32f3f0443c"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/tangent_model.py",
+      "bytes": 7812,
+      "sha256": "bc2c77fb39a0faea557861a0b680e93f48aaa28ff6215a9db953582bbce2bdd0"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/tensor_cubature.py",
+      "bytes": 16409,
+      "sha256": "ac89abf901a415412a01e82d3b68d28f1d307a76d78add5255006d28a860e0fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0005/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/adaptive_velocity.py",
+      "bytes": 2282,
+      "sha256": "87df0ccca8f0bbb30e2c563726ee9971d6a3c65d02258e6accab1d2b5fe3ac4d"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/base.py",
+      "bytes": 10980,
+      "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/candidate_bundle.json",
+      "bytes": 404,
+      "sha256": "d8bf76406ebb6aff28778279692640b8b6eeeb0cdc83110c513d079dc85676d9"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/hermite_response.py",
+      "bytes": 13760,
+      "sha256": "e50738f847ddb54b68e973274f16bee01aed96e9033f460188bcdd953e6b4315"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/hermite_response_h4.py",
+      "bytes": 8729,
+      "sha256": "51a55171c862f7443bd9d000d52e933d564d934e05eb192e793e53faa6a5210f"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/moments.py",
+      "bytes": 4437,
+      "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/realizability.py",
+      "bytes": 2251,
+      "sha256": "79a15bf9f9a697a71694af14c86431c5ea05a92509fddcb88e3673099ab8546c"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/submission.py",
+      "bytes": 30394,
+      "sha256": "fdef6f6dbfe76b44021d2f62d071c8d5ffe53c7e4fe8192f3d01b8ece87a8e14"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r3-0006/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/base.py",
+      "bytes": 10980,
+      "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/candidate_bundle.json",
+      "bytes": 409,
+      "sha256": "ecd2b4cf3214d16c1fc847ab1192104cf8d134f779c0b2d765cb45804c07c48e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/green_ops.py",
+      "bytes": 11028,
+      "sha256": "bf5cd53fe1c8e8c37f6cd36e9eb4a0de9125cabe7ccc15dcc6ceb2cea1e975de"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/kinetic_ops.py",
+      "bytes": 10084,
+      "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/macro_limiter.py",
+      "bytes": 11524,
+      "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/moments.py",
+      "bytes": 4437,
+      "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/realizability.py",
+      "bytes": 2307,
+      "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/spline_kernel.py",
+      "bytes": 7367,
+      "sha256": "d5acdb3a3aece11d495bf447873b26fc94745618c947bf6415df2fca55018cfe"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/submission.py",
+      "bytes": 23142,
+      "sha256": "eb3616459c3c35a2f574cf39e7eb34364a0ecf6100b41a57b5f436980c3a836e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0007/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/adaptive_velocity.py",
+      "bytes": 2282,
+      "sha256": "87df0ccca8f0bbb30e2c563726ee9971d6a3c65d02258e6accab1d2b5fe3ac4d"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/base.py",
+      "bytes": 11035,
+      "sha256": "47b367c00793f5c82d86199f9f75a7c5070cb7e7ab0a1e12a04f4bcf0e607269"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/candidate_bundle.json",
+      "bytes": 486,
+      "sha256": "284f19c9ac94375416f884bfaa4eb8d37af3594a0f2807c7d1c92034f5231acb"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/convex_guard.py",
+      "bytes": 3746,
+      "sha256": "6c2f0cbee69621e15755b7af99cc2fd4981fda487bb833709b2dca27e270bc55"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/hermite_response.py",
+      "bytes": 13760,
+      "sha256": "e50738f847ddb54b68e973274f16bee01aed96e9033f460188bcdd953e6b4315"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/hermite_response_h4.py",
+      "bytes": 8729,
+      "sha256": "51a55171c862f7443bd9d000d52e933d564d934e05eb192e793e53faa6a5210f"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/initial_acquisition.py",
+      "bytes": 2923,
+      "sha256": "4b62a603ab7f454143e5fe5f75433218c8817eeb5c973b7fec7e15974f35a817"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/initial_quadrature.py",
+      "bytes": 9148,
+      "sha256": "d1cdfa1559d048108bbd689761dc2983f7e34755b9f0733f4bfcb5376756a288"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/moments.py",
+      "bytes": 4437,
+      "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/realizability.py",
+      "bytes": 2251,
+      "sha256": "79a15bf9f9a697a71694af14c86431c5ea05a92509fddcb88e3673099ab8546c"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/submission.py",
+      "bytes": 35250,
+      "sha256": "2e7746d1eed7b81a09388f5d330ddd412c7d47162fcdc2ad281e4d672543c7d3"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r4-0008/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/adaptive_taper.py",
+      "bytes": 6447,
+      "sha256": "b7173a168913124c2060e259e4773e6c9c7c5a5ac38550af90bc32a751ef722b"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/base.py",
+      "bytes": 11003,
+      "sha256": "a7fcc4b17549f84c29bc02eac6c5c53c46f69d2e94042620e7a0f965288b727e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/candidate_bundle.json",
+      "bytes": 593,
+      "sha256": "face342a86c0e5efaf70aade107f399340af6c49a7d919428eeb9ccec8c3c513"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/cuda_force_projector.py",
+      "bytes": 5461,
+      "sha256": "1626ea2c4208932fad0bdfec203a9ecb9a828c0580faecb2cd1643b9e302cfde"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/field_corrector.py",
+      "bytes": 5116,
+      "sha256": "9319cbbdac46199b8dada39c68bff29b750e29aa59e2c20f287454e3ed0d28b6"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/gaussian_green.py",
+      "bytes": 5275,
+      "sha256": "aca56f1f78b1b97c0ff6dec15bd8bfb8d5182a9e86858adf1a2d4a78db3d32f8"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/green_gpu.py",
+      "bytes": 11132,
+      "sha256": "ab00d36533487b66f2959a9cbedb3a14cd2d578707af76b7a6bc0ccc6502f386"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/green_ops.py",
+      "bytes": 14799,
+      "sha256": "cfac22ef97366bfae7c00eb3950fad0753cbab88c1730dd3df86f60e8cc0ebb0"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/kinetic_ops.py",
+      "bytes": 10084,
+      "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/macro_limiter.py",
+      "bytes": 11524,
+      "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/moments.py",
+      "bytes": 4886,
+      "sha256": "0f39681fdeb0d355c590a5ceed4ef879da341db187252181fd71435dd90d092d"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/realizability.py",
+      "bytes": 2307,
+      "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/response_budget.py",
+      "bytes": 6583,
+      "sha256": "c6877fa0ee4abb5d7abedfbd8e76b1d438a57fbe37a342f97fd13928387afaac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/same_grid_midpoints.py",
+      "bytes": 7789,
+      "sha256": "696c0d2e0319cb9139637efb380d3c9ff0d2a3ff30df02b9ad6683bc163a03ab"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/spline_kernel.py",
+      "bytes": 7367,
+      "sha256": "d5acdb3a3aece11d495bf447873b26fc94745618c947bf6415df2fca55018cfe"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/submission.py",
+      "bytes": 28966,
+      "sha256": "b00ca0045dffc8eb75b744d2d2b5911045cb97590eb9cc7469d4a414db06ff6a"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0009/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/base.py",
+      "bytes": 10980,
+      "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/candidate_bundle.json",
+      "bytes": 509,
+      "sha256": "8ad78b2ebf4a0bb37673016ff06f23c3211d7bd264bd57deebff573a8c70f391"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/conjugate_green.py",
+      "bytes": 3537,
+      "sha256": "15c2351d4f16d5be5360c7c6efeeb03071bf4cd4caa0d3d3724d48d2d883bc81"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/gaussian_force.py",
+      "bytes": 9931,
+      "sha256": "23516895ee711fed02cff0344f41c685398e342b9a64af3f7d077c91ecaa8189"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/green_ops.py",
+      "bytes": 12734,
+      "sha256": "d0ba8710cad87b3d3b179733b1fd6ae99bac503110469ad70a636b28213c7dfd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/kinetic_ops.py",
+      "bytes": 10084,
+      "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/macro_limiter.py",
+      "bytes": 11524,
+      "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/moments.py",
+      "bytes": 4437,
+      "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/optional_force.py",
+      "bytes": 3259,
+      "sha256": "ed983cf824e20e148c9b8466c520be732621111649a07c27f25048e511b1d610"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/realizability.py",
+      "bytes": 2307,
+      "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/smooth_macro.py",
+      "bytes": 3631,
+      "sha256": "8da92209154e99102cd92dcd7937c3a0de5751fd50f4858eb2c88857f8e1f2a6"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/spline_kernel.py",
+      "bytes": 7367,
+      "sha256": "d5acdb3a3aece11d495bf447873b26fc94745618c947bf6415df2fca55018cfe"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/submission.py",
+      "bytes": 23866,
+      "sha256": "110059b477cd9b74fdf29dfcd5d868b96969cae0d9ab9a178d8c06d972b96849"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r5-0010/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/adaptive_taper.py",
+      "bytes": 6447,
+      "sha256": "b7173a168913124c2060e259e4773e6c9c7c5a5ac38550af90bc32a751ef722b"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/base.py",
+      "bytes": 11003,
+      "sha256": "a7fcc4b17549f84c29bc02eac6c5c53c46f69d2e94042620e7a0f965288b727e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/candidate_bundle.json",
+      "bytes": 751,
+      "sha256": "d646e9007ce2a470fd1395c166f661f03b156a4f9c221561c5c9a4c2bb6876ff"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/checkerboard_midpoints.py",
+      "bytes": 12202,
+      "sha256": "ad50ebb7e589197836eaf1b0e18469ae4af378d7e330db3a3af342cc29791914"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/cuda_force_projector.py",
+      "bytes": 5461,
+      "sha256": "1626ea2c4208932fad0bdfec203a9ecb9a828c0580faecb2cd1643b9e302cfde"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/dyadic_source_history.py",
+      "bytes": 9547,
+      "sha256": "e93c05f5d7ebce7f45017ec2bfeeea178e32e892b7f29b5f5440ff038bb8492f"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/field_corrector.py",
+      "bytes": 5116,
+      "sha256": "9319cbbdac46199b8dada39c68bff29b750e29aa59e2c20f287454e3ed0d28b6"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/gaussian_green.py",
+      "bytes": 5275,
+      "sha256": "aca56f1f78b1b97c0ff6dec15bd8bfb8d5182a9e86858adf1a2d4a78db3d32f8"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/green_gpu.py",
+      "bytes": 11718,
+      "sha256": "08bf942069edde4b77d193a6b9f6e2cfb156926bb56a3faf32340515e943cdc4"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/green_ops.py",
+      "bytes": 14799,
+      "sha256": "cfac22ef97366bfae7c00eb3950fad0753cbab88c1730dd3df86f60e8cc0ebb0"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/kinetic_ops.py",
+      "bytes": 10084,
+      "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/macro_limiter.py",
+      "bytes": 11524,
+      "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/moments.py",
+      "bytes": 4886,
+      "sha256": "0f39681fdeb0d355c590a5ceed4ef879da341db187252181fd71435dd90d092d"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/optional_response_budget.py",
+      "bytes": 6118,
+      "sha256": "4c71526748033264f931150b89ebf4c33b8042852c62e65bd0c44bc9981ce0af"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/realizability.py",
+      "bytes": 2307,
+      "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/response_budget.py",
+      "bytes": 6583,
+      "sha256": "c6877fa0ee4abb5d7abedfbd8e76b1d438a57fbe37a342f97fd13928387afaac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/same_grid_midpoints.py",
+      "bytes": 7789,
+      "sha256": "696c0d2e0319cb9139637efb380d3c9ff0d2a3ff30df02b9ad6683bc163a03ab"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/sitewise_initial_force.py",
+      "bytes": 3534,
+      "sha256": "b4638900f1b41d355340f2eec40fcee103176f2da2c950c3b365c5395f102419"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/source_pruning.py",
+      "bytes": 10007,
+      "sha256": "6a0e4b8df3c947ba049fd66ec0ffffd218e356d495f30828b5355987d9fd3722"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/spline_kernel.py",
+      "bytes": 8387,
+      "sha256": "3ef562600e66bbf41c8baabb0ec2f44890eb9007efa8e48cf093e6ca0dd23212"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/submission.py",
+      "bytes": 32182,
+      "sha256": "62f98e07213b7cb5025896f7869ac9103f4c7f80e8e9fcb4679584362f7b3cb3"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0011/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/adaptive_initial.py",
+      "bytes": 7108,
+      "sha256": "7eeb40659385ba476d045bf67a80bd977c1ee1b7c65fde0c63eb13adf5c9c9b1"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/adaptive_taper.py",
+      "bytes": 6447,
+      "sha256": "b7173a168913124c2060e259e4773e6c9c7c5a5ac38550af90bc32a751ef722b"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/base.py",
+      "bytes": 11003,
+      "sha256": "a7fcc4b17549f84c29bc02eac6c5c53c46f69d2e94042620e7a0f965288b727e"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/candidate_bundle.json",
+      "bytes": 620,
+      "sha256": "e50876d782cf6934708df419572d8c9c79d778b5e08f9d368e2b7d477cf362a0"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/cuda_force_projector.py",
+      "bytes": 5461,
+      "sha256": "1626ea2c4208932fad0bdfec203a9ecb9a828c0580faecb2cd1643b9e302cfde"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/field_corrector.py",
+      "bytes": 5116,
+      "sha256": "9319cbbdac46199b8dada39c68bff29b750e29aa59e2c20f287454e3ed0d28b6"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/gaussian_green.py",
+      "bytes": 5275,
+      "sha256": "aca56f1f78b1b97c0ff6dec15bd8bfb8d5182a9e86858adf1a2d4a78db3d32f8"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/green_gpu.py",
+      "bytes": 13663,
+      "sha256": "957adc98474e1c6241e6c3e65977a87f5266a94f3cfaeb60488b2e11d6d109f9"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/green_ops.py",
+      "bytes": 14799,
+      "sha256": "cfac22ef97366bfae7c00eb3950fad0753cbab88c1730dd3df86f60e8cc0ebb0"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/kinetic_ops.py",
+      "bytes": 10084,
+      "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/macro_limiter.py",
+      "bytes": 11524,
+      "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/moments.py",
+      "bytes": 4886,
+      "sha256": "0f39681fdeb0d355c590a5ceed4ef879da341db187252181fd71435dd90d092d"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/realizability.py",
+      "bytes": 2307,
+      "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/response_budget.py",
+      "bytes": 6583,
+      "sha256": "c6877fa0ee4abb5d7abedfbd8e76b1d438a57fbe37a342f97fd13928387afaac"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/same_grid_midpoints.py",
+      "bytes": 7898,
+      "sha256": "2b39773b7b8ad31b8d1d40b9d20de7801b6da202e83bd263dc1fd8d12d971e9b"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/spline_kernel.py",
+      "bytes": 7495,
+      "sha256": "0a2c5c85e9e093acf910db470a7b1a0b6f3e331982d866e676cbd74fdeb0e0ef"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/submission.py",
+      "bytes": 29722,
+      "sha256": "b4833d2b2b7b0ad4004bf73f52725449d05d908397d513159cc20998b496b787"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-r6-0012/thermal_mixing.py",
+      "bytes": 3407,
+      "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-s0/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463"
+    },
+    {
+      "path": "solutions/weak-astra/candidate-s0/submission.py",
+      "bytes": 6101,
+      "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0001/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "d0142f359b147c7371056b8398cb8dbd698243371c47b75fef9bfe57c5eb51b7"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0001/submission.py",
+      "bytes": 10680,
+      "sha256": "5fa9e226b5e3b549a869d7fd104f6e6c477745835b1fbd4a980562ffdbfccacc"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/ballistic.py",
+      "bytes": 9378,
+      "sha256": "e37bcfc11088284d325f4fc2a844b01e1ff5c41c5d0d428e368801e8fc115c98"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/calibrated.py",
+      "bytes": 4530,
+      "sha256": "524f7ab24dd278f284eca8faf7367a603fb7219e3df2dc9f8495938590a8ae5f"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/candidate_bundle.json",
+      "bytes": 329,
+      "sha256": "e55981b09fa4ccf6ce1519d9f460efed7bd49d526d4166b13c5dc6030ff8ba63"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/freestream.py",
+      "bytes": 6058,
+      "sha256": "0b50315b8faf628b1298a8ac540a1a39f2619ffda61b38afcbfde8721e763df2"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/hybrid.py",
+      "bytes": 1869,
+      "sha256": "4f0871ad8315a22c7cecc2441e71700ce1dfb0a224643bc2db4ae01832b65c74"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/submission.py",
+      "bytes": 8103,
+      "sha256": "1d32842847fdb35ff04aadf0fa7932ca700bf48fd977478d5dd5fda380c2f674"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r1-0002/taylor.py",
+      "bytes": 10904,
+      "sha256": "f56f36f4453078b395cdda0d107d760632a3f4b4ce94ba16c9c7f968de476a73"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r2-0003/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "447415f1f9143a77009506f0871ad2fba11f7d12ddda05828518ae4eb2c1e3e0"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r2-0003/submission.py",
+      "bytes": 12686,
+      "sha256": "b470ea764c26f3e8c933f8fa65678236d4c5a40010944bbf26551aa4b060ef96"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r2-0004/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "16fa50f16a8d419784c87353a3a5848762bf810c44e5845dba4d7da3e050304c"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r2-0004/submission.py",
+      "bytes": 11325,
+      "sha256": "51a815d0bcfc3f1df7bc8f5ef219af1a20f950df49ab774798dcf27d9fd10e56"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r3-0005/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "b613d40c19b35f049f6ead83beb3077b92ad1dcd81b12696b5b6a09a848073ab"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r3-0005/submission.py",
+      "bytes": 11325,
+      "sha256": "df82fdcdb6de2f35f3b0076c5ac23287d16a1194742934a9a9b696cb699e4ae2"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r3-0006/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "d36a6ea3fc3e2daa772a957199907b0327da953fa06b857795900d1107eed287"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r3-0006/submission.py",
+      "bytes": 11325,
+      "sha256": "f0c8ee912330978a72ea197ca1746dd1797e8bfdea7f252a11b7d056b8381eef"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r4-0007/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "5dbf970c8a60eba2cde8da205d236f8963a99480584c7a07671fed5ff2d88e57"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r4-0007/submission.py",
+      "bytes": 12079,
+      "sha256": "293afa6ea2e014d4a2790dc358922800c8436dda9d16b8477f0defbb496a4cd5"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r4-0008/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "aee40af38fc3c12e18984d547b2056d98d87d812e3795e532eb6c64978d74bf0"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r4-0008/submission.py",
+      "bytes": 11621,
+      "sha256": "f0c6fed16a8e079b040c8953f8527b68a79e807fc4190ed807a1e2b1d5215861"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r5-0009/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "fbac4ae47f8296e9a45b4b504f4c962109b7921a8031b5c020a2b7c46f6800f6"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r5-0009/submission.py",
+      "bytes": 14782,
+      "sha256": "5dca66032f8c8a5e897d8486fbc0695cb811e9a13850f32ae47039701d25dc09"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r5-0010/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "dd96139b5d10c4ccf78636dd77bc9cba4b318e3f920a3d9fed79b918b836426b"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r5-0010/submission.py",
+      "bytes": 16896,
+      "sha256": "45e0f86f6b6279fd0cff8ebad97fb97ab5d96b0d6f3ed8f8b7af4835941a3d68"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r6-0011/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "cad9f9d7ca9c8b5f3a2e4e815021c88842a7ff320b3cc318ffdeb610126f61f8"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r6-0011/submission.py",
+      "bytes": 16351,
+      "sha256": "6502974a219e67a0e0d0f42e218d2452e89241fd06bc3e29c6c3228d03f19498"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r6-0012/candidate_bundle.json",
+      "bytes": 237,
+      "sha256": "2a4fe51e3d392b485215853f750e3929551878baffb76a53be4af3785fc6cd56"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-r6-0012/submission.py",
+      "bytes": 14788,
+      "sha256": "b8ba415b275a7a59506b633458ad4a7ff9d33a72d43caa2e41050f97aac09fb4"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-s0/candidate_bundle.json",
+      "bytes": 236,
+      "sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463"
+    },
+    {
+      "path": "solutions/weak-sol/candidate-s0/submission.py",
+      "bytes": 6101,
+      "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 9736,
+      "sha256": "4c638c13c60267109e07b93dbb2c5e2ff45d4f4a9d6b1dbcec2a238584cc22bf"
+    }
+  ]
+}

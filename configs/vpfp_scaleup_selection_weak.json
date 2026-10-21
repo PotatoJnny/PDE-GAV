@@ -1,0 +1,126 @@
+{
+  "schema": "vpfp_scaleup_candidate_selection_v1",
+  "regime": "weak",
+  "candidate": "cov_base",
+  "pilot_result_sha256": "d385a4e44661972c934e18329c0ce1328961aff9dcd2f1b02ffb652e59bdd588",
+  "pilot_plan_sha256": "e226370f79492efea1663b12490ce06a53fa7e56fc5c990fd52fdbeaa266847e",
+  "evidence": {
+    "decision": "Launch bounded paired longer training; promising temporal-geometry configuration, not scientific admission.",
+    "rationale": "Both seeds strongly reduce freely generated temporal derivative errors. Choose the geometry-only arm to isolate this supported mechanism; added low-sigma coverage does not restore momentum amplitudes.",
+    "physical_sw": {
+      "value_base": [
+        23.404942501990128,
+        26.413935235730378
+      ],
+      "cov_base": [
+        9.002514700820209,
+        10.072221306354354
+      ],
+      "cov_low": [
+        8.017082254114605,
+        8.54453015502255
+      ]
+    },
+    "derivative_sw": {
+      "value_base": [
+        12.705098086460204,
+        11.91913771448954
+      ],
+      "cov_base": [
+        1.3572561235218643,
+        1.2719906610553493
+      ],
+      "cov_low": [
+        1.2377034326602234,
+        1.255287246654293
+      ]
+    },
+    "late_dtf_probe_rms_case_mean": {
+      "reference_ab": 0.0315094196562349,
+      "value_base": [
+        0.9779392628730834,
+        0.9226609151855667
+      ],
+      "cov_base": [
+        0.03126891599181244,
+        0.031141029595194113
+      ]
+    },
+    "late_dtk_probe_rms_case_mean": {
+      "reference_ab": 0.7951864870715721,
+      "value_base": [
+        31.29984200905246,
+        31.441450132135824
+      ],
+      "cov_base": [
+        1.572081697631624,
+        1.5807859180912192
+      ]
+    },
+    "late_jx_probe_rms_case_mean": {
+      "reference_ab": 0.4452778515257094,
+      "value_base": [
+        0.3235599231777595,
+        0.3098046672119197
+      ],
+      "cov_base": [
+        0.24997577302501417,
+        0.24177717024771914
+      ],
+      "cov_low": [
+        0.2344601425150194,
+        0.2269488147957854
+      ]
+    },
+    "terminal_kinetic_high_spectrum": {
+      "reference_ab": 0.00017802802618078022,
+      "value_base": [
+        0.13665176468039986,
+        0.13371547296705238
+      ],
+      "cov_base": [
+        0.01578220206643714,
+        0.01610210085727632
+      ]
+    },
+    "physical_mmd_counterevidence": {
+      "value_base": [
+        1.0488148790713308,
+        1.048814879071337
+      ],
+      "cov_base": [
+        1.3125298229646745,
+        1.3738426857915438
+      ]
+    },
+    "limitations": [
+      "All physical and derivative audits still detect distribution differences; every original strict scorecard remains failed.",
+      "Early kinetic derivatives and spatial variation are underestimated; late kinetic spatial variation and high-frequency power remain excessive.",
+      "Momentum amplitudes remain too low, and cov_low further reduces them despite somewhat lower joint SW.",
+      "This is not proof that cov_base is the globally best configuration, nor that longer training will fix amplitude or distribution coverage."
+    ],
+    "pilot_directory": "${PDE_GAV_RUN_ROOT}/vpfp-temporal-training-weak-5240924",
+    "scorecard_sha256": {
+      "seed-0": "afd871b3c599cf88c3a82425dee1ec62b2184c4424db5288152b8012a3d0db66",
+      "seed-1": "b924bfdd21e6b2a5d847f944491672cbe715a2b05ba4c34dc1f06bf942579bcc"
+    },
+    "summary_semantics": "RMS is per-trajectory probe RMS then averaged across trajectories; reference is the mean of reference A/B means. No continuum norm or population quantile qualification.",
+    "next_experiment": "same train512/validation128; fresh evaluation384; value_base versus cov_base; two new seeds; 1800 seconds per arm; fixed EMA snapshots at 360 and 900 seconds; 128 generated answers per model state",
+    "next_diagnostics": [
+      "early/late dtf and dtK in physical units",
+      "momentum amplitude and cross-trajectory diversity",
+      "kinetic spatial variation and frequency bands",
+      "within-stratum and bandwidth-specific MMD alongside SW",
+      "reference-null and sample-tail sensitivity; no automatic equivalence claim"
+    ],
+    "old_scorecard_used_as_mandatory_gate": false,
+    "native_macro_only_smoke": {
+      "status": "passed",
+      "full_solution_prediction_required": false,
+      "online_pde_calls_during_learned_sampling": 0,
+      "scientific_performance_validation": false,
+      "completed_rounds": 1
+    }
+  },
+  "scientific_admission": false
+}

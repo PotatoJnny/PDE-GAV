@@ -1,0 +1,25 @@
+{
+  "schema": "vpfp_exponential_guidance_experiment_v1",
+  "reference_effect_config": "configs/vpfp_calibrated_guidance_effect_20260908.json",
+  "steps": 2000,
+  "seed": 3120260908,
+  "beta": 2,
+  "external_strength": 1,
+  "calibration_seed": 7120260908,
+  "validation_seed": 7220260908,
+  "fresh_split_seeds": {
+    "fit": 8320260908,
+    "validation": 8420260908,
+    "selection": 8520260908,
+    "confirmation": 8620260908,
+    "training": 8720260908
+  },
+  "bootstrap_seed": 8820260908,
+  "bootstrap_replicates": 10000,
+  "prior_effects": [
+    {
+      "path": "${PDE_GAV_RUN_ROOT}/vpfp-calibrated-guidance-effect-5311273/evaluation/result.json",
+      "sha256": "a2b59ebc8abe1bd07004c93696af9d535cc71c4f0926200f44f03d07e1eece4b"
+    }
+  ]
+}

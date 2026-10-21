@@ -1,0 +1,14 @@
+{
+  "entrypoint": "hybrid.py",
+  "files": [
+    "ballistic.py",
+    "calibrated.py",
+    "freestream.py",
+    "hybrid.py",
+    "submission.py",
+    "taylor.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 40842,
+  "tree_sha256": "ca637c90273bed5398b46938dd52ba1b9e84a31fa766ccd00d2b146d70879454"
+}

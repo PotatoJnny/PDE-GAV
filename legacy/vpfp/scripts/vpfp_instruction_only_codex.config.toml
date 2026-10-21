@@ -1,0 +1,56 @@
+approval_policy = "on-request"
+approvals_reviewer = "auto_review"
+sandbox_mode = "workspace-write"
+allow_login_shell = false
+check_for_update_on_startup = false
+web_search = "live"
+
+[features]
+guardian_approval = true
+
+[sandbox_workspace_write]
+network_access = true
+
+[shell_environment_policy]
+inherit = "all"
+include_only = [
+  "HOME",
+  "PATH",
+  "VIRTUAL_ENV",
+  "LANG",
+  "LC_*",
+  "TERM",
+  "TMPDIR",
+  "TMP",
+  "TEMP",
+  "USER",
+  "PYTHONDONTWRITEBYTECODE",
+  "PYTHONUNBUFFERED",
+  "PYTHONNOUSERSITE",
+  "CUDA*",
+  "NVIDIA*",
+  "LD_LIBRARY_PATH",
+  "LIBRARY_PATH",
+  "CPATH",
+  "OMP_NUM_THREADS",
+  "MKL_NUM_THREADS",
+  "SLURM_JOB_ID",
+  "SLURM_JOB_NAME",
+  "SLURM_TMPDIR",
+  "SLURM_CPUS_PER_TASK",
+  "SLURM_MEM_PER_NODE",
+  "SLURM_JOB_GPUS",
+  "SLURM_GPUS",
+  "VPFP_ONLINE_GENERATOR_SOCKET",
+  "HTTP_PROXY",
+  "HTTPS_PROXY",
+  "NO_PROXY",
+  "SSL_CERT_FILE",
+  "SSL_CERT_DIR",
+  "REQUESTS_CA_BUNDLE",
+  "CURL_CA_BUNDLE",
+  "XDG_CACHE_HOME",
+  "TORCH_HOME",
+  "HF_HOME",
+  "PIP_CACHE_DIR",
+]

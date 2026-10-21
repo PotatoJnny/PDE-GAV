@@ -1,0 +1,3911 @@
+{
+  "schema": "pde_gav_published_candidate_index_v1",
+  "program_count": 77,
+  "candidate_files_unchanged": true,
+  "selection_rule": "native round promotion; deliver S6; never select by terminal or independent error",
+  "programs": [
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-s0",
+      "round_created": 0,
+      "agent_id": "user",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Simple stable transport S0",
+      "submission_summary": "Hold public initial macros.",
+      "selected_in_rounds": [],
+      "is_initial_program": true,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-s0",
+      "entrypoint": "submission.py",
+      "tree_sha256": "3abdeac64d69149722b9e0e3be72aff571d3c7b315493c806a33d36ed5a3b4a2",
+      "manifest_sha256": "3cefb722c17a948a674d7b8c225645707ec8d3a19317e3cf47b130067985f5ee",
+      "total_bytes": 5827,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 5827,
+          "sha256": "9a2d495286a1bcee78ea02339c06dc65aca725e749571fa8428f86d111b62b04"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-s0--3abdeac64d69"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r1-0001",
+      "round_created": 1,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Poisson-compatible exact-pilot DG",
+      "submission_summary": "Completed shared-plan Development fresh pairC: mean transport score 0.00679887723 versus incumbent 0.13905770725, 2/2 successful cases. Root 0.00067378335 and perturbed child 0.01292397110. Reported solve active times 553.51 and 556.69 seconds. Same unprojected DG base previously scored 0.0099460814 on guided G2 versus adaptive FD8 0.0152494652 on one shared plan; these versions/cohorts are not pooled. Density projection preserves j, central pressure, heat flux and E; finite/positivity/conditioning gates retain original when unsafe.",
+      "selected_in_rounds": [
+        1
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r1-0001",
+      "entrypoint": "submission.py",
+      "tree_sha256": "fcea460e3d01b824f2f0f288b307a5cff520b7de7d87a786eca192d764a4a3d7",
+      "manifest_sha256": "2155742997bce6debaf1a14bb32a1d6da4805798de7c318186b8b733c9225668",
+      "total_bytes": 26644,
+      "files": [
+        {
+          "path": "base_solver.py",
+          "bytes": 20431,
+          "sha256": "9fd2e3ff457c845d2b4af54831c7d70df6ab31441c1cbcc59f9db05643634d36"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 5137,
+          "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r1-0001--fcea460e3d01"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r1-0002",
+      "round_created": 1,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "chebyshev-eight-moment-kinetic",
+      "submission_summary": "Both candidates passed shared-plan fresh BASE-perturbed Development comparison: rank4-safe score 0.0136387487063 versus rank8-safe 0.0134609785014; heat-flux normalized RMS 0.0185369694 to 0.0178375465, slight particle-flux regression. Rank8 active solve 369.724s. Earlier shared Guided comparison supports combined Chebyshev-time and moment correction, not a separate rank8 Guided result. Synthetic cold-beam, strong-field, conservation, ABI and budget rollback checks pass. Generalization evidence remains sparse; velocity-tail, positivity and forecast limitations remain.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r1-0002",
+      "entrypoint": "submission.py",
+      "tree_sha256": "b1f6966fdf89cb5a3bc675dbef629de31ae646161ab5822815348ec553716751",
+      "manifest_sha256": "d7cd70ab6304d7644ee661dfd7f38883e4dffe0c8964502dbdcea9e5f2e52a40",
+      "total_bytes": 19848,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 19848,
+          "sha256": "d0f6ca83dd561f6ed97ae529ba51442e2b7789258eba8a2b34bd0c76e5c71245"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r1-0002--b1f6966fdf89"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r2-0003",
+      "round_created": 2,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Temporally covered exact-pilot DG",
+      "submission_summary": "Selected by complete shared-plan Development comparison: mean0.008434306363 versus adaptive challenger0.008503318204 on fresh Guided and BASE-perturbed cases; equal Guided score and lower perturbation score, all solves completed. Earlier shared BASE ablation improved incumbent0.000540423336 to0.000528591961. Selected program completed all3 evaluated Development cases in574-578 active solve seconds. Dense32x17 exact pilot strongly improved authored moving-beam stress; no Official claim.",
+      "selected_in_rounds": [
+        2
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r2-0003",
+      "entrypoint": "submission.py",
+      "tree_sha256": "ceee9f2f8606c7e8da039d31ca3a58dde9a4aed79fb725b791ce66235a926710",
+      "manifest_sha256": "99e285efa481d0105d9a61803bf2b260f215e32defdc45187b9bc0ac0c340961",
+      "total_bytes": 26652,
+      "files": [
+        {
+          "path": "base_solver.py",
+          "bytes": 20439,
+          "sha256": "6443d54c608f69828b136dbb2eb3611d4bd3e7fa276b62f600906499c720206a"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 5137,
+          "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r2-0003--ceee9f2f8606"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r2-0004",
+      "round_created": 2,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Fine-grid conservative Gauss7 data projection",
+      "submission_summary": "Selected for preserved incumbent NX1024,160 DG6 cells,exact pilot,65 source times and stronger runtime margin. Gauss7-to-DG6 data projection preserves moments through degree5. Authored same-grid cold-tail score improves1.02821355e-6 to7.44790235e-8 (13.8x), with65 times and312 steps. Simulated880s remaining,.036s per request,20s coarse cost reaches65 without fallback at692.16s and75.789m points; G8 returns33 in that stress. No completed Development score for this exact variant. Coarsened alternatives regressed, motivating preservation of incumbent state resolution.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r2-0004",
+      "entrypoint": "submission.py",
+      "tree_sha256": "10682a60b2d165065db951f093dba35b4fc21dd08c39ae79b2f67f21a263bb0e",
+      "manifest_sha256": "8068b1b988c3f1fb93afda3c70aafb3b0f8f12248979841901357ff5ff712336",
+      "total_bytes": 32601,
+      "files": [
+        {
+          "path": "base_solver.py",
+          "bytes": 26388,
+          "sha256": "c14023c4ae2f1d5e5b40fefbaaa6da17f09d33b4f9c73f08b613d616de22c968"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 5137,
+          "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r2-0004--10682a60b2d1"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r3-0005",
+      "round_created": 3,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Gauss8 DG with129 source times",
+      "submission_summary": "Complete shared-plan Development BASE comparison: transport score0.0007866263829456 versus incumbent0.0023627618103322 and equal-node120G8/65time0.0023191737538723. Every scored component improved versus incumbent. Oracle count21196 confirms129source times; charged solve761.393s; all3candidate solves completed with cleanup confirmed. Authored tests identify narrow velocity and temporal alias risks; noOfficial claim.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r3-0005",
+      "entrypoint": "submission.py",
+      "tree_sha256": "455e34d783182bc565381f611d9a966b3232a513f4a490a5a23b8089eb4b3180",
+      "manifest_sha256": "8edb2941656fbe34fadba4b08858c434e212faf28c1663d1c992014c4d37fa1f",
+      "total_bytes": 26653,
+      "files": [
+        {
+          "path": "base_solver.py",
+          "bytes": 20440,
+          "sha256": "2aaa00298e5395ad82b4b7be37f14d60d2538936c9e831355a4fe2c740287736"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 5137,
+          "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r3-0005--455e34d78318"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r3-0006",
+      "round_created": 3,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Complete129 DG with projected initial moments",
+      "submission_summary": "Final selection uses exact full-spatial complete129 source refinement, 120 Gauss6 velocity cells, Gauss12 initial-data L2 projection, and solved-baseline recovery. In retained completed-candidate diagnostics from a cancelled three-way Guided batch, its unprojected dense parent scored0.00346757 versus incumbent0.01656942 and completed23850 requests in848.763 active seconds; the batch itself is incomplete and no three-way overall result is claimed. The projected sparse alternative completed a separate BASE at0.01101013 in588.988 active seconds, with request counts consistent with baseline recovery after one sparse trial. Authored native-array cold-beam projection improves dense120 terminal error9.36960e-5 to1.90752e-6; polynomial/moment identities, ABI, portable smoke and deadline recovery checks pass. This exact combined dense variant has no completed Development score.",
+      "selected_in_rounds": [
+        3
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r3-0006",
+      "entrypoint": "submission.py",
+      "tree_sha256": "978b5b446c2237dc9adcf881f4114a58171d51683a7a5f7f7eabf78d69a72e1c",
+      "manifest_sha256": "bff53f58c58aa235517157be2112f97c78780d764116de7fb0c3e3ebdff6b760",
+      "total_bytes": 34322,
+      "files": [
+        {
+          "path": "base_solver.py",
+          "bytes": 23475,
+          "sha256": "5ba79675302259f33f781375323ebdae7b0e09c61a9f0957196db33fc3bf2d51"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 5137,
+          "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 3132,
+          "sha256": "ebeb2e3900a011f9a717988d1276fdc0253456abe780912be4b1eb0d3721e9aa"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1502,
+          "sha256": "79d5c01afc5fbf0e22144acb661dfd9befa4b4fb5d987867acbbc77eeafc53cf"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r3-0006--978b5b446c22"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r4-0007",
+      "round_created": 4,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "spectrum-and-validation-budget-adaptive-transport",
+      "submission_summary": "Extends tested sequence13 with a strict1536 spatial option only when initial modes abs(k)>=768 have macro indicator<=1e-7 and kinetic indicator<=1e-6. Only that new route chooses257/193/129/65 compressed source times while reserving exact validation and fitting time; existing1024/2048 routes remain unchanged. Three reserved full-VP controls pass below761 simulated charged seconds. Matched overlapping611 error improves0.00684149631 to0.00579088839; fast611 remains about1.73e-10 while avoiding a demonstrated validation-starvation failure of the unreserved prototype. CPU boundaries, Fourier projection, matrix stages and portable13-file ABI pass. Prior sequence9 regressed on one Development Guided comparison; this final composite has no completed Development score.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r4-0007",
+      "entrypoint": "submission.py",
+      "tree_sha256": "73cf96e5be36c50cd3ba9c7733afa1b3fb295824790f3ab07184f4b6fbea35b1",
+      "manifest_sha256": "9299807ba5d5ca5596b6c45974bb22116e85ff66568d74f5b6a9d39a31428450",
+      "total_bytes": 122888,
+      "files": [
+        {
+          "path": "base_solver.py",
+          "bytes": 54701,
+          "sha256": "20a2fd9cc9496c6321a1f4cacb35b5646671adce9980ccc7eedfabdc3b54d1ce"
+        },
+        {
+          "path": "cell_source.py",
+          "bytes": 9542,
+          "sha256": "4282d16c96fdb980ab7cc57bd144bd5e142f0d4ba982d0c386413c80373dc073"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 5137,
+          "sha256": "607d015149cb466a058ad46d67817ec40bdefa5931d0aee6b2486a23088a89a6"
+        },
+        {
+          "path": "compressed_source.py",
+          "bytes": 7192,
+          "sha256": "50d21de376b401857cbadfc37d00deef2a1f742dd998a727e7683d6711bcda03"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 3380,
+          "sha256": "1bca6e28fa89f7d772dc32fa1fc8c8b7b7f8b9f8b5a2e6aed3b95aa661a4eb88"
+        },
+        {
+          "path": "free_source.py",
+          "bytes": 10963,
+          "sha256": "60e77c859e11b9cfccba5b73c94ff245cff9f058fa4f25bf46f64ca0f4cec4e2"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1502,
+          "sha256": "79d5c01afc5fbf0e22144acb661dfd9befa4b4fb5d987867acbbc77eeafc53cf"
+        },
+        {
+          "path": "interaction_source.py",
+          "bytes": 13281,
+          "sha256": "447ad1940e8cb91ee4b084c9428f173c5e5d733d5e181f01dd4ff33e1a85fa04"
+        },
+        {
+          "path": "source_geometry.py",
+          "bytes": 6614,
+          "sha256": "58e92b784e9102f98aa651625836ff1ed3b04b5984cf26fa2183ffd55cd122ed"
+        },
+        {
+          "path": "source_integral_plan.py",
+          "bytes": 2977,
+          "sha256": "4460dc1fe342bed3acbf79b907dd2c05f95f2fbe4717fbcf80872bfaacf09eba"
+        },
+        {
+          "path": "source_projection.py",
+          "bytes": 2983,
+          "sha256": "b07e8b2ae0d5da9dd83cd5575bb7fee2da968acbc795bb2a243020fc4b67742a"
+        },
+        {
+          "path": "startup_fallback.py",
+          "bytes": 3540,
+          "sha256": "cb1ecadf466ca6a001e76082702cc0cd49af093beaa6c9b9b1c6ef06a0199a0b"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r4-0007--73cf96e5be36"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r4-0008",
+      "round_created": 4,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "g6_guarded_source_sampling",
+      "submission_summary": "Select fixed1024/fixed120G6 solver with independently validated512 source queries and exact per-slice fallback, allowing budgeted193-time panels. Parent has completed38.55percent paired Development improvement; this final variant has no Task score. Authored warm endpoint improves5898fold at700.72charged seconds, cold fallback predictions are bitwise parent, spatial-pulse/alias and changing-cost rollback tests pass. Finite-probe generalization remains uncertain.",
+      "selected_in_rounds": [
+        4
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r4-0008",
+      "entrypoint": "submission.py",
+      "tree_sha256": "db08832cd416046663e676d8d8955bd4f7bee34bb0cf34154d7102723c783a35",
+      "manifest_sha256": "631241749eb3f628beb3912b6b0e1bc8d5cd79e53ee296b2b0efb7542e3031eb",
+      "total_bytes": 82144,
+      "files": [
+        {
+          "path": "adaptive_grid.py",
+          "bytes": 7121,
+          "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+        },
+        {
+          "path": "base_solver.py",
+          "bytes": 28909,
+          "sha256": "626009f4368704bcb1496b5a65f4e43a4be9fc0c4f59744b573bea32341e1ed5"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 6318,
+          "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+        },
+        {
+          "path": "demodulated_source.py",
+          "bytes": 7917,
+          "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 5197,
+          "sha256": "9c50aa6701614a363bdfce5ecf7e63add659c734ad042d4487f5baae6b1bfbb4"
+        },
+        {
+          "path": "evolution_policy.py",
+          "bytes": 2781,
+          "sha256": "539e5e72a9ac6763e51c5c6e22a93cafa4a7ed3f1c9b0087a9860c95c04db693"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1491,
+          "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+        },
+        {
+          "path": "integrated_forcing.py",
+          "bytes": 2411,
+          "sha256": "4407e948dfe9665f9b604ee206270737fc2e2d21209aad126e3e6f496dc99677"
+        },
+        {
+          "path": "phase_output.py",
+          "bytes": 8348,
+          "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+        },
+        {
+          "path": "source_query_grid.py",
+          "bytes": 3407,
+          "sha256": "d8ab0611bd86ff7f8a79c07223de44fe3e7cc4c995c9dc855bd88c55b40be3a7"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        },
+        {
+          "path": "temporal_selection.py",
+          "bytes": 7168,
+          "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r4-0008--db08832cd416"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r5-0009",
+      "round_created": 5,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "measured_per_column_source",
+      "submission_summary": "Select measured spatial sampler: on one shared128-point BASE Development case score improves0.003964390019423023 to0.0016317820961657596 (58.839%), all five components improve, active863.324s with23085 Oracle requests. Later tightCUR matches incumbent on GUIDED; finalhybrid matches incumbent on perturbedBASE (0.00591087781761), despite17s savings. These neutral comparisons do not displace the directly measured positive program. No Official claim.",
+      "selected_in_rounds": [
+        5
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r5-0009",
+      "entrypoint": "submission.py",
+      "tree_sha256": "824da9d11a6ad7c2f0b413307981cefc7af69ed0636c1fa29911885a3dc96780",
+      "manifest_sha256": "d7440c331473b93719b7c41032e7826915e02d762dec9fe63d02042f460a1a2e",
+      "total_bytes": 86166,
+      "files": [
+        {
+          "path": "adaptive_grid.py",
+          "bytes": 7121,
+          "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+        },
+        {
+          "path": "base_solver.py",
+          "bytes": 28909,
+          "sha256": "626009f4368704bcb1496b5a65f4e43a4be9fc0c4f59744b573bea32341e1ed5"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 6318,
+          "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+        },
+        {
+          "path": "demodulated_source.py",
+          "bytes": 7917,
+          "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 5197,
+          "sha256": "9c50aa6701614a363bdfce5ecf7e63add659c734ad042d4487f5baae6b1bfbb4"
+        },
+        {
+          "path": "evolution_policy.py",
+          "bytes": 2781,
+          "sha256": "539e5e72a9ac6763e51c5c6e22a93cafa4a7ed3f1c9b0087a9860c95c04db693"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1491,
+          "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+        },
+        {
+          "path": "integrated_forcing.py",
+          "bytes": 2411,
+          "sha256": "4407e948dfe9665f9b604ee206270737fc2e2d21209aad126e3e6f496dc99677"
+        },
+        {
+          "path": "phase_output.py",
+          "bytes": 8348,
+          "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+        },
+        {
+          "path": "source_query_grid.py",
+          "bytes": 7429,
+          "sha256": "b925f742c16bebc3940eda471fef98606f037e3e54d1f3f8ae5dcf36d5887421"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        },
+        {
+          "path": "temporal_selection.py",
+          "bytes": 7168,
+          "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r5-0009--824da9d11a6a"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r5-0010",
+      "round_created": 5,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "guarded_transport_1024_qr",
+      "submission_summary": "Select1024/120G6 stable early two-tone solver with density/central-pressure trajectory rejection and last-complete rollback. Allocation favors source-time sampling after2048seq5 shared-plan Guidedregression .03513 vsinc .004496; seq6child .012458. Authored mixedT1 remains5.095e-8,cold3.745e-6 at129nodes; hardcoldchirp invalid-output score31282.8 falls to.1483 through physicalfallback, not source-resolution recovery. QR/fused/conservation/ABI checks pass. Exactguardedbundle has no completedTaskscore; unguarded7/8Guidedtests pending.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r5-0010",
+      "entrypoint": "submission.py",
+      "tree_sha256": "022cec16b096fbc9d540558a5e00909217248d6911607d14a61d4ad9723e882c",
+      "manifest_sha256": "6179c93c8584cb4f2e450e6892e70e8f171048c02b471e224fa7e3e304c1fb35",
+      "total_bytes": 122942,
+      "files": [
+        {
+          "path": "adaptive_grid.py",
+          "bytes": 7121,
+          "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+        },
+        {
+          "path": "additive_source.py",
+          "bytes": 11618,
+          "sha256": "a3ee07caf7e4c35ef1788f662f4d34f8ab79dad49aec45121643142b685602e0"
+        },
+        {
+          "path": "base_solver.py",
+          "bytes": 33826,
+          "sha256": "c077330179c623a3e5e7166caf0420445b00efe1d82bc306a724d9cd8e6b28f6"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 6318,
+          "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+        },
+        {
+          "path": "demodulated_source.py",
+          "bytes": 15253,
+          "sha256": "8223318f841a06456c3c9d18df3b56f8008fb913f4dd24c74ecd614f4cdd599a"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 5197,
+          "sha256": "9c50aa6701614a363bdfce5ecf7e63add659c734ad042d4487f5baae6b1bfbb4"
+        },
+        {
+          "path": "evolution_policy.py",
+          "bytes": 2781,
+          "sha256": "fed48428f4273748344ab1a87763e891c17c23ee5abf6006ad47384e850c1103"
+        },
+        {
+          "path": "fused_cuda.py",
+          "bytes": 11772,
+          "sha256": "192f6242f54db0651404b12480c5d3427bb74b7452f7f3dbf4b44b7c99a25c67"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1491,
+          "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+        },
+        {
+          "path": "integrated_forcing.py",
+          "bytes": 3402,
+          "sha256": "5a390a4630726aab07db855c98f3c1cf49bfa8a1c4d6b7e1311e597ce6b76f4e"
+        },
+        {
+          "path": "phase_output.py",
+          "bytes": 8348,
+          "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+        },
+        {
+          "path": "source_query_grid.py",
+          "bytes": 7571,
+          "sha256": "1b8aeedd9210133ec215ddc611421a8a264938d850fe800de3aefe6c35188ee5"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        },
+        {
+          "path": "temporal_selection.py",
+          "bytes": 7168,
+          "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r5-0010--022cec16b096"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r6-0011",
+      "round_created": 6,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "validated-cur-local-piece-transport",
+      "submission_summary": "Select frozen CUR plus stable local-piece exact forcing: cached public source slice172 to139 requests with tiny moment defect; authored positive-VP budget controls complete193/257 instead of129/161 nodes and reduce endpoint errors to8.14e-11/4.61e-12. Quadrature, nonlinear order, ABI, fallback, portability and memory checks pass. Finite CUR probes retain a narrow-feature blindspot; direct shared-plan Development comparison against exact_split remains pending. No Official gain claimed.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-astra/candidate-r6-0011",
+      "entrypoint": "submission.py",
+      "tree_sha256": "64eed1ad9adb72528c34f5a2c5ea7d7a0c4ab15cc739a175d5c0cab5cd0e247f",
+      "manifest_sha256": "e53941f1359d60bedc4cd9903f3f92e8f879859e3e2ea1154d9a8acf2cd0f1df",
+      "total_bytes": 107714,
+      "files": [
+        {
+          "path": "adaptive_grid.py",
+          "bytes": 7121,
+          "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+        },
+        {
+          "path": "base_solver.py",
+          "bytes": 28956,
+          "sha256": "6130bb1ff224d77259629480057fb33fb3185fd45a9a2ec0112638429949c981"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 6318,
+          "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+        },
+        {
+          "path": "demodulated_source.py",
+          "bytes": 7917,
+          "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 7813,
+          "sha256": "58c281f21c844ed25436ee041b08711b470780752b4561145d464126dc1a915f"
+        },
+        {
+          "path": "evolution_policy.py",
+          "bytes": 2781,
+          "sha256": "539e5e72a9ac6763e51c5c6e22a93cafa4a7ed3f1c9b0087a9860c95c04db693"
+        },
+        {
+          "path": "fused_cuda.py",
+          "bytes": 9706,
+          "sha256": "a89217e3e07ec3fb92492de339daf3d08ce25d6a5549b03c38d66ca392deef88"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1491,
+          "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+        },
+        {
+          "path": "integrated_forcing.py",
+          "bytes": 5923,
+          "sha256": "14f789e265ac35817e3745c06936d2215a622b6898968fdf3f28a9064af80913"
+        },
+        {
+          "path": "phase_output.py",
+          "bytes": 8348,
+          "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+        },
+        {
+          "path": "source_query_grid.py",
+          "bytes": 13096,
+          "sha256": "3b1ed694ca1a7a13854c70372e92535561d46458574f60099c42fe707740c667"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        },
+        {
+          "path": "temporal_selection.py",
+          "bytes": 7168,
+          "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r6-0011--64eed1ad9adb"
+    },
+    {
+      "arm": "artemis-astra",
+      "artifact_id": "candidate-r6-0012",
+      "round_created": 6,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "resilient_absolute_guarded_enrichment",
+      "submission_summary": "Sequence4 numerical algorithm with exception rollback confined to optional post-regular enrichment.19 policy and5 real partial-panel CPU controls verify exact completed-handle fallback and identical successful-path calls, clock trace, metadata and arrays. Authored generalization shows substantial gains and a documented10.95% regression; paired Task evaluation of numerically identical capped predecessor remains pending. No claimed Official result.",
+      "selected_in_rounds": [
+        6
+      ],
+      "is_initial_program": false,
+      "is_final_program": true,
+      "bundle": "solutions/artemis-astra/candidate-r6-0012",
+      "entrypoint": "submission.py",
+      "tree_sha256": "cc53c4176bb704c0154a7a5331f4e834559f657814b2705c60f6cf60f9908867",
+      "manifest_sha256": "1c1393d86e618a5228dbc2eef39867998d5a36cdef1312f9c0b4d9c60c83decd",
+      "total_bytes": 100447,
+      "files": [
+        {
+          "path": "adaptive_grid.py",
+          "bytes": 7121,
+          "sha256": "d012fcff2e7506d199d7b0b5cb24b366bcae5a2de042af87170a713831767fb0"
+        },
+        {
+          "path": "base_solver.py",
+          "bytes": 29529,
+          "sha256": "284a9a653e0a5b9d00c70323550a07e8cdaec8356b071df25a22d238a3f878f3"
+        },
+        {
+          "path": "charge_projection.py",
+          "bytes": 6318,
+          "sha256": "c0f5ec57d1d8d67cbc6e0df96ed389b3ce0e1e6773e65b50a2558e32edd309b3"
+        },
+        {
+          "path": "demodulated_source.py",
+          "bytes": 7917,
+          "sha256": "868fe1687b5af952fbf20dacafb93f2e8576a89d9ee719512b5ff003be117da6"
+        },
+        {
+          "path": "dense_source.py",
+          "bytes": 9860,
+          "sha256": "77c7955a479d2368f64595021027c44b0ccacc2582c6b6ec74eca1275ba75a01"
+        },
+        {
+          "path": "evolution_policy.py",
+          "bytes": 4859,
+          "sha256": "f4209a8d95fd26334459b2b553716b02dd664240d63bd036816ffbb73d4f97f8"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 1491,
+          "sha256": "71ea2e4f43e794ace536274e7c68de947f2e3207812d9b41e553fc7f253412a2"
+        },
+        {
+          "path": "integrated_forcing.py",
+          "bytes": 2411,
+          "sha256": "4407e948dfe9665f9b604ee206270737fc2e2d21209aad126e3e6f496dc99677"
+        },
+        {
+          "path": "phase_output.py",
+          "bytes": 8348,
+          "sha256": "80a23caa5db6cd1971da83baf5db391b5b6b18478f3109b17633ad0119d206b2"
+        },
+        {
+          "path": "source_query_grid.py",
+          "bytes": 14349,
+          "sha256": "2b7a6ae201d20c4f27b8706e83a3a29de133aeeeea35eae081274939c0b66d08"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 1076,
+          "sha256": "319f46cb3bdfda770c293aa48c842482043dc76b78e38c185a996868eb3fe039"
+        },
+        {
+          "path": "temporal_selection.py",
+          "bytes": 7168,
+          "sha256": "9786387593096a102d00c14d1e595529d2b801a20f434bcc06a0e8f066a18638"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-astra/candidate-r6-0012--cc53c4176bb7"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-s0",
+      "round_created": 0,
+      "agent_id": "user",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "Simple stable transport S0",
+      "submission_summary": "Hold public initial macros.",
+      "selected_in_rounds": [],
+      "is_initial_program": true,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-s0",
+      "entrypoint": "submission.py",
+      "tree_sha256": "3abdeac64d69149722b9e0e3be72aff571d3c7b315493c806a33d36ed5a3b4a2",
+      "manifest_sha256": "3cefb722c17a948a674d7b8c225645707ec8d3a19317e3cf47b130067985f5ee",
+      "total_bytes": 5827,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 5827,
+          "sha256": "9a2d495286a1bcee78ea02339c06dc65aca725e749571fa8428f86d111b62b04"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-s0--3abdeac64d69"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r1-0001",
+      "round_created": 1,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "source-spectral-hybrid-r1-m12-x192",
+      "submission_summary": "Final primary: Nx=192,Nv=256,384 RK4 steps/unit,modes<=47; evolved M0/E, 3% M1/M2 increments, frozen M3. Shared horizon-0.75 BASE score 0.035015 vs 0.035422 for Nx128; GUIDED 0.038469 vs 0.038850. Density error fell 12% and 29%, respectively. Parent Nx128 mixed six-case mean 0.04152, all successful. Observed active time 245s at t=0.75, projected ~325s at t=1 under 900s cap.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r1-0001",
+      "entrypoint": "submission.py",
+      "tree_sha256": "73136cec5fed7ed98a78b5bb2903b27c554e12d4b4f66c47c63dad03db47a9a8",
+      "manifest_sha256": "e914c71df173961f65ed7ac74a28f22ccb6230dc4aecb9a78cf69d9fff06541b",
+      "total_bytes": 8028,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 8028,
+          "sha256": "e514f98cb40db29904e35cd7550f650e2ed768f96382c7e765376312e10cb0b8"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r1-0001--73136cec5fed"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r1-0002",
+      "round_created": 1,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "kinetic-global-moments-m2m3-v7",
+      "submission_summary": "Sequence 6 plus global M2 balance using existing source grids and frozen M1 spatial correlation. Shared fresh BASE half-horizon score improved 0.014961 to 0.014885; pressure 0.019080 to 0.018803 and heat slightly improved, unchanged runtime.",
+      "selected_in_rounds": [
+        1
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r1-0002",
+      "entrypoint": "submission.py",
+      "tree_sha256": "1c059e92f4bfa2f0678b6b52d7438e10edd9a4d8baf81a97de32c5826dacbbd4",
+      "manifest_sha256": "67c9f0c7492c245b216cc6a0fc630bc77ffca7dcb59d61312a29af91a6804293",
+      "total_bytes": 9633,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 9633,
+          "sha256": "9c5110f4aa154548c44c100a03d72df6d3660b519f780cd59688cfaa9f653b1c"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r1-0002--1c059e92f4bf"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r2-0003",
+      "round_created": 2,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "dual-grid-charge-gated-transport-r2-v4",
+      "submission_summary": "Dual prepared solve: Nx192 supplies M0/E; selected Nx128 solver supplies M1-M3 with 10% local M2 and gated low-mode M3 phase. Shared full-horizon perturbed plan improved charge/field 0.0149278->0.0104687 and total 0.0401066->0.0391532 (2.38%); pressure slightly improved, heat slightly worsened. Active 565.95s, 334s under 900s.",
+      "selected_in_rounds": [
+        2
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r2-0003",
+      "entrypoint": "submission.py",
+      "tree_sha256": "798a1b375cc8b663cb7c5d130be71bb44c0f015d2ea720179680bc2154963bde",
+      "manifest_sha256": "de1cf45bb24475843b05e326f0e9a93ee63512ed60cd3e17d63b9a1224a4a5a5",
+      "total_bytes": 22939,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 10746,
+          "sha256": "6fe84410bf32462bbef3f8468641af967bfef91cf44bd15de0269a5419bdfca6"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 9883,
+          "sha256": "fabc27234596a5aae205c647512114518d8b59d2f6981da20876c733562acc8f"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 2310,
+          "sha256": "ccaa2d483aca01ae0387e50d0b2fd713590b6610b487db07bfe401a4b217b541"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r2-0003--798a1b375cc8"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r2-0004",
+      "round_created": 2,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "kinetic-m2local002-fieldwork-r2",
+      "submission_summary": "Incumbent plus 2% mean-free local M2 increment and kinetic-midpoint global field-work correlations. M2-only beat incumbent on all four paired breadth cases (mean 0.089666 to 0.088566). Midpoint correlations then improved all three shared cases, mean 0.113671 to 0.113639, at matched runtime.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r2-0004",
+      "entrypoint": "submission.py",
+      "tree_sha256": "8b413eb01662e684d8a339b8d59721a59ab466c494a4244f2070de379dd5f391",
+      "manifest_sha256": "733af2611a771206cb5088fa93c9abb6739bb6a98ce5a6a9d94af67c97e21926",
+      "total_bytes": 10514,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 10514,
+          "sha256": "b87f5d9d0ce2855fc12d99660e9f52da6bc7e88c3411731d3f61c42f3c8d5ac8"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r2-0004--8b413eb01662"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r3-0005",
+      "round_created": 3,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "tail-panel-charge-correction-r3-v1",
+      "submission_summary": "Shared perturbed-child plan: score 0.0317836 to 0.0259798 (-18.3%); charge/field 0.027254 to 0.004057 and E 0.04918 to 0.00503, with transport unchanged. Active 513.4s at long horizon.",
+      "selected_in_rounds": [
+        3
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r3-0005",
+      "entrypoint": "submission.py",
+      "tree_sha256": "ad554c1dc49c150c1b7bbdf2beea13fdd25ebe767223133b7583251e84d6e050",
+      "manifest_sha256": "ef446bb7ae760145758f483f334b33047e14cd951c722722c88a68a2626f7969",
+      "total_bytes": 26808,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 10746,
+          "sha256": "6fe84410bf32462bbef3f8468641af967bfef91cf44bd15de0269a5419bdfca6"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 13752,
+          "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 2310,
+          "sha256": "ccaa2d483aca01ae0387e50d0b2fd713590b6610b487db07bfe401a4b217b541"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r3-0005--ad554c1dc49c"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r3-0006",
+      "round_created": 3,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "adaptive-characteristic-gauss512-r3-s4",
+      "submission_summary": "Sequence 3 adaptive characteristic solver plus independent Gauss-512 exact-coordinate initial moment anchoring; kinetic grid supplies only evolved increments. Hot shared wins underlying dynamics: 0.058352 vs 0.197975 and GUIDED 0.016469 vs 0.019598. Cold ungated loss motivated M2-RMS gate at 0.45. Gauss-512 previously improved a difficult shared score 0.059979 to 0.051769; adds only 16 oracle requests to ~766-776s full-horizon projection.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r3-0006",
+      "entrypoint": "submission.py",
+      "tree_sha256": "2865bbfb45ebd41e9d54171369448b811885d5079c1442386afe04ac87820325",
+      "manifest_sha256": "110b626d678920c6251401539072ea6ed83fe85813258a1713aa584e1209debf",
+      "total_bytes": 9978,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 9978,
+          "sha256": "195633495cbf514159cb3ec995b29693be378d3b8958b4248e9e7f6267e038ed"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r3-0006--2865bbfb45eb"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r4-0007",
+      "round_created": 4,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "midpoint-fieldwork-r4-v3",
+      "submission_summary": "Incumbent tail-corrected dual-grid solver with exact global M2/M3 field-work correlations evaluated from the kinetic acceleration-midpoint state. Prior shared Development evidence improved all three tested cases (mean 0.11367111 to 0.11363895) at unchanged runtime.",
+      "selected_in_rounds": [
+        4
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r4-0007",
+      "entrypoint": "submission.py",
+      "tree_sha256": "73c7dc542508f0ff1cbea9ad8b50a0a7b1a236262547aed65083275eb9d73937",
+      "manifest_sha256": "3976ae824a5099f549d147dd6814396011011d1d6b679dec9ed273a950be3d8d",
+      "total_bytes": 27284,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 11189,
+          "sha256": "3781eb094e537adfda84f05ceb1b884c43eefb957347d2d94b966af1f364a7d0"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 13752,
+          "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 2343,
+          "sha256": "bc260f671bc464100815afd6192211765b8f2181e2a9f6453eaf61935298443e"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r4-0007--73c7dc542508"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r4-0008",
+      "round_created": 4,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "half-blend-tailcorrected-m2-r4",
+      "submission_summary": "Shared near-full-horizon Development plan: score 0.025061307 to 0.024756623 (-1.22%); pressure 0.02397082 to 0.02284362 (-4.70%), heat 0.05976096 to 0.05966943, with charge/current unchanged. Blends M2 50/50 between validated Nx128 transport and tail-corrected Nx192 trajectory using a panel-corrected global S2 balance; active 689.7s.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r4-0008",
+      "entrypoint": "submission.py",
+      "tree_sha256": "dbf5e18ff4515d03db21d3536fc21e678a5c8ec23b3a942b746a96d1cf8d3816",
+      "manifest_sha256": "5d71600916ad837bf95ffe83ec6aa909b8daa07775bd2fc64c14c801a8c4f184",
+      "total_bytes": 27323,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 10746,
+          "sha256": "6fe84410bf32462bbef3f8468641af967bfef91cf44bd15de0269a5419bdfca6"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 14128,
+          "sha256": "3b6156c25f12677523a90a8e3e36cca0ebec8e0412dbcf95945c19e28f96e765"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 2449,
+          "sha256": "bd3031b0f9efb240c22eaca32edd7c5700c2671e9d26b313d6302c7f81f69421"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r4-0008--dbf5e18ff451"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r5-0009",
+      "round_created": 5,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "anti-central-heat-halfstep-r5-v2",
+      "submission_summary": "Two shared hot-case plans rejected movement toward frozen central heat: beta=1 worsened 0.0124533 to 0.0128276 and beta=0.5 worsened 0.0237429 to 0.0240265, solely in heat. This incumbent-cost candidate takes beta=-0.5 while preserving the global M3 mean and query-time centralization. Direct negative-step evaluation was interrupted by the round reserve; all dynamics/runtime remain incumbent-identical.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r5-0009",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c154048a9181989f5aee1cc805625d27a31a92887133853662ce803c1b0f3148",
+      "manifest_sha256": "cea9a714164d3bd1e2ce5ab1d90f70612c015603a8c74d1862e78222d46bc542",
+      "total_bytes": 28588,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 11747,
+          "sha256": "aafd145fa73ee186c3c576b20da4e1f44366820a218cf01e9aed2f690152995b"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 13752,
+          "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 3089,
+          "sha256": "997d0d001c9dcf4da958f3ccaa51db1907ef014adc55ed6b138ebc6f75389e35"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r5-0009--c154048a9181"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r5-0010",
+      "round_created": 5,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "adaptive-hot-transport-r5-s4",
+      "submission_summary": "Final gated transport refinement. Cold initial-pressure-RMS cases (<0.45) are exactly the incumbent. Hot cases use full mean-free kinetic M1/M2 increments plus centered-heat anchoring and charge-consistent raw reconstruction. Shared hot evidence: centered heat cut score 0.125974->0.077090 (heat 0.269690->0.074005); on a fresh horizon full hot M1/M2 further cut selected adaptive score 0.068712->0.055817, current 0.113138->0.064341 and pressure 0.075102->0.069150. Cold ungated ablation was adverse, validating the gate. Runtime unchanged/safe (276-543s observed).",
+      "selected_in_rounds": [
+        5
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r5-0010",
+      "entrypoint": "submission.py",
+      "tree_sha256": "e3f38828a775e24926df95ef0d5585267e3cd247291dac45a538e3d189252fc1",
+      "manifest_sha256": "85568ed6cce78d15078a80301d652b04bd4003ff3c820d6110c38fef287b76a8",
+      "total_bytes": 29710,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 12487,
+          "sha256": "430323fb92754f03db51b6dc332b1742a766212e861e6085bc25456f8338b12b"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 13752,
+          "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 3471,
+          "sha256": "f5c2ef4881a898c94e9e5134e3b5ac91aa3660564e7650dc5be6198c4dab0f84"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r5-0010--e3f38828a775"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r6-0011",
+      "round_created": 6,
+      "agent_id": "artemis-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "hot-m1m2-half-r6-s2",
+      "submission_summary": "Hot transport shrinkage composite. M2=0.5 won two independent shared cases: GUIDED 0.036642->0.032905 (-10.2%, pressure 0.043969->0.028898) and BASE 0.035997->0.028442 (-21.0%, pressure 0.058729->0.030325). On a third hot BASE case, additionally setting M1=0.5 cut current 0.029942->0.018804 and total 0.016847->0.014132 (-16.1%) with only ~0.00015 pressure and ~0.00012 heat increases. Cold branch and runtime remain exactly incumbent.",
+      "selected_in_rounds": [
+        6
+      ],
+      "is_initial_program": false,
+      "is_final_program": true,
+      "bundle": "solutions/artemis-sol/candidate-r6-0011",
+      "entrypoint": "submission.py",
+      "tree_sha256": "b24a7960ab2cbe36e62417efada0b1bf56d305856e93e6101f5d3775d031a70b",
+      "manifest_sha256": "584bf136db4a3df5d081239ed5796a80a707cfc253e1f324388b3bedd9a20109",
+      "total_bytes": 29814,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 12591,
+          "sha256": "fad36704f846f3a1f87754e660df0c6005d221e43553e9096ee6a526fc492568"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 13752,
+          "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 3471,
+          "sha256": "f5c2ef4881a898c94e9e5134e3b5ac91aa3660564e7650dc5be6198c4dab0f84"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r6-0011--b24a7960ab2c"
+    },
+    {
+      "arm": "artemis-sol",
+      "artifact_id": "candidate-r6-0012",
+      "round_created": 6,
+      "agent_id": "artemis-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "decoupled-long-fallback-r6-s10",
+      "submission_summary": "Final composition: hot central pressure always robust 10%-M2; incumbent full current/q through T<=.625; robust current/q from T>=.75; cold unchanged. Inferred/direct fresh scores: T=.25 0.05322 vs inc .05696, T=.375 0.03144 vs .03409, two T=.875 robust wins .02242 vs .05510 and .02116 vs .03057. Prior same-cohort projection 0.032215 vs .033458 before long fallback.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/artemis-sol/candidate-r6-0012",
+      "entrypoint": "submission.py",
+      "tree_sha256": "17617179037ba9937d966792c253cc4398d20090d53f38306d75e44cc1fd7c2d",
+      "manifest_sha256": "32a56e0193541deeef165f37652b5965430175bd16c67e29075bd6a972e604ac",
+      "total_bytes": 30603,
+      "files": [
+        {
+          "path": "solver128.py",
+          "bytes": 13380,
+          "sha256": "6075e76e1473c357c4991e19cfadf1c41888f2ff06a03de4ef975473d3068a42"
+        },
+        {
+          "path": "solver192.py",
+          "bytes": 13752,
+          "sha256": "0baac16e9a22704e89a7112e36974f832c863525fc689dc5a2fcb81fe2671187"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 3471,
+          "sha256": "f5c2ef4881a898c94e9e5134e3b5ac91aa3660564e7650dc5be6198c4dab0f84"
+        }
+      ],
+      "archive_program_directory": "programs/artemis-sol/candidate-r6-0012--17617179037b"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-s0",
+      "round_created": 0,
+      "agent_id": "user",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Simple stable transport S0",
+      "submission_summary": "Public rho0 and periodic Poisson; static Maxwellian closure j=qh=0, P=rho*T*I.",
+      "selected_in_rounds": [],
+      "is_initial_program": true,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-s0",
+      "entrypoint": "submission.py",
+      "tree_sha256": "fa7fa53fb31db00d620002a32fb1b4db0f0ec01cba65ac92cacd8bd21ec208dd",
+      "manifest_sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463",
+      "total_bytes": 6101,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 6101,
+          "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-s0--fa7fa53fb31d"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r1-0001",
+      "round_created": 1,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "gpu-fourier-hermite-transport",
+      "submission_summary": "GPU Fourier-Hermite M16/nx33 with source validation through degree12, promoted intermediate quadrature, and budget-adaptive dense time integration. Public-source probes resolve large perturbation-child quadrature aliases; manufactured worst macro RMS3.17e-8 and CPU/GPU parity within4.7e-15. Development A/C4 batch is running; no final GPU Development score claimed yet.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r1-0001",
+      "entrypoint": "submission.py",
+      "tree_sha256": "ff1f9034b225da6f6a4e4d226daa32910d0405c6ed709fc4e3700ec4f47e8572",
+      "manifest_sha256": "db26461737fa3c6ea3085fcd12a15eb807a732f0d96692b9cc5cf1f3c06b5f75",
+      "total_bytes": 20601,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 20601,
+          "sha256": "7b7caa48932b7665c5e043f64896a7cc1b5f2259b01225bf384f51d63d0dc6e2"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r1-0001--ff1f9034b225"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r1-0002",
+      "round_created": 1,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Corner-aware Fourier-Hermite transport",
+      "submission_summary": "Nx41 D12 adaptive GH24-32 and 257 source times with detected temporal corners and separate cubic segments. Public-source response proxy improved about sevenfold versus global cubic; manufactured pipeline, central moments, portable imports, and eight deadline branches passed. Shared Development comparison remains pending at this checkpoint. Endpoint-first sampling preserves complete-domain budget fallback.",
+      "selected_in_rounds": [
+        1
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r1-0002",
+      "entrypoint": "submission.py",
+      "tree_sha256": "865461df4b280f9bd9638ed88b61cc7dda0518617c56bdaa8ceeed47c1913a6f",
+      "manifest_sha256": "88112a16d555f510828ec30a9ccaedb1c65266ecab85a5cbf290fed35dd1fb4d",
+      "total_bytes": 39923,
+      "files": [
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7301,
+          "sha256": "cd5991819a27f40aabded2a1758cdc2d01518a1c081bba24adccb04658caade1"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 9283,
+          "sha256": "ad205620832b09b61a1a87c74bfecd9d2dbfb59c18155d92d1bf7963c86628b7"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 3954,
+          "sha256": "2cf60886891d85acdf6fca3f684f99dcb1a69c96250102fd9cbde6d961229739"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 2697,
+          "sha256": "835ddb29b97757eaf01b5f24726a250b65c26d376af3cf3b362f16b86a4d0e54"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 10371,
+          "sha256": "0c002c4a9cdc4d6e16b1b3db97bf8ed1120414caecf6801ca42602d4c041f44d"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r1-0002--865461df4b28"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r2-0003",
+      "round_created": 2,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Guarded adaptive macro transport",
+      "submission_summary": "D16 Fourier-Hermite solver with adaptive initial-layer and source-corner sampling; predecessor scored 1.7466e-7 on one Development BASE case (unpaired incumbent 9.0719e-6). Adds public-probe-validated 29-to-33-to-41 source mesh fallback and 65-second finish reserve; exact-bundle synthetic ABI, alias rejection, deadline, and full-size cold GPU checks passed. Broader Development validation pending.",
+      "selected_in_rounds": [
+        2
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r2-0003",
+      "entrypoint": "submission.py",
+      "tree_sha256": "ed7bb64cbc669d9022e126c9b7a0c31c0fbf8a012192301957916d31729bca25",
+      "manifest_sha256": "bcccd4ed2f958536620dff5edbffb6662dc17a272d707f18a3d1919b97d318ab",
+      "total_bytes": 62205,
+      "files": [
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 10035,
+          "sha256": "f1b35ac8973c8e39e0a176a5dcadca5e978d06494ece9ab13a3a0030aeeeef60"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 3975,
+          "sha256": "3fddedaa273068424219ceea0e6d410dc7ba3203fb401b63d872083c132378e8"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4230,
+          "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 15458,
+          "sha256": "3c47da4501afb28521909a29da2712284ccf52e6c2e0705aed0fed02294ed6e3"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r2-0003--ed7bb64cbc66"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r2-0004",
+      "round_created": 2,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "direct-stable-time-safe-vpfp",
+      "submission_summary": "Direct Fourier-Hermite solver: exact parent scored 1.929469945e-6 versus transactional compressed solver 0.002915225286 on one shared Development case, both successful; parent preparation 684.33s. Only additional change deduplicates physical pilot times, bitwise unchanged on all issued [0,1] domains. Full shifted-domain analytic OU ABI test passed in 16.99s, maximum macro error 4.80e-8. No Official improvement claim.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r2-0004",
+      "entrypoint": "submission.py",
+      "tree_sha256": "bf180c434ef8f07bf5475aacd8ed517d81d01fe4f249b08a7e9ae18dfaa801f3",
+      "manifest_sha256": "9941db940b1cd2b1d27613371b825dd54abf04a4722275653b8d103704ae011f",
+      "total_bytes": 63464,
+      "files": [
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7595,
+          "sha256": "535871312f31f7d982afb859e5307dd20dc100d5a955858cc802630b15bfc77a"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 12895,
+          "sha256": "e18e517ed2780ecc0162ec4ef9d21d4986bb579a4f19a2f18a0f8b563f713f50"
+        },
+        {
+          "path": "initial_quadrature_select.py",
+          "bytes": 6830,
+          "sha256": "a8df01386a610a4df603a566f6d4b70b7418e80039d21a47cbadab86f9ff518a"
+        },
+        {
+          "path": "pilot_refinement.py",
+          "bytes": 7036,
+          "sha256": "83cc733d1e06c6543857919f4897e9b409de113cc4a66f94d7a5c49ddb7267f2"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 3954,
+          "sha256": "2cf60886891d85acdf6fca3f684f99dcb1a69c96250102fd9cbde6d961229739"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4298,
+          "sha256": "2058a8fb80d26f575e63a9fbb5e768dd54e76a6cdfa8370108a0b74a0d4774a2"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 14539,
+          "sha256": "ede1e08a82baf6193df882d316f50d10b6441b9d9e3a671f0740931be65a11d3"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r2-0004--bf180c434ef8"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r3-0005",
+      "round_created": 3,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "conservative_time_refinement",
+      "submission_summary": "Preserves incumbent source acquisition, full Gaussian quadrature, 769-frame target and 65-second finish reserve; adds stable cubic construction, half RK4 steps and guarded local output. Fixed-source convergence proxy improves from 2.29e-7 to 4.77e-9. Full manufactured ABI max error 1.51e-11; dense D16/769/quintic GPU finish 41.82 seconds within 65. Selected after learned variant regressed 33.74 percent on a shared-plan child and no-cubature ablation scored 5.63047e-6 on a new plan. Final variant has no completed Development truth evaluation; Official improvement is unestablished.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r3-0005",
+      "entrypoint": "submission.py",
+      "tree_sha256": "712bc6587cdd4b7804b94c47b5c700bb8b459e074ad8e0a8509b48b240e40fbc",
+      "manifest_sha256": "8cee306558dfc257f7b4072c70353e330a97be5dc3ae7882044b7e29fd4fe997",
+      "total_bytes": 71732,
+      "files": [
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 10037,
+          "sha256": "5ef77dfde589f24ad3d1929cd32f66792b0f0c3220e2e9da5335e781cb974eda"
+        },
+        {
+          "path": "guarded_output.py",
+          "bytes": 6169,
+          "sha256": "43bd7ca50fc814f0f583801e089a0fdfa98429b11d762ea6ca70509fb40735b7"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 3975,
+          "sha256": "3fddedaa273068424219ceea0e6d410dc7ba3203fb401b63d872083c132378e8"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 7484,
+          "sha256": "9dda8a6df9dc1d570462f722c11b4203ae14f10f665fb475cff2c425ad439782"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 15560,
+          "sha256": "0e336a041ceacc26af94ea023fd6893c0704deceab8900f5200e3d707444ba42"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r3-0005--712bc6587cdd"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r3-0006",
+      "round_created": 3,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Validated pilot density reconstruction",
+      "submission_summary": "Development shared-plan child comparison: score 7.568724660844937e-7 versus 1.2845080288788454e-6 for scalar density sampling (41.1% lower). All ten fields returned successfully within budget; preparation 820.69 charged seconds. Held-out source reconstruction gates, exact acquired-frame anchoring, zero source mass; manufactured PDE and deadline checks passed. Heat-flux error increased in this comparison; only one Development case completed, no Official improvement claimed.",
+      "selected_in_rounds": [
+        3,
+        4
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r3-0006",
+      "entrypoint": "submission.py",
+      "tree_sha256": "e3e69e2be11e646fcd4034d83995f454914266e0475b668c5417c9237e86b693",
+      "manifest_sha256": "7bd66ab63e47d213a5dda071f01241e41b30afe974d0e0d1aab56235301b7bb1",
+      "total_bytes": 106054,
+      "files": [
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 13699,
+          "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4230,
+          "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 3797,
+          "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 22436,
+          "sha256": "ff33d9402898c0cc8c4fcf46e6ed19504761c21baed5a366be9940e702e34e4a"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r3-0006--e3e69e2be11e"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r4-0007",
+      "round_created": 4,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Adaptive guarded transport reconstruction",
+      "submission_summary": "Completes ordinary all-moment residual reconstruction first, then conditionally selects field-weighted density only when every held-out source and cumulative density/Poisson ratio is nonworse, or the baseline was rejected. An independent twelve-mode exact VPFP test exposed a 0.54 percent regression in unconditional weighting; this adaptive version recovers all primary-7 predictions bitwise and retains a strongly improved public-source held-out fold. Exact cubic optimization, independent review, ABI and deadline branch audits passed. No direct Development score for this exact variant.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r4-0007",
+      "entrypoint": "submission.py",
+      "tree_sha256": "e86a27e03a10886092a9af7b91379a45c80eb48abcf7302dfcb760aa96d44cdb",
+      "manifest_sha256": "656364ad6162417e620147710bddabd673579e874ec69feecaa59f79b04ea994",
+      "total_bytes": 151939,
+      "files": [
+        {
+          "path": "corner_collapse.py",
+          "bytes": 9022,
+          "sha256": "27a0142be5c749d271f6ee1123af2372c328c7deeda2d142d1124b2d36917aed"
+        },
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 13699,
+          "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+        },
+        {
+          "path": "pilot_macros.py",
+          "bytes": 28956,
+          "sha256": "ff9bb28a6b8ead0451580c490f576b40496af362363208d271c0c032ad3c5f77"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4230,
+          "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 5129,
+          "sha256": "0dbdca7b6b6da2e1dfbdbe311b880381e28b407cc725afc4844e34180f487f3c"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spatial_trial_retry.py",
+          "bytes": 2893,
+          "sha256": "5e0ba02287bab49d55e999e75e3307ab0be803e59e4690bc120a30a819e094ef"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 26118,
+          "sha256": "e6d2a45190929c409d243c803eec20ca268edbdbe6fa1737e52cf8bfa87b7665"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r4-0007--e86a27e03a10"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r4-0008",
+      "round_created": 4,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Stable scalar macro reconstruction",
+      "submission_summary": "Selects scalar ten-moment source correction plus the bounded quintic stability fix. The scalar parent scored 2.895550522e-7 versus incumbent 2.933087641e-7 on shared BASE points; checked joint28 regressed 4.40 percent on a completed shared Guided comparison. At 769 source frames the dense mixture proxies are scalar 1.244384119e-7 and checked joint 1.244375518e-7, while both avoid the positive alias counterexample at 2.019e-12. Only source_spline_piecewise.py differs from the Task-tested scalar parent; 17 stability and ordinary-path identity checks pass. This exact stability variant has not separately received a Development score.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r4-0008",
+      "entrypoint": "submission.py",
+      "tree_sha256": "f89c77d0c064bc4b0bddb24377558a5ab3b0e7dce342ea50a99cc25a373f5e39",
+      "manifest_sha256": "bc78cfb652454d8e6f3cefa17ba5949b3da48459e0f27c57278245ed94b82a57",
+      "total_bytes": 109627,
+      "files": [
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 14067,
+          "sha256": "fe1dc67cd5f3a076877adc295aab60ff829440ef0b4f45613dab77300380dee6"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 6947,
+          "sha256": "c40c7f70acdb4db68053e10785a5bd856dc7cb8856bbfa99f96381a2f630af01"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 3797,
+          "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 22924,
+          "sha256": "262e56db0a7013d4d08bc9359f401e32b06acbf155e714cdf3e261679957ee32"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r4-0008--f89c77d0c064"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r5-0009",
+      "round_created": 5,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Guarded transport with separable source projection",
+      "submission_summary": "State41 antecedent completed Guided Development score 2.28848767331531e-6 and beat state49 on shared points. Exact optimized bundle passes native GPU Gaussian prepare/evaluate with authored transport proxy 4.39e-12; captured91-frame source spline coefficients and guards are byte-identical with 4.87x faster construction. Separable source projection agrees to roundoff. No Official improvement claim.",
+      "selected_in_rounds": [
+        5
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r5-0009",
+      "entrypoint": "submission.py",
+      "tree_sha256": "8f4f85128e587e4e68b3c36f1e59c98e117b135c4dcdad2779e091fa70e3257e",
+      "manifest_sha256": "9e00f564ec1edebdde5d61db8088f1eaf9232fb829c84b47c9c40b6afdf5c276",
+      "total_bytes": 139443,
+      "files": [
+        {
+          "path": "bounded_cubic.py",
+          "bytes": 14043,
+          "sha256": "c516df9a9d8e7b8a0e2702da00bc51ae1a265243150a6f0d818bdf1636cff40c"
+        },
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "initial_normalization.py",
+          "bytes": 7984,
+          "sha256": "9b18b8cd2be55838e1728caa8010e2e64d550910d9fe5b51827e4a55c0ec2819"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 13699,
+          "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "separable_projection.py",
+          "bytes": 2955,
+          "sha256": "87ebe8cd9001121f45bb318e91b64a353e31b84e180d4f7f171059f784be6c1f"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4230,
+          "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 3797,
+          "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "stable_quintic.py",
+          "bytes": 7333,
+          "sha256": "dbfa17ff70319105c0afa5293590f01f1b1dd561ad01d1bc4b6ae9fe2f64be72"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 23510,
+          "sha256": "434997be03827772fa7879cd82cf9a2b5ede6f48db6670e99550a30b4a7670bb"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r5-0009--8f4f85128e58"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r5-0010",
+      "round_created": 5,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Validated guarded source reconstruction",
+      "submission_summary": "Primary: shared128-point Development child61802 comparison completed without failures: incumbent1.6322868179552077e-5 versus candidate3.738501687197948e-6, 77.10percent lower; density,field,particle flux,pressure andheat errors all improve. Preparation838.33 chargedseconds. Stablequintic repair, pilot-guarded trustedcorner collapse, gain32 conditioned cubic interpolation, cachedgeometry and65s finishing reserve. This is one Development case, not Official or a generalization claim.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r5-0010",
+      "entrypoint": "submission.py",
+      "tree_sha256": "f0735925a1fea52ed363f0b55c0308294f1be969619137d6d55549d0ff5bdeb9",
+      "manifest_sha256": "711b7049d20629f17827f2aacdd952894e54dbd8794ce827bcef4328c572a585",
+      "total_bytes": 130189,
+      "files": [
+        {
+          "path": "bounded_hermite.py",
+          "bytes": 13440,
+          "sha256": "8dd6320e183fd0153cc12ce8d9fd4cf30a46973b18502c2bd3a688b864f05303"
+        },
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "guarded_corner_collapse.py",
+          "bytes": 6880,
+          "sha256": "bf1b44844d3876e0041d57031de7b5e1a7e640fec939c8fa092e1b03988fffdc"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 13699,
+          "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 7127,
+          "sha256": "7170200b953f8771e018d4c20969a8275f7d79ff51e28dd0a9e558c676e81491"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 3797,
+          "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 23354,
+          "sha256": "36695cc934cabcba2f34aa4539d8e6c8a84fc27461944288c40cc320096508c9"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r5-0010--f0735925a1fe"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r6-0011",
+      "round_created": 6,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "r6-state41-early16",
+      "submission_summary": "Exact incumbent41 implementation with only mandatory early source seeds reduced from32 to16. All endpoints and detected corners retained; closed19-file bundle and ABI audited. Public source-response checks on two cases show large scarce-budget gains but higher-budget and heldout regressions. Avoids the completed49/57 spatial-budget regressions. No completed Development score for this exact variant; selected as a scientific research judgment, not a claimed measured transport improvement.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-astra/candidate-r6-0011",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c64aeb195b0cca4a9e793279720ac22a7ea4750ced30b447c06cba0deaa26b25",
+      "manifest_sha256": "6a2917a22d6976818349ba66a09a88cd4dcb14aba8cd3d89458ef85b7af0081b",
+      "total_bytes": 139464,
+      "files": [
+        {
+          "path": "bounded_cubic.py",
+          "bytes": 14043,
+          "sha256": "c516df9a9d8e7b8a0e2702da00bc51ae1a265243150a6f0d818bdf1636cff40c"
+        },
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "initial_normalization.py",
+          "bytes": 7984,
+          "sha256": "9b18b8cd2be55838e1728caa8010e2e64d550910d9fe5b51827e4a55c0ec2819"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 13699,
+          "sha256": "fc8d40314a1b4178ce10a1c734c06f2d8c39c28ccac637d6d3b6d31ead60fa68"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "separable_projection.py",
+          "bytes": 2955,
+          "sha256": "87ebe8cd9001121f45bb318e91b64a353e31b84e180d4f7f171059f784be6c1f"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4230,
+          "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 3797,
+          "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "stable_quintic.py",
+          "bytes": 7333,
+          "sha256": "dbfa17ff70319105c0afa5293590f01f1b1dd561ad01d1bc4b6ae9fe2f64be72"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 23531,
+          "sha256": "340a9c199f496ac2d4e0aa1897412d71d796d72222425a6c63ef26a8cce42e81"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r6-0011--c64aeb195b0c"
+    },
+    {
+      "arm": "strong-astra",
+      "artifact_id": "candidate-r6-0012",
+      "round_created": 6,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Transport41 with better-conditioned public source probes",
+      "submission_summary": "Completed perturbed-child Development case score2.565608914760997e-5, prepare795.680s, all ten fields returned. Paired batch was cancelled at round cutoff: quadrature alternative incomplete, so no paired ranking claimed. Earlier incumbent child score3.986436854607539e-5 used independent private points. Source-probe geometry improves actual retained density-basis conditioning; all original source/density guards preserved. Native41 ABI, conservation, deadline and rejection tests pass. Clean BASE1 validation follows.",
+      "selected_in_rounds": [
+        6
+      ],
+      "is_initial_program": false,
+      "is_final_program": true,
+      "bundle": "solutions/strong-astra/candidate-r6-0012",
+      "entrypoint": "submission.py",
+      "tree_sha256": "db8c6b642ce6c6c088a69bbda82a290eebc16d21abd5f9a1a8f71bae866f13ba",
+      "manifest_sha256": "8467b5d53ea7f7c69b337880c787fa30779880cd2f62d7ee93f6c1201d8d6023",
+      "total_bytes": 151346,
+      "files": [
+        {
+          "path": "bounded_cubic.py",
+          "bytes": 17388,
+          "sha256": "53093e49086ea55953cd8f19589016ccc42a973d5eb1318f94e2ee8a31674529"
+        },
+        {
+          "path": "corner_proposals.py",
+          "bytes": 1172,
+          "sha256": "0646ffa0a92d1a8b5056e50420c014180624a64aa6ded0d6f6c8bc9f9a7a8264"
+        },
+        {
+          "path": "corner_refinement.py",
+          "bytes": 5564,
+          "sha256": "10bdad9f20124f0228e989ee13bb264c90b50cf2aa862b6570319fdf9df262ee"
+        },
+        {
+          "path": "corner_sampling.py",
+          "bytes": 7536,
+          "sha256": "a6ac69b0474b01beb1985cd6a8e2541edee9bdc9a558ab49bf7980a9ccebe721"
+        },
+        {
+          "path": "gpu_integrator_bspline.py",
+          "bytes": 13170,
+          "sha256": "56f597b87e8b7ef736152d2f07df42497d6af6b5dfad1f41fbb2fd2083595fa8"
+        },
+        {
+          "path": "initial_normalization.py",
+          "bytes": 7984,
+          "sha256": "9b18b8cd2be55838e1728caa8010e2e64d550910d9fe5b51827e4a55c0ec2819"
+        },
+        {
+          "path": "initial_projection.py",
+          "bytes": 5592,
+          "sha256": "a920e3b19ce12fd22c23c09d0ebcea46c6c15f1ac6bcb3e5b51e1efacf20fee1"
+        },
+        {
+          "path": "late_source_plan.py",
+          "bytes": 3251,
+          "sha256": "5ba43fc13ca3845b32d882d6f172147212b451cc1fd48a8130fb0829ed2adcae"
+        },
+        {
+          "path": "multirate_gate.py",
+          "bytes": 7719,
+          "sha256": "682a4148631a766ccc2c84d489be9168e12a70263bd22375c5809557d83a3cf9"
+        },
+        {
+          "path": "multirate_sampling.py",
+          "bytes": 2839,
+          "sha256": "91776c381cc24b9b70ef774ebe6a392a38ec6edb265cbdf8a748094bb1f80af2"
+        },
+        {
+          "path": "pilot_density.py",
+          "bytes": 17914,
+          "sha256": "10fb010483fa0efd46568ad572707bf06b0b6683be771a6010f02a4bbfc5c1dd"
+        },
+        {
+          "path": "quadrature_select.py",
+          "bytes": 4065,
+          "sha256": "8484904b86034afd3398fced237e4986a0162843f944436834bc68a689330e55"
+        },
+        {
+          "path": "separable_projection.py",
+          "bytes": 2955,
+          "sha256": "87ebe8cd9001121f45bb318e91b64a353e31b84e180d4f7f171059f784be6c1f"
+        },
+        {
+          "path": "source_spline_piecewise.py",
+          "bytes": 4230,
+          "sha256": "4fb1ee07f317471e399891675a9e3f278cd56e810074b578e21bdf336d85a429"
+        },
+        {
+          "path": "source_spline_stable.py",
+          "bytes": 3797,
+          "sha256": "353a13455233192be8b576902ee47c2587940ef1623ba7e7890a1b82dc8bd67a"
+        },
+        {
+          "path": "spatial_source_guard.py",
+          "bytes": 3378,
+          "sha256": "3ce9210f88ede6696270cf63cf2fc851741778bb0539d228a251c304d8289e1e"
+        },
+        {
+          "path": "spline_degree_selection.py",
+          "bytes": 4540,
+          "sha256": "c6b60b6ee6bfa5c3fb8c60b009b97421f9d5e0e51d4903b942c9e8898b2724af"
+        },
+        {
+          "path": "stable_quintic.py",
+          "bytes": 7333,
+          "sha256": "dbfa17ff70319105c0afa5293590f01f1b1dd561ad01d1bc4b6ae9fe2f64be72"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 24602,
+          "sha256": "09571e426b447e05d3e6230a379f01bb872264e5b514b0eb454f8ec0532b45fd"
+        },
+        {
+          "path": "temporal_sampling.py",
+          "bytes": 6317,
+          "sha256": "be1404e9d3779697b6bda45205a095dd83a1c3636e07a2b66511af77126cfdaf"
+        }
+      ],
+      "archive_program_directory": "programs/strong-astra/candidate-r6-0012--db8c6b642ce6"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-s0",
+      "round_created": 0,
+      "agent_id": "user",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "Simple stable transport S0",
+      "submission_summary": "Public rho0 and periodic Poisson; static Maxwellian closure j=qh=0, P=rho*T*I.",
+      "selected_in_rounds": [],
+      "is_initial_program": true,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-s0",
+      "entrypoint": "submission.py",
+      "tree_sha256": "fa7fa53fb31db00d620002a32fb1b4db0f0ec01cba65ac92cacd8bd21ec208dd",
+      "manifest_sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463",
+      "total_bytes": 6101,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 6101,
+          "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-s0--fa7fa53fb31d"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r1-0001",
+      "round_created": 1,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "fourier_hermite_t257_q24_h8_x32",
+      "submission_summary": "Selected final. Shared-plan hard BASE 0.00422 vs x24 0.00609; GUIDED 0.00493 vs x24 0.00979. Every transport block improves on both except tiny BASE E tradeoff. Charged solve 298.1 s, >600 s margin; all evaluations successful.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r1-0001",
+      "entrypoint": "submission.py",
+      "tree_sha256": "2e812e997b6339af4a57b8453a5abc9af5353e2fcc312616f060e3f9b84d7747",
+      "manifest_sha256": "97c748fc3a277c32c337e8f0d855f29b0751cc9ae2d68aa0196939ebf48e97e5",
+      "total_bytes": 8994,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 8994,
+          "sha256": "b1786a1b7aa40daa488d028081fc32f11037dc0c66cce2295a010d4d4edb997e"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r1-0001--2e812e997b63"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r1-0002",
+      "round_created": 1,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "fourier-hermite-hybrid-t512",
+      "submission_summary": "Hybrid output projection: shared-plan score 0.000466 vs sequence-5 0.000634; Fourier heat-flux projection cut heat error 0.000819 to 0.000149 with other blocks identical; 287.7s solve.",
+      "selected_in_rounds": [
+        1
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r1-0002",
+      "entrypoint": "submission.py",
+      "tree_sha256": "36a570ea1ef0e013d1c21317eb6e9a1d1f2c571cbfed00c16dc629ce66615de3",
+      "manifest_sha256": "425203bb87f0d52ce3895ca78eea3118ab1deb62a2fc4b74e38ffc99b3b0301f",
+      "total_bytes": 16773,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 16773,
+          "sha256": "af58c17514a4417e3587ad97620de3fa60f30f6baa8704e4b2380e98c7317de1"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r1-0002--36a570ea1ef0"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r2-0003",
+      "round_created": 2,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "filtered-spectral-transport-t512",
+      "submission_summary": "Shared-plan Development: 0.000168008 vs sixth-order local 0.000180943 (-7.15%); particle-flux normalized RMS 1.0246e-4 to 4.8866e-5, pressure 8.673e-5, heat 3.896e-5. Separate shared plan showed charge cutoff improvement 0.000275910 to 0.000273267.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r2-0003",
+      "entrypoint": "submission.py",
+      "tree_sha256": "14e115ab4b969ecadd98dfa0e596c79eae020caa429561f599fbf78b5c097607",
+      "manifest_sha256": "7e48e44be6f9b4b9e3ea05406e01d0d3419f2181112ee53e27a3b713df0272a2",
+      "total_bytes": 17076,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 17076,
+          "sha256": "28c1f772074440bbaad99d29b50a95f0af9d65d87ed1bf194125c2ebc38f3889"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r2-0003--14e115ab4b96"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r2-0004",
+      "round_created": 2,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "x40-s24-momentum-heat-hybrid",
+      "submission_summary": "Shared-plan low-nu perturbed child: 0.00056384 vs x32/s24 primary 0.00073637 (-23.4%) at 291.6 vs 286.0 s. Charge/field 0.0005521 vs 0.0011153 (-50.5%), stress 0.0004371 vs 0.0005604 (-22.0%); particle/heat stable. Source32 only reached 0.00055907 at 525.0 s, so retained source24. Development evidence only.",
+      "selected_in_rounds": [
+        2
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r2-0004",
+      "entrypoint": "submission.py",
+      "tree_sha256": "dc7ed4488f1253facf0c074a81aa7797cfbb6b62b17e3cf09d2cd4deb2fe9410",
+      "manifest_sha256": "d0490eeb428c78a147d487c64939cec18c07f5da3dd2fefd951bfe0eee8f95e1",
+      "total_bytes": 17242,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 17242,
+          "sha256": "fe8b60a3de1d1d1d357e1df17ac877184496275424ad42d2199adc8be0294b4d"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r2-0004--dc7ed4488f12"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r3-0005",
+      "round_created": 3,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "x64-mixed-t1024",
+      "submission_summary": "Shared paired-perturbation: 0.000464927 vs selected T768 0.000476776 (-2.49%); charge -9.24%, particle -2.99%, stress -0.11%, heat +0.016% (flat). 634.4 charged s, leaving ~265 s formal margin. Monotone T512->T768->T1024 gains; x64 evolution with x40-restricted cubic rho/E and native x64 pressure/Fourier j,q.",
+      "selected_in_rounds": [
+        3
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r3-0005",
+      "entrypoint": "submission.py",
+      "tree_sha256": "02fe1b610a165e73f2da8c296e7683242e61c68caf99933d85888e18b6e80f8a",
+      "manifest_sha256": "34c54933e7a091b9b2bf6a65e8df3f0de8c2fa04f26547d0acd5821ac0d46711",
+      "total_bytes": 19116,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 19116,
+          "sha256": "513f0098fe3af1a68f2536176826473eaf362fc0e9cc4299b927781725aac179"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r3-0005--02fe1b610a16"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r3-0006",
+      "round_created": 3,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "x40-s24-pressure12-t1024",
+      "submission_summary": "Shared perturbed-child Development: 0.000855054 vs incumbent 0.000936743 (-8.72%); charge/field 0.000586991 vs 0.000902688 (-35.0%), particle 0.000560914 vs 0.000583128 (-3.8%). Successful in 585.9 charged s; pressure filter alone was not beneficial on this child.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r3-0006",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c89213a689317d11e555d71968ff6d2ec48e619ddd24d7f909b97f46d56b63d9",
+      "manifest_sha256": "21efe00393f1c7d2260173eb0a6df34fd4b7d0b10fae5767a91651757fdca990",
+      "total_bytes": 17537,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 17537,
+          "sha256": "795227be5026d6aafdd3d47adda548ef7fb8611e731ca11fe43a01490ec82b2f"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r3-0006--c89213a68931"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r4-0007",
+      "round_created": 4,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "h10-q16-t1024",
+      "submission_summary": "Shared perturbed-child Development score 0.000633868 vs incumbent 0.000635063 (-0.19%); heat -0.55%, charge slightly better, particle/stress slightly worse; 673.3 charged s, successful.",
+      "selected_in_rounds": [
+        4
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r4-0007",
+      "entrypoint": "submission.py",
+      "tree_sha256": "32b23a543ab73bc2ab011ffe671a50c18b77c131c857171fe0ccd38255f8c45d",
+      "manifest_sha256": "0dda9d6e7c48c0fae9994c1c71fceff7676fb9953e05d86720ca0372e66a41fc",
+      "total_bytes": 19117,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 19117,
+          "sha256": "2c882d10380ee60322c563ff626b6f76606f94c2b1de5afe9c316516054486c1"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r4-0007--32b23a543ab7"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r5-0008",
+      "round_created": 5,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "multirate-q24-s32-fourier12",
+      "submission_summary": "Independent high-nu perturbed-child Development: 0.000051785 vs frozen corrected cubic 0.000119819 (-56.8%); charge/field -69.2%, other blocks identical. Corrected cubic itself independently confirmed at 0.000119819. 766.3 charged s.",
+      "selected_in_rounds": [
+        5
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r5-0008",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c1c718db87e2bcd0382590a2a5cc8e4ffbfecf3fb5ecdf110262887f4b05f45f",
+      "manifest_sha256": "d629faa9b4c2786ce5d891f1414237ba9c72be50b202702b7f502c9e4168ea44",
+      "total_bytes": 24814,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 24814,
+          "sha256": "b35b7c33ffad9edeb25c2c52eb5920b0350be42eaa617babf4a3c8f14fd54076"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r5-0008--c1c718db87e2"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r5-0009",
+      "round_created": 5,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "richardson-h10-charge12",
+      "submission_summary": "Shared high-nu perturbed-child Development score 0.000543408 vs frozen Richardson 0.000549506 (-1.11%); charge/field -3.06%, both rho and E improved, other blocks identical; 706.7 charged s.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r5-0009",
+      "entrypoint": "submission.py",
+      "tree_sha256": "31f6f1889729ca9d8cbab23f5b2c7ff9f4dd90834b8b3e7c687b9fb3c7943b1d",
+      "manifest_sha256": "2ea11149616e072210eb2c0706d491c7b6d2233356f56413bd7823247ec3a9f3",
+      "total_bytes": 21285,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 21285,
+          "sha256": "bd83be51e9ab491843c3ebdcda8f7707a201ff48a0b706817d498ba9cb8e95c5"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r5-0009--31f6f1889729"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r6-0010",
+      "round_created": 6,
+      "agent_id": "vpfp-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "multitime-corrected-richardson-h10",
+      "submission_summary": "Independent borderline high-nu child: 0.0000467666 at 803.7 charged s. Multi-time public-source classifier max over t={0.5,0.75,1}: current roots <=0.000924 at midpoint and <=0.000460 at t=.75, children >=0.00606 at t=.75; captures prior false negative while retaining threshold 0.002. Richardson shared low-nu child -5.68% across all blocks.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/strong-sol/candidate-r6-0010",
+      "entrypoint": "submission.py",
+      "tree_sha256": "cd05e6d428bcd32173423ae18f246aaaffccbbc027da5f0eeffcc24d25f81e4b",
+      "manifest_sha256": "6233a17edcc6e03092911af403755ee0b4596755b42567cbe2cd32d4c2072590",
+      "total_bytes": 30083,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 30083,
+          "sha256": "161915074f13a4b2e07d8f67e427bb46f3cab8b53d9693f102e5e34148494360"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r6-0010--cd05e6d428bc"
+    },
+    {
+      "arm": "strong-sol",
+      "artifact_id": "candidate-r6-0011",
+      "round_created": 6,
+      "agent_id": "vpfp-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "all-source-q24-s32-richardson",
+      "submission_summary": "Low-nu GUIDED: 0.0000608982 in 804.95 charged s; all-correction-only independent draw 0.0000662184 in 764.86 s and incumbent draw 0.0000746388 in 663.91 s. Richardson reduced dominant charge block to 0.0001801; prior round evidence found its gain across all blocks.",
+      "selected_in_rounds": [
+        6
+      ],
+      "is_initial_program": false,
+      "is_final_program": true,
+      "bundle": "solutions/strong-sol/candidate-r6-0011",
+      "entrypoint": "submission.py",
+      "tree_sha256": "d2544e63519cab0de3e704f97944c234eebe83edd6b62dfb87b44a1faf6e825c",
+      "manifest_sha256": "f1b0f0fe51c6368dc4c95c0f6b902a3d563db3dcf59060be7dae67b681b7d777",
+      "total_bytes": 28807,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 28807,
+          "sha256": "a0c9555645083d6de2f6d66066ca800da3727050ff3d38c7b8d6fc39e27c0a4d"
+        }
+      ],
+      "archive_program_directory": "programs/strong-sol/candidate-r6-0011--d2544e63519c"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-s0",
+      "round_created": 0,
+      "agent_id": "user",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Simple stable transport S0",
+      "submission_summary": "Public rho0 and periodic Poisson; static Maxwellian closure j=qh=0, P=rho*T*I.",
+      "selected_in_rounds": [],
+      "is_initial_program": true,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-s0",
+      "entrypoint": "submission.py",
+      "tree_sha256": "fa7fa53fb31db00d620002a32fb1b4db0f0ec01cba65ac92cacd8bd21ec208dd",
+      "manifest_sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463",
+      "total_bytes": 6101,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 6101,
+          "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-s0--fa7fa53fb31d"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r1-0001",
+      "round_created": 1,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Drift-adaptive macro transport",
+      "submission_summary": "Primary empirical two-regime solver: mean drift above4*sqrt(theta) returns laboratory-fixed full initial macros from shifted NV128 quadrature; otherwise uses moment-corrected Fourier kinetic evolution with consistent Nyquist projection. CPU branch tests match lab_initial and corrected_nyquist exactly, including early fallback. Development component evidence: corrected BASE0 .19339973 prep641.68s; lab-initial GUIDED5 .28110684 prep23.51s, versus corrected GUIDED .50128250 and moving-initial .50798483. Separate point plans; inferred component mean .23725329 is not a directly measured composite score. One high-drift case supports the policy; broad generalization remains untested.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r1-0001",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c5e24386e7464a0a8f6cf2c76ef7297e00bc8bae7a6b4ad1849c0ec6ad9f2be0",
+      "manifest_sha256": "5c9ffd3f5d6c237cd28f46c9a27df719b3daadbbecaff6a479b9702f31fc8628",
+      "total_bytes": 50855,
+      "files": [
+        {
+          "path": "source_compression.py",
+          "bytes": 30550,
+          "sha256": "b97026ec6f10a44504e6a0b271589b57496269fdb419476042f65919b4c517df"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 20305,
+          "sha256": "406a46cf26eb0c95612400c8b4fd49eebe91aba3b57fa6c01daaa4b18ccd7a05"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r1-0001--c5e24386e746"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r1-0002",
+      "round_created": 1,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Wide-window initial transport reconstruction",
+      "submission_summary": "Complete three-case Development mean 0.2667202; scores 0.2409426, 0.2689221, 0.2902959 with no failures; NX32, bulk-centered NV80 halfwidth14, exact initial central macros; no temporal evolution.",
+      "selected_in_rounds": [
+        1
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r1-0002",
+      "entrypoint": "submission.py",
+      "tree_sha256": "7e4ee3f684727b88df045d8990151ed8713a7c09a0de3db8bb6125fbd32ee43a",
+      "manifest_sha256": "682e8c18363d7d30b452fbe5a4c5ae9d8737c2af16ebc66bc09795bcca743765",
+      "total_bytes": 8360,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 8360,
+          "sha256": "95541cb16d757422c27980db6241bd042320a31e47a7b45587ffff243c8c1cd4"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r1-0002--7e4ee3f68472"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r2-0003",
+      "round_created": 2,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Budget-adaptive initial-source macro forecast",
+      "submission_summary": "Primary: source-informed Gaussian forecast of rho/E/j/P with fixed initial central heat, budget-aware 32-to-64 spatial/velocity refinement and hybrid fallback. Three fresh shared-plan cases: fixed-fine model mean 0.22331758, coarse model 0.22395319, wide hybrid 0.25221092; all passed. Adaptive wrapper passed separate BASE0 end-to-end check, score 0.21486181, 215.41 charged preparation seconds. Exact fine/base forecast equivalence and forced budget fallback tested. Second fresh trio still pending.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r2-0003",
+      "entrypoint": "submission.py",
+      "tree_sha256": "255b23279ad14c60fa75a4f0cf76f72104474c0a42daba6f1977eb95675212cc",
+      "manifest_sha256": "f3fb426f48474689f2f429a24b57230205dd07c20f3cf96b258ff5b2829cc9b1",
+      "total_bytes": 55363,
+      "files": [
+        {
+          "path": "derivative_forecast.py",
+          "bytes": 9604,
+          "sha256": "6498e6c592719451497b378adb008194421ebdb0fe6b3ae7ce15e9da1199642f"
+        },
+        {
+          "path": "hybrid_initial_adapter.py",
+          "bytes": 6212,
+          "sha256": "80eb5b07cc7d080bcd03fae50ad13a640bde78ad1a0cf8b63f8695bc2d6bdce6"
+        },
+        {
+          "path": "initial_sampling.py",
+          "bytes": 5222,
+          "sha256": "33d8701e0ed2d6d016d2de74dac3b48cb33dd79965dd7565ecce2c650101cc02"
+        },
+        {
+          "path": "projection.py",
+          "bytes": 11063,
+          "sha256": "62d9c18b9e39f91e12a1e0f2633c9e0c86bb3c45153c5c938c53659e18869f74"
+        },
+        {
+          "path": "rectangle_rule.py",
+          "bytes": 10792,
+          "sha256": "659bf154912910ff50b689b55c09b2f98259ec22611a8e2fcb09cada91d265c2"
+        },
+        {
+          "path": "source_sampler.py",
+          "bytes": 3295,
+          "sha256": "37960802703e9dcfca209cd79ad22de1b9af032740ad3ea3848d64953ec35d06"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 9175,
+          "sha256": "e2218b3944ac731d3a988a27f306f142a6115143c400959e5cbbb211662aa634"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r2-0003--255b23279ad1"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r2-0004",
+      "round_created": 2,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "Balanced kinetic charge with Brownian central transport",
+      "submission_summary": "Final composite: guarded balanced kinetic rho/E; Brownian momentum, central pressure and central heat. Direct GUIDED Development check passed: score0.1570686636, preparation105.22s. Completed shared-plan parent runs on BASE0 and fresh BASE R2 imply composite scores0.1828685781/0.1684294993, mean0.1756490387 vs Brownian0.1885001458 (6.82% lower); these BASE scores are inferred by unchanged observable groups, not direct composite runs. Same preparation/helpers as successful balanced runs699.22/681.49s; group-selection and detached-loader tests passed. Brownian fallback separately improved all6 fresh mixed Development cases, mean0.21184106 vs incumbent0.28810774. Broader composite generalization remains untested.",
+      "selected_in_rounds": [
+        2
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r2-0004",
+      "entrypoint": "submission.py",
+      "tree_sha256": "f0bd9e5f796b986c556df47e89140f244a04e13383ee1c2afab78ef4d01899a4",
+      "manifest_sha256": "5b158624a8537c7fc78dc5996e68a71020d263f5f70a8d4e639cc2ac376f196b",
+      "total_bytes": 77966,
+      "files": [
+        {
+          "path": "base.py",
+          "bytes": 10980,
+          "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+        },
+        {
+          "path": "compressed_source.py",
+          "bytes": 7234,
+          "sha256": "c8f696f83a2b5c393997be1ea091afc6f1e8244b6fe15694eb248d8077be8192"
+        },
+        {
+          "path": "fourier_helpers.py",
+          "bytes": 9421,
+          "sha256": "f9bfef903a6c31a16d72c71887debfd37138fadffcca300503e74e085a464f30"
+        },
+        {
+          "path": "initial_defect.py",
+          "bytes": 7397,
+          "sha256": "ec5fafbf220fc59627df2d984fe2d26376fee610d3560208860fafe316f20721"
+        },
+        {
+          "path": "kinetic_evolution.py",
+          "bytes": 12912,
+          "sha256": "0006439a62e0be312186766dfc99f2ce26eda1efd801d1e73e35fca8b417f744"
+        },
+        {
+          "path": "reconstruct.py",
+          "bytes": 3721,
+          "sha256": "036de06d27a23902ed737ecd7f2f95c48cb43ebd27ca809fc7b3e1c0cf6c0c0e"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 6485,
+          "sha256": "a301f509b1e900b4339c589c9d7955cbe30ea9cb2ba2a4948f12f48e20af8ff8"
+        },
+        {
+          "path": "tensor_cubature.py",
+          "bytes": 16409,
+          "sha256": "ac89abf901a415412a01e82d3b68d28f1d307a76d78add5255006d28a860e0fd"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r2-0004--f0bd9e5f796b"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r3-0005",
+      "round_created": 3,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "fine_balanced_cubic_transport",
+      "submission_summary": "Fresh shared-plan GUIDED0:0.1637760167 versus incumbent0.1777357107 (7.8542% lower), charged preparation753.566s versus708.647s; no failures. Linear-projection parent previously scored0.1765113368 versus0.1923924025 on unused BASE2. Adds manufactured-validated cubic charge projection; keeps fine64 balance, adaptive16 direct source, GP current/pressure and Brownian heat.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r3-0005",
+      "entrypoint": "submission.py",
+      "tree_sha256": "3754fd5501ee8a431f2821888b3cb73307e4b30266ecea13f6fa5971cf26ac6d",
+      "manifest_sha256": "2713760cee4f90cc894744e7f8fdb8f543ecd0494afabf32fcd3b3645385379b",
+      "total_bytes": 117372,
+      "files": [
+        {
+          "path": "base.py",
+          "bytes": 11638,
+          "sha256": "66cadd7c0ae9ad8f8864035920599fb2a88238ecebaa5e7591c3ed162d0861a2"
+        },
+        {
+          "path": "charge_engine.py",
+          "bytes": 4967,
+          "sha256": "48e7950cc31005caa2906c2e7b20b970a982999f874619473d6ce3f54089d9e1"
+        },
+        {
+          "path": "compressed_source.py",
+          "bytes": 11269,
+          "sha256": "febd5c8815c92ed1b778f480b95f3689381bfe8dfe5afeca56de7bc2c6553890"
+        },
+        {
+          "path": "cubic_charge_projection.py",
+          "bytes": 2955,
+          "sha256": "81f0779528355c96401bcf18d4bedb257ca40d15c47ea181f92acf952e98d1df"
+        },
+        {
+          "path": "fourier_helpers.py",
+          "bytes": 9421,
+          "sha256": "f9bfef903a6c31a16d72c71887debfd37138fadffcca300503e74e085a464f30"
+        },
+        {
+          "path": "goal_tensor.py",
+          "bytes": 5998,
+          "sha256": "918f9dfd23d9e4bb559b828587c9937f01dbdffa2217d7870e29c9227793f88e"
+        },
+        {
+          "path": "gp_engine.py",
+          "bytes": 8409,
+          "sha256": "4592053b5677f762c6fcf8dcc5678fe52de86ada84a71e457e0bfca5a48603b4"
+        },
+        {
+          "path": "initial_defect.py",
+          "bytes": 7397,
+          "sha256": "ec5fafbf220fc59627df2d984fe2d26376fee610d3560208860fafe316f20721"
+        },
+        {
+          "path": "kinetic_evolution.py",
+          "bytes": 12912,
+          "sha256": "0006439a62e0be312186766dfc99f2ce26eda1efd801d1e73e35fca8b417f744"
+        },
+        {
+          "path": "reconstruct.py",
+          "bytes": 3721,
+          "sha256": "036de06d27a23902ed737ecd7f2f95c48cb43ebd27ca809fc7b3e1c0cf6c0c0e"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 11057,
+          "sha256": "cccd63ab3ac15d0de3efeaf4e92f1f25f9511357db44455890138b32f3f0443c"
+        },
+        {
+          "path": "tangent_model.py",
+          "bytes": 7812,
+          "sha256": "bc2c77fb39a0faea557861a0b680e93f48aaa28ff6215a9db953582bbce2bdd0"
+        },
+        {
+          "path": "tensor_cubature.py",
+          "bytes": 16409,
+          "sha256": "ac89abf901a415412a01e82d3b68d28f1d307a76d78add5255006d28a860e0fd"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r3-0005--3754fd5501ee"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r3-0006",
+      "round_created": 3,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "validated-local-hermite-response",
+      "submission_summary": "Selected after a completed shared-plan Development comparison on issued BASE0: transport score 0.17184349 versus incumbent 0.20046424 (14.28% lower); every normalized group improved. Preparation charged 636.37s, no failure. All-time locally adapted GH source validation, velocity-major queries, representative source timing calibration, H4 response and conditional degree4 Gram guard. Only one scored case so far; source space/time resolution remains a diagnosed limitation. Weak interval alternative remains under Development comparison.",
+      "selected_in_rounds": [
+        3
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r3-0006",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c55af7297aa1b69f6eb76161958a982640f59d7233405805cf0e44e19edf0fc3",
+      "manifest_sha256": "d8bf76406ebb6aff28778279692640b8b6eeeb0cdc83110c513d079dc85676d9",
+      "total_bytes": 76240,
+      "files": [
+        {
+          "path": "adaptive_velocity.py",
+          "bytes": 2282,
+          "sha256": "87df0ccca8f0bbb30e2c563726ee9971d6a3c65d02258e6accab1d2b5fe3ac4d"
+        },
+        {
+          "path": "base.py",
+          "bytes": 10980,
+          "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+        },
+        {
+          "path": "hermite_response.py",
+          "bytes": 13760,
+          "sha256": "e50738f847ddb54b68e973274f16bee01aed96e9033f460188bcdd953e6b4315"
+        },
+        {
+          "path": "hermite_response_h4.py",
+          "bytes": 8729,
+          "sha256": "51a55171c862f7443bd9d000d52e933d564d934e05eb192e793e53faa6a5210f"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4437,
+          "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2251,
+          "sha256": "79a15bf9f9a697a71694af14c86431c5ea05a92509fddcb88e3673099ab8546c"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 30394,
+          "sha256": "fdef6f6dbfe76b44021d2f62d071c8d5ffe53c7e4fe8192f3d01b8ece87a8e14"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r3-0006--c55af7297aa1"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r4-0007",
+      "round_created": 4,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "parallel-spline-ou-macro-response",
+      "submission_summary": "Selected after completed shared-plan Development Guided4 comparison: transport .036342825 versus incumbent .163348961, 77.75% lower, every normalized group improved; prepare568.87 charged seconds, no failure. Exact OU balanced macro response, two density Picard passes, phase-adaptive natural-cubic velocity quadrature and tested four-thread convolution. Independent phased-source diagnostics improve, matched manufactures show no material regression. Plain Green separately scored .046633 on BASE1 versus fine64 .159087; no direct Task head-to-head between Green variants. Weak-field approximation and limited scored coverage remain.",
+      "selected_in_rounds": [
+        4
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r4-0007",
+      "entrypoint": "submission.py",
+      "tree_sha256": "b3430b991101381bb75c19b611ad960d99530a862bd7c936f495f9e6bb588468",
+      "manifest_sha256": "ecd2b4cf3214d16c1fc847ab1192104cf8d134f779c0b2d765cb45804c07c48e",
+      "total_bytes": 84276,
+      "files": [
+        {
+          "path": "base.py",
+          "bytes": 10980,
+          "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+        },
+        {
+          "path": "green_ops.py",
+          "bytes": 11028,
+          "sha256": "bf5cd53fe1c8e8c37f6cd36e9eb4a0de9125cabe7ccc15dcc6ceb2cea1e975de"
+        },
+        {
+          "path": "kinetic_ops.py",
+          "bytes": 10084,
+          "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+        },
+        {
+          "path": "macro_limiter.py",
+          "bytes": 11524,
+          "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4437,
+          "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2307,
+          "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+        },
+        {
+          "path": "spline_kernel.py",
+          "bytes": 7367,
+          "sha256": "d5acdb3a3aece11d495bf447873b26fc94745618c947bf6415df2fca55018cfe"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 23142,
+          "sha256": "eb3616459c3c35a2f574cf39e7eb34364a0ecf6100b41a57b5f436980c3a836e"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r4-0007--b3430b991101"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r4-0008",
+      "round_created": 4,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "validated-local-quadrature-h4",
+      "submission_summary": "Selected conservative H4 endpoint refinement: validated adaptive initial GH quadrature with mass repair, expanded local source quadrature, 12-frame timing calibration, and retained33-frame interrupted-refinement fallback. BASE1 Development score0.157728642 in502.745 charged solve seconds with no failure; earlier incumbent0.148243581 and kinetic0.208859477 used different private plans, so no incumbent improvement is established. Shared-plan local H4/H6 guard variants regressed, supporting retention of the incumbent dyadic guard. Request, ABI, central-moment, ordering, budget and refinement-interruption tests pass.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r4-0008",
+      "entrypoint": "submission.py",
+      "tree_sha256": "cc4a7a40824b822b4f912b7ae56f6004dbd2ca1040dff1322daed7dba8c353bd",
+      "manifest_sha256": "284f19c9ac94375416f884bfaa4eb8d37af3594a0f2807c7d1c92034f5231acb",
+      "total_bytes": 96968,
+      "files": [
+        {
+          "path": "adaptive_velocity.py",
+          "bytes": 2282,
+          "sha256": "87df0ccca8f0bbb30e2c563726ee9971d6a3c65d02258e6accab1d2b5fe3ac4d"
+        },
+        {
+          "path": "base.py",
+          "bytes": 11035,
+          "sha256": "47b367c00793f5c82d86199f9f75a7c5070cb7e7ab0a1e12a04f4bcf0e607269"
+        },
+        {
+          "path": "convex_guard.py",
+          "bytes": 3746,
+          "sha256": "6c2f0cbee69621e15755b7af99cc2fd4981fda487bb833709b2dca27e270bc55"
+        },
+        {
+          "path": "hermite_response.py",
+          "bytes": 13760,
+          "sha256": "e50738f847ddb54b68e973274f16bee01aed96e9033f460188bcdd953e6b4315"
+        },
+        {
+          "path": "hermite_response_h4.py",
+          "bytes": 8729,
+          "sha256": "51a55171c862f7443bd9d000d52e933d564d934e05eb192e793e53faa6a5210f"
+        },
+        {
+          "path": "initial_acquisition.py",
+          "bytes": 2923,
+          "sha256": "4b62a603ab7f454143e5fe5f75433218c8817eeb5c973b7fec7e15974f35a817"
+        },
+        {
+          "path": "initial_quadrature.py",
+          "bytes": 9148,
+          "sha256": "d1cdfa1559d048108bbd689761dc2983f7e34755b9f0733f4bfcb5376756a288"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4437,
+          "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2251,
+          "sha256": "79a15bf9f9a697a71694af14c86431c5ea05a92509fddcb88e3673099ab8546c"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 35250,
+          "sha256": "2e7746d1eed7b81a09388f5d330ddd412c7d47162fcdc2ad281e4d672543c7d3"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r4-0008--cc4a7a40824b"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r5-0009",
+      "round_created": 5,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "same-grid-cubic-cuda-transport",
+      "submission_summary": "Matching-grid midpoint residuals improve GUIDED4 shared-plan Development replay from 0.060593977 to 0.054962839 (9.29 percent), all groups better. Exact general bundle completed fresh GUIDED4 and GUIDED5 evaluations at 0.055853974 and 0.058053823, mean 0.056953898, preparation 627.61 and 627.14 seconds, no failures. General validation uses a different query plan; no paired population gain claimed. Portable CUDA continuous OU macro response, fixed bandwidth, extended velocity quadrature, and guarded optional midpoint acquisition.",
+      "selected_in_rounds": [
+        5
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r5-0009",
+      "entrypoint": "submission.py",
+      "tree_sha256": "08516af0e5bfdaf1ddc0ae48d94d219f27a48bedb0f5f3c5664387b2111b03f3",
+      "manifest_sha256": "face342a86c0e5efaf70aade107f399340af6c49a7d919428eeb9ccec8c3c513",
+      "total_bytes": 142146,
+      "files": [
+        {
+          "path": "adaptive_taper.py",
+          "bytes": 6447,
+          "sha256": "b7173a168913124c2060e259e4773e6c9c7c5a5ac38550af90bc32a751ef722b"
+        },
+        {
+          "path": "base.py",
+          "bytes": 11003,
+          "sha256": "a7fcc4b17549f84c29bc02eac6c5c53c46f69d2e94042620e7a0f965288b727e"
+        },
+        {
+          "path": "cuda_force_projector.py",
+          "bytes": 5461,
+          "sha256": "1626ea2c4208932fad0bdfec203a9ecb9a828c0580faecb2cd1643b9e302cfde"
+        },
+        {
+          "path": "field_corrector.py",
+          "bytes": 5116,
+          "sha256": "9319cbbdac46199b8dada39c68bff29b750e29aa59e2c20f287454e3ed0d28b6"
+        },
+        {
+          "path": "gaussian_green.py",
+          "bytes": 5275,
+          "sha256": "aca56f1f78b1b97c0ff6dec15bd8bfb8d5182a9e86858adf1a2d4a78db3d32f8"
+        },
+        {
+          "path": "green_gpu.py",
+          "bytes": 11132,
+          "sha256": "ab00d36533487b66f2959a9cbedb3a14cd2d578707af76b7a6bc0ccc6502f386"
+        },
+        {
+          "path": "green_ops.py",
+          "bytes": 14799,
+          "sha256": "cfac22ef97366bfae7c00eb3950fad0753cbab88c1730dd3df86f60e8cc0ebb0"
+        },
+        {
+          "path": "kinetic_ops.py",
+          "bytes": 10084,
+          "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+        },
+        {
+          "path": "macro_limiter.py",
+          "bytes": 11524,
+          "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4886,
+          "sha256": "0f39681fdeb0d355c590a5ceed4ef879da341db187252181fd71435dd90d092d"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2307,
+          "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+        },
+        {
+          "path": "response_budget.py",
+          "bytes": 6583,
+          "sha256": "c6877fa0ee4abb5d7abedfbd8e76b1d438a57fbe37a342f97fd13928387afaac"
+        },
+        {
+          "path": "same_grid_midpoints.py",
+          "bytes": 7789,
+          "sha256": "696c0d2e0319cb9139637efb380d3c9ff0d2a3ff30df02b9ad6683bc163a03ab"
+        },
+        {
+          "path": "spline_kernel.py",
+          "bytes": 7367,
+          "sha256": "d5acdb3a3aece11d495bf447873b26fc94745618c947bf6415df2fca55018cfe"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 28966,
+          "sha256": "b00ca0045dffc8eb75b744d2d2b5911045cb97590eb9cc7469d4a414db06ff6a"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r5-0009--08516af0e5bf"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r5-0010",
+      "round_created": 5,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "cubic-ou-self-consistent-macro-response",
+      "submission_summary": "Cubic source Duhamel integration, verified Hermitian half-spectrum response, three analytic Gaussian-lift nonlinear-force Picard passes, and positive cubic macro interpolation. Whole-prepare synthetic test improves all ten fields; rho RMS .02092 to .0005745, qx .01985 to .0002433. Deadline and query-isolation tests pass. No Task score yet; first paired Development comparison follows.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r5-0010",
+      "entrypoint": "submission.py",
+      "tree_sha256": "075a0be942fb13b933f0a31f6a3b774cfca415cf160e5c923a29ab820985eb8d",
+      "manifest_sha256": "8ad78b2ebf4a0bb37673016ff06f23c3211d7bd264bd57deebff573a8c70f391",
+      "total_bytes": 107064,
+      "files": [
+        {
+          "path": "base.py",
+          "bytes": 10980,
+          "sha256": "92d5951be9764a11014f1e6ce6d8a3d3c0bf380d748d940ba8c38c3f857b3c89"
+        },
+        {
+          "path": "conjugate_green.py",
+          "bytes": 3537,
+          "sha256": "15c2351d4f16d5be5360c7c6efeeb03071bf4cd4caa0d3d3724d48d2d883bc81"
+        },
+        {
+          "path": "gaussian_force.py",
+          "bytes": 9931,
+          "sha256": "23516895ee711fed02cff0344f41c685398e342b9a64af3f7d077c91ecaa8189"
+        },
+        {
+          "path": "green_ops.py",
+          "bytes": 12734,
+          "sha256": "d0ba8710cad87b3d3b179733b1fd6ae99bac503110469ad70a636b28213c7dfd"
+        },
+        {
+          "path": "kinetic_ops.py",
+          "bytes": 10084,
+          "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+        },
+        {
+          "path": "macro_limiter.py",
+          "bytes": 11524,
+          "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4437,
+          "sha256": "93a990e8e00973243fc9a17934da12e1555be3b79627f66a2466b7380f8ada20"
+        },
+        {
+          "path": "optional_force.py",
+          "bytes": 3259,
+          "sha256": "ed983cf824e20e148c9b8466c520be732621111649a07c27f25048e511b1d610"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2307,
+          "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+        },
+        {
+          "path": "smooth_macro.py",
+          "bytes": 3631,
+          "sha256": "8da92209154e99102cd92dcd7937c3a0de5751fd50f4858eb2c88857f8e1f2a6"
+        },
+        {
+          "path": "spline_kernel.py",
+          "bytes": 7367,
+          "sha256": "d5acdb3a3aece11d495bf447873b26fc94745618c947bf6415df2fca55018cfe"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 23866,
+          "sha256": "110059b477cd9b74fdf29dfcd5d868b96969cae0d9ab9a178d8c06d972b96849"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r5-0010--075a0be942fb"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r6-0011",
+      "round_created": 6,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "streamed-source-cuda-transport",
+      "submission_summary": "Preserves complete source frames using original levelwise request batches. Exact request-plan equivalence and independent fault/integration tests pass. This bundle completed the BASE1 phase-perturbed Development case at score 0.1842271242 in 694.01 seconds preparation. Predecessor completed a shared-plan BASE1 pair at 0.1642316155 versus incumbent 0.1663146047; this is limited Development evidence, not Official improvement.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-astra/candidate-r6-0011",
+      "entrypoint": "submission.py",
+      "tree_sha256": "55f0142214725757cece25e78a0dd60db61bc8516d11a3f5ac4dd9a80666ad6d",
+      "manifest_sha256": "d646e9007ce2a470fd1395c166f661f03b156a4f9c221561c5c9a4c2bb6876ff",
+      "total_bytes": 188376,
+      "files": [
+        {
+          "path": "adaptive_taper.py",
+          "bytes": 6447,
+          "sha256": "b7173a168913124c2060e259e4773e6c9c7c5a5ac38550af90bc32a751ef722b"
+        },
+        {
+          "path": "base.py",
+          "bytes": 11003,
+          "sha256": "a7fcc4b17549f84c29bc02eac6c5c53c46f69d2e94042620e7a0f965288b727e"
+        },
+        {
+          "path": "checkerboard_midpoints.py",
+          "bytes": 12202,
+          "sha256": "ad50ebb7e589197836eaf1b0e18469ae4af378d7e330db3a3af342cc29791914"
+        },
+        {
+          "path": "cuda_force_projector.py",
+          "bytes": 5461,
+          "sha256": "1626ea2c4208932fad0bdfec203a9ecb9a828c0580faecb2cd1643b9e302cfde"
+        },
+        {
+          "path": "dyadic_source_history.py",
+          "bytes": 9547,
+          "sha256": "e93c05f5d7ebce7f45017ec2bfeeea178e32e892b7f29b5f5440ff038bb8492f"
+        },
+        {
+          "path": "field_corrector.py",
+          "bytes": 5116,
+          "sha256": "9319cbbdac46199b8dada39c68bff29b750e29aa59e2c20f287454e3ed0d28b6"
+        },
+        {
+          "path": "gaussian_green.py",
+          "bytes": 5275,
+          "sha256": "aca56f1f78b1b97c0ff6dec15bd8bfb8d5182a9e86858adf1a2d4a78db3d32f8"
+        },
+        {
+          "path": "green_gpu.py",
+          "bytes": 11718,
+          "sha256": "08bf942069edde4b77d193a6b9f6e2cfb156926bb56a3faf32340515e943cdc4"
+        },
+        {
+          "path": "green_ops.py",
+          "bytes": 14799,
+          "sha256": "cfac22ef97366bfae7c00eb3950fad0753cbab88c1730dd3df86f60e8cc0ebb0"
+        },
+        {
+          "path": "kinetic_ops.py",
+          "bytes": 10084,
+          "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+        },
+        {
+          "path": "macro_limiter.py",
+          "bytes": 11524,
+          "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4886,
+          "sha256": "0f39681fdeb0d355c590a5ceed4ef879da341db187252181fd71435dd90d092d"
+        },
+        {
+          "path": "optional_response_budget.py",
+          "bytes": 6118,
+          "sha256": "4c71526748033264f931150b89ebf4c33b8042852c62e65bd0c44bc9981ce0af"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2307,
+          "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+        },
+        {
+          "path": "response_budget.py",
+          "bytes": 6583,
+          "sha256": "c6877fa0ee4abb5d7abedfbd8e76b1d438a57fbe37a342f97fd13928387afaac"
+        },
+        {
+          "path": "same_grid_midpoints.py",
+          "bytes": 7789,
+          "sha256": "696c0d2e0319cb9139637efb380d3c9ff0d2a3ff30df02b9ad6683bc163a03ab"
+        },
+        {
+          "path": "sitewise_initial_force.py",
+          "bytes": 3534,
+          "sha256": "b4638900f1b41d355340f2eec40fcee103176f2da2c950c3b365c5395f102419"
+        },
+        {
+          "path": "source_pruning.py",
+          "bytes": 10007,
+          "sha256": "6a0e4b8df3c947ba049fd66ec0ffffd218e356d495f30828b5355987d9fd3722"
+        },
+        {
+          "path": "spline_kernel.py",
+          "bytes": 8387,
+          "sha256": "3ef562600e66bbf41c8baabb0ec2f44890eb9007efa8e48cf093e6ca0dd23212"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 32182,
+          "sha256": "62f98e07213b7cb5025896f7869ac9103f4c7f80e8e9fcb4679584362f7b3cb3"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r6-0011--55f014221472"
+    },
+    {
+      "arm": "weak-astra",
+      "artifact_id": "candidate-r6-0012",
+      "round_created": 6,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "name": "adaptive-axis-ou-transport",
+      "submission_summary": "Shared-plan general Development comparison on BASE1 and GUIDED5: mean transport score 0.0884244404 incumbent versus 0.0650386012, 26.45 percent lower; all five component errors improve on both cases. Preparation 683.01 and 721.99 charged seconds, no failures. Includes adaptive initial quadrature, resolved source budgets and midpoint extension, verified conjugate CUDA response and per-axis quadrature blending.",
+      "selected_in_rounds": [
+        6
+      ],
+      "is_initial_program": false,
+      "is_final_program": true,
+      "bundle": "solutions/weak-astra/candidate-r6-0012",
+      "entrypoint": "submission.py",
+      "tree_sha256": "038c3ae12d79cf3e37168bb4065026f9b3292fcc379b52ac5b72b99dcb298859",
+      "manifest_sha256": "e50876d782cf6934708df419572d8c9c79d778b5e08f9d368e2b7d477cf362a0",
+      "total_bytes": 152778,
+      "files": [
+        {
+          "path": "adaptive_initial.py",
+          "bytes": 7108,
+          "sha256": "7eeb40659385ba476d045bf67a80bd977c1ee1b7c65fde0c63eb13adf5c9c9b1"
+        },
+        {
+          "path": "adaptive_taper.py",
+          "bytes": 6447,
+          "sha256": "b7173a168913124c2060e259e4773e6c9c7c5a5ac38550af90bc32a751ef722b"
+        },
+        {
+          "path": "base.py",
+          "bytes": 11003,
+          "sha256": "a7fcc4b17549f84c29bc02eac6c5c53c46f69d2e94042620e7a0f965288b727e"
+        },
+        {
+          "path": "cuda_force_projector.py",
+          "bytes": 5461,
+          "sha256": "1626ea2c4208932fad0bdfec203a9ecb9a828c0580faecb2cd1643b9e302cfde"
+        },
+        {
+          "path": "field_corrector.py",
+          "bytes": 5116,
+          "sha256": "9319cbbdac46199b8dada39c68bff29b750e29aa59e2c20f287454e3ed0d28b6"
+        },
+        {
+          "path": "gaussian_green.py",
+          "bytes": 5275,
+          "sha256": "aca56f1f78b1b97c0ff6dec15bd8bfb8d5182a9e86858adf1a2d4a78db3d32f8"
+        },
+        {
+          "path": "green_gpu.py",
+          "bytes": 13663,
+          "sha256": "957adc98474e1c6241e6c3e65977a87f5266a94f3cfaeb60488b2e11d6d109f9"
+        },
+        {
+          "path": "green_ops.py",
+          "bytes": 14799,
+          "sha256": "cfac22ef97366bfae7c00eb3950fad0753cbab88c1730dd3df86f60e8cc0ebb0"
+        },
+        {
+          "path": "kinetic_ops.py",
+          "bytes": 10084,
+          "sha256": "70ea020a9103ab9886df0c164d50af2376c75323381e5862191bbd826975b9fd"
+        },
+        {
+          "path": "macro_limiter.py",
+          "bytes": 11524,
+          "sha256": "26ed5b260bd01d82fc958a8d0946c37019d4e7de7999b212ee1bcc386469ddbc"
+        },
+        {
+          "path": "moments.py",
+          "bytes": 4886,
+          "sha256": "0f39681fdeb0d355c590a5ceed4ef879da341db187252181fd71435dd90d092d"
+        },
+        {
+          "path": "realizability.py",
+          "bytes": 2307,
+          "sha256": "3535ef3332ff9ade7fe7fffe8df3485be8f4e34284e46027364e90dee7297eac"
+        },
+        {
+          "path": "response_budget.py",
+          "bytes": 6583,
+          "sha256": "c6877fa0ee4abb5d7abedfbd8e76b1d438a57fbe37a342f97fd13928387afaac"
+        },
+        {
+          "path": "same_grid_midpoints.py",
+          "bytes": 7898,
+          "sha256": "2b39773b7b8ad31b8d1d40b9d20de7801b6da202e83bd263dc1fd8d12d971e9b"
+        },
+        {
+          "path": "spline_kernel.py",
+          "bytes": 7495,
+          "sha256": "0a2c5c85e9e093acf910db470a7b1a0b6f3e331982d866e676cbd74fdeb0e0ef"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 29722,
+          "sha256": "b4833d2b2b7b0ad4004bf73f52725449d05d908397d513159cc20998b496b787"
+        },
+        {
+          "path": "thermal_mixing.py",
+          "bytes": 3407,
+          "sha256": "2edeedac8a1eb7a1e8cbff1cc5e89c47256efd6d8979d030e3a4d48dcbd1fb40"
+        }
+      ],
+      "archive_program_directory": "programs/weak-astra/candidate-r6-0012--038c3ae12d79"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-s0",
+      "round_created": 0,
+      "agent_id": "user",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "Simple stable transport S0",
+      "submission_summary": "Public rho0 and periodic Poisson; static Maxwellian closure j=qh=0, P=rho*T*I.",
+      "selected_in_rounds": [],
+      "is_initial_program": true,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-s0",
+      "entrypoint": "submission.py",
+      "tree_sha256": "fa7fa53fb31db00d620002a32fb1b4db0f0ec01cba65ac92cacd8bd21ec208dd",
+      "manifest_sha256": "5e2c2938fd243ed94710dfd93b3cdfe55c394670dc3571168160de42030de463",
+      "total_bytes": 6101,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 6101,
+          "sha256": "930e712974a97402329f92088d56ff68fb3a38ccdda985bc48c9959ac2e54257"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-s0--fa7fa53fb31d"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r1-0001",
+      "round_created": 1,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "spatial24-kinetic-q40-safe",
+      "submission_summary": "Final 24x24x22x22 adaptive kinetic solver with 40% evolved heat-flux blend. Development: shared BASE 0.1374 (q 0.334); fresh moderate GUIDED 0.1472 (q 0.289); BASE perturb 0.1285 (q 0.313); ~272-277 charged seconds. High-drift guided cases use finite full-initial fallback (~0.31); unseen instability also falls back.",
+      "selected_in_rounds": [
+        1
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r1-0001",
+      "entrypoint": "submission.py",
+      "tree_sha256": "e196fb646c02aad5a5ec4b4b535e0a45e64c3a65968921ad17ac907f1f2c4dbe",
+      "manifest_sha256": "d0142f359b147c7371056b8398cb8dbd698243371c47b75fef9bfe57c5eb51b7",
+      "total_bytes": 10680,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 10680,
+          "sha256": "5fa9e226b5e3b549a869d7fd104f6e6c477745835b1fbd4a980562ffdbfccacc"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r1-0001--e196fb646c02"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r1-0002",
+      "round_created": 1,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "calibrated-freestream-pressure-final",
+      "submission_summary": "Selected after shared-plan validation: exponential macro model averaged 0.21709 on 12 fresh BASE/paired/GUIDED cases; pressure-only free-stream hybrid improved 0.23571 to 0.22938 on four untouched fresh cases, all improved; no failures, ~11.7 charged s/case.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r1-0002",
+      "entrypoint": "hybrid.py",
+      "tree_sha256": "ca637c90273bed5398b46938dd52ba1b9e84a31fa766ccd00d2b146d70879454",
+      "manifest_sha256": "e55981b09fa4ccf6ce1519d9f460efed7bd49d526d4166b13c5dc6030ff8ba63",
+      "total_bytes": 40842,
+      "files": [
+        {
+          "path": "ballistic.py",
+          "bytes": 9378,
+          "sha256": "e37bcfc11088284d325f4fc2a844b01e1ff5c41c5d0d428e368801e8fc115c98"
+        },
+        {
+          "path": "calibrated.py",
+          "bytes": 4530,
+          "sha256": "524f7ab24dd278f284eca8faf7367a603fb7219e3df2dc9f8495938590a8ae5f"
+        },
+        {
+          "path": "freestream.py",
+          "bytes": 6058,
+          "sha256": "0b50315b8faf628b1298a8ac540a1a39f2619ffda61b38afcbfde8721e763df2"
+        },
+        {
+          "path": "hybrid.py",
+          "bytes": 1869,
+          "sha256": "4f0871ad8315a22c7cecc2441e71700ce1dfb0a224643bc2db4ae01832b65c74"
+        },
+        {
+          "path": "submission.py",
+          "bytes": 8103,
+          "sha256": "1d32842847fdb35ff04aadf0fa7932ca700bf48fd977478d5dd5fda380c2f674"
+        },
+        {
+          "path": "taylor.py",
+          "bytes": 10904,
+          "sha256": "f56f36f4453078b395cdda0d107d760632a3f4b4ce94ba16c9c7f968de476a73"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r1-0002--ca637c90273b"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r2-0003",
+      "round_created": 2,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "spatial32-moving-band-q20",
+      "submission_summary": "Final 32x32x22x22 solver: lab kinetic q50 for BASE, comoving kinetic lower moments and 20% evolved+80% fixed-lab heat for 3<max|U|<5, frozen full-initial for >=5/instability. BASE nx32 beat nx28 .11145 vs .11856 shared. GUIDED q20 beat fixed q on two shared plans: .20757 vs .21651 (drift4.27), .16894 vs .17997 (drift4.54). Moving lower moments previously beat fallback .23331 vs .32190 on drift4.27. Full solve 482-491s.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r2-0003",
+      "entrypoint": "submission.py",
+      "tree_sha256": "56cc0a998b1c09968cd173a0feebf226f00a323dbb0d3950e6cd9a29c87b2fa5",
+      "manifest_sha256": "447415f1f9143a77009506f0871ad2fba11f7d12ddda05828518ae4eb2c1e3e0",
+      "total_bytes": 12686,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 12686,
+          "sha256": "b470ea764c26f3e8c933f8fa65678236d4c5a40010944bbf26551aa4b060ef96"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r2-0003--56cc0a998b1c"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r2-0004",
+      "round_created": 2,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "spatial36-spectral-q80-guided",
+      "submission_summary": "36x36 space, 22x22 spectral velocity, q80 normal-drift blend plus calibrated high-drift fallback. BASE anchor scored 0.07736 (charge 0.0551, momentum 0.0716, pressure 0.0392, heat 0.1435) versus 0.08873 for 32x32 q70; solve 663.5 s, leaving 236 s headroom. Guided fallback retained.",
+      "selected_in_rounds": [
+        2
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r2-0004",
+      "entrypoint": "submission.py",
+      "tree_sha256": "562101c831557f40d7e23a082064d1a757d3225a27c5d761062938b54e6e0b66",
+      "manifest_sha256": "16fa50f16a8d419784c87353a3a5848762bf810c44e5845dba4d7da3e050304c",
+      "total_bytes": 11325,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 11325,
+          "sha256": "51a815d0bcfc3f1df7bc8f5ef219af1a20f950df49ab774798dcf27d9fd10e56"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r2-0004--562101c83155"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r3-0005",
+      "round_created": 3,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "spatial38-q80-guided-e100",
+      "submission_summary": "BASE shared plan: NX38 q80 scored 0.093597 vs incumbent 0.094087 at 725.2 charged s. On 8 fresh GUIDED cases, full field-decay blend improved mean 0.208588 to 0.208227 and charge/field 0.208385 to 0.206943, improving 7/8; fitted alpha optimum 1.01. Other guided blocks and safe fallback unchanged.",
+      "selected_in_rounds": [
+        3
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r3-0005",
+      "entrypoint": "submission.py",
+      "tree_sha256": "4ddffdae5b0179c9c931e446f05eb5968cbe9f44e515cab7b9082b62ca4360c8",
+      "manifest_sha256": "b613d40c19b35f049f6ead83beb3077b92ad1dcd81b12696b5b6a09a848073ab",
+      "total_bytes": 11325,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 11325,
+          "sha256": "df82fdcdb6de2f35f3b0076c5ac23287d16a1194742934a9a9b696cb699e4ae2"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r3-0005--4ddffdae5b01"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r3-0006",
+      "round_created": 3,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "heat70-guided-calibrated",
+      "submission_summary": "Shared-plan BASE validation: heat70 improved 0.14176 to 0.13919 versus incumbent heat80; on a second BASE heat70 beat heat60 0.11761 to 0.11901. Eight fresh extreme-GUIDED cases fit fallback current weight 0.86 and heat-decay weight 0.44; predicted guided mean gain about 0.0009. Runtime 640-654 s full solve, 2.6-3.1 s fallback, no failures.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r3-0006",
+      "entrypoint": "submission.py",
+      "tree_sha256": "b345abaa4d97a741921d39133a6f2fa8f1027f3b0a3e2e183f8a84d3e363b6d5",
+      "manifest_sha256": "d36a6ea3fc3e2daa772a957199907b0327da953fa06b857795900d1107eed287",
+      "total_bytes": 11325,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 11325,
+          "sha256": "f0c8ee912330978a72ea197ca1746dd1797e8bfdea7f252a11b7d056b8381eef"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r3-0006--b345abaa4d97"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r4-0007",
+      "round_created": 4,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "spatial37-v24-vmax10p5-guided",
+      "submission_summary": "Fresh shared BASE root: +/-10.5 scored 0.079865 vs +/-10 0.082115; heat .17938 vs .18863, pressure .02976 vs .03027, solve 678.8 s. Retains 8-case guided calibration score .19966 vs incumbent .20248.",
+      "selected_in_rounds": [
+        4
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r4-0007",
+      "entrypoint": "submission.py",
+      "tree_sha256": "50ffccadcf7e974f70ae5f229afd79618d9e91969669ef7bd5464dca7fee451f",
+      "manifest_sha256": "5dbf970c8a60eba2cde8da205d236f8963a99480584c7a07671fed5ff2d88e57",
+      "total_bytes": 12079,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 12079,
+          "sha256": "293afa6ea2e014d4a2790dc358922800c8436dda9d16b8477f0defbb496a4cd5"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r4-0007--50ffccadcf7e"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r4-0008",
+      "round_created": 4,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "nx38-guided-calibration-final",
+      "submission_summary": "Selected robust result: incumbent NX38 kinetic BASE branch is bit-for-bit unchanged. High-drift fallback uses e=0.87,j=0.86,P=0.46,q=0.44. Round-3 Official carrier improved every guided block; fresh round-4 shared partial batch improved 9/10 matched guided cases, mean 0.207944 to 0.204605. Exact H3 balance was rejected after mixed BASE results (-0.000241 then +0.001197 total).",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r4-0008",
+      "entrypoint": "submission.py",
+      "tree_sha256": "3d51bbc23002bc0b24d4c8d09040daebe332b5e7a20517b4537a4872db57451f",
+      "manifest_sha256": "aee40af38fc3c12e18984d547b2056d98d87d812e3795e532eb6c64978d74bf0",
+      "total_bytes": 11621,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 11621,
+          "sha256": "f0c6fed16a8e079b040c8953f8527b68a79e807fc4190ed807a1e2b1d5215861"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r4-0008--3d51bbc23002"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r5-0009",
+      "round_created": 5,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "gpu-v28-vmax11p5-guided-refit",
+      "submission_summary": "CUDA 37x37x28x28 +/-11.5 kinetic solver plus validated guided weights. Shared BASE against frozen CUDA v24: 0.101338 to 0.088278; all blocks improved (charge .07476 to .06841, j .07633 to .05747, P .04509 to .03553, q .20918 to .19170). Charged solve 818.4 s. Five-case high-drift refit independently improved .20940 to .20802.",
+      "selected_in_rounds": [
+        5
+      ],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r5-0009",
+      "entrypoint": "submission.py",
+      "tree_sha256": "634e61e50a20472c0d5bb223ca9ea1971ffb1790815dd7181268fc6a3ffe52a9",
+      "manifest_sha256": "fbac4ae47f8296e9a45b4b504f4c962109b7921a8031b5c020a2b7c46f6800f6",
+      "total_bytes": 14782,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 14782,
+          "sha256": "5dca66032f8c8a5e897d8486fbc0695cb811e9a13850f32ae47039701d25dc09"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r5-0009--634e61e50a20"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r5-0010",
+      "round_created": 5,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "sinh24-q60-guided-tail32-final",
+      "submission_summary": "Final mapped solver. Mapped grid beat uniform +/-12 on two shared BASE plans: 0.109173 to 0.082259 (all blocks) and 0.118536 to 0.114474 (lower blocks; heat exposed). Reducing mapped evolved-heat weight 0.80 to 0.60 then improved the latter shared plan 0.116210 to 0.109586, heat 0.274330 to 0.247836 with other blocks identical. Guided nested tail quadrature mean 0.213103 vs incumbent 0.214590 over 9 cases; solve ~704-711 s BASE, ~5.7 s fallback.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r5-0010",
+      "entrypoint": "submission.py",
+      "tree_sha256": "8cbd5e83bc0fc09f71d31fe335e683c421f71018b7d4aef113f671ba29857ffc",
+      "manifest_sha256": "dd96139b5d10c4ccf78636dd77bc9cba4b318e3f920a3d9fed79b918b836426b",
+      "total_bytes": 16896,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 16896,
+          "sha256": "45e0f86f6b6279fd0cff8ebad97fb97ab5d96b0d6f3ed8f8b7af4835941a3d68"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r5-0010--8cbd5e83bc0f"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r6-0011",
+      "round_created": 6,
+      "agent_id": "vpfp-weak-broad-explorer",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "round6-guided-exact-lower",
+      "submission_summary": "Keeps incumbent ordinary kinetic solve and cohort-fitted guided weights (.80/.885/.712/.47). High-drift initial rho, momentum, and pressure trace use released exact previews with Fourier interpolation and consistent P recentering; heat keeps robust original quadrature. Shared all-14 validation improved refit 0.200613 to 0.200411, with charge .229170 to .228784, j .067759 to .067451, stress .133429 to .133314, heat identical; solve 4.18 s.",
+      "selected_in_rounds": [],
+      "is_initial_program": false,
+      "is_final_program": false,
+      "bundle": "solutions/weak-sol/candidate-r6-0011",
+      "entrypoint": "submission.py",
+      "tree_sha256": "c6a842545e43525f1aa965662577bdc30950cc7cf53a86b4f79cd6d19b1b7aeb",
+      "manifest_sha256": "cad9f9d7ca9c8b5f3a2e4e815021c88842a7ff320b3cc318ffdeb610126f61f8",
+      "total_bytes": 16351,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 16351,
+          "sha256": "6502974a219e67a0e0d0f42e218d2452e89241fd06bc3e29c6c3228d03f19498"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r6-0011--c6a842545e43"
+    },
+    {
+      "arm": "weak-sol",
+      "artifact_id": "candidate-r6-0012",
+      "round_created": 6,
+      "agent_id": "vpfp-weak-critical-refiner",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "name": "guided-28case-quadratic-calibration",
+      "submission_summary": "Ordinary CUDA kinetic branch unchanged. Exact shared-plan quadratic fit on 28 fresh high-drift GUIDED cases predicts mean 0.193922 to 0.191907, improving 20/28, with robust fixed E/j/P/q weights 0.8014/0.9015/0.7886/0.6261.",
+      "selected_in_rounds": [
+        6
+      ],
+      "is_initial_program": false,
+      "is_final_program": true,
+      "bundle": "solutions/weak-sol/candidate-r6-0012",
+      "entrypoint": "submission.py",
+      "tree_sha256": "77dc764ba4e536c8e6f1065a2b8490be17e935eb0de814ecf6986c21e9f90b7d",
+      "manifest_sha256": "2a4fe51e3d392b485215853f750e3929551878baffb76a53be4af3785fc6cd56",
+      "total_bytes": 14788,
+      "files": [
+        {
+          "path": "submission.py",
+          "bytes": 14788,
+          "sha256": "b8ba415b275a7a59506b633458ad4a7ff9d33a72d43caa2e41050f97aac09fb4"
+        }
+      ],
+      "archive_program_directory": "programs/weak-sol/candidate-r6-0012--77dc764ba4e5"
+    }
+  ]
+}

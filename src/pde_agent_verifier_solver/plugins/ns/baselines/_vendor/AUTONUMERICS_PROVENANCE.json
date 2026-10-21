@@ -1,0 +1,62 @@
+{
+  "repository": "https://github.com/Daviddjddu/Autonumerics",
+  "revision": "adc25f7c32e278d63b9ff8a1f6d882da4ec2f560",
+  "audited_at": "2026-09-20",
+  "upstream_source_vendored": false,
+  "implementation": "Independent source-audited NS adaptation; not an exact author benchmark reproduction.",
+  "upstream_license": null,
+  "license_audit": "No license inferred; no upstream source copied into this repository.",
+  "source_files": [
+    {
+      "path": "implementation/main_pipeline/runner_single_prob.py",
+      "url": "https://github.com/Daviddjddu/Autonumerics/blob/adc25f7c32e278d63b9ff8a1f6d882da4ec2f560/implementation/main_pipeline/runner_single_prob.py",
+      "sha256": "f590f7accb4c98e19b7dbd0bdf35f50fe547cdc69ef4ae5f2846d7f0d16da6be"
+    },
+    {
+      "path": "implementation/main_pipeline/plan_selector_v2.py",
+      "url": "https://github.com/Daviddjddu/Autonumerics/blob/adc25f7c32e278d63b9ff8a1f6d882da4ec2f560/implementation/main_pipeline/plan_selector_v2.py",
+      "sha256": "1e2691488d1d2792bdb8ace8b69d4c14b9c39f83cea09d6d8bd86bd77a9885de"
+    },
+    {
+      "path": "implementation/main_pipeline/planner_agent_v2.py",
+      "url": "https://github.com/Daviddjddu/Autonumerics/blob/adc25f7c32e278d63b9ff8a1f6d882da4ec2f560/implementation/main_pipeline/planner_agent_v2.py",
+      "sha256": "9f7fb15663cfd4e18260c8c51a00abd390dd198e0f4a7f16b14b5374e1c3fa54"
+    },
+    {
+      "path": "implementation/main_pipeline/coder_agent_v3_robust.py",
+      "url": "https://github.com/Daviddjddu/Autonumerics/blob/adc25f7c32e278d63b9ff8a1f6d882da4ec2f560/implementation/main_pipeline/coder_agent_v3_robust.py",
+      "sha256": "a0809c7c7bd96376961d5027b7008165ddd2f09ac0e19d01016742497f282034"
+    },
+    {
+      "path": "implementation/main_pipeline/critic_agent_v2.py",
+      "url": "https://github.com/Daviddjddu/Autonumerics/blob/adc25f7c32e278d63b9ff8a1f6d882da4ec2f560/implementation/main_pipeline/critic_agent_v2.py",
+      "sha256": "3c158ac377635fda82db2baf2a791128bbb19000ab98d3d8ac828d6853d4d23c"
+    }
+  ],
+  "paper": "https://arxiv.org/abs/2602.17607",
+  "preserved": [
+    "Formulator -> Planner (10 plans) -> Selector (top 5) -> Coder -> coarse/fine Critic",
+    "plan scores and rejected-plan filtering with explicit all-rejected fallback",
+    "coarse spatial sizes max(16,N//4) passed to actual candidate execution",
+    "two fresh implementation starts per selected plan",
+    "four coarse and two fine repair attempts per fresh start, as pinned code",
+    "completion_v2: final measured-result Selector followed by Reasoner explanation"
+  ],
+  "adaptations": [
+    "NS public Case and prepare_solution_for_plan adapter",
+    "LLM numerical feature/compatibility assessment; no reproduction of author PDE catalog filters or textbook retrieval",
+    "shared trusted reference error instead of native residual acceptance and native grids",
+    "300-second solver cap, common LM; bounded_v1 wall caps or completion_v2 natural completion",
+    "fine means original numerical plan, not an imposed resolution or smaller validation set",
+    "optional S0 delivery fallback; not supplied to fresh implementation roles"
+  ],
+  "paper_code_disagreement": "v1 paper describes six fine repairs; pinned public runner uses max_retries=2. This implementation follows pinned source.",
+  "score_caveat": "Native CodePDE-derived residual results and native successful-restart-only runtimes must not be relabeled as our relative error or full development cost.",
+  "completion_v2_adaptations": [
+    "NS plan deduplication and compatibility facts; lightweight numerical reference anchors, not a full retrieval system",
+    "Full Agent per role; all roles use the assigned paired environment",
+    "Finite starter reference velocities public in both arms; continuous truth queries disabled",
+    "No cumulative Agent time or online Base quota; operational segments retain native session and code",
+    "S0 only when no numerical plan succeeds; final Selector is not replaced with automatic argmin"
+  ]
+}

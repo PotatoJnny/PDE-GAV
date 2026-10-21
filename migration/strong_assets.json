@@ -1,0 +1,76 @@
+{
+  "schema": "clean_migration_assets_v1",
+  "backend": "strong",
+  "source_commit": "9b18f0e05bbeee743a00ee641336a14420cf9dba",
+  "files": [
+    {
+      "role": "base",
+      "source": "${PDE_GAV_RUN_ROOT}/vpfp-strong-regime-coherent-5268586/seed-0/initial_conditioned/checkpoints/fixed-step-040000.pt",
+      "destination": "strong/models/base-ic40.pt",
+      "sha256": "255b8f77e418568b4d48b3669b95aa706cd83d94cee76d291806ae4e55794f62",
+      "bytes": 10181261,
+      "config_keys": [
+        "backend",
+        "base_checkpoint"
+      ],
+      "purpose": "Frozen trained input for fresh strong VPFP"
+    },
+    {
+      "role": "codec",
+      "source": "${PDE_GAV_RUN_ROOT}/vpfp-portable-codec-export-5299171/conversion/portable-codec.pt",
+      "destination": "strong/models/portable-codec.pt",
+      "sha256": "ab52cf84c5d010900165f884d52787e19d83f6760de5e5d5e56bc9af5d07f18c",
+      "bytes": 13591990,
+      "config_keys": [
+        "backend",
+        "portable_codec"
+      ],
+      "purpose": "Frozen trained input for fresh strong VPFP"
+    },
+    {
+      "role": "base_decoder",
+      "source": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/base_online_decoder.pt",
+      "destination": "strong/models/base-online-decoder.pt",
+      "sha256": "44f15e3d48120bce94066078dd5f54ff99227d0855f7c5646c173e43fdacd6a9",
+      "bytes": 68280387,
+      "config_keys": [
+        "backend",
+        "native_spec",
+        "base_decoder_checkpoint"
+      ],
+      "purpose": "Frozen trained input for fresh strong VPFP"
+    },
+    {
+      "role": "expanded_decoder",
+      "source": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/expanded_robust_decoder.pt",
+      "destination": "strong/models/expanded-robust-decoder.pt",
+      "sha256": "18eeaefb325b998fbaf72fb27059df9528a4f8e75ea8975a5ce4db491aca3530",
+      "bytes": 68318011,
+      "config_keys": [
+        "backend",
+        "native_spec",
+        "expanded_decoder_checkpoint"
+      ],
+      "purpose": "Frozen trained input for fresh strong VPFP"
+    },
+    {
+      "role": "codec_conversion_proof",
+      "source": "${PDE_GAV_RUN_ROOT}/vpfp-portable-codec-export-5299171/conversion/result.json",
+      "destination": "strong/provenance/codec-conversion-result.json",
+      "sha256": "29d0542cd92a7df1bce3226465d3c1c70385fb7da48b683249100a1eb805f9fe",
+      "bytes": 252957,
+      "purpose": "Original immutable proof; embedded source paths are historical provenance, never runtime locators"
+    }
+  ],
+  "code_refs": [
+    "configs/vpfp_strong_formal_5round_s101.json",
+    "configs/candidates/vpfp_strong_initial_bundle",
+    "configs/vpfp_single_primary_r4_s101.json",
+    "docs/agents/vpfp_single_primary",
+    "legacy/vpfp"
+  ],
+  "excludes": [
+    "Old campaign state, guidance, memory, runtime/auth and optimizer/RNG",
+    "Training corpus: frozen sampler contains validated normalization and prior payloads"
+  ]
+}

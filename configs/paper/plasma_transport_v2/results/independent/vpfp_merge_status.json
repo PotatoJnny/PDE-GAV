@@ -1,0 +1,23 @@
+{
+  "new_solver_calls": 0,
+  "original": {
+    "path": "${PDE_GAV_RUN_ROOT}/kinetic-followup-postprocess-6464177/independent/verified-results.json",
+    "sha256": "3dbc674053e4e56669d6157e8d6469c1795081fb7040a99c5e0e01cedcdad2a7"
+  },
+  "original_attempts": 200,
+  "remaining_failed_cases": 0,
+  "schema": "kinetic_independent_supplement_merge_v1",
+  "score_based_selection": false,
+  "status": "complete",
+  "successful_cases": 200,
+  "superseded_failures": 11,
+  "supplement_roots": [
+    "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-qualification-6468972/independent/strong-d2544e63519cab0d",
+    "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-qualification-6484714/independent/strong-d2544e63519cab0d",
+    "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-qualification-6484714/independent/strong-ed7bb64cbc669d90",
+    "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-qualification-6484714/independent-remainder/strong-d2544e63519cab0d",
+    "${PDE_GAV_RUN_ROOT}/kinetic-followup-relaxed-qualification-6484714/independent-remainder/strong-ed7bb64cbc669d90"
+  ],
+  "supplementary_attempts": 12,
+  "verified_results_sha256": "2ea634fd4aec950e3614889cb77da3643bf461fea422b46c8deee05ddf446a0d"
+}

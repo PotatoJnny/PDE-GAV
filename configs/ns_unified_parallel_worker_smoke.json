@@ -1,0 +1,87 @@
+{
+  "schema": "unified_plasma_agent_iteration_v1",
+  "campaign_id": "ns-unified-synthetic-cpu-chain-test-only-v1",
+  "execution": {
+    "mode": "process_per_agent_with_central_gpu",
+    "worker_gpu_count": 2,
+    "controller_gpu_count": 1,
+    "cpus_per_worker": 8,
+    "timeout_seconds": 1800
+  },
+  "controller_policy": {
+    "schema": "unified_macro_controller_policy_v1",
+    "profile": "ns_synthetic_cpu_chain_test_only_v1",
+    "agent_count": 2,
+    "round_count": 1,
+    "development_root_count": 1,
+    "development_pool_multiplier": 1,
+    "development_release_root_limit": 1,
+    "development_screen_root_stages": [1],
+    "development_screen_root_credit_limit": 1,
+    "development_screen_confidence_z": 0.0,
+    "development_screen_continuation_max_mean_ratio": 2.0,
+    "selection_root_count": 1,
+    "evidence_stages": [
+      {
+        "root_count": 1,
+        "confidence_z": 0.0,
+        "min_mean_improvement": 0.0,
+        "min_win_rate": 0.0,
+        "require_cvar_no_regression": false
+      }
+    ],
+    "development_screen_timeout_seconds": 300,
+    "terminal_root_count": 1,
+    "development_case_credits": 2,
+    "seed_stride": 10000,
+    "paired_sampling_max_attempts": 8,
+    "paired_objective": {
+      "mode": "weighted_composite",
+      "base_weight": 0.5,
+      "perturbed_weight": 0.5,
+      "guardrail_relative_margin": 0.05,
+      "guardrail_confidence_z": 0.0
+    },
+    "candidate_compute_budget": 30,
+    "candidate_query_seconds_per_point_limit": 0.05,
+    "agent_timeout_seconds": 300,
+    "agent_hard_timeout_seconds": 900,
+    "model": "scripted-gpu-smoke",
+    "reasoning_effort": "low",
+    "allow_development_truth": false,
+    "cvar_tail_fraction": 1.0,
+    "terminal_confidence_z": 0.0,
+    "terminal_min_win_rate": 0.0,
+    "terminal_require_cvar_no_regression": false,
+    "search_protocol": {
+      "min_distinct_screened_candidates": 0,
+      "min_full_stage_candidates": 0,
+      "min_released_roots": 0,
+      "require_final_full_stage": false,
+      "leaderboard_limit": 2,
+      "cross_share_after_round": 0
+    },
+    "agent_roles": [
+      "Scripted NS GPU worker A: exercise one complete paired-root release, screen, CandidateBundle, and submission path.",
+      "Scripted NS GPU worker B: independently exercise the same path on a distinct assigned GPU."
+    ]
+  },
+  "physics": "ns",
+  "run_root": "${PLASMA_RUN_ROOT}",
+  "storage_root": "${PLASMA_STORAGE_ROOT}",
+  "agent": {
+    "cold_start_candidate": "${UNIFIED_ROOT}/configs/candidates/ns_hold_initial_bundle",
+    "agent_launcher": "${UNIFIED_ROOT}/scripts/run_reference_macro_smoke_agent.py",
+    "codex_binary": "${CODEX_BINARY}",
+    "auth_file": "${CODEX_AUTH_FILE}"
+  },
+  "ns": {
+    "generator_mode": "synthetic_cpu_chain_test_only",
+    "runtime": {
+      "max_points_per_request": 4096
+    },
+    "guidance": {
+      "enabled": false
+    }
+  }
+}

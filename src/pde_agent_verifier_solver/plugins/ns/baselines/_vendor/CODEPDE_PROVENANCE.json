@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/LithiumDA/CodePDE",
+  "revision": "26938c5832ddd0a957426dff6f702b54649c14af",
+  "revision_date": "2026-02-12T19:17:14Z",
+  "audited_at": "2026-09-06",
+  "upstream_mode": "repeated_sample",
+  "source_files": [
+    {
+      "path": "repeated_sample.py",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/repeated_sample.py",
+      "sha256": "cbe644cc3f33308db2a6b238f023d93e5f7b1ffbab7889b56072edd1f5f441e8",
+      "policy_lines": "31-43"
+    },
+    {
+      "path": "code_generation.py",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/code_generation.py",
+      "sha256": "c83d5f94e2c70bbb867c4318014a180be6538b36d9899dc871fcf6b157bbb170",
+      "policy_lines": "102-127, 375-438"
+    },
+    {
+      "path": "configs/method/repeated_sample.yaml",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/configs/method/repeated_sample.yaml",
+      "sha256": "5612b398b1346c4278864bb8343ce7ed3286f0058771c36a099a53efe7cf0b85"
+    }
+  ],
+  "upstream_license": null,
+  "license_audit": "No LICENSE, COPYING, or NOTICE file appears in the recursive tree at this revision; no license header appears in the audited Python files. No license terms are inferred.",
+  "upstream_source_vendored": false,
+  "implementation": "Independent reimplementation of the publicly inspectable control policy, with NS callbacks.",
+  "upstream_delivery_selection": "repeated_sample writes per-sample results and does not select one delivered program",
+  "ns_delivery_selection": "minimum finite fixed-validation error among completed samples; ties retain the earlier sample"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "vpfp_frozen_guidance_effect_v1",
+  "round_config": "configs/vpfp_strong_solver_guidance_demand_20260908.json",
+  "guide": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-guidance-calibration-5310061/training/combined/seed-3120260908/fixed-step-002000.pt",
+    "sha256": "c04a16324ce383a47debe97c4b5f24099089444e658fe56387b0733e9bddb8d8"
+  },
+  "training_plan": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-solver-guidance-preflight-5299309/pipeline/frozen-plan.json",
+    "sha256": "b0a67105af6b9ee927656616f625e3cc2045d333304bdd408207d4e4e36b5e68"
+  },
+  "training_labels": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-solver-guidance-preflight-5299309/pipeline/label-manifest.json",
+    "sha256": "6f6cddd18b407e8b71b591ae12d3b7a99fed1f62004e29c8a117e853e3baaca2"
+  },
+  "training_report": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-guidance-calibration-5310061/training/combined/seed-3120260908/training.json",
+    "sha256": "506bbb103ee76cf4b0520eeafee32440bc013c00f79d0e118603a72581ccf84e"
+  },
+  "strength": 2,
+  "fresh_split_seeds": {
+    "fit": 7320260908,
+    "validation": 7420260908,
+    "selection": 7520260908,
+    "confirmation": 7620260908,
+    "training": 7820260908
+  },
+  "expected_pairs": 32,
+  "bootstrap_seed": 7720260908,
+  "bootstrap_replicates": 10000,
+  "prior_effect": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-guidance-effect-demand-5308991/evaluation/result.json",
+    "sha256": "d6fa4c24fc1337327d2fe19055fc95aca7ed73ca05988a414f069a32c067552f"
+  },
+  "selection_note": {
+    "calibration_job": 5310061,
+    "variant": "combined",
+    "seed": 3120260908,
+    "step": 2000,
+    "basis": "lowest_development_reward_MSE; frozen_before_any_new_solver_result",
+    "previous_two_seed_regression_gate": "diagnostic_only_for_this_user_requested_direct_effect_evaluation",
+    "final_criterion": "paired_actual_solver_error_on_generated_questions; failures_not_hardness_gains",
+    "automatic_online_deployment": false
+  }
+}

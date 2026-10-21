@@ -1,0 +1,59 @@
+{
+  "repository": "https://github.com/LithiumDA/CodePDE",
+  "revision": "26938c5832ddd0a957426dff6f702b54649c14af",
+  "audited_at": "2026-09-17",
+  "upstream_source_vendored": false,
+  "implementation": "Independent source-audited NS adaptation; not an exact author benchmark reproduction.",
+  "upstream_license": null,
+  "license_audit": "No license inferred; no upstream source copied into this repository.",
+  "source_files": [
+    {
+      "path": "refine.py",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/refine.py",
+      "sha256": "a465cc9f6e058596ae6c414e65e10a535f6672e231f7328b0c0ca36fcc14a8a8"
+    },
+    {
+      "path": "code_generation.py",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/code_generation.py",
+      "sha256": "c83d5f94e2c70bbb867c4318014a180be6538b36d9899dc871fcf6b157bbb170"
+    },
+    {
+      "path": "configs/method/refine.yaml",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/configs/method/refine.yaml",
+      "sha256": "742c18c1465f171407bf9dfb80a21443e4c7b1ca075978de62e64c78cf6587af"
+    },
+    {
+      "path": "prompt_files/general_prompt.py",
+      "url": "https://github.com/LithiumDA/CodePDE/blob/26938c5832ddd0a957426dff6f702b54649c14af/prompt_files/general_prompt.py",
+      "sha256": "97391826c080a7d10a5e21924b9f971af41fe763125c5af0c5044588942700b4"
+    }
+  ],
+  "paper": "https://arxiv.org/abs/2505.08783",
+  "preserved": [
+    "independent initial samples",
+    "debug execution/nonfinite failures only",
+    "frozen validation-ranked seed pool",
+    "random subsets of multiple complete seed implementations",
+    "independent refinement branches; refinements do not reenter seed pool"
+  ],
+  "adaptations": [
+    "reusable NS Case solver instead of one PDE invocation",
+    "shared trusted hidden relative-velocity error rather than author benchmark runner",
+    "bounded 3 initial samples + 3 refinements, seed pool at most 3, reference counts 2/3/3",
+    "optional common S0 included as explicit NS seed and delivery fallback",
+    "same backbone and hard-wall/case budgets as paired arm",
+    "fixed sampled input or continuous Base environment through shared SDK"
+  ],
+  "completion_v2": {
+    "protocol": "completion_v2",
+    "implemented_at": "2026-09-20",
+    "independent_generation": 3,
+    "refinement": 3,
+    "references": "all valid initial outputs; S0 excluded",
+    "s0": "separate reference and no-valid-output fallback",
+    "stage_clock": "natural completion, no experimental deadline",
+    "online_environment": "Base acquisition, public input queries and development evaluation available in generation, debug and refinement; no cumulative quotas",
+    "development_reference": "same finite MMS velocity arrays public in both arms",
+    "implementation_label": "Agent-based NS adaptation; not the native benchmark reproduction"
+  }
+}

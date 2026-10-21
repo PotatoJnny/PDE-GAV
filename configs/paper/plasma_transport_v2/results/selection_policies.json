@@ -1,0 +1,374 @@
+{
+  "artemis-astra": {
+    "resolved_config_promotion": {
+      "preset": "minimize_metric",
+      "settings": {
+        "primary": {
+          "distribution": "overall",
+          "statistic": "mean"
+        }
+      }
+    },
+    "current_selection_policy": {
+      "counts": {
+        "base": 16,
+        "base_perturbed": 16,
+        "guided": 16
+      },
+      "feedback_counts": {
+        "base": 32
+      },
+      "terminal_counts": {
+        "common_base/base": 16,
+        "common_base/base_perturbed": 16,
+        "common_guided/guided": 16,
+        "common_guided/guided_perturbed": 16
+      }
+    },
+    "policy_transitions": [
+      {
+        "previous": {
+          "counts": {
+            "base": 64,
+            "base_perturbed": 64,
+            "guided": 64
+          },
+          "feedback_counts": {
+            "base": 80
+          }
+        },
+        "current": {
+          "counts": {
+            "base": 16,
+            "base_perturbed": 16,
+            "guided": 16
+          },
+          "feedback_counts": {
+            "base": 32
+          },
+          "terminal_counts": {
+            "common_base/base": 16,
+            "common_base/base_perturbed": 16,
+            "common_guided/guided": 16,
+            "common_guided/guided_perturbed": 16
+          }
+        },
+        "phase": "official_ready",
+        "preserved_completed_rounds": 0
+      }
+    ],
+    "config_path": "${PDE_GAV_AGGREGATE_ROOT}/coverage/remote-native/artemis-astra/resolved_config.json",
+    "config_sha256": "ee487c8f0dba91210e19ed2cb69b88ce1c8cdac172710211e2936abc113adc33",
+    "payload_sha256": "e1b3c2cd6b64999a51ce9664bf841aa9c38abc852004ed1fa4f352415f5459e3"
+  },
+  "strong-astra": {
+    "resolved_config_promotion": {
+      "preset": "minimize_metric",
+      "settings": {
+        "primary": {
+          "distribution": "overall",
+          "statistic": "mean"
+        }
+      }
+    },
+    "current_selection_policy": {
+      "counts": {
+        "base": 16,
+        "base_perturbed": 16,
+        "guided": 16
+      },
+      "feedback_counts": {
+        "base": 32
+      },
+      "terminal_counts": {
+        "common_base/base": 16,
+        "common_base/base_perturbed": 16,
+        "common_guided/guided": 16,
+        "common_guided/guided_perturbed": 16
+      }
+    },
+    "policy_transitions": [
+      {
+        "previous": {
+          "counts": {
+            "base": 64,
+            "base_perturbed": 64,
+            "guided": 64
+          },
+          "feedback_counts": {
+            "base": 80
+          }
+        },
+        "current": {
+          "counts": {
+            "base": 16,
+            "base_perturbed": 16,
+            "guided": 16
+          },
+          "feedback_counts": {
+            "base": 32
+          },
+          "terminal_counts": {
+            "common_base/base": 16,
+            "common_base/base_perturbed": 16,
+            "common_guided/guided": 16,
+            "common_guided/guided_perturbed": 16
+          }
+        },
+        "phase": "official_ready",
+        "preserved_completed_rounds": 0
+      }
+    ],
+    "config_path": "${PDE_GAV_AGGREGATE_ROOT}/coverage/remote-native/strong-astra/resolved_config.json",
+    "config_sha256": "39d03bc37b80dfdd8672dbc3633cd63f866487b5960ac55481174769bc04901e",
+    "payload_sha256": "139e96641906c8900ce01b971d4e8d7481dd757644e0de41b59f35c43a88e4b9"
+  },
+  "weak-astra": {
+    "resolved_config_promotion": {
+      "preset": "minimize_metric",
+      "settings": {
+        "primary": {
+          "distribution": "overall",
+          "statistic": "mean"
+        }
+      }
+    },
+    "current_selection_policy": {
+      "counts": {
+        "base": 16,
+        "base_perturbed": 16,
+        "guided": 16
+      },
+      "feedback_counts": {
+        "base": 32
+      },
+      "terminal_counts": {
+        "common_base/base": 16,
+        "common_base/base_perturbed": 16,
+        "common_guided/guided": 16,
+        "common_guided/guided_perturbed": 16
+      }
+    },
+    "policy_transitions": [
+      {
+        "previous": {
+          "counts": {
+            "base": 64,
+            "base_perturbed": 64,
+            "guided": 64
+          },
+          "feedback_counts": {
+            "base": 80
+          }
+        },
+        "current": {
+          "counts": {
+            "base": 16,
+            "base_perturbed": 16,
+            "guided": 16
+          },
+          "feedback_counts": {
+            "base": 32
+          },
+          "terminal_counts": {
+            "common_base/base": 16,
+            "common_base/base_perturbed": 16,
+            "common_guided/guided": 16,
+            "common_guided/guided_perturbed": 16
+          }
+        },
+        "phase": "official_ready",
+        "preserved_completed_rounds": 0
+      }
+    ],
+    "config_path": "${PDE_GAV_AGGREGATE_ROOT}/coverage/remote-native/weak-astra/resolved_config.json",
+    "config_sha256": "8ea7fc920d0c3104dca6db6f7f09fe5ae31d238ad05b1c56d8832d40e189e615",
+    "payload_sha256": "b8f6d2cb9cce0a71f9bad139a769b57742cab4d8fa269aea477ac4ea863c8879"
+  },
+  "weak-sol": {
+    "resolved_config_promotion": {
+      "preset": "minimize_metric",
+      "settings": {
+        "primary": {
+          "distribution": "overall",
+          "statistic": "mean"
+        }
+      }
+    },
+    "current_selection_policy": {
+      "counts": {
+        "base": 16,
+        "base_perturbed": 16,
+        "guided": 16
+      },
+      "feedback_counts": {
+        "base": 32
+      },
+      "terminal_counts": {
+        "common_base/base": 16,
+        "common_base/base_perturbed": 16,
+        "common_guided/guided": 16,
+        "common_guided/guided_perturbed": 16
+      }
+    },
+    "policy_transitions": [
+      {
+        "previous": {
+          "counts": {
+            "base": 64,
+            "base_perturbed": 64,
+            "guided": 64
+          },
+          "feedback_counts": {
+            "base": 80
+          }
+        },
+        "current": {
+          "counts": {
+            "base": 16,
+            "base_perturbed": 16,
+            "guided": 16
+          },
+          "feedback_counts": {
+            "base": 32
+          },
+          "terminal_counts": {
+            "common_base/base": 16,
+            "common_base/base_perturbed": 16,
+            "common_guided/guided": 16,
+            "common_guided/guided_perturbed": 16
+          }
+        },
+        "phase": "official_ready",
+        "preserved_completed_rounds": 1
+      }
+    ],
+    "config_path": "${PDE_GAV_AGGREGATE_ROOT}/coverage/remote-native/weak-sol/resolved_config.json",
+    "config_sha256": "c849522195f2bf18416f39f6608ee6c241288519aa51e926eceb447a49b03cb4",
+    "payload_sha256": "29450c1c461e855b1e727830a89eab36d778a615177b4d92682b4737e2307dda"
+  },
+  "artemis-sol": {
+    "resolved_config_promotion": {
+      "preset": "minimize_metric",
+      "settings": {
+        "primary": {
+          "distribution": "overall",
+          "statistic": "mean"
+        }
+      }
+    },
+    "current_selection_policy": {
+      "counts": {
+        "base": 16,
+        "base_perturbed": 16,
+        "guided": 16
+      },
+      "feedback_counts": {
+        "base": 32
+      },
+      "terminal_counts": {
+        "common_base/base": 16,
+        "common_base/base_perturbed": 16,
+        "common_guided/guided": 16,
+        "common_guided/guided_perturbed": 16
+      }
+    },
+    "policy_transitions": [
+      {
+        "previous": {
+          "counts": {
+            "base": 64,
+            "base_perturbed": 64,
+            "guided": 64
+          },
+          "feedback_counts": {
+            "base": 80
+          }
+        },
+        "current": {
+          "counts": {
+            "base": 16,
+            "base_perturbed": 16,
+            "guided": 16
+          },
+          "feedback_counts": {
+            "base": 32
+          },
+          "terminal_counts": {
+            "common_base/base": 16,
+            "common_base/base_perturbed": 16,
+            "common_guided/guided": 16,
+            "common_guided/guided_perturbed": 16
+          }
+        },
+        "phase": "official_ready",
+        "preserved_completed_rounds": 0
+      }
+    ],
+    "config_path": "${PDE_GAV_AGGREGATE_ROOT}/coverage/completed-results/artemis-sol/resolved_config.json",
+    "config_sha256": "3bda14001e2527496c11750a15eba8f97946debdf8b3be2d566b431e70991ff9",
+    "payload_sha256": "f4af52de7408ef4db5e387abd599584eb910614425cced6e7c23b7974064d112"
+  },
+  "strong-sol": {
+    "resolved_config_promotion": {
+      "preset": "minimize_metric",
+      "settings": {
+        "primary": {
+          "distribution": "overall",
+          "statistic": "mean"
+        }
+      }
+    },
+    "current_selection_policy": {
+      "counts": {
+        "base": 16,
+        "base_perturbed": 16,
+        "guided": 16
+      },
+      "feedback_counts": {
+        "base": 32
+      },
+      "terminal_counts": {
+        "common_base/base": 16,
+        "common_base/base_perturbed": 16,
+        "common_guided/guided": 16,
+        "common_guided/guided_perturbed": 16
+      }
+    },
+    "policy_transitions": [
+      {
+        "previous": {
+          "counts": {
+            "base": 64,
+            "base_perturbed": 64,
+            "guided": 64
+          },
+          "feedback_counts": {
+            "base": 80
+          }
+        },
+        "current": {
+          "counts": {
+            "base": 16,
+            "base_perturbed": 16,
+            "guided": 16
+          },
+          "feedback_counts": {
+            "base": 32
+          },
+          "terminal_counts": {
+            "common_base/base": 16,
+            "common_base/base_perturbed": 16,
+            "common_guided/guided": 16,
+            "common_guided/guided_perturbed": 16
+          }
+        },
+        "phase": "official_ready",
+        "preserved_completed_rounds": 1
+      }
+    ],
+    "config_path": "${PDE_GAV_AGGREGATE_ROOT}/coverage/completed-results/strong-sol/resolved_config.json",
+    "config_sha256": "85427e3551f5f3c8105c70d81e15a693319a2919f9252df7d4ee98e3e24d37b4",
+    "payload_sha256": "03535f7fcd4257581882a7465dff65972e6cbb13f919da6ed193c254bb44389c"
+  }
+}

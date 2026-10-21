@@ -1,0 +1,16 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "adaptive_velocity.py",
+    "base.py",
+    "hermite_response.py",
+    "hermite_response_h4.py",
+    "moments.py",
+    "realizability.py",
+    "submission.py",
+    "thermal_mixing.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 76240,
+  "tree_sha256": "c55af7297aa1b69f6eb76161958a982640f59d7233405805cf0e44e19edf0fc3"
+}

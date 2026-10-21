@@ -1,0 +1,194 @@
+{
+  "schema": "pde_gav_recorded_plasma_protocol_v1",
+  "published_on": "2026-10-21",
+  "record_kind": "completed experiment documentation, not a new launch configuration",
+  "archive_date": "2026-10-19",
+  "arms": [
+    "artemis-astra",
+    "artemis-sol",
+    "strong-astra",
+    "strong-sol",
+    "weak-astra",
+    "weak-sol"
+  ],
+  "master_seed": 101,
+  "round_count": 6,
+  "agents_per_round": 2,
+  "models": {
+    "sol": {
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max"
+    },
+    "astra": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra"
+    }
+  },
+  "development": {
+    "allowed_sources": [
+      "base",
+      "guided"
+    ],
+    "case_replay": false,
+    "max_cases_per_agent_per_round": 32,
+    "starter": {
+      "base": 4,
+      "base_perturbed": 0,
+      "guided": 0,
+      "guided_perturbed": 0,
+      "original": 0
+    },
+    "strategy": "agent_adaptive"
+  },
+  "timing": {
+    "agent_total_wall_seconds": 10800,
+    "candidate_shared_charged_seconds": 900,
+    "separate_preparation_limit": null,
+    "excluded_from_candidate_clock": [
+      "controller-metered Oracle queue waiting",
+      "controller-metered shared-lock waiting"
+    ],
+    "agent_waits_count_toward_budget": true
+  },
+  "candidate_interface": {
+    "prepare": "prepare_solution(case, solve_budget=None)",
+    "evaluate": "handle.evaluate(points_query) -> AnswerView",
+    "query_blind_preparation": true,
+    "causal_public_source": true,
+    "required_full_distribution_output": false
+  },
+  "scoring": {
+    "protocol_id": "plasma_macro_transport_v2",
+    "objective_hash": "855cf8984dc60dee1d654fa3f0e2e2afbd184a23b8608f3181456077f51e14ae",
+    "weights": {
+      "density": 0.125,
+      "electric_field": 0.125,
+      "particle_flux": 0.25,
+      "pressure": 0.25,
+      "heat_flux": 0.25
+    },
+    "calibration_file": "metric_calibration.json",
+    "calibration_file_sha256": "973c82defb0f0e5d3d2ac7612a62cdb1c1c8b8bf733977a9ce8200c8b94e1da4",
+    "native_calibration_file_sha256": "04742192d469784180a2c893012f6d762b20f5309ec7ba4b6fb2ba9c332070d0",
+    "floors": {
+      "density": 1.0041253663782175,
+      "electric_field": 0.0698185715388132,
+      "heat_flux": 0.9900774471118267,
+      "particle_flux": 0.4788345668393978,
+      "pressure": 2.930763214320111
+    },
+    "units": {
+      "density": 1.0,
+      "electric_field": 1.0,
+      "velocity": 1.0
+    },
+    "development_points": 128,
+    "official_points": 256,
+    "terminal_points": 256,
+    "failure_policy": "failed cases disqualify; no successful-subset promotion mean"
+  },
+  "official_nomination_policy": {
+    "mode": "single_primary_v1",
+    "start_round": 1
+  },
+  "official_selection_subset": "balanced_48_with_base32_feedback_v1",
+  "effective_selection_policy": {
+    "counts": {
+      "base": 16,
+      "base_perturbed": 16,
+      "guided": 16
+    },
+    "feedback_counts": {
+      "base": 32
+    },
+    "terminal_counts": {
+      "common_base/base": 16,
+      "common_base/base_perturbed": 16,
+      "common_guided/guided": 16,
+      "common_guided/guided_perturbed": 16
+    }
+  },
+  "historical_selection_exceptions": [
+    {
+      "arm": "strong-sol",
+      "round": 1,
+      "case_count": 256,
+      "counts": {
+        "base": 86,
+        "guided": 85,
+        "base_perturbed": 85
+      }
+    },
+    {
+      "arm": "weak-sol",
+      "round": 1,
+      "case_count": 192,
+      "counts": {
+        "base": 64,
+        "guided": 64,
+        "base_perturbed": 64
+      }
+    }
+  ],
+  "promotion": {
+    "preset": "minimize_metric",
+    "settings": {
+      "primary": {
+        "distribution": "overall",
+        "statistic": "mean"
+      }
+    }
+  },
+  "guidance": {
+    "feedback_selection": "first_32_clean_base_feedback_order",
+    "base_rows": 32,
+    "additional_selected_solver_base_rows": 16,
+    "same_transport_objective": true,
+    "base_generator_frozen": true
+  },
+  "terminal": {
+    "purpose": "reporting only",
+    "common_reference": "S0 and round-one G1",
+    "case_count": 64,
+    "selected_program": "last_round_selected_not_terminal_best"
+  },
+  "configuration_note": "Recorded configs retain the larger sealed-bank counts. Use the effective subset policy above for actual selection, Guidance feedback and terminal counts.",
+  "prompts": [
+    {
+      "family": "artemis",
+      "agent_id": "artemis-broad-explorer",
+      "path": "prompts/artemis/artemis-broad-explorer.md",
+      "sha256": "4ced52a34d79053875e18ae39883d308dab2060c6dc426c3506676d82845cf96"
+    },
+    {
+      "family": "artemis",
+      "agent_id": "artemis-critical-refiner",
+      "path": "prompts/artemis/artemis-critical-refiner.md",
+      "sha256": "21979b23c3095bd5c9c2a73ffa29e8a31873ac25a54110c072c04ac32d6d9b09"
+    },
+    {
+      "family": "strong",
+      "agent_id": "vpfp-broad-explorer",
+      "path": "prompts/strong/vpfp-broad-explorer.md",
+      "sha256": "d43263ccbc5e855ee6be031e5f4ea8cdf352e6397088e0cade413e88f4a4545d"
+    },
+    {
+      "family": "strong",
+      "agent_id": "vpfp-critical-refiner",
+      "path": "prompts/strong/vpfp-critical-refiner.md",
+      "sha256": "3ed31e52a357cec89b4e2cc52831974e29196c5f0c8ddbe5babed90bda956869"
+    },
+    {
+      "family": "weak",
+      "agent_id": "vpfp-weak-broad-explorer",
+      "path": "prompts/weak/vpfp-weak-broad-explorer.md",
+      "sha256": "7d5c13b84516639ad4693237f0785af803cbe7b793c55749488f9c657827564a"
+    },
+    {
+      "family": "weak",
+      "agent_id": "vpfp-weak-critical-refiner",
+      "path": "prompts/weak/vpfp-weak-critical-refiner.md",
+      "sha256": "60ccbf7609c505a00ad4847b0cb29fffe499e610f7bc4200c18af53d4e245cfb"
+    }
+  ]
+}

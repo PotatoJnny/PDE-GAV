@@ -1,0 +1,3442 @@
+{
+  "artemis-astra": [
+    {
+      "round_index": 1,
+      "promotion_decision": {
+        "selected_digest": "candidate-r1-0001",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-s0",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00895254319490581
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.009732329517591402
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00824196360743201
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.008975612106643074
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.006519325827871401
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.02609902738083254
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.007097577674905214
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.013238643627869718
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-s0",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.18312422468137365
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.18291494762927596
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.1665998856897572
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.17754635266680227
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "promotion_decision": {
+        "selected_digest": "candidate-r2-0003",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.004052841243592686
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0048493870495409375
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0094124162322231
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.006104881508452242
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.004414701164233753
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.004907447583443671
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.009772208472830725
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.006364785740169383
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00441442931788567
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.004903278891632254
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.009771775510044812
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.006363161239854246
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0006",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0019442659434590823
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0030974653964308163
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0016083369172048489
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0022166894190315824
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.001793791305750647
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.003031040393270816
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0015367690199920433
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.002120533573004502
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.006720935566253358
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.007689476237661247
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.005254903637105356
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0065551051470066546
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "promotion_decision": {
+        "selected_digest": "candidate-r4-0008",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0008",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00422130021353644
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.006091762785494188
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.002885499426338253
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.004399520808456294
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0023388199581908234
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0038982167769283874
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.002163011554575058
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0028000160965647564
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0021277558738844017
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.007302514870989156
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0021630115545750576
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0038644274331495385
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "promotion_decision": {
+        "selected_digest": "candidate-r5-0009",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0010",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0008",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0021991052307692976
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.004096895533416314
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.001734695682103517
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.00267689881542971
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.1844563235381019
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.18539209290741135
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.002753541605400699
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12420065268363799
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0023153291278826074
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.003995986034530042
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0020324082329820433
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.002781241131798231
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "promotion_decision": {
+        "selected_digest": "candidate-r6-0012",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r6-0011",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r6-0012",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r6-0011",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0019884918214814955
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.004059535416388932
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0021914143193079334
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0027464805190594538
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r6-0012",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.002404364075400697
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0031853400105080385
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0024995294151136456
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0026964111670074605
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.002286598281163957
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0033076313545347467
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0032192542434291184
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0029378279597092744
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "strong-astra": [
+    {
+      "round_index": 1,
+      "promotion_decision": {
+        "selected_digest": "candidate-r1-0002",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-s0",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.2204606590767687e-06
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 5.369930674580358e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 5.828867454372166e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 4.806419596009764e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 4.320284468560671e-06
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 4.281404550177094e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 3.246246836223295e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.949311951653687e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-s0",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.16190031209144132
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.16270330824050713
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.15111935001542098
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.15857432344912314
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "promotion_decision": {
+        "selected_digest": "candidate-r2-0003",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.272587145620656e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.262981258895558e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 4.641975311034083e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.725847905183432e-07
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 1.986415126700812e-06
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 2.003406855257365e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 1.888919086426844e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 1.9595803561283405e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 2.9733208386743292e-06
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.016576735722382e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 5.792598082239603e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.927498552212105e-06
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0006",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 2.867857369121253e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 2.824952442605255e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 5.501704110778929e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.731504640835146e-07
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.0424623478229886e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 2.99685712941527e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 4.5585306699225113e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.532616715720257e-07
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 2.8696689713222804e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 2.827968953473253e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 5.503234206644952e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.733624043813495e-07
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0006",
+        "promoted": false,
+        "reason": "incumbent_kept_by_configured_metrics",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0008",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 7.168651197601237e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 4.734542693731754e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.8587762741015446e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 1.9124284803006773e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 7.177191624237284e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 1.1161817333267418e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.9767240956806333e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 7.105244351061778e-07
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 7.177427953355605e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 8.091509504415495e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.8596035681162403e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 6.042847008629114e-07
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "promotion_decision": {
+        "selected_digest": "candidate-r5-0009",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0010",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.641478902256601e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.583581690067293e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.921677721752977e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 1.2147279269951223e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.6523990211304784e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.5684221953945905e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.9247065322652527e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 1.2155962179725865e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.656965577635027e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.868252762223881e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.924011534423771e-06
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 1.2255111228032207e-06
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "promotion_decision": {
+        "selected_digest": "candidate-r6-0012",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r6-0011",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r6-0012",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r6-0011",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.9281923137712147e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.300649621771202e-06
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.8700428398980865e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 1.326824379046044e-06
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r6-0012",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.159742982735857e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.072985947917091e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.8640514358388145e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.0322601221639207e-07
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 3.189594104471345e-07
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 3.128717539341697e-07
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 2.873756783277243e-07
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 3.064022809030095e-07
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "weak-astra": [
+    {
+      "round_index": 1,
+      "promotion_decision": {
+        "selected_digest": "candidate-r1-0002",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-s0",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.3155961328944291
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.29911814188723507
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.2690072975007447
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.2945738574274696
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.2991957576454685
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.29882455481958664
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.2487138738251929
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.282244728763416
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-s0",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.6011708175575413
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.6018104586671105
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.7210944489343334
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.6413585750529951
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "promotion_decision": {
+        "selected_digest": "candidate-r2-0004",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.2068979409771096
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.20728418124296116
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.19529176210633772
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.20315796144213616
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.20488052419513073
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.20402911151500702
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.18287649843156195
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.19726204471389988
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.2926515246043061
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.2929099449220829
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.22890991115661108
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.2714904602276667
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0006",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.18783208846379898
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.1883924847451282
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.1737193554422993
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.18331464288374213
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.1874821657865697
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.1872595644566379
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.17241723733615977
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.18238632252645579
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.2008873074599686
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.20101213574668533
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.18369462751044044
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.1951980235723648
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "promotion_decision": {
+        "selected_digest": "candidate-r4-0007",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0008",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.08670123421592389
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.08670839113147305
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.07458803093679021
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.08266588542806239
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.18601209978181837
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.18627986416317016
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.15197721839624478
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.17475639411374444
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.18906495558280156
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.18891831278822918
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.1590959400534899
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.17902640280817353
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "promotion_decision": {
+        "selected_digest": "candidate-r5-0009",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0010",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.07770734611507628
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.08131322025989647
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.08708500627720137
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.08203519088405804
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.09433292341444538
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.09433580115209908
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.08922654820663455
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.09263175759105967
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.09421489542519162
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10317799421908785
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.10597717102209842
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.1011233535554593
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "promotion_decision": {
+        "selected_digest": "candidate-r6-0012",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r6-0011",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r6-0012",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r6-0011",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.07303900381410669
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.06574129080182939
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.23085800141244733
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12321276534279448
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r6-0012",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.04995745420286682
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.048289577445327254
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.19798290416341055
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.09874331193720154
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.07025337947856687
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.06625832800091398
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.23906157523730362
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12519109423892816
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "weak-sol": [
+    {
+      "round_index": 1,
+      "promotion_decision": {
+        "selected_digest": "candidate-r1-0001",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-s0",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 64,
+              "mean": 0.15360945793876796
+            },
+            "base_perturbed": {
+              "case_count": 64,
+              "mean": 0.15361038028722968
+            },
+            "guided": {
+              "case_count": 64,
+              "mean": 0.2256550713275318
+            },
+            "overall": {
+              "case_count": 192,
+              "mean": 0.17762496985117648
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 64,
+              "mean": 0.21821964658646176
+            },
+            "base_perturbed": {
+              "case_count": 64,
+              "mean": 0.21830062250905827
+            },
+            "guided": {
+              "case_count": 64,
+              "mean": 0.2123025577359354
+            },
+            "overall": {
+              "case_count": 192,
+              "mean": 0.21627427561048515
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-s0",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 64,
+              "mean": 0.6008657111394672
+            },
+            "base_perturbed": {
+              "case_count": 64,
+              "mean": 0.6009331279274496
+            },
+            "guided": {
+              "case_count": 64,
+              "mean": 0.6969089513505144
+            },
+            "overall": {
+              "case_count": 192,
+              "mean": 0.6329025968058104
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "promotion_decision": {
+        "selected_digest": "candidate-r2-0004",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.12149186476025652
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.12145263171491921
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.21343066730821605
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.15212505459446393
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.10378744923688758
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10341909095071132
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.21453885285734584
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.14058179768164825
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.16417373870057012
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.16390273241248582
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.23295954252839607
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.18701200454715064
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0005",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.10254520178861844
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10257710476819341
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.20664411795295112
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.13725547483658765
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.10853314745510392
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10856549114242553
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.20546711869225462
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.14085525242992802
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.10711059115870576
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10713744812320837
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.20581180376471395
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.14001994768220935
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "promotion_decision": {
+        "selected_digest": "candidate-r4-0007",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0008",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.09315893435717039
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.09304421712789455
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.2023536984553377
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12951894998013422
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.09637880308090516
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.09623711872564947
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.20287604620375513
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.13183065600343657
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.09637880308090516
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.09623711872564947
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.20325477507793877
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.1319568989614978
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "promotion_decision": {
+        "selected_digest": "candidate-r5-0009",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0010",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.09341739270127072
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.09341320464091336
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.14990805749360792
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.11224621827859733
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.10189040037492582
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10197306039843294
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.15295850385615348
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.11894065487650408
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.10018946555083982
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.10015723027072036
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.15119091816883815
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.11717920466346611
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "promotion_decision": {
+        "selected_digest": "candidate-r6-0012",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r6-0011",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r6-0012",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r6-0011",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.08366465732742501
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.08357409750962598
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.19854791924240592
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12192889135981895
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r6-0012",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.08366465732742501
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.08357409750962598
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.19825997357725172
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12183290947143423
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.08366465732742501
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.08357409750962598
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.19889303904692945
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.12204393129466014
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "artemis-sol": [
+    {
+      "round_index": 1,
+      "promotion_decision": {
+        "selected_digest": "candidate-r1-0002",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-s0",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.054108011708820035
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.09250975652375794
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.05650362503437501
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.06770713108898434
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.034933037045684845
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.043649456046474334
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.03228988548901082
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03695745952705667
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-s0",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.18312422468137365
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.18291494762927596
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.1665998856897572
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.17754635266680227
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "promotion_decision": {
+        "selected_digest": "candidate-r2-0003",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.019208124524492
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.02459924314604004
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.04701157833483453
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.030272982001788854
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.02023994934011584
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.02535525734259409
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.04966037865108709
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03175186177793234
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0203416974327554
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.02545769577917919
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.05014949905275093
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.031982964088228504
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0005",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.021695091035749233
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.022341850420302862
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.02461959219112959
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.02288551121572723
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.032086118704477966
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.04257968383314888
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.024283774199823954
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03298319224581694
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.021680401396792618
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.03293101521142708
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.02465511445579255
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.026422177021337413
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "promotion_decision": {
+        "selected_digest": "candidate-r4-0007",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0008",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.03918569213078586
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.039836874664650634
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.023962563637781924
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03432837681107281
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.039499659390156996
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.04015348838018755
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.023864634507792068
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03450592742604554
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.03919372627415617
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.039844431338387054
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.023962880334929475
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.034333679315824234
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "promotion_decision": {
+        "selected_digest": "candidate-r5-0010",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0010",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.049246815714756156
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.04964101567895776
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.03749082385478723
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.045459551749500386
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.03432583319459246
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.03484867172052919
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.031200562986044438
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03345835596705536
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.042692563369193
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.043041545147590746
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.033721721747297935
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03981861008802722
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "promotion_decision": {
+        "selected_digest": "candidate-r6-0011",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r6-0011",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r6-0012",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0010",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r6-0011",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.026865434794152262
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.027265304718062166
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.030266346364713047
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.028132361958975824
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r6-0012",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.02848583535250133
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.028837787474901247
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.03160254605901376
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.02964205629547211
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.033009474345653496
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.033491758670185376
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.03175161508830923
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.03275094936804936
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "strong-sol": [
+    {
+      "round_index": 1,
+      "promotion_decision": {
+        "selected_digest": "candidate-r1-0002",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r1-0001",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-s0",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r1-0001",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 86,
+              "mean": 0.005172391822741204
+            },
+            "base_perturbed": {
+              "case_count": 85,
+              "mean": 0.006754559694560273
+            },
+            "guided": {
+              "case_count": 85,
+              "mean": 0.00526221795459016
+            },
+            "overall": {
+              "case_count": 256,
+              "mean": 0.005727546081771603
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 86,
+              "mean": 0.0004763943710592546
+            },
+            "base_perturbed": {
+              "case_count": 85,
+              "mean": 0.0012370653595396906
+            },
+            "guided": {
+              "case_count": 85,
+              "mean": 0.00048742882580970863
+            },
+            "overall": {
+              "case_count": 256,
+              "mean": 0.000732624694007011
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-s0",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 86,
+              "mean": 0.15029734744777035
+            },
+            "base_perturbed": {
+              "case_count": 85,
+              "mean": 0.1514436030142091
+            },
+            "guided": {
+              "case_count": 85,
+              "mean": 0.15575112207069355
+            },
+            "overall": {
+              "case_count": 256,
+              "mean": 0.15248876372158193
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "promotion_decision": {
+        "selected_digest": "candidate-r2-0004",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r2-0003",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r1-0002",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r2-0003",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0002574387487748785
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0030004359849277835
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00029490924183086235
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0011842613251778415
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00024235708408298115
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0010033725886012558
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0002741659805648969
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0005066318844163779
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r1-0002",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0004565294193171348
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0011922416269533576
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0005290307126373071
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0007259339196359332
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "promotion_decision": {
+        "selected_digest": "candidate-r3-0005",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0006",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r2-0004",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00016155697332474424
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0009815092458217974
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00015541880778494735
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0004328283423104963
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0006",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00016324923784377397
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0009820398655963386
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00016114547968186513
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0004354781943739926
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r2-0004",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0002469458780102221
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0010337940797012768
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0002410309599800398
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0005072569725638462
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "promotion_decision": {
+        "selected_digest": "candidate-r4-0007",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r3-0005",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00016504902028513705
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.000876143358820601
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00014357679866163197
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.00039492305925579004
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r3-0005",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00016512283282085869
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0008763865909889828
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0001435435851598584
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.00039501766965656664
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "promotion_decision": {
+        "selected_digest": "candidate-r5-0008",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r5-0008",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0009",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r4-0007",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r5-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00017297137805406555
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.00020954242934219814
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00021640788626839676
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.00019964056455488681
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0009",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.0001628416734821962
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0013232471153340568
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00021104628243654268
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0005657116904175985
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r4-0007",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00016961040479444164
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0013437321807396611
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00022800677734437577
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0005804497876261595
+            }
+          }
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "promotion_decision": {
+        "selected_digest": "candidate-r6-0011",
+        "promoted": true,
+        "reason": "configured_metric_minimized",
+        "ranking": [
+          {
+            "candidate_digest": "candidate-r6-0010",
+            "rank": 2,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r6-0011",
+            "rank": 1,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          },
+          {
+            "candidate_digest": "candidate-r5-0008",
+            "rank": 3,
+            "eligible": true,
+            "reason": "eligible_metric_ranking"
+          }
+        ]
+      },
+      "contenders": [
+        {
+          "artifact_id": "candidate-r6-0010",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00013094979790175505
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 8.669818785111145e-05
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.00014075655604438306
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.00011946818059908318
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r6-0011",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 8.37783819008659e-05
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 8.669818785110917e-05
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 9.222820724853833e-05
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 8.756825900017114e-05
+            }
+          }
+        },
+        {
+          "artifact_id": "candidate-r5-0008",
+          "technically_eligible": true,
+          "distributions": {
+            "base": {
+              "case_count": 16,
+              "mean": 0.00013686263144988258
+            },
+            "base_perturbed": {
+              "case_count": 16,
+              "mean": 0.0002454951686245419
+            },
+            "guided": {
+              "case_count": 16,
+              "mean": 0.0001472811472664251
+            },
+            "overall": {
+              "case_count": 48,
+              "mean": 0.0001765463157802832
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

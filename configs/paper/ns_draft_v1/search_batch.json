@@ -1,0 +1,46 @@
+{
+  "schema": "ns_draft_search_batch_v1",
+  "protocol_revision": "iclr_hard_wall_4h_single_seed_v2",
+  "time_budget_mode": "hard_wall",
+  "agent_hard_wall_seconds": 14400,
+  "execution_status": "configured_not_submitted",
+  "seed": 101,
+  "entries": [
+    {
+      "method": "bon",
+      "kind": "baseline",
+      "config": "bon_s101.json",
+      "csv_run_id": "01-NS-BoN-mean-error-gpt-5.6-sol-1a-10u-hard240m-only-s101",
+      "gpus": 1,
+      "gpu_allocation_upper_bound": 2,
+      "agent_concurrency": 1,
+      "agent_gpu_allocation_indices": [
+        0
+      ],
+      "controller_gpu": false,
+      "planned_agent_turns": 10,
+      "agent_wall_hours_cap": 40
+    },
+    {
+      "method": "aide",
+      "kind": "baseline",
+      "config": "aide_s101.json",
+      "csv_run_id": "01-NS-AIDE-mean-error-gpt-5.6-sol-1a-10u-hard240m-only-s101",
+      "gpus": 1,
+      "gpu_allocation_upper_bound": 2,
+      "agent_concurrency": 1,
+      "agent_gpu_allocation_indices": [
+        0
+      ],
+      "controller_gpu": false,
+      "planned_agent_turns": 10,
+      "agent_wall_hours_cap": 40
+    }
+  ],
+  "failure_protocol": "complete_finite_selection_raw_external_v1",
+  "data_index": "data/bank_index.json",
+  "shared_fixed_config": "fixed_s101.json",
+  "scheduling": "One Agent turn at a time per method; BoN and AIDE may run in separate one-GPU jobs.",
+  "aide_s0_counts_as_existing_draft": true,
+  "requires_preflight": true
+}

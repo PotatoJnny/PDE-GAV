@@ -1,0 +1,147 @@
+NS Agent tool reference
+
+Quick start (choose which steps you need)
+
+- status: inspect your available Cases and current retained program.
+- sample base 4: obtain four new Base Cases.
+- sample guided 4: obtain four new Guided Cases, when enabled.
+- perturb CASE_ID: obtain one controlled variation of an acquired clean Case.
+- evaluate BUNDLE CASE_ID: measure a program's error on an acquired Case.
+- evaluate-many: compare programs on the same scoring points.
+
+Prefix these commands with:
+    python -m pde_agent_verifier_solver.engine.agent_tool
+
+Use status for the actual Case allowance, enabled capabilities, scoring mode,
+solver devices and per-Case budget. In status, round.development_sampling.max_cases
+being null means there is no cumulative Case limit; sampling replies likewise
+report remaining: null. This is not zero remaining. The Agent deadline and
+per-Case solve budget still apply, and acquired Cases are counted normally.
+Read README.md for the NS equation and inputs, and SOLVER_INTERFACE.md for
+input fields, the return format, program packaging and command examples.
+
+Commands
+
+All commands run inside the assigned Agent workspace. BUNDLE is the path to
+your candidate bundle. SOURCE is base or guided; CASE_ID is an issued Case ID.
+
+    python -m pde_agent_verifier_solver.engine.agent_tool status
+    python -m pde_agent_verifier_solver.engine.agent_tool sample SOURCE COUNT
+    python -m pde_agent_verifier_solver.engine.agent_tool sample-paired SOURCE COUNT
+    python -m pde_agent_verifier_solver.engine.agent_tool perturb CASE_ID...
+    python -m pde_agent_verifier_solver.engine.agent_tool export-cases DEST CASE_ID...
+    python -m pde_agent_verifier_solver.engine.agent_tool clone-incumbent DEST
+    python -m pde_agent_verifier_solver.engine.agent_tool evaluate BUNDLE CASE_ID...
+    python -m pde_agent_verifier_solver.engine.agent_tool evaluate BUNDLE --all
+    python -m pde_agent_verifier_solver.engine.agent_tool evaluate-many --bundle A --bundle B --case-id CASE_ID
+    python -m pde_agent_verifier_solver.engine.agent_tool evaluate-many --bundle A --bundle B --all
+    python -m pde_agent_verifier_solver.engine.agent_tool submit BUNDLE --sequence N --name NAME --summary SUMMARY --usage USAGE
+    python -m pde_agent_verifier_solver.engine.agent_tool log NOTES.md
+    python -m pde_agent_verifier_solver.engine.agent_tool cancel-evaluation REQUEST_ID
+
+Repeat --case-id to select multiple Cases for evaluate-many. Consult each
+subcommand's --help for its arguments. Sampling and evaluation here are for
+Development; Official selection is performed later by the Controller.
+
+Public inputs and export
+
+Generated Cases expose query_initial_velocity and query_forcing. Read boundary
+conditions from the Case; use a boundary-input oracle only when declared.
+The continuous NS interface provides generated Cases. See the public README
+for Case/source definitions and an initial-velocity/forcing query example.
+
+status and sampling responses summarize large values. export-cases writes
+complete public_data for already-issued Cases into a new DEST, with cases.json
+and non-pickle arrays/*.npy sidecars. Use the printed AgentWireCodec decoder
+hint. Exported data contains no hidden reference or private provenance.
+
+In sample-paired, roots[i] corresponds to children[i]. perturb preserves
+request order. These associations are usable even though public Case views
+hide internal source labels, parent identifiers and phase metadata.
+
+Evaluation and diagnostics
+
+In private_random_points mode, each evaluate call draws a fresh private
+coordinate plan. evaluate-many uses one shared plan within its batch,
+preserves bundle order and reports shared_plan: true. status reports the
+configured point count, coordinate mode and disclosure permissions. Scoring
+points and reference values are hidden unless that run explicitly enables
+access. For private or user-fixed scoring, do not override query coordinates.
+Other enabled options, if needed, are described by the evaluation command's
+--help and the public Task contract.
+
+Successful evaluation provides overall and per-Case scalar feedback. A failed
+request exits with a nonzero CLI status. Inspect error.diagnostic (CLI) or the
+exception's diagnostic attribute (Python) for the solver's original exception,
+traceback, file, line number and source line. Completed feedback remains in
+evaluation_progress and request status; an incomplete candidate has no overall
+score. Candidate diagnostics do not expose Controller-private scoring errors.
+
+Interrupting evaluation requests cancellation. Check status for confirmed
+cleanup before launching replacement work; unfinished feedback is not a
+completed evaluation report.
+
+Timing
+
+Use pde_agent_verifier_solver.sdk.solve_budget.candidate_solve_clock inside the
+solver to measure charged elapsed time. It excludes trusted Controller-metered
+queue and shared-lock waits. Oracle numerical work, your own computation,
+sleep and unmetered waits remain charged. The published per-Case whole-worker
+limit applies in Development, Official and Terminal evaluation. A numeric
+solve_budget is the remaining per-Case charged time supplied at preparation, not a new
+whole-worker deadline.
+Leave time for evaluate and returning the result. The Agent's separate
+round deadline includes every wait, including those excluded for the solver.
+
+Bundle and submission
+
+prepare_solution must be an undecorated synchronous module-level function
+with exactly (case, solve_budget=None), and must not be rebound later.
+It constructs the candidate-owned continuous representation before scoring
+coordinates are supplied. handle.evaluate(points_query) returns an AnswerView
+by querying/projecting that representation, without deferring the solve.
+Declare all algorithm files in the portable candidate bundle. Check
+status.candidate_execution for the configured CPU/CUDA resources.
+In GPU-enabled evaluation, each worker has one GPU visible as cuda:0 and may
+also use CPU; a CPU-only run exposes no GPU to submitted programs.
+Return host values via AnswerView; computation and transfers are charged.
+The Controller schedules at most one candidate worker per assigned GPU.
+Waiting for a free candidate GPU is Controller setup time, excluded from the
+solver limit but included in the Agent round deadline.
+
+The retained incumbent is a Controller-owned read-only snapshot. Use
+clone-incumbent DEST to obtain a writable author bundle; its manifest contains
+schema, entrypoint and files. You can also create a new bundle independently.
+
+Submission sequences are contiguous, starting at 1. Submissions are atomic.
+The run prompt and status specify which nominations enter selection:
+- single_primary_v1: submit --primary saves and selects a version; select-primary N
+  chooses an already saved sequence without modifying its code or weights. Ordinary
+  submissions do not change the choice. status reports primary_nomination_sequence.
+  Only that explicit primary enters Official evaluation; earlier research remains
+  saved. A timeout retains the last completed selection. Missing/invalid selection
+  never falls back to latest or an automatically chosen version.
+- latest: only the last committed submission represents you. Earlier versions
+  remain archived. If the Agent times out or fails, the last commit is retained.
+  An invalid final submission does not trigger fallback to an earlier version.
+  To select an earlier version, submit it again last.
+- all: every committed nomination remains eligible for evaluation, including
+  after the Agent times out or fails.
+
+agent_tool log saves the research record as ROUND_LOG.md for later rounds.
+The wrapper writes response.json after the Agent exits; do not edit it yourself.
+
+Research notes and candidate history
+
+CAMPAIGN_MEMORY.md contains previous Agents' research records and Controller
+round outcomes. Notes explain what was attempted and why; recorded scores and
+selection outcomes are the measured evidence. First-round memory has no earlier
+Agent research notes.
+
+CANDIDATE_HISTORY.json is a structured list of submitted candidates, with round,
+author, parent, name/summary, Official metrics, failure messages, evaluation
+status and selection outcome when available. It does not list every local code
+edit or unsubmitted experiment; those belong in the research record.
+
+The current run's prompt and status define its selection cohort and Case
+allowance. These are experiment settings, not fixed constants of the NS SDK.

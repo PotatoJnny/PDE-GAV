@@ -1,0 +1,31 @@
+{
+  "schema": "unified_plasma_agent_iteration_v1",
+  "campaign_id": "vpfp-strong-collision-unified-agent-pilot-20260825-v2-r2",
+  "physics": "vpfp",
+  "run_root": "${PLASMA_RUN_ROOT}",
+  "agent": {
+    "cold_start_candidate": "${UNIFIED_ROOT}/configs/candidates/vpfp_hold_initial_macro_candidate.py",
+    "agent_launcher": "${UNIFIED_ROOT}/scripts/run_reference_macro_codex_agent.sh",
+    "codex_binary": "${CODEX_BINARY}",
+    "auth_file": "${CODEX_AUTH_FILE}"
+  },
+  "vpfp": {
+    "regime_id": "long_time_strong_collision_v2",
+    "collision_nu_range": [
+      10,
+      30
+    ],
+    "temperature_range": [
+      0.8,
+      1.2
+    ],
+    "time_domain": [
+      0,
+      1
+    ],
+    "base_decoder_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/base_online_decoder.pt",
+    "expanded_decoder_checkpoint": "${PDE_GAV_RUN_ROOT}/vpfp_long_time_robust_strong_smoke_20260815_v6/time_controls_033/expanded_robust_decoder.pt",
+    "base_decoder_sha256": "44f15e3d48120bce94066078dd5f54ff99227d0855f7c5646c173e43fdacd6a9",
+    "expanded_decoder_sha256": "18eeaefb325b998fbaf72fb27059df9528a4f8e75ea8975a5ce4db491aca3530"
+  }
+}

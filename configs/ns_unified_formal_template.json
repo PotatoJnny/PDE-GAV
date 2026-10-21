@@ -1,0 +1,158 @@
+{
+  "schema": "unified_plasma_agent_iteration_v1",
+  "campaign_id": "ns-unified-trained-structured-flow-fresh-template-v1",
+  "execution": {
+    "mode": "process_per_agent_with_central_gpu",
+    "worker_gpu_count": 2,
+    "controller_gpu_count": 1,
+    "cpus_per_worker": 16,
+    "timeout_seconds": 32400
+  },
+  "controller_policy": {
+    "schema": "unified_macro_controller_policy_v1",
+    "profile": "ns_trained_structured_flow_open_search_v1",
+    "agent_count": 2,
+    "round_count": 4,
+    "development_root_count": 32,
+    "development_pool_multiplier": 1,
+    "development_release_root_limit": 128,
+    "development_screen_root_stages": [4, 16, 64],
+    "development_screen_root_credit_limit": 128,
+    "development_screen_confidence_z": 1.6448536269514722,
+    "development_screen_continuation_max_mean_ratio": 1.2,
+    "selection_root_count": 128,
+    "evidence_stages": [
+      {
+        "root_count": 128,
+        "confidence_z": 0.0,
+        "min_mean_improvement": 0.0,
+        "min_win_rate": 0.0,
+        "require_cvar_no_regression": false
+      }
+    ],
+    "development_screen_timeout_seconds": 7200,
+    "terminal_root_count": 256,
+    "development_case_credits": 64,
+    "seed_stride": 100000,
+    "paired_sampling_max_attempts": 32,
+    "paired_objective": {
+      "mode": "primary_with_perturbed_guardrail",
+      "base_weight": 0.5,
+      "perturbed_weight": 0.5,
+      "guardrail_relative_margin": 0.05,
+      "guardrail_confidence_z": 1.6448536269514722
+    },
+    "promotion": {
+      "preset": "base_improvement_with_robustness_guardrails",
+      "settings": {
+        "relative_margin": 0.05,
+        "guardrail_distributions": [
+          "guided"
+        ],
+        "require_base_improvement": true
+      }
+    },
+    "candidate_compute_budget": 300,
+    "candidate_query_seconds_per_point_limit": 0.05,
+    "agent_timeout_seconds": 21600,
+    "agent_hard_timeout_seconds": 28800,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "allow_development_truth": false,
+    "cvar_tail_fraction": 0.1,
+    "terminal_confidence_z": 1.6448536269514722,
+    "terminal_min_win_rate": 0.5,
+    "terminal_require_cvar_no_regression": true,
+    "search_protocol": {
+      "min_distinct_screened_candidates": 0,
+      "min_full_stage_candidates": 0,
+      "min_released_roots": 0,
+      "require_final_full_stage": false,
+      "leaderboard_limit": 8,
+      "cross_share_after_round": 1
+    },
+    "agent_roles": [
+      "Broad NS solver explorer: seek the strongest physically and numerically distinct PDE solution method through self-directed Oracle experiments.",
+      "Critical NS solver refiner: diagnose incumbent and shared-candidate failure modes and construct the strongest independent corrective method."
+    ]
+  },
+  "physics": "ns",
+  "run_root": "${PLASMA_RUN_ROOT}",
+  "storage_root": "${PLASMA_STORAGE_ROOT}",
+  "agent": {
+    "cold_start_candidate": "${UNIFIED_ROOT}/configs/candidates/ns_hold_initial_bundle",
+    "agent_launcher": "${UNIFIED_ROOT}/scripts/run_reference_macro_codex_agent.sh",
+    "codex_binary": "${CODEX_BINARY}",
+    "auth_file": "${CODEX_AUTH_FILE}"
+  },
+  "ns": {
+    "generator_mode": "trained_structured_coefficient_flow",
+    "artifacts": {
+      "pca_checkpoint": "${NS_PCA_CHECKPOINT}",
+      "pca_selection": "${NS_PCA_SELECTION}",
+      "pca_audit": "${NS_PCA_AUDIT}",
+      "flow_checkpoint": "${NS_FLOW_CHECKPOINT}",
+      "flow_selection": "${NS_FLOW_SELECTION}",
+      "flow_train_report": "${NS_FLOW_TRAIN_REPORT}",
+      "flow_sample_audit": "${NS_FLOW_SAMPLE_AUDIT}",
+      "answer_first_report": "${NS_ANSWER_FIRST_REPORT}"
+    },
+    "artifact_sha256": {
+      "pca_checkpoint": "${NS_PCA_CHECKPOINT_SHA256}",
+      "pca_selection": "${NS_PCA_SELECTION_SHA256}",
+      "pca_audit": "${NS_PCA_AUDIT_SHA256}",
+      "flow_checkpoint": "${NS_FLOW_CHECKPOINT_SHA256}",
+      "flow_selection": "${NS_FLOW_SELECTION_SHA256}",
+      "flow_train_report": "${NS_FLOW_TRAIN_REPORT_SHA256}",
+      "flow_sample_audit": "${NS_FLOW_SAMPLE_AUDIT_SHA256}",
+      "answer_first_report": "${NS_ANSWER_FIRST_REPORT_SHA256}"
+    },
+    "runtime": {
+      "time_interval": [0.0, 0.12],
+      "viscosity": 0.01,
+      "integration_steps": 256,
+      "flow_state": "raw",
+      "perturbation_family": "spectral_complement",
+      "perturbation_amplitude": "${NS_PERTURBATION_AMPLITUDE}",
+      "spectral_max_mode": 20,
+      "max_points_per_request": 4096,
+      "device": "cuda"
+    },
+    "guidance": {
+      "enabled": true,
+      "protocol": {
+        "guidance_config_sha256": "730f7133c51d5933d1668f9271e35537512065cd93cb0d9157a031e6cc6f8eaa",
+        "reward_feedback_case_count": 1024,
+        "official_round_case_count": 64,
+        "official_terminal_case_count": 128,
+        "inference_wall_budget_seconds": 1800,
+        "inference_compute_capacity": "one-controller-l40s",
+        "training_budget": {
+          "maximum_wall_seconds": 7200,
+          "compute_capacity": "one-controller-l40s",
+          "maximum_concurrency": 1
+        },
+        "official_sample_settings": {
+          "sampling_policy": "solver_reward_guided_rectified_flow",
+          "flow_state": "raw",
+          "integration_steps": 256,
+          "guidance_strength": 0.1,
+          "guidance_max_flow_ratio": 0.25
+        }
+      },
+      "backend": {
+        "training_steps": 5000,
+        "batch_size": 256,
+        "width": 512,
+        "depth": 6,
+        "time_width": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0001,
+        "maximum_gradient_norm": 1.0,
+        "minimum_cases": 32,
+        "guidance_strength": 0.1,
+        "guidance_max_flow_ratio": 0.25
+      }
+    }
+  }
+}

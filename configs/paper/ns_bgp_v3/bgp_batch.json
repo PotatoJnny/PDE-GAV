@@ -1,0 +1,138 @@
+{
+  "schema": "ns_bgp_batch_v3",
+  "protocol_revision": "iclr_ns_bgp_192_single_final_v5",
+  "budget_revision": "iclr_hard_wall_4h_single_seed_v2",
+  "seed": 101,
+  "time_budget_mode": "hard_wall",
+  "agent_hard_wall_seconds": 14400,
+  "agents": 2,
+  "rounds": 5,
+  "execution_status": "prepared_not_submitted",
+  "submission_scope": "approved_first_and_second_batches_only",
+  "entries": [
+    {
+      "method": "fixed",
+      "kind": "baseline",
+      "config": "fixed_s101.json",
+      "csv_run_id": "01-NS-fixed-data-iteration-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 2,
+      "mode": "fixed",
+      "source_config": "configs/paper/ns_draft_v1/fixed_s101.json",
+      "evaluation_revision": "iclr_ns_bgp_192_single_final_v5"
+    },
+    {
+      "method": "base",
+      "kind": "canonical",
+      "config": "base_s101.json",
+      "csv_run_id": "01-NS-base-new-cases-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3,
+      "mode": "base",
+      "source_config": "configs/paper/ns_draft_v1/base_s101.json",
+      "evaluation_revision": "iclr_ns_bgp_192_single_final_v5"
+    },
+    {
+      "method": "full",
+      "kind": "canonical",
+      "config": "full_s101.json",
+      "csv_run_id": "01-NS-full-framework-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3,
+      "mode": "full",
+      "source_config": "configs/paper/ns_draft_v1/full_s101.json",
+      "evaluation_revision": "iclr_ns_bgp_192_single_final_v5"
+    },
+    {
+      "method": "base_guided",
+      "kind": "canonical",
+      "config": "base_guided_s101.json",
+      "csv_run_id": "02-NS-base-plus-guided-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3,
+      "mode": "base_guided",
+      "source_config": "configs/paper/ns_gp_v2/base_guided_s101.json",
+      "evaluation_revision": "iclr_ns_bgp_192_single_final_v5"
+    },
+    {
+      "method": "base_perturbed",
+      "kind": "canonical",
+      "config": "base_perturbed_s101.json",
+      "csv_run_id": "02-NS-base-plus-perturbed-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3,
+      "mode": "base_perturbed",
+      "source_config": "configs/paper/ns_gp_v2/base_perturbed_s101.json",
+      "evaluation_revision": "iclr_ns_bgp_192_single_final_v5"
+    }
+  ],
+  "data_index": "../ns_draft_v1/data/bank_index.json",
+  "reference_bundle": "../ns_draft_v1/s0_hold_initial_bundle",
+  "agent_resume": {
+    "maximum_attempts_including_initial": 3,
+    "scope": "same_native_session_within_live_agent_turn",
+    "budget": "original_hard_deadline_including_reconnect_waits",
+    "policy_rejection_retry": false
+  },
+  "candidate_submission": {
+    "policy": "latest",
+    "per_agent_per_round": 1,
+    "maximum_new_programs_per_round": 2,
+    "include_incumbent": true,
+    "earlier_submissions": "archived_not_evaluated"
+  },
+  "promotion": {
+    "case_count": 192,
+    "counts": {
+      "original": 0,
+      "base": 64,
+      "guided": 64,
+      "base_perturbed": 64,
+      "guided_perturbed": 0
+    },
+    "metric": "overall.mean",
+    "guidance_reference": "each_run_entering_incumbent",
+    "common_within_run_and_round": true,
+    "guided_cases_common_across_runs": false,
+    "base_and_base_perturbed_common_across_runs": true,
+    "shared_suite_manifest": "../../../../control/mixed_evaluation/comparison_suite.json",
+    "live_delegated_kinds": [
+      "guided"
+    ]
+  },
+  "fixed_baseline": {
+    "development_case_count": 512,
+    "selection_case_count": 192,
+    "selection_counts": {
+      "original": 0,
+      "base": 64,
+      "guided": 64,
+      "base_perturbed": 64,
+      "guided_perturbed": 0
+    },
+    "selection_metric": "mean_primary_error",
+    "selection_manifest": "../../../../control/mixed_evaluation/fixed_selection.json",
+    "guidance_reference": "frozen_common_s0",
+    "selection_updates": "never",
+    "independent_of_terminal": true
+  },
+  "terminal": {
+    "case_count": 768,
+    "counts": {
+      "original": 0,
+      "base": 256,
+      "guided": 256,
+      "base_perturbed": 256,
+      "guided_perturbed": 0
+    },
+    "metric": "overall.mean",
+    "suite_manifest": "../../../../control/mixed_evaluation/terminal_suite.json",
+    "case_manifest": "../../../../control/mixed_evaluation/terminal.json",
+    "guidance_reference": "frozen_common_s0",
+    "shared_across_all_five_methods": true,
+    "comparison_suite_manifest": "../../../../control/mixed_evaluation/comparison_suite.json"
+  },
+  "guidance": {
+    "training_steps": 5000,
+    "reward_feedback_case_count": 64,
+    "official_round_case_count": 192,
+    "official_terminal_case_count": 768,
+    "config_hash_scope": "StructuredNSGuidanceConfig backend settings; excludes protocol case counts"
+  },
+  "failure_protocol": "complete_finite_selection_raw_external_v1"
+}

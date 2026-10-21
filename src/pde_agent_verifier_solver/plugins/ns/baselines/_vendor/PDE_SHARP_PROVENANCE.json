@@ -1,0 +1,48 @@
+{
+  "audited_at": "2026-09-18",
+  "upstream_source_vendored": false,
+  "implementation": "Independent paper-and-appendix-based NS adaptation; not an exact author implementation or benchmark reproduction.",
+  "upstream_revision": null,
+  "shared_execution": "Existing NS literature host, canonical command Agent, private validation, hard-wall accounting and phase-boundary continuation.",
+  "paper": "https://arxiv.org/html/2511.00183v2",
+  "repository": "https://github.com/udellgroup/PDE-SHARP",
+  "sections": [
+    "Section 3",
+    "Appendix prompts and algorithm description"
+  ],
+  "source_html_sha256": "d0d5849812ac6263b5b2e44e3cc8ac534a4bbe99c3e7ac11d9f7360063f882cb",
+  "public_source_status": "Author-linked repository returned HTTP 404 through the GitHub API on the audit date; no upstream commit is claimed.",
+  "preserved": [
+    "Sequential classification, analytic treatment, transformation, decomposition and stability analyses",
+    "Independent Genesis programs form a complete unranked candidate pool",
+    "Each judge sees the entire pool, selects its top half and nominates one program for outer evaluation",
+    "Judges receive common completed-round numerical feedback and improve or combine nominated programs",
+    "A later cycle expands the pool and resets judge histories"
+  ],
+  "bounded_v1_adaptations": [
+    "Three initial Genesis programs instead of the paper default thirty-two; three judges, one cycle and one hybrid round in the small-budget template",
+    "Common model and at most twelve Agent hours including analysis and selection calls; at most two hours per Genesis or judge branch",
+    "Incremental changes are delivered as full standard NS bundles with a requested diff description, rather than the native patch format",
+    "Common NS validation reports replace author task-specific execution feedback; no pre-ranking all Genesis programs by validation",
+    "Optional S0 is validated as a delivery fallback, not added as a Genesis seed",
+    "Fixed sampled versus continuous-online Base is our paired environment intervention",
+    "Use one common model for all judges instead of the paper default heterogeneous o3, DeepSeek-R1 and GPT-4o mixture; keeps the environment pair controlled."
+  ],
+  "completion_v2": {
+    "implemented_at": "2026-09-21",
+    "settings": {
+      "analysis_sessions": 1,
+      "genesis": 4,
+      "judges": 3,
+      "hybrid_rounds": 2,
+      "cycles": 1,
+      "agent_time_limit": null,
+      "development_execution_allowed_in_genesis": true,
+      "delivery": "best_valid_nominee_or_hybrid; S0_only_labeled_fallback"
+    },
+    "common_environment": "same frozen 64 v6 Cases, finite references in both arms; online continuous public inputs and unlimited Base; no continuous truth",
+    "validation_terminal": "frozen common 24/96 Cases; 300 seconds per solver Case",
+    "cost_matching": "not matched; report actual costs",
+    "continuation": "same unfinished session on allocation pause; completed stages cached"
+  }
+}

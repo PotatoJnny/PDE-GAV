@@ -1,0 +1,169 @@
+{
+  "schema": "pde_campaign_v1",
+  "problem": "ns",
+  "name": "NS validated mixed-case 5-round",
+  "dataset": {
+    "format": "ns_d0_v1",
+    "manifest": "${PDE_GAV_SHARED_DATA_ROOT}/runs/server_triplane_generator_20260628_full100k/d0_large/split_manifest.json"
+  },
+  "execution": {
+    "backend": "slurm",
+    "run_root": "${PDE_GAV_SOURCE_ROOT}/project_runs/ns_validated_mixed_case_5round",
+    "account": "${PDE_GAV_SLURM_ACCOUNT}",
+    "qos": "normal",
+    "gpu_partition": "gpubase_l40s_b3",
+    "gpu_gres": "gpu:l40s:1",
+    "modules": [
+      "scipy-stack",
+      "hdf5",
+      "pytest"
+    ]
+  },
+  "projection": {
+    "train_cases": 80000,
+    "validation_cases": 10000,
+    "batch_cases": 32,
+    "shard_cases": 256,
+    "loader_workers": 8,
+    "spatial_mode_x": 16,
+    "spatial_mode_y": 16,
+    "time_order": 12,
+    "geometry_mask_transition": 0.05,
+    "ridge_relative": 1e-06,
+    "hidden_reference_cases": 5000
+  },
+  "pca": {
+    "ranks": [
+      64,
+      128,
+      256
+    ],
+    "validation_cases": 2048,
+    "batch_cases": 16,
+    "loader_workers": 8,
+    "oversample": 16,
+    "power_iterations": 4,
+    "seed": 20260809,
+    "selection": {
+      "metric": "manifold_velocity_relative_l2",
+      "statistic": "median",
+      "relative_tolerance": 0.05
+    }
+  },
+  "flow": {
+    "steps": 30000,
+    "batch_size": 512,
+    "validation_cases": 2048,
+    "width": 768,
+    "depth": 8,
+    "time_width": 128,
+    "lr": 0.0002,
+    "checkpoint_every": 5000,
+    "seed": 20260809,
+    "amp": "bfloat16",
+    "selection": {
+      "sample_cases": 512,
+      "materialized_cases": 128,
+      "reference_cases": 256,
+      "baseline_repeats": 32,
+      "rule": "empirical_d0_gate",
+      "baseline_lower_quantile": 0.05,
+      "baseline_upper_quantile": 0.95,
+      "minimum_contract_pass_fraction": 1.0,
+      "seed": 20260812,
+      "selection_seed": 20260813,
+      "weights": {
+        "validation_loss": 2.0,
+        "latent_mmd": 1.0,
+        "latent_sliced_wasserstein": 1.0,
+        "latent_coverage": 1.0,
+        "physical_mmd": 1.0,
+        "physical_sliced_wasserstein": 1.0,
+        "physical_coverage": 1.0
+      }
+    }
+  },
+  "generator": {
+    "integration_steps": 256,
+    "sample_batch": 256,
+    "train_audit_cases": 80000,
+    "validation_audit_cases": 2048,
+    "metric_rank": 64,
+    "paired_base_audit_cases": 128,
+    "source_batch_points": 8192,
+    "cuda_cache_clear_every": 16,
+    "flow_state": "raw",
+    "seed": 20260810
+  },
+  "guidance": {
+    "steps": 5000,
+    "batch_size": 256,
+    "width": 512,
+    "depth": 6,
+    "time_width": 128,
+    "lr": 0.0002,
+    "strength": 0.1,
+    "max_flow_ratio": 0.25,
+    "objective": "solver_error",
+    "seed": 20260810,
+    "minimum_cases": 32
+  },
+  "perturbations": {
+    "pca_tangent": 48,
+    "spectral_complement": 96,
+    "pca_normal": 48,
+    "replay": 96,
+    "target_question_norm": 0.01,
+    "reference_velocity_scale": 0.005531590859331513,
+    "reference_forcing_scale": 0.39948812205030987,
+    "spectral_max_mode": 20,
+    "selection_seed": 2026081601,
+    "seed": 2026081602
+  },
+  "hidden": {
+    "initial_cases": 128,
+    "cases_per_round": 128,
+    "guided_fraction": 0.5,
+    "accumulate": true,
+    "seed": 20260810,
+    "round_seed": 20260815,
+    "selection_seed": 20260811,
+    "sample_cases": 2048
+  },
+  "campaign": {
+    "rounds": 5,
+    "cases_per_round": 1024,
+    "guard_cases": 0,
+    "case_mix": {
+      "original": 256,
+      "generated": 576,
+      "perturbed": 192,
+      "guided_fraction": 0.5,
+      "original_split": "adversarial_guard",
+      "original_seed": 20260814
+    }
+  },
+  "agent": {
+    "backend": "codex",
+    "prompt_file": "",
+    "budget_seconds": 3600,
+    "execution_mode": "persistent",
+    "invocation_timeout_seconds": 3600,
+    "persistent_max_attempts": 0,
+    "max_attempts": 1,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "cache_fixed_setup": true,
+    "allow_network": true
+  },
+  "evaluator": {
+    "formal_scope": "cumulative",
+    "workers": 4,
+    "nx": 0,
+    "ny": 0,
+    "nt": 0
+  },
+  "task": {
+    "kind": "solver"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "submission.py",
+    "assets/reconstruction_settings.json"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1"
+}

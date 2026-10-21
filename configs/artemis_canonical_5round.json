@@ -1,0 +1,75 @@
+{
+  "schema": "canonical_artemis_campaign_v1",
+  "campaign_id": "artemis-canonical-d2-base-g-p-5round-2agent-s101-20260908",
+  "profile": "artemis_admitted_reward_guided",
+  "master_seed": 101,
+  "round_count": 5,
+  "backend": {
+    "config": "plasma_canonical_artemis.json",
+    "sha256": "0433ef1edefce3c49dc0f085ec0f886c467e350eddf9d5c187e6ca8eda1b3651"
+  },
+  "execution": {
+    "agent_count": 2,
+    "agent_active_budget_seconds": 7200,
+    "agent_hard_wall_seconds": 14400,
+    "controller_rpc_timeout_seconds": 7200,
+    "candidate_case_workers": 28,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_candidate_batch_hard_wall_seconds": 6900,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max"
+  },
+  "generator": {
+    "guidance_enabled": true,
+    "perturbations_enabled": true,
+    "settings": {"guidance_maximum_wall_seconds": 3600.0},
+    "feedback_source": "canonical_selected_solver_official",
+    "feedback_case_count": 128
+  },
+  "development": {
+    "strategy": "agent_adaptive",
+    "case_replay": false,
+    "max_cases_per_agent_per_round": 256,
+    "allowed_sources": ["base", "guided"],
+    "starter": {"original": 0, "base": 16, "guided": 0, "base_perturbed": 0, "guided_perturbed": 0}
+  },
+  "official": {"original": 0, "base": 128, "guided": 0, "base_perturbed": 0, "guided_perturbed": 0},
+  "terminal": {
+    "cohort_id": "base_model",
+    "guidance_source": "base",
+    "suite": {"original": 0, "base": 256, "guided": 0, "base_perturbed": 256, "guided_perturbed": 0},
+    "ranking": {"distribution": "base", "statistic": "mean"}
+  },
+  "promotion": {
+    "preset": "minimize_metric",
+    "settings": {"primary": {"distribution": "base", "statistic": "mean"}}
+  },
+  "evaluator": {
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 16,
+    "official_point_count": 32,
+    "terminal_point_count": 32,
+    "allow_grid_truth": false,
+    "allow_point_truth": false,
+    "allow_development_solution_session": false
+  },
+  "task": {"require_prepared_solution": true, "causal_horizon": true, "candidate_compute_budget": 600},
+  "candidate": {
+    "initial_bundle": "candidates/artemis_hold_initial_bundle",
+    "initial_name": "Hold public initial macros",
+    "initial_summary": "A weak query-blind macroscopic baseline prepared only from the public initial distribution and equation."
+  },
+  "worker": {"script": "../scripts/run_canonical_codex_agent.py", "codex_config": "../scripts/canonical_codex.config.toml"},
+  "agents": [
+    {
+      "agent_id": "artemis-broad-explorer",
+      "name": "Broad Artemis macroscopic-model explorer",
+      "prompt": "Develop the strongest scientifically valid program for the supplied forced 1D1V Vlasov--Poisson Cases, using only staged public equation, initial distribution, causal source and approved Development capabilities. Choose your own hypotheses, numerical or learned representation, and diagnostics; no solver family is prescribed. Predict only M0, M1, M2, M3 and E; no complete f output is required. Export prepare_solution(case, solve_budget=None), which prepares a candidate-owned representation before scoring coordinates are known, and return a handle.evaluate(points_query) -> AnswerView. Fresh BASE, GUIDED and their paired PERTURBED Development Cases share one adaptive Case allowance. Guidance is trained on the selected solver feedback and frozen once per round for both Agents; choose whether to request Guided Cases. Use that evidence, shared Campaign Memory and the incumbent to guide experiments. Official promotion uses only clean Base mean error; no completed-solution/truth access is granted. Submit every genuinely distinct Candidate worth common Official evaluation and checkpoint an evidence-based round log."
+    },
+    {
+      "agent_id": "artemis-critical-refiner",
+      "name": "Critical Artemis macroscopic-model refiner",
+      "prompt": "Independently diagnose the incumbent and shared Official evidence for the supplied forced 1D1V Vlasov--Poisson Cases, then build the strongest corrective scientific program. Choose methods freely and examine stability, causality, quadrature, conservation and generalization using only staged public resources and approved Development capabilities. The outputs are M0, M1, M2, M3 and E, not complete f. Implement query-blind prepare_solution(case, solve_budget=None) -> handle and handle.evaluate(points_query) -> AnswerView; do not defer solving until scoring points are revealed. BASE, GUIDED and their paired PERTURBED Cases are available within one adaptive Case allowance. Both Agents share the same Guidance snapshot, trained once per round on selected solver feedback; Guided use is optional. Official promotion uses only clean Base mean error; completed-solution/truth access remains disabled. Evaluate meaningful alternatives, atomically nominate portable bundles, and checkpoint failures, evidence and useful next steps in the round log."
+    }
+  ]
+}

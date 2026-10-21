@@ -1,0 +1,5 @@
+# Preserve the bytes covered by release and original candidate checksums.
+* -text
+# Archived CSVs use CRLF; the archived Python files retain their original EOFs.
+*.csv whitespace=cr-at-eol
+solutions/**/*.py whitespace=-blank-at-eof

@@ -1,0 +1,25 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "adaptive_initial.py",
+    "adaptive_taper.py",
+    "base.py",
+    "cuda_force_projector.py",
+    "field_corrector.py",
+    "gaussian_green.py",
+    "green_gpu.py",
+    "green_ops.py",
+    "kinetic_ops.py",
+    "macro_limiter.py",
+    "moments.py",
+    "realizability.py",
+    "response_budget.py",
+    "same_grid_midpoints.py",
+    "spline_kernel.py",
+    "submission.py",
+    "thermal_mixing.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 152778,
+  "tree_sha256": "038c3ae12d79cf3e37168bb4065026f9b3292fcc379b52ac5b72b99dcb298859"
+}

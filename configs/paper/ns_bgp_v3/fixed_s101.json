@@ -1,0 +1,77 @@
+{
+  "schema": "ns_fixed_data_baseline_v1",
+  "method": "competitive_refinement",
+  "seed": 101,
+  "dataset": {
+    "manifest": "../ns_draft_v1/data/development_manifest.json",
+    "development_split": "development",
+    "selection_manifest": "../../../../control/mixed_evaluation/fixed_selection.json"
+  },
+  "initial_candidate": "../ns_draft_v1/s0_hold_initial_bundle",
+  "search": {
+    "competition_rounds": 5
+  },
+  "prompt": "NS task and public inputs\n-------------------------\nBuild a solver for the supplied incompressible Navier--Stokes Cases, supporting\nboth public input representations. Generated Cases expose the domain and public\nquery_initial_velocity/query_forcing Oracles. Original numerical Cases expose\npublic_data['question'] and ['arrays']: x[X], y[Y], t[T],\ninitial_velocity[2,X,Y], forcing[T,2,X,Y], and fluid_mask[X,Y].\nBoth representations describe the declared NS equation. The supplied S0\nillustrates support for both input paths.\n\nSelection objective\n-------------------\nAt each round boundary, each Agent's final nominated program and the\nincumbent are evaluated on the same fixed 192 hidden selection Cases:\n64 clean Base, 64 Guided, 64 Base-perturbed, and 0 Guided-perturbed.\nMinimize the unweighted mean of all 192 per-Case u/v-component relative L2 errors, without truncation. Execution or\nnonfinite failures make a program ineligible; exact ties retain the incumbent.\nThis selection bank was frozen using the common S0 reference. It stays fixed\nthroughout this baseline, independently of the Agent's current program, and is\nseparate from the final test bank. Pressure is unscored.\n\nUse the same fixed 512 original finite-array development Cases and the available evaluation tool throughout all five rounds. The Agents cannot generate new development Cases online. Submitted solvers must also support continuous generated Cases through their public initial-velocity and forcing oracles when evaluated on hidden selection/test Cases. Develop and test as many versions as useful within your budget. Each submit replaces your own nominated representative; at the round boundary only your last committed nomination enters Promotion. Choose your strongest program using development evidence and submit it before finishing. To select an earlier version, submit it again last. Earlier versions and research logs remain archived.",
+  "agent": {
+    "command": [
+      "{python}",
+      "{repo}/scripts/run_canonical_codex_agent.py",
+      "--codex-binary",
+      "${CODEX_BINARY}",
+      "--auth-file",
+      "${CODEX_AUTH_FILE}",
+      "--runtime-root",
+      "{output}/agent_runtime",
+      "--config",
+      "{repo}/scripts/canonical_codex.config.toml"
+    ],
+    "hard_wall_seconds": 14400,
+    "inline_array_bytes": 256,
+    "worker_settings": {
+      "profile": "structured_numerical",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "candidate_abi": "prepare_solution_then_evaluate_points_v1",
+      "candidate_execution": {
+        "device": "cpu",
+        "cuda_available": false
+      },
+      "controller_rpc_timeout_seconds": 7200
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "8",
+      "MKL_NUM_THREADS": "8"
+    },
+    "roles": [
+      {
+        "agent_id": "ns-broad-explorer",
+        "name": "Broad NS solver explorer",
+        "prompt": "Focus primarily on exploring new approaches to the task. Pursue the ideas you judge most promising for producing a stronger program. Use the current program and available evidence as context, and follow useful findings wherever they lead. You have full freedom to choose methods, representations, and experiments, including combining new ideas with improvements to existing approaches.",
+        "gpu_devices": [
+          "0"
+        ]
+      },
+      {
+        "agent_id": "ns-critical-refiner",
+        "name": "Critical NS solver refiner",
+        "prompt": "Focus primarily on improving the current approach. Use the current program and available evidence to identify where further work could produce a stronger program. You decide what to retain, change, or replace, and follow useful findings wherever they lead. You have full freedom to choose methods, representations, and experiments, including a different approach when it offers a better path forward.",
+        "gpu_devices": [
+          "1"
+        ]
+      }
+    ],
+    "nomination_policy": "latest",
+    "transient_resume_max_attempts": 3
+  },
+  "evaluation": {
+    "allow_point_truth": false,
+    "allow_grid_truth": false,
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 32,
+    "selection_point_count": 96,
+    "candidate_case_workers": 28,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_batch_hard_wall_seconds": 6900,
+    "borrow_agent_gpus": true
+  }
+}

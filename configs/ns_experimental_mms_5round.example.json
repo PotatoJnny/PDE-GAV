@@ -1,0 +1,163 @@
+{
+  "schema": "canonical_ns_campaign_v1",
+  "campaign_id": "ns-experimental-mms-5round",
+  "profile": "experimental_mms",
+  "master_seed": 2026090402,
+  "round_count": 5,
+  "execution": {
+    "agent_count": 2,
+    "agent_hard_wall_seconds": 14400,
+    "controller_rpc_timeout_seconds": 7200,
+    "candidate_case_workers": 28,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_candidate_batch_hard_wall_seconds": 6900,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max"
+  },
+  "dataset": {
+    "dataset_id": "experimental-piv-mms",
+    "manifest": "/absolute/path/to/prepared_dataset.json",
+    "settings": {}
+  },
+  "generator": {
+    "guidance_enabled": true,
+    "perturbations_enabled": true,
+    "artifacts": {
+      "flow_checkpoint": "/absolute/path/to/flow_checkpoint.pt",
+      "pca_checkpoint": "/absolute/path/to/pca_checkpoint.pt"
+    },
+    "runtime": {
+      "integration_steps": 256,
+      "integration_method": "heun",
+      "cuda_graph_sampling": true,
+      "flow_state": "raw",
+      "perturbation_family": "spectral_complement",
+      "perturbation_amplitude": 2.861761125944777e-06,
+      "spectral_max_mode": 20,
+      "max_points_per_request": 4096,
+      "device": "cuda"
+    },
+    "guidance": {
+      "protocol": {
+        "guidance_config_sha256": "730f7133c51d5933d1668f9271e35537512065cd93cb0d9157a031e6cc6f8eaa",
+        "reward_feedback_case_count": 1024,
+        "official_round_case_count": 64,
+        "official_terminal_case_count": 128,
+        "inference_wall_budget_seconds": 1800,
+        "inference_compute_capacity": "one-controller-l40s",
+        "training_budget": {
+          "maximum_wall_seconds": 7200,
+          "compute_capacity": "one-controller-l40s",
+          "maximum_concurrency": 1
+        },
+        "official_sample_settings": {
+          "sampling_policy": "solver_reward_guided_rectified_flow",
+          "flow_state": "raw",
+          "integration_steps": 256,
+          "guidance_strength": 0.1,
+          "guidance_max_flow_ratio": 0.25
+        }
+      },
+      "backend": {
+        "training_steps": 5000,
+        "batch_size": 256,
+        "width": 512,
+        "depth": 6,
+        "time_width": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0001,
+        "maximum_gradient_norm": 1.0,
+        "minimum_cases": 32,
+        "guidance_strength": 0.1,
+        "guidance_max_flow_ratio": 0.25
+      }
+    }
+  },
+  "development": {
+    "strategy": "agent_adaptive",
+    "case_replay": false,
+    "max_cases_per_agent_per_round": 64,
+    "allowed_sources": [
+      "original",
+      "base",
+      "guided"
+    ],
+    "starter_only_sources": [
+      "original"
+    ],
+    "starter": {
+      "original": 10,
+      "base": 8,
+      "guided": 8,
+      "base_perturbed": 0,
+      "guided_perturbed": 0
+    }
+  },
+  "official": {
+    "original": 5,
+    "base": 6,
+    "guided": 3,
+    "base_perturbed": 1,
+    "guided_perturbed": 1
+  },
+  "terminal": {
+    "cohorts": [
+      {
+        "cohort_id": "experimental_mms_final_test",
+        "guidance_source": "base",
+        "suite": {
+          "original": 25,
+          "base": 0,
+          "guided": 0,
+          "base_perturbed": 0,
+          "guided_perturbed": 0
+        }
+      }
+    ],
+    "ranking": {
+      "cohort_id": "experimental_mms_final_test",
+      "distribution": "original",
+      "statistic": "mean"
+    }
+  },
+  "promotion": {
+    "preset": "minimize_metric",
+    "settings": {
+      "primary": {
+        "distribution": "original",
+        "statistic": "mean"
+      },
+      "require_improvement": true
+    }
+  },
+  "evaluator": {
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 32,
+    "official_point_count": 96,
+    "terminal_point_count": 128,
+    "allow_grid_truth": false,
+    "allow_point_truth": false,
+    "allow_development_solution_session": false
+  },
+  "candidate": {
+    "initial_bundle": "candidates/ns_hold_initial_bundle",
+    "initial_name": "Hold initial velocity",
+    "initial_summary": "A public-initial-data baseline for the experimental MMS solver task."
+  },
+  "worker": {
+    "script": "../scripts/run_canonical_codex_agent.py",
+    "codex_config": "../scripts/canonical_codex.config.toml"
+  },
+  "agents": [
+    {
+      "agent_id": "mms-broad-explorer",
+      "name": "Solver method explorer",
+      "prompt": "Find and improve a solver for the declared incompressible Navier-Stokes initial-boundary problem. Use the public initial velocity, forcing and boundary-velocity queries. The manufactured boundary can be nonzero and time dependent. Return a prepare_solution program with a continuous velocity handle; the scoring rule is velocity error. Experimental observations and reconstruction coefficients are private preparation data. Explore and compare different numerical or reduced representations."
+    },
+    {
+      "agent_id": "mms-critical-refiner",
+      "name": "Solver method refiner",
+      "prompt": "Find and improve a solver for the declared incompressible Navier-Stokes initial-boundary problem. Use the public initial velocity, forcing and boundary-velocity queries. The manufactured boundary can be nonzero and time dependent. Return a prepare_solution program with a continuous velocity handle; the scoring rule is velocity error. Experimental observations and reconstruction coefficients are private preparation data. Develop the strongest current method using measured solver errors and timing."
+    }
+  ]
+}

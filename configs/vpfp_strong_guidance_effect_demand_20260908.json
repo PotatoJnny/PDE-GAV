@@ -1,0 +1,31 @@
+{
+  "schema": "vpfp_frozen_guidance_effect_v1",
+  "round_config": "configs/vpfp_strong_solver_guidance_demand_20260908.json",
+  "guide": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-solver-guidance-preflight-5299309/pipeline/guidance/best.pt",
+    "sha256": "5fe6688bcb5f2cb0791fcd69814134528df4de96723fd1356c80b2a89fcbf48b"
+  },
+  "training_plan": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-solver-guidance-preflight-5299309/pipeline/frozen-plan.json",
+    "sha256": "b0a67105af6b9ee927656616f625e3cc2045d333304bdd408207d4e4e36b5e68"
+  },
+  "training_labels": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-solver-guidance-preflight-5299309/pipeline/label-manifest.json",
+    "sha256": "6f6cddd18b407e8b71b591ae12d3b7a99fed1f62004e29c8a117e853e3baaca2"
+  },
+  "training_report": {
+    "path": "${PDE_GAV_RUN_ROOT}/vpfp-strong-solver-guidance-preflight-5299309/pipeline/guidance/training.json",
+    "sha256": "4600a5b61933605d38b8981a278a124d326b3967003f57e1bd4f2822736d7db2"
+  },
+  "strength": 2,
+  "fresh_split_seeds": {
+    "fit": 5820260908,
+    "validation": 5920260908,
+    "selection": 6020260908,
+    "confirmation": 6120260908,
+    "training": 6220260908
+  },
+  "expected_pairs": 32,
+  "bootstrap_seed": 6320260908,
+  "bootstrap_replicates": 10000
+}

@@ -1,0 +1,55 @@
+{
+  "repository": "https://github.com/WecoAI/aideml",
+  "revision": "60b3978ddf65b71f86eb7c64506965048a1398cf",
+  "license": "MIT",
+  "retrieved_on": "2026-09-06",
+  "upstream_sources": [
+    {
+      "upstream_path": "aide/agent.py",
+      "local_path": "aide_upstream/aide__agent.py.txt",
+      "sha256": "c97033ea8c5cad618bcf4063fbd2a426598dfb2bee4f3a9e10d5ea8af258072c"
+    },
+    {
+      "upstream_path": "aide/journal.py",
+      "local_path": "aide_upstream/aide__journal.py.txt",
+      "sha256": "6539cac937ef65af1ee6f05c6434ec66c2d3c268460c74f13eba4fa7bf9b6020"
+    },
+    {
+      "upstream_path": "aide/utils/metric.py",
+      "local_path": "aide_upstream/aide__utils__metric.py.txt",
+      "sha256": "0e99884a28720fc2487c6d2e3825ce8ec2cac5390018f343a79fbcb0e2907eb8"
+    },
+    {
+      "upstream_path": "aide/interpreter.py",
+      "local_path": "aide_upstream/aide__interpreter.py.txt",
+      "sha256": "a0b6a16302dd15bd189be79c604bf2300870e174370c59243114ad10a2b2b7b6"
+    },
+    {
+      "upstream_path": "aide/utils/response.py",
+      "local_path": "aide_upstream/aide__utils__response.py.txt",
+      "sha256": "d166ee59f885fa5becb17d269f9f9ab1a7296054fce22a053d726a785fdd0ae8"
+    },
+    {
+      "upstream_path": "aide/utils/config.yaml",
+      "local_path": "aide_upstream/aide__utils__config.yaml.txt",
+      "sha256": "7ae409fbb429cc5a7a07a902abbd7c97286c4a1614028af54a1e8783e522f8b7"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "local_path": "AIDE_LICENSE",
+      "sha256": "723b16d1701dfb2d280d229ff84f3056df65b6b00ad8419ec6cb7da2fdd8f616"
+    }
+  ],
+  "derived_core": {
+    "path": "aide_core.py",
+    "sha256": "256c7e3a1db10c2b07a278235fc550f24f1ff15f9bdf0a7324e2c2b8995f20ab"
+  },
+  "extraction": [
+    "Retain MetricValue, WorstMetricValue, trim_long_string, ExecutionResult, Node, Journal definitions and all their method bodies.",
+    "Retain Agent.__init__, Agent.search_policy and Agent.step method bodies exactly; omit provider, prompt and interpreter integration methods.",
+    "Omit DataClassJsonMixin base from extracted classes; no upstream JSON serialization API is used.",
+    "Replace module imports with only the standard-library and numpy dependencies used by the retained definitions; postpone type annotations."
+  ],
+  "ns_adaptation": "../aide.py binds generation/evaluation callbacks, an isolated seeded random module substitute, and trusted numerical metric interpretation. The search policy and step selection methods remain unchanged.",
+  "paper_end_to_end_reproduction": false
+}

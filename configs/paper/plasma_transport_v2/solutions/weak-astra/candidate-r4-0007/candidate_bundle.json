@@ -1,0 +1,17 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "base.py",
+    "green_ops.py",
+    "kinetic_ops.py",
+    "macro_limiter.py",
+    "moments.py",
+    "realizability.py",
+    "spline_kernel.py",
+    "submission.py",
+    "thermal_mixing.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 84276,
+  "tree_sha256": "b3430b991101381bb75c19b611ad960d99530a862bd7c936f495f9e6bb588468"
+}

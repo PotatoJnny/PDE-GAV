@@ -1,0 +1,74 @@
+{
+  "schema": "ns_fixed_data_baseline_v1",
+  "method": "competitive_refinement",
+  "seed": 101,
+  "dataset": {
+    "manifest": "data/development_manifest.json",
+    "development_split": "development",
+    "selection_split": "validation"
+  },
+  "initial_candidate": "s0_hold_initial_bundle",
+  "search": {
+    "competition_rounds": 5
+  },
+  "prompt": "Deliver one solver supporting both public input representations. Generated\nCases expose domain and query_initial_velocity/query_forcing via the public\nsession. Original numerical Cases expose public_data['question'] and ['arrays']:\nx[X], y[Y], t[T], initial_velocity[2,X,Y], forcing[T,2,X,Y], fluid_mask[X,Y].\nUse these public inputs to solve the SAME declared NS equation; interpolate\nfinite arrays when necessary. The supplied S0 demonstrates both input paths.\nReturn a prepared handle evaluated at physical (t,x,y) points with velocity_x\nand velocity_y. Preserve support for both input types when editing. No hidden\ntrajectory, reference files, selection data or test data may be inspected.\nSelection minimizes untruncated mean u/v-component relative L2 on a complete,\nfinite validation cohort; execution/nonfinite failures make that program\nineligible, and exact ties retain the incumbent. Do not optimize pressure error.\n\nUse the fixed 512 development Cases and available evaluation tool; this run has no online case-generation or public oracle sessions. Both Agents compete on the same fixed 512 validation Cases at each round boundary. Retain all useful runnable nominations and cumulative logs.",
+  "agent": {
+    "command": [
+      "{python}",
+      "{repo}/scripts/run_canonical_codex_agent.py",
+      "--codex-binary",
+      "${CODEX_BINARY}",
+      "--auth-file",
+      "${CODEX_AUTH_FILE}",
+      "--runtime-root",
+      "{output}/agent_runtime",
+      "--config",
+      "{repo}/scripts/canonical_codex.config.toml"
+    ],
+    "hard_wall_seconds": 14400,
+    "inline_array_bytes": 256,
+    "worker_settings": {
+      "profile": "structured_numerical",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "candidate_abi": "prepare_solution_then_evaluate_points_v1",
+      "candidate_execution": {
+        "device": "cpu",
+        "cuda_available": false
+      },
+      "controller_rpc_timeout_seconds": 7200
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "8",
+      "MKL_NUM_THREADS": "8"
+    },
+    "roles": [
+      {
+        "agent_id": "ns-broad-explorer",
+        "name": "Broad NS solver explorer",
+        "prompt": "Explore physically distinct NS numerical methods.",
+        "gpu_devices": [
+          "0"
+        ]
+      },
+      {
+        "agent_id": "ns-critical-refiner",
+        "name": "Critical NS solver refiner",
+        "prompt": "Diagnose and refine numerical stability, boundary treatment and integration.",
+        "gpu_devices": [
+          "1"
+        ]
+      }
+    ]
+  },
+  "evaluation": {
+    "allow_point_truth": false,
+    "allow_grid_truth": false,
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 32,
+    "selection_point_count": 96,
+    "candidate_case_workers": 28,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_batch_hard_wall_seconds": 6900
+  }
+}

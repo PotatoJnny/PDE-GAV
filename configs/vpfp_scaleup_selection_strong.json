@@ -1,0 +1,150 @@
+{
+  "schema": "vpfp_scaleup_candidate_selection_v1",
+  "regime": "strong",
+  "candidate": "cov_base",
+  "pilot_result_sha256": "afe27b5a9ab1ad045f7adc8f18d153f1c36152bb19a1a0db6952704d6c441bd4",
+  "pilot_plan_sha256": "f1d133ca8c2777ebd876ce4dfac83a0611542070a5586ed84d4f3b8fdabbd978",
+  "evidence": {
+    "decision": "Launch bounded paired longer training; promising temporal-geometry configuration, not scientific admission.",
+    "rationale": "Both seeds reproduce large physical and derivative improvements, including recovery of the fast early kinetic transient. Retain original sigma sampling; added low-sigma coverage has no stable advantage across the targeted physical errors.",
+    "physical_sw": {
+      "value_base": [
+        50.339682219583196,
+        44.842707387843596
+      ],
+      "cov_base": [
+        7.725785359795408,
+        5.9338922259448665
+      ],
+      "cov_low": [
+        7.843291081843466,
+        3.3539308979910487
+      ],
+      "value_low": [
+        119.5433761887194,
+        88.36241228670218
+      ]
+    },
+    "derivative_sw": {
+      "value_base": [
+        50.784583947761746,
+        52.445027395760285
+      ],
+      "cov_base": [
+        1.3928123578768514,
+        1.566452918393795
+      ],
+      "cov_low": [
+        1.6969260606262435,
+        1.7340287751254344
+      ],
+      "value_low": [
+        85.1274204091181,
+        109.77856741801088
+      ]
+    },
+    "early_dtk_probe_rms_case_mean": {
+      "reference_ab": 30.43069853992656,
+      "value_base": [
+        66.23501861332716,
+        68.36657800472732
+      ],
+      "cov_base": [
+        30.0345077436319,
+        28.582762431320663
+      ]
+    },
+    "late_dtk_probe_rms_case_mean": {
+      "reference_ab": 0.05595442585710435,
+      "value_base": [
+        1.4352538263753014,
+        1.1524324957252243
+      ],
+      "cov_base": [
+        0.33813582366154743,
+        0.3832397823684794
+      ]
+    },
+    "late_dtf_probe_rms_case_mean": {
+      "reference_ab": 0.003475412087311069,
+      "value_base": [
+        0.1563263567638203,
+        0.1564904331313373
+      ],
+      "cov_base": [
+        0.02037301522258428,
+        0.02259966115967751
+      ]
+    },
+    "late_jx_probe_rms_case_mean": {
+      "reference_ab": 0.01168401784430154,
+      "value_base": [
+        0.05165240627459664,
+        0.049906209947899634
+      ],
+      "cov_base": [
+        0.007555744286653399,
+        0.006852464022366625
+      ],
+      "cov_low": [
+        0.006389603164140837,
+        0.0059871584223316985
+      ]
+    },
+    "terminal_kinetic_spatial_std": {
+      "reference_ab": 0.07645409912197848,
+      "value_base": [
+        0.059138455053908356,
+        0.058068797667993714
+      ],
+      "cov_base": [
+        0.052300414131453116,
+        0.04760521554190805
+      ]
+    },
+    "physical_mmd_counterevidence": {
+      "value_base": [
+        0.977791448139177,
+        0.9777914481391803
+      ],
+      "cov_base": [
+        1.1955720284612075,
+        0.95447234294031
+      ],
+      "cov_low": [
+        1.103907169375224,
+        0.7354309717556188
+      ]
+    },
+    "limitations": [
+      "All physical and derivative audits still detect distribution differences; every original strict scorecard remains failed.",
+      "Late physical derivatives remain about six to seven times the reference, despite large improvement over baseline.",
+      "Late momentum, kinetic spatial variation, spectrum and cross-trajectory tail-summary variance remain too small.",
+      "cov_low improves some physical metrics, especially seed1 SW and both physical MMDs; cov_base is selected to isolate geometry, not because it dominates every metric.",
+      "Lower validation loss of value_low does not translate to better freely generated answers."
+    ],
+    "pilot_directory": "${PDE_GAV_RUN_ROOT}/vpfp-temporal-training-strong-5240925",
+    "scorecard_sha256": {
+      "seed-0": "04c8b6e52d69ef8179dad8932fcb12e78f2f7d0f9fe8071ec61d008867fb8690",
+      "seed-1": "7bd1897c4024ebdfffcb04778a0a42d11129865ec06149772234d97d9f4a6308"
+    },
+    "summary_semantics": "RMS is per-trajectory probe RMS then averaged across trajectories; reference is the mean of reference A/B means. No continuum norm or population quantile qualification.",
+    "next_experiment": "same train512/validation128; fresh evaluation384; value_base versus cov_base; two new seeds; 1800 seconds per arm; fixed EMA snapshots at 360 and 900 seconds; 128 generated answers per model state",
+    "next_diagnostics": [
+      "early/late dtf and dtK in physical units",
+      "momentum amplitude and cross-trajectory diversity",
+      "kinetic spatial variation and frequency bands",
+      "within-stratum and bandwidth-specific MMD alongside SW",
+      "reference-null and sample-tail sensitivity; no automatic equivalence claim"
+    ],
+    "old_scorecard_used_as_mandatory_gate": false,
+    "native_macro_only_smoke": {
+      "status": "passed",
+      "full_solution_prediction_required": false,
+      "online_pde_calls_during_learned_sampling": 0,
+      "scientific_performance_validation": false,
+      "completed_rounds": 1
+    }
+  },
+  "scientific_admission": false
+}

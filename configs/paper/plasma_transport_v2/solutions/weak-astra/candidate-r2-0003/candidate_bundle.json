@@ -1,0 +1,15 @@
+{
+  "entrypoint": "submission.py",
+  "files": [
+    "derivative_forecast.py",
+    "hybrid_initial_adapter.py",
+    "initial_sampling.py",
+    "projection.py",
+    "rectangle_rule.py",
+    "source_sampler.py",
+    "submission.py"
+  ],
+  "schema": "pde_agent_verifier.candidate_bundle.v1",
+  "total_bytes": 55363,
+  "tree_sha256": "255b23279ad14c60fa75a4f0cf76f72104474c0a42daba6f1977eb95675212cc"
+}

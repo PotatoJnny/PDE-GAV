@@ -1,0 +1,19 @@
+{
+  "physics": "artemis",
+  "factory_settings": {
+    "physical_checkout": "${PDE_GAV_WORKTREES_ROOT}/artemis-oracle-opt2-20260907",
+    "admission_record_path": "${PDE_GAV_WORKTREES_ROOT}/artemis-reward-guidance/configs/vp_1d1v_artemis_compact_v5_admission_v1.json",
+    "expected_admission_record_sha256": "7b036e6cc471ab7f2d629dabe70d6495ef3caed3ee462094833765093e4a6eb0",
+    "science_config_path": "${PDE_GAV_WORKTREES_ROOT}/vp-contour-answer-first-pilot/configs/vp_1d1v_artemis_compact_pca_v5_coordinate_v5_sensor_bin_v5_dev_matrix.json",
+    "expected_science_config_sha256": "8f16ab9aacd1d7f33e612814b939435adc7fb9d28a5837a44cb4ef0d5079f58c",
+    "device": "cuda",
+    "oracle_settings": {
+      "exact_query_tx_reuse": "request",
+      "exact_query_source_mode": "source_only",
+      "factorized_jvp_mode": "forward",
+      "exact_query_tx_mode": "demand",
+      "exact_query_transfer_mode": "request",
+      "generation_sensor_geometry": "precomputed"
+    }
+  }
+}

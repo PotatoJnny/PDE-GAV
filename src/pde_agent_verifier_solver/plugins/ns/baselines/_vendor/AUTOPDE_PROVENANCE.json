@@ -1,0 +1,43 @@
+{
+  "audited_at": "2026-09-18",
+  "upstream_source_vendored": false,
+  "implementation": "Independent paper-and-appendix-based NS adaptation; not an exact author implementation or benchmark reproduction.",
+  "upstream_revision": null,
+  "shared_execution": "Existing NS literature host, canonical command Agent, private validation, hard-wall accounting and phase-boundary continuation.",
+  "paper": "https://arxiv.org/html/2606.10752v1",
+  "sections": [
+    "Section 5",
+    "Appendix G"
+  ],
+  "source_html_sha256": "6ac11c3afc5d45f5d2e3fb82b2c43f04393f917c351be943c0d63d64f1596508",
+  "public_source_status": "No runnable official source or complete author PDE skill library was verified in this audit.",
+  "preserved": [
+    "Explicit PDE DIAGNOSIS followed by a justified METHOD strategy",
+    "Numerical-method guide and measured pilot testing with autonomous tuning",
+    "Fresh-context second pass restricted to local imports, shapes and API repairs; no numerical redesign"
+  ],
+  "bounded_v1_adaptations": [
+    "NS input/output ABI and existing command Agent replace the original mini-swe-agent integration",
+    "Independently written NS/profiling guides; not the unavailable author skill library",
+    "DIAGNOSIS and METHOD are bounded structured JSON stages; their outputs are passed to development",
+    "Six independent two-pass attempts under a common twelve-Agent-hour cap; repetition and validation selection are explicit budget-matching additions",
+    "Two hours per attempt shared by planning, coding and review; reserve at most five minutes for local review",
+    "Shared NS validation error replaces native task-specific checking; optional S0 is delivery fallback only",
+    "Fixed sampled versus continuous-online Base is our paired environment intervention"
+  ],
+  "completion_v2": {
+    "implemented_at": "2026-09-21",
+    "settings": {
+      "development_sessions": 1,
+      "review_sessions": 1,
+      "agent_time_limit": null,
+      "strategy_in_same_development_session": true,
+      "delivery": "review_output_not_validation_argmin",
+      "review_failure": "fail_without_silent_fallback"
+    },
+    "common_environment": "same frozen 64 v6 Cases, finite references in both arms; online continuous public inputs and unlimited Base; no continuous truth",
+    "validation_terminal": "frozen common 24/96 Cases; 300 seconds per solver Case",
+    "cost_matching": "not matched; report actual costs",
+    "continuation": "same unfinished session on allocation pause; completed stages cached"
+  }
+}

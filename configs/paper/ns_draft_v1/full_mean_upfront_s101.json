@@ -1,0 +1,195 @@
+{
+  "schema": "canonical_ns_campaign_v1",
+  "campaign_id": "ns-draft-hardwall-v2-full-mean-upfront-s101",
+  "profile": "structured_numerical",
+  "master_seed": 101,
+  "round_count": 5,
+  "execution": {
+    "agent_count": 2,
+    "agent_hard_wall_seconds": 14400,
+    "controller_rpc_timeout_seconds": 7200,
+    "candidate_case_workers": 28,
+    "candidate_case_hard_wall_seconds": 900,
+    "development_candidate_batch_hard_wall_seconds": 6900,
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max"
+  },
+  "dataset": {
+    "dataset_id": "ns-d0-structured-100k",
+    "manifest": "data/development_manifest.json",
+    "settings": {
+      "development_split": "development",
+      "hidden_split": "validation",
+      "development_cases": 16,
+      "hidden_cases": 8
+    }
+  },
+  "generator": {
+    "generator_id": "ns-structured-coefficient-flow-v1",
+    "generator_sha256": "a19926782cdc1fea3231ff1fd83c8625d0a4d76d82d090be3f0e4dd33a92e88c",
+    "artifacts": {
+      "pca_checkpoint": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/pca_checkpoint.pt",
+      "pca_selection": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/pca_selection.json",
+      "pca_audit": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/pca_audit.json",
+      "flow_checkpoint": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/flow_checkpoint.pt",
+      "flow_selection": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/flow_selection.json",
+      "flow_train_report": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/flow_train_report.json",
+      "flow_sample_audit": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/flow_sample_audit.json",
+      "answer_first_report": "${PDE_GAV_SOURCE_ROOT}/assets/generators/ns/structured_flow_v1/answer_first_report.json"
+    },
+    "artifact_sha256": {
+      "pca_checkpoint": "3b559846e59f6e068238a8c4c156bc1d43a598a4a2da2b2779a726dc90f5fc07",
+      "pca_selection": "62c652564d9448a07081e09c17e419d9419e699688762cb460573a29ff69e562",
+      "pca_audit": "e743e0f0293c424500e8905a608274c3d97916e1fa1773f6f8d36bf5d2cfabc4",
+      "flow_checkpoint": "a19926782cdc1fea3231ff1fd83c8625d0a4d76d82d090be3f0e4dd33a92e88c",
+      "flow_selection": "7f0d9f6f420bbb8b99b27af39dc8f43feb5056c6336f3ac8fe6bae70fa53300d",
+      "flow_train_report": "832ae25a5beec6b1c94c8d8eeec213d9419d1f7de34d10fa33fb4fdf39346ad0",
+      "flow_sample_audit": "e819acd59831776adc667ec090f3fab5829e006294ce368b7b40b3b9e30abeca",
+      "answer_first_report": "22aa32bf3de751e880234b95421508fee0fb40d584121db56ce92401d393d9c6"
+    },
+    "runtime": {
+      "time_interval": [
+        0.0,
+        0.12
+      ],
+      "viscosity": 0.01,
+      "integration_steps": 256,
+      "integration_method": "heun",
+      "cuda_graph_sampling": true,
+      "flow_state": "raw",
+      "perturbation_family": "spectral_complement",
+      "perturbation_amplitude": 2.861761125944777e-06,
+      "spectral_max_mode": 20,
+      "max_points_per_request": 4096,
+      "device": "cuda"
+    },
+    "guidance": {
+      "protocol": {
+        "guidance_config_sha256": "730f7133c51d5933d1668f9271e35537512065cd93cb0d9157a031e6cc6f8eaa",
+        "reward_feedback_case_count": 1024,
+        "official_round_case_count": 64,
+        "official_terminal_case_count": 128,
+        "inference_wall_budget_seconds": 1800,
+        "inference_compute_capacity": "one-controller-l40s",
+        "training_budget": {
+          "maximum_wall_seconds": 7200,
+          "compute_capacity": "one-controller-l40s",
+          "maximum_concurrency": 1
+        },
+        "official_sample_settings": {
+          "sampling_policy": "solver_reward_guided_rectified_flow",
+          "flow_state": "raw",
+          "integration_steps": 256,
+          "guidance_strength": 0.1,
+          "guidance_max_flow_ratio": 0.25
+        }
+      },
+      "backend": {
+        "training_steps": 5000,
+        "batch_size": 256,
+        "width": 512,
+        "depth": 6,
+        "time_width": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0001,
+        "maximum_gradient_norm": 1.0,
+        "minimum_cases": 32,
+        "guidance_strength": 0.1,
+        "guidance_max_flow_ratio": 0.25
+      }
+    },
+    "guidance_enabled": true,
+    "perturbations_enabled": true
+  },
+  "development": {
+    "strategy": "fixed_recipe",
+    "case_replay": false,
+    "max_cases_per_agent_per_round": 1024,
+    "allowed_sources": [
+      "base",
+      "guided"
+    ],
+    "starter_only_sources": [],
+    "starter": {
+      "original": 0,
+      "base": 0,
+      "guided": 0,
+      "base_perturbed": 0,
+      "guided_perturbed": 0
+    },
+    "fixed_recipe": {
+      "original": 0,
+      "base": 256,
+      "guided": 256,
+      "base_perturbed": 256,
+      "guided_perturbed": 256
+    }
+  },
+  "official": {
+    "original": 0,
+    "base": 1024,
+    "guided": 0,
+    "base_perturbed": 0,
+    "guided_perturbed": 0
+  },
+  "terminal": {
+    "cohorts": [
+      {
+        "cohort_id": "common_base",
+        "guidance_source": "base",
+        "suite": {
+          "original": 0,
+          "base": 256,
+          "guided": 0,
+          "base_perturbed": 0,
+          "guided_perturbed": 0
+        }
+      }
+    ],
+    "ranking": {
+      "cohort_id": "common_base",
+      "distribution": "base",
+      "statistic": "mean"
+    }
+  },
+  "promotion": {
+    "preset": "minimize_metric",
+    "settings": {
+      "primary": {
+        "distribution": "base",
+        "statistic": "mean"
+      }
+    }
+  },
+  "evaluator": {
+    "development_coordinate_mode": "private_random_points",
+    "development_point_count": 32,
+    "official_point_count": 96,
+    "terminal_point_count": 128,
+    "allow_grid_truth": false,
+    "allow_point_truth": false,
+    "allow_development_solution_session": false
+  },
+  "candidate": {
+    "initial_bundle": "s0_hold_initial_bundle",
+    "initial_name": "Hold initial velocity",
+    "initial_summary": "Common hold-initial velocity solver supporting finite original arrays and generated public oracles."
+  },
+  "worker": {
+    "script": "../../../scripts/run_canonical_codex_agent.py",
+    "codex_config": "../../../scripts/canonical_codex.config.toml"
+  },
+  "agents": [
+    {
+      "agent_id": "ns-broad-explorer",
+      "name": "Broad NS solver explorer",
+      "prompt": "Explore physically distinct NS numerical methods.\nDeliver one solver supporting both public input representations. Generated\nCases expose domain and query_initial_velocity/query_forcing via the public\nsession. Original numerical Cases expose public_data['question'] and ['arrays']:\nx[X], y[Y], t[T], initial_velocity[2,X,Y], forcing[T,2,X,Y], fluid_mask[X,Y].\nUse these public inputs to solve the SAME declared NS equation; interpolate\nfinite arrays when necessary. The supplied S0 demonstrates both input paths.\nReturn a prepared handle evaluated at physical (t,x,y) points with velocity_x\nand velocity_y. Preserve support for both input types when editing. No hidden\ntrajectory, reference files, selection data or test data may be inspected.\nSelection minimizes the mean of per-Case u/v-component relative L2 errors on the same complete 1024 clean Base Official Cases in each round. Execution/nonfinite failures make that program ineligible; exact ties retain the incumbent. The Official cohort contains no Guided/Perturbed Cases and is not the final external test. Do not optimize pressure error.\n\nAt the start of every round, both Agents receive the SAME complete batch of 1024 development Cases: 256 Base, 256 Guided, 256 perturbed children of those Base parents, and 256 perturbed children of those Guided parents. Guided Cases use the entering selected program (S0 in round 1); the Guidance model is frozen during that round. No additional Cases or perturbations can be requested during the Agent turn. Choose how to evaluate and use this fixed batch. Your turn lasts at most 4 hours total elapsed from Agent start, including all Generator, evaluator and other tool calls and waits. Use the previous selected program and cumulative Campaign Memory; submit all distinct runnable candidates worth common evaluation."
+    },
+    {
+      "agent_id": "ns-critical-refiner",
+      "name": "Critical NS solver refiner",
+      "prompt": "Diagnose and refine numerical stability, boundary treatment and integration.\nDeliver one solver supporting both public input representations. Generated\nCases expose domain and query_initial_velocity/query_forcing via the public\nsession. Original numerical Cases expose public_data['question'] and ['arrays']:\nx[X], y[Y], t[T], initial_velocity[2,X,Y], forcing[T,2,X,Y], fluid_mask[X,Y].\nUse these public inputs to solve the SAME declared NS equation; interpolate\nfinite arrays when necessary. The supplied S0 demonstrates both input paths.\nReturn a prepared handle evaluated at physical (t,x,y) points with velocity_x\nand velocity_y. Preserve support for both input types when editing. No hidden\ntrajectory, reference files, selection data or test data may be inspected.\nSelection minimizes the mean of per-Case u/v-component relative L2 errors on the same complete 1024 clean Base Official Cases in each round. Execution/nonfinite failures make that program ineligible; exact ties retain the incumbent. The Official cohort contains no Guided/Perturbed Cases and is not the final external test. Do not optimize pressure error.\n\nAt the start of every round, both Agents receive the SAME complete batch of 1024 development Cases: 256 Base, 256 Guided, 256 perturbed children of those Base parents, and 256 perturbed children of those Guided parents. Guided Cases use the entering selected program (S0 in round 1); the Guidance model is frozen during that round. No additional Cases or perturbations can be requested during the Agent turn. Choose how to evaluate and use this fixed batch. Your turn lasts at most 4 hours total elapsed from Agent start, including all Generator, evaluator and other tool calls and waits. Use the previous selected program and cumulative Campaign Memory; submit all distinct runnable candidates worth common evaluation."
+    }
+  ],
+  "official_audit_manifest": "../../../../control/official_s101.json"
+}

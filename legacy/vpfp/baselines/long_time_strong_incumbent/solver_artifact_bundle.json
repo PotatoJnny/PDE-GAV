@@ -1,0 +1,15 @@
+{
+  "aggregate_sha256": "425d772df0a6fab416c7aec7c926a8d7574b2dedab07322ef482b53ec57c479d",
+  "entrypoint": "submission.py",
+  "files": [
+    "model_dense_old.npz",
+    "model_dense_rand.npz",
+    "model_source.npz",
+    "model_source_v13.npz",
+    "submission.py",
+    "vpfp_hierarchy.py",
+    "vpfp_newrepair.py"
+  ],
+  "schema": "vpfp_solver_artifact_bundle_v1",
+  "total_bytes": 4284741
+}

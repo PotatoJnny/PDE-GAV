@@ -1,0 +1,332 @@
+diff --git a/codex-rs/linux-sandbox/src/bwrap.rs b/codex-rs/linux-sandbox/src/bwrap.rs
+index d63997d..70dc0b3 100644
+--- a/codex-rs/linux-sandbox/src/bwrap.rs
++++ b/codex-rs/linux-sandbox/src/bwrap.rs
+@@ -19,6 +19,7 @@ use std::fs::Metadata;
+ use std::io;
+ use std::os::fd::AsRawFd;
+ use std::os::unix::ffi::OsStringExt;
++use std::os::unix::fs::FileTypeExt;
+ use std::os::unix::fs::MetadataExt;
+ use std::path::Path;
+ use std::path::PathBuf;
+@@ -390,7 +391,8 @@ fn create_bwrap_flags(
+ /// 3. Unreadable ancestors of writable roots are masked before their child
+ ///    mounts are rebound so nested writable carveouts can be reopened safely.
+ /// 4. `--bind <root> <root>` re-enables writes for allowed roots, including
+-///    writable subpaths under `/dev` (for example, `/dev/shm`).
++///    writable subpaths under `/dev` (for example, `/dev/shm`). Explicitly
++///    authorized NVIDIA character-device leaves instead use `--dev-bind`.
+ /// 5. `--ro-bind <subpath> <subpath>` re-applies read-only protections under
+ ///    those writable roots so protected subpaths win.
+ /// 6. Nested unreadable carveouts under a writable root are masked after that
+@@ -583,6 +585,20 @@ fn create_filesystem_args(
+     for writable_root in &sorted_writable_roots {
+         let root = writable_root.root.as_path();
+         let symlink_target = canonical_target_if_symlinked_path(root);
++        let nvidia_device = has_explicit_nvidia_device_write(file_system_sandbox_policy, root, cwd);
++        if nvidia_device {
++            // A device grant is a leaf capability, never a directory grant.
++            // Do not follow symlinks or accept a regular file with this name.
++            // These exact /dev paths are host-managed; no device discovery or
++            // parent-directory permission implicitly adds another device.
++            let metadata = fs::symlink_metadata(root)?;
++            if !metadata.file_type().is_char_device() || fs::canonicalize(root)? != root {
++                return Err(CodexErr::Fatal(format!(
++                    "explicit NVIDIA device grant must name a non-symlink character device: {}",
++                    root.display()
++                )));
++            }
++        }
+         // If a denied ancestor was already masked, recreate any missing mount
+         // target parents before binding the narrower writable descendant.
+         if let Some(masking_root) = unreadable_roots
+@@ -595,36 +611,54 @@ fn create_filesystem_args(
+         }
+ 
+         let mount_root = symlink_target.as_deref().unwrap_or(root);
+-        bwrap_args.args.push("--bind".to_string());
++        // Ordinary --bind deliberately preserves nodev. Only the exact,
++        // explicitly authorized character-device leaf may clear that flag.
++        bwrap_args.args.push(
++            if nvidia_device {
++                "--dev-bind"
++            } else {
++                "--bind"
++            }
++            .to_string(),
++        );
+         bwrap_args.args.push(path_to_string(mount_root));
+         bwrap_args.args.push(path_to_string(mount_root));
+ 
+-        let mut read_only_subpaths: Vec<PathBuf> = writable_root
+-            .read_only_subpaths
+-            .iter()
+-            .map(|path| path.as_path().to_path_buf())
+-            .filter(|path| !unreadable_paths.contains(path))
+-            .filter(|path| !missing_auto_metadata_read_only_project_root_subpaths.contains(path))
+-            .collect();
+-        let protected_metadata_names = writable_root.protected_metadata_names.clone();
+-        append_metadata_path_masks_for_writable_root(
+-            &mut read_only_subpaths,
+-            root,
+-            &protected_metadata_names,
+-        );
+-        if let Some(target) = &symlink_target {
+-            read_only_subpaths = remap_paths_for_symlink_target(read_only_subpaths, root, target);
+-        }
+-        append_protected_create_targets_for_writable_root(
+-            &mut bwrap_args,
+-            &protected_metadata_names,
+-            root,
+-            symlink_target.as_deref(),
+-            &read_only_subpaths,
+-        );
+-        read_only_subpaths.sort_by_key(|path| path_depth(path));
+-        for subpath in read_only_subpaths {
+-            append_read_only_subpath_args(&mut bwrap_args, &subpath, &allowed_write_paths)?;
++        // Character devices cannot contain protected child paths. Applying
++        // directory metadata masks to them would manufacture paths such as
++        // /dev/nvidia0/.git and fail with ENOTDIR. Keep the entire existing
++        // protection path unchanged for all ordinary writable roots.
++        if !nvidia_device {
++            let mut read_only_subpaths: Vec<PathBuf> = writable_root
++                .read_only_subpaths
++                .iter()
++                .map(|path| path.as_path().to_path_buf())
++                .filter(|path| !unreadable_paths.contains(path))
++                .filter(|path| {
++                    !missing_auto_metadata_read_only_project_root_subpaths.contains(path)
++                })
++                .collect();
++            let protected_metadata_names = writable_root.protected_metadata_names.clone();
++            append_metadata_path_masks_for_writable_root(
++                &mut read_only_subpaths,
++                root,
++                &protected_metadata_names,
++            );
++            if let Some(target) = &symlink_target {
++                read_only_subpaths =
++                    remap_paths_for_symlink_target(read_only_subpaths, root, target);
++            }
++            append_protected_create_targets_for_writable_root(
++                &mut bwrap_args,
++                &protected_metadata_names,
++                root,
++                symlink_target.as_deref(),
++                &read_only_subpaths,
++            );
++            read_only_subpaths.sort_by_key(|path| path_depth(path));
++            for subpath in read_only_subpaths {
++                append_read_only_subpath_args(&mut bwrap_args, &subpath, &allowed_write_paths)?;
++            }
+         }
+         // Protect the registry only where a writable bind exposes it. Apply
+         // this before deny masks so a denied parent stays hidden, rather than
+@@ -676,6 +710,37 @@ fn create_filesystem_args(
+     Ok(bwrap_args)
+ }
+ 
++/// Opt in only through a literal write rule for an exact NVIDIA device leaf.
++/// Read rules, ancestor grants, aliases, and other /dev nodes never enable a
++/// device bind. The effective-policy check preserves same-path deny precedence.
++fn has_explicit_nvidia_device_write(
++    policy: &FileSystemSandboxPolicy,
++    root: &Path,
++    cwd: &Path,
++) -> bool {
++    if root.parent() != Some(Path::new("/dev")) {
++        return false;
++    }
++    let Some(name) = root.file_name().and_then(|name| name.to_str()) else {
++        return false;
++    };
++    let allowed_name = matches!(name, "nvidiactl" | "nvidia-uvm" | "nvidia-uvm-tools")
++        || name.strip_prefix("nvidia").is_some_and(|index| {
++            !index.is_empty() && index.bytes().all(|byte| byte.is_ascii_digit())
++        });
++    allowed_name
++        && policy.entries.iter().any(|entry| {
++            entry.access == FileSystemAccessMode::Write
++                && matches!(&entry.path, FileSystemPath::Path { path }
++                    if path.to_abs_path().is_ok_and(|path| path.as_path() == root))
++        })
++        && policy.can_write_local_path_with_cwd(root, cwd)
++}
++
++#[cfg(test)]
++#[path = "bwrap_nvidia_tests.rs"]
++mod nvidia_tests;
++
+ fn append_protected_create_targets_for_writable_root(
+     bwrap_args: &mut BwrapArgs,
+     protected_metadata_names: &[String],
+diff --git a/codex-rs/linux-sandbox/src/bwrap_nvidia_tests.rs b/codex-rs/linux-sandbox/src/bwrap_nvidia_tests.rs
+new file mode 100644
+index 0000000..f1b99ff
+--- /dev/null
++++ b/codex-rs/linux-sandbox/src/bwrap_nvidia_tests.rs
+@@ -0,0 +1,163 @@
++use super::*;
++use codex_protocol::protocol::FileSystemSandboxEntry;
++use pretty_assertions::assert_eq;
++use tempfile::TempDir;
++use test_case::test_case;
++
++fn entry(path: &str, access: FileSystemAccessMode) -> FileSystemSandboxEntry {
++    FileSystemSandboxEntry {
++        path: AbsolutePathBuf::from_absolute_path(path)
++            .expect("absolute fixture path")
++            .into(),
++        access,
++        missing_path_behavior: None,
++    }
++}
++
++#[test_case("/dev/nvidia0"; "GPU zero")]
++#[test_case("/dev/nvidia15"; "GPU minor fifteen")]
++#[test_case("/dev/nvidiactl"; "driver control")]
++#[test_case("/dev/nvidia-uvm"; "unified memory")]
++#[test_case("/dev/nvidia-uvm-tools"; "unified memory tools")]
++fn requires_exact_write_authorization(path: &str) {
++    let root = Path::new(path);
++    let cwd = Path::new("/");
++    let cases = [
++        (vec![entry(path, FileSystemAccessMode::Write)], true),
++        (vec![entry(path, FileSystemAccessMode::Read)], false),
++        (vec![entry("/dev", FileSystemAccessMode::Write)], false),
++        (vec![entry("/", FileSystemAccessMode::Write)], false),
++        (
++            vec![
++                entry(path, FileSystemAccessMode::Write),
++                entry(path, FileSystemAccessMode::Deny),
++            ],
++            false,
++        ),
++        (
++            vec![
++                entry("/dev", FileSystemAccessMode::Deny),
++                entry(path, FileSystemAccessMode::Write),
++            ],
++            true,
++        ),
++    ];
++    for (entries, expected) in cases {
++        let policy = FileSystemSandboxPolicy::restricted(entries);
++        assert_eq!(
++            has_explicit_nvidia_device_write(&policy, root, cwd),
++            expected,
++            "policy: {policy:?}"
++        );
++    }
++}
++
++#[test_case("/dev"; "device directory")]
++#[test_case("/dev/null"; "unrelated character device")]
++#[test_case("/dev/nvidia"; "missing GPU minor")]
++#[test_case("/dev/nvidia*"; "wildcard")]
++#[test_case("/dev/nvidia-1"; "negative minor")]
++#[test_case("/dev/nvidia-caps"; "capability directory")]
++#[test_case("/dev/nvidia-caps/nvidia-cap1"; "unreviewed capability node")]
++#[test_case("/dev/nvidia0/.git"; "child of leaf")]
++#[test_case("/tmp/nvidia0"; "wrong parent")]
++fn rejects_non_allowlisted_device_grants(path: &str) {
++    let policy =
++        FileSystemSandboxPolicy::restricted(vec![entry(path, FileSystemAccessMode::Write)]);
++    assert!(!has_explicit_nvidia_device_write(
++        &policy,
++        Path::new(path),
++        Path::new("/")
++    ));
++}
++
++#[test]
++fn ordinary_workspace_keeps_protected_metadata_and_no_device_binds() {
++    let workspace = TempDir::new().expect("workspace");
++    let policy = FileSystemSandboxPolicy::workspace_write(
++        &[],
++        /*exclude_tmpdir_env_var*/ true,
++        /*exclude_slash_tmp*/ true,
++    );
++    let args = create_filesystem_args(&policy, workspace.path(), /*glob_scan_max_depth*/ None)
++        .expect("ordinary workspace args");
++    assert!(!args.args.iter().any(|arg| arg == "--dev-bind"));
++    for name in [".git", ".codex", ".agents"] {
++        let path = workspace.path().join(name);
++        assert!(
++            args.synthetic_mount_targets
++                .iter()
++                .any(|target| target.path() == path)
++        );
++    }
++}
++
++#[test]
++#[ignore = "requires a compute host with actual NVIDIA character devices; does not run CUDA"]
++fn actual_device_binds_are_leaf_scoped_and_preserve_workspace_protections() {
++    let workspace = TempDir::new().expect("workspace");
++    let device = fs::read_dir("/dev")
++        .expect("read /dev")
++        .map(|entry| entry.expect("device entry").path())
++        .find(|path| {
++            let policy = FileSystemSandboxPolicy::restricted(vec![entry(
++                path.to_str().expect("device path"),
++                FileSystemAccessMode::Write,
++            )]);
++            has_explicit_nvidia_device_write(&policy, path, workspace.path())
++                && fs::symlink_metadata(path)
++                    .expect("device metadata")
++                    .file_type()
++                    .is_char_device()
++        })
++        .expect("test explicitly requires an NVIDIA device");
++    let device_string = path_to_string(&device);
++    let mut policy = FileSystemSandboxPolicy::workspace_write(
++        &[],
++        /*exclude_tmpdir_env_var*/ true,
++        /*exclude_slash_tmp*/ true,
++    );
++    policy
++        .entries
++        .push(entry(&device_string, FileSystemAccessMode::Write));
++    let args = create_filesystem_args(&policy, workspace.path(), /*glob_scan_max_depth*/ None)
++        .expect("device workspace args");
++    let private_dev = args
++        .args
++        .windows(2)
++        .position(|args| args == ["--dev", "/dev"])
++        .expect("minimal private /dev");
++    let device_bind = args
++        .args
++        .windows(3)
++        .position(|args| args == ["--dev-bind", device_string.as_str(), device_string.as_str()])
++        .expect("exact device bind");
++    assert!(private_dev < device_bind);
++    assert!(
++        !args
++            .synthetic_mount_targets
++            .iter()
++            .any(|target| target.path().starts_with(&device))
++    );
++    assert!(
++        !args
++            .protected_create_targets
++            .iter()
++            .any(|target| target.path().starts_with(&device))
++    );
++    for name in [".git", ".codex", ".agents"] {
++        let path = workspace.path().join(name);
++        assert!(
++            args.synthetic_mount_targets
++                .iter()
++                .any(|target| target.path() == path)
++        );
++    }
++    policy
++        .entries
++        .push(entry(&device_string, FileSystemAccessMode::Deny));
++    let denied =
++        create_filesystem_args(&policy, workspace.path(), /*glob_scan_max_depth*/ None)
++            .expect("denied device workspace args");
++    assert!(!denied.args.iter().any(|arg| arg == "--dev-bind"));
++}

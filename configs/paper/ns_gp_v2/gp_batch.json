@@ -1,0 +1,28 @@
+{
+  "schema": "ns_gp_batch_v1",
+  "protocol_revision": "iclr_hard_wall_4h_single_seed_v2",
+  "time_budget_mode": "hard_wall",
+  "agent_hard_wall_seconds": 14400,
+  "execution_status": "prepared_not_submitted",
+  "seed": 101,
+  "entries": [
+    {
+      "method": "base_guided",
+      "kind": "canonical",
+      "config": "base_guided_s101.json",
+      "csv_run_id": "02-NS-base-plus-guided-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3
+    },
+    {
+      "method": "base_perturbed",
+      "kind": "canonical",
+      "config": "base_perturbed_s101.json",
+      "csv_run_id": "02-NS-base-plus-perturbed-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3
+    }
+  ],
+  "reference_batch_manifest": "../ns_draft_v1/first_batch.json",
+  "data_index": "../ns_draft_v1/data/bank_index.json",
+  "official_audit_manifest": "../../../../control/official_s101.json",
+  "failure_protocol": "complete_finite_selection_raw_external_v1"
+}

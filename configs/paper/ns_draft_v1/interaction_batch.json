@@ -1,0 +1,50 @@
+{
+  "schema": "ns_draft_interaction_batch_v1",
+  "protocol_revision": "iclr_hard_wall_4h_single_seed_v2",
+  "time_budget_mode": "hard_wall",
+  "agent_hard_wall_seconds": 14400,
+  "execution_status": "prepared_not_submitted",
+  "seed": 101,
+  "entries": [
+    {
+      "method": "full_mean_upfront",
+      "kind": "canonical",
+      "config": "full_mean_upfront_s101.json",
+      "csv_run_id": "03-NS-full-framework_upfront-cases-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3
+    },
+    {
+      "method": "full_tail_upfront",
+      "kind": "canonical",
+      "config": "full_tail_upfront_s101.json",
+      "csv_run_id": "03-NS-full-framework_upfront-cases-worst-20pct-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3
+    },
+    {
+      "method": "full_tail_adaptive",
+      "kind": "canonical",
+      "config": "full_tail_adaptive_s101.json",
+      "csv_run_id": "03-NS-full-framework_adaptive-worst-20pct-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "gpus": 3
+    }
+  ],
+  "reused_entries": [
+    {
+      "method": "full_mean_adaptive",
+      "config": "full_s101.json",
+      "csv_run_id": "01-NS-full-framework-mean-error-gpt-5.6-sol-2a-5u-hard240m-only-s101",
+      "submit": false
+    }
+  ],
+  "failure_protocol": "complete_finite_selection_raw_external_v1",
+  "data_index": "data/bank_index.json",
+  "comparison": {
+    "purpose": "Full framework objective by overall interaction policy; this is not an equal-visible-case ablation.",
+    "official": "All four cells use the same 1024 clean Base Official Cases per round and seed block.",
+    "tail": "Canonical Controller base.cvar is the mean of the largest ceil(0.20*N) per-Case errors.",
+    "upfront": "1024 fresh Cases generated once before each round and shared by both Agents; Base/Guided/Base-perturbed/Guided-perturbed each 256; no further draws.",
+    "adaptive": "At most 1024 fresh team Cases per round, each Agent limited to 512 including its 16 Base + 16 Guided starter Cases and perturbed children.",
+    "guidance": "Generated using the entering selected program (S0 in round 1); Guidance is frozen within each round.",
+    "costs": "Report Agent elapsed time, total run elapsed time, Generator preparation/sampling and evaluator time separately; upfront preparation precedes the Agent clock."
+  }
+}

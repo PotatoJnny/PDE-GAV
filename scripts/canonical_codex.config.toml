@@ -1,0 +1,98 @@
+# Canonical Command-Agent policy. The Controller exposes only an execution-
+# scoped workspace and loopback capability; this is not a hostile-code OS
+# isolation boundary.
+developer_instructions = """
+Host compatibility notice (restricted_namespace_workspace_edit_v1).
+This notice applies only on hosts where the current deployment confirms
+/proc/sys/user/max_net_namespaces is 0, or a native file-edit helper has failed
+there with the documented namespace ENOSPC error: Creating new namespace
+failed: nesting depth or /proc/sys/user/max_*_namespaces exceeded.
+On other hosts, or when neither condition is confirmed, use the normal editing
+tools; do not infer this host limitation from an unrelated tool failure.
+
+Under that restricted-namespace condition, do not invoke or retry the affected native
+apply_patch/file-edit helper. The experiment owner permits targeted file edits
+through the normal sandboxed shell tool, including Python file operations,
+only inside the already authorized Agent workspace. Inspect existing content
+first, preserve unrelated work, and verify the resulting diff and relevant
+tests. Explain that these are shell edits, not successful native file-tool calls.
+Pass this host constraint to any child agents working on the same deployment.
+
+Keep the current sandbox, approval policy, network policy and writable roots.
+Do not request unsandboxed execution, broader permissions or full access, and
+do not change sysctls, install/replace sandbox components, or restart services.
+If the normal sandboxed shell also fails or the edit needs access outside the
+authorized workspace, preserve partial work and report the blocker; this notice
+does not authorize a workaround across an access boundary. Do not alter hidden
+data access, GPU assignments, model settings, scientific tasks, nomination rules
+or time budgets. The host-level namespace fix remains an administrator task.
+"""
+
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+allow_login_shell = false
+check_for_update_on_startup = false
+# Public literature and code search are part of the research action space.
+# Controller-private Cases and truth remain outside the Agent workspace.
+web_search = "live"
+
+[features]
+guardian_approval = false
+
+[sandbox_workspace_write]
+# Required for the Controller-owned loopback capability and optional web search.
+network_access = true
+
+[shell_environment_policy]
+inherit = "all"
+include_only = [
+  "HOME",
+  "PATH",
+  "VIRTUAL_ENV",
+  "PYTHONPATH",
+  "LANG",
+  "LC_*",
+  "TERM",
+  "TMPDIR",
+  "TMP",
+  "TEMP",
+  "USER",
+  "PYTHONDONTWRITEBYTECODE",
+  "PYTHONPYCACHEPREFIX",
+  "PYTHONUNBUFFERED",
+  "PYTHONNOUSERSITE",
+  "LD_LIBRARY_PATH",
+  "LIBRARY_PATH",
+  "CPATH",
+  "OMP_NUM_THREADS",
+  "MKL_NUM_THREADS",
+  "OPENBLAS_NUM_THREADS",
+  "NUMEXPR_NUM_THREADS",
+  "BLIS_NUM_THREADS",
+  "VECLIB_MAXIMUM_THREADS",
+  "CUDA_VISIBLE_DEVICES",
+  "CUDA_DEVICE_ORDER",
+  "SLURM_JOB_ID",
+  "SLURM_JOB_NAME",
+  "SLURM_TMPDIR",
+  "SLURM_CPUS_PER_TASK",
+  "SLURM_MEM_PER_NODE",
+  "SLURM_JOB_GPUS",
+  "SLURM_GPUS",
+  "PDE_AGENT_WORKSPACE",
+  "PDE_AGENT_REQUEST",
+  "PDE_AGENT_NOMINATIONS",
+  "PDE_AGENT_EXECUTION_ID",
+  "PDE_AGENT_CAMPAIGN_MEMORY",
+  "PDE_AGENT_CANDIDATE_HISTORY",
+  "PDE_AGENT_ROUND_LOG",
+  "PDE_AGENT_ROUND_LOG_MAX_BYTES",
+  "PDE_AGENT_PROTOCOL_MAX_BYTES",
+  "HTTP_PROXY",
+  "HTTPS_PROXY",
+  "NO_PROXY",
+  "SSL_CERT_FILE",
+  "SSL_CERT_DIR",
+  "REQUESTS_CA_BUNDLE",
+  "CURL_CA_BUNDLE",
+]
