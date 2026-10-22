@@ -4,6 +4,18 @@ PDE-GAV lets agents develop scientific programs in a queryable PDE environment. 
 
 Extend the system through **PDE plugins and experiment configurations**. The shared Controller manages rounds, budgets, selection, logs, parallel execution, and recovery.
 
+## Solver demos
+
+**Navier–Stokes: cylinder-wake PIV.** Vorticity from first-round R1 and final-round R5 solvers on the same PIV-derived manufactured case.
+
+![NS: manufactured reference, R1 and R5 predictions, and errors](docs/media/ns-cylinder-wake-r1-r5.gif)
+
+**Strong-collision VPFP: Astra.** Density from first-round R1 and final-round R6 solvers on the same generated manufactured case.
+
+![VPFP: manufactured reference, Astra R1 and R6 predictions, and errors](docs/media/vpfp-strong-astra-r1-r6.gif)
+
+The upper row shows the reference and both predictions; the lower row shows error curves and error maps. Color scales are fixed across time and both rounds, and playback is slowed. Relative L2 errors describe the displayed field on one case, not aggregate benchmark scores.
+
 ## Run a complete example
 
 From the repository root:
